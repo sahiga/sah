@@ -1,0 +1,19 @@
+.. link: 
+.. description: 
+.. tags: 
+.. date: 2013/05/04 22:45:00
+.. title: GitHub for Linux Mint
+.. slug: github-for-linux-mint
+.. nocomments: true
+
+As you can see, I got my site up and running. It turned out that I only needed to upload a few files to my **public_html** folder, not the whole Nikola site folder (obvious in retrospect):
+
+- The posts folder
+- The pages folder
+- The categories folder
+- The assets folder of folders (CSS, JS, images)
+- index.html
+- archive.html
+- rss.xml
+
+Next, I wanted to use `GitHub <https://wwww.github.com>`_ to manage my code.

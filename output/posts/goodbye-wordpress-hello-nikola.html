@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="Stephanie A. Higa"><title>Goodbye, WordPress! Hello, Nikola! | sahiga</title><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            sahiga
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav"><li><a href="../stories/about.html">About</a>
+            </li><li><a href="../archive.html">Archives</a>
+            </li><li><a href="../categories/index.html">Tags</a>
+            </li><li><a href="../rss.xml">RSS</a>
+
+                </li></ul><ul class="nav pull-right"><li>
+    <a href="goodbye-wordpress-hello-nikola.txt" id="sourcelink">Source</a>
+    </li>
+
+                </ul></div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>Goodbye, WordPress! Hello, Nikola!</h1>
+
+    <hr><small>
+        Posted: <time class="published" datetime="2013-05-04T14:09:26">2013-05-04 14:09</time></small>
+    <hr><p>It's official: I've finally migrated my personal website from <a class="reference external" href="http://www.wordpress.org">WordPress</a> to <a class="reference external" href="http://nikola.ralsina.com.ar">Nikola</a>, a static site generator. In my 53432099809th attempt to return to writing, I'll use this bit of nerd news to jumpstart what I hope will become a regular blogging habit.</p>
+<div class="section" id="the-quest-for-static">
+<h2>The quest for static</h2>
+<p>WordPress gets a lot of hate in the development community. Let me say upfront that this is absolutely not the reason I decided to leave it (I have the softest of spots for WordPress). It's just that one day I woke up and realized I didn't need a database and a gazillion server queries to post text on my website.</p>
+<p>So I started looking into static site generators. A static site generator does exactly what's written on the box: it creates a static site. It combines the best of Web 1.0 (fast, portable, secure HTML pages) with the best of Web 2.0 (templates). I considered:</p>
+<ul class="simple"><li><a class="reference external" href="http://jekyllrb.com/">Jekyll</a> + <a class="reference external" href="http://www.octopress.org">Octopress</a>: Hooks directly into <a class="reference external" href="http://pages.github.com/">GitHub Pages</a> and is apparently very good. But I don't know Ruby, so I kept looking.</li>
+<li><a class="reference external" href="http://ringce.com/hyde">Hyde</a>: A Python port of Jekyll. Ultimately, I passed on it because of the lack of documentation. When it comes to technology, this Luddite needs a lot of hand-holding.</li>
+<li><a class="reference external" href="http://docs.getpelican.com">Pelican</a>: Also Python-based, with complete, well-written documentation. I installed it and got lost while trying to generate files. Pelican looks like a great choice, but I think it's meant for people who are much more tech-savvy than I am.</li>
+</ul><p>Shortly after I installed Pelican, someone posted a link to <a class="reference external" href="http://nikola.ralsina.com.ar">Nikola</a> on Hacker News. I'm not sure why it didn't come up in all my searches for Python-based static site generators, because so far it's proven to be a dream come true. The documentation is amazing. It's easy to use and in active development. And it was named after <a class="reference external" href="http://theoatmeal.com/comics/tesla">Nikola Tesla</a>. (<strong>Huge</strong> Nikola Tesla fan here.)</p>
+</div>
+<div class="section" id="goodbye-wordpress">
+<h2>Goodbye, WordPress</h2>
+<p>Nikola has an <tt class="docutils literal">import_wordpress</tt> function to ease the transition from WordPress to Nikola. I grabbed an XML dump of my site (<strong>Tools &gt; Export &gt; All Content</strong> in the WP admin panel) and saved it in my Nikola site folder.</p>
+<p>I installed the Python <a class="reference external" href="https://pypi.python.org/pypi/requests">requests</a> package (import_wordpress depends on requests):</p>
+<pre class="literal-block">
+sudo pip install requests
+</pre>
+<p>Then I ran import_wordpress on the file:</p>
+<pre class="literal-block">
+nikola import_wordpress stephanieahiga.wordpress.2013-05-05.xml
+</pre>
+<p>This created a new folder, <strong>new_site</strong>, within the Nikola folder. I had no posts and only a handful of pages in my WordPress database, so I recreated the pages manually using the page command: <tt class="docutils literal">nikola new_post <span class="pre">-p</span></tt>. Similar to WordPress, Nikola differentiates between posts and pages: posts are in the <strong>posts</strong> folder and pages are in the <strong>stories</strong> folder.</p>
+<p>Finally, I uninstalled WordPress from my domain via <a class="reference external" href="https://www.simplescripts.com">SimpleScripts</a> on my cPanel.</p>
+<p>import_wordpress saves all posts and pages with the <tt class="docutils literal">.wp</tt> extension (read by my computer as WordPerfect files). The XML dump, and therefore the folder created by import_wordpress, save the contents of the WordPress database, but <strong>not</strong> the theme files. So it's important to backup any custom themes before uninstalling WordPress.</p>
+<p>Tutorials on importing WordPress posts into Nikola:</p>
+<ul class="simple"><li><a class="reference external" href="http://nikola.ralsina.com.ar/handbook.html#importing-your-wordpress-site-into-nikola">Official site</a></li>
+<li><a class="reference external" href="http://flexion.org/posts/2012-10-migrating-wordpress-to-nikola.html">Flexion.Org</a></li>
+<li><a class="reference external" href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html">Kushal Das</a></li>
+</ul></div>
+<div class="section" id="hello-nikola">
+<h2>Hello, Nikola</h2>
+<p>I assume that the next step is to upload the Nikola site folder to my domain server. If you're reading this post, you can assume that my assumption turned out to be true.</p>
+</div>
+    
+    <ul class="pager"></ul></div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013 <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul></div>
+    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
