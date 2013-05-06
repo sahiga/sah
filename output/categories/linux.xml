@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>sahiga (linux)</title><link>http://www.stephaniehiga.com</link><description>The personal website of Stephanie A. Higa.</description><lastBuildDate>Sun, 05 May 2013 22:39:20 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GitHub for Linux Mint</title><link>http://www.stephaniehiga.com/posts/github-for-linux-mint.html</link><description>&lt;p&gt;Version control terrifies me.&lt;/p&gt;
+&lt;p&gt;But you know what else terrifies me? Losing files. I've lost enough of them and endured enough filename headaches (story-1.doc, story-2.doc, story-final, story-new.doc, story-newEST.doc, etc.) in my lifetime to realize that &lt;strong&gt;version control is extremely important&lt;/strong&gt;, and I need to develop better version control habits.&lt;/p&gt;
+&lt;p&gt;So, I added the files for this site to &lt;a class="reference external" href="https://github.com/sahiga/sah"&gt;my GitHub account&lt;/a&gt;. The following guide details the steps I took, minus the legion of errors I made. I've named it "GitHub for &lt;a class="reference external" href="http://www.linuxmint.com"&gt;Linux Mint&lt;/a&gt;," in honor of my operating system and the fact that GitHub offers &lt;a class="reference external" href="http://mac.github.com"&gt;GitHub for Mac&lt;/a&gt; and &lt;a class="reference external" href="http://windows.github.com"&gt;GitHub for Windows&lt;/a&gt;, but no GitHub for GNU/Linux (even though, hey, some of us GNU/Linux users could use a little point-and-click help over here).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: Afterward, I realized I could have had a &lt;a class="reference external" href="https://help.github.com/articles/fetching-a-remote"&gt;much easier time&lt;/a&gt; cloning the repository. This command is identical to the "Clone in Windows" and "Clone in Mac" buttons in the corresponding GitHub GUI applications:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git clone &amp;lt;URL&amp;gt;
+&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;div class="section" id="connect-your-computer-to-github"&gt;
+&lt;h2&gt;Connect your computer to GitHub&lt;/h2&gt;
+&lt;p&gt;First, you need a secure method of connecting your computer to GitHub. You can do this through SSH (generate a new public/private SSH key pair and add it to your GitHub account) or through HTTPS (configure the Git credential helper).&lt;/p&gt;
+&lt;ul class="simple"&gt;&lt;li&gt;&lt;a class="reference external" href="https://help.github.com/articles/set-up-git"&gt;Instructions for using HTTPS with GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://help.github.com/articles/generating-ssh-keys"&gt;Instructions for using SSH with GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;div class="section" id="prepare-the-branches"&gt;
+&lt;h2&gt;Prepare the branches&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/new"&gt;Create a new repository on GitHub&lt;/a&gt;. This is the &lt;strong&gt;remote branch&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Fire up your command line. Move to the directory containing your version control files (if you're not there already), e.g., &lt;tt class="docutils literal"&gt;cd sah&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;Initialize a Git repository in this directory. This is the &lt;strong&gt;local branch&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git init
+&lt;/pre&gt;
+&lt;p&gt;Check the status of your new repository.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git status
+&lt;/pre&gt;
+&lt;p&gt;(or &lt;tt class="docutils literal"&gt;git st&lt;/tt&gt; if you've set up &lt;a class="reference external" href="http://git-scm.com/book/ch2-7.html#Git-Aliases"&gt;aliases&lt;/a&gt;). This is optional, but I like checking the status to see which branch I'm working on and which files will be included in the next commit.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# On branch master
+# Untracked files:
+#   (use "git add &amp;lt;file&amp;gt;..." to include in what will be committed)
+#
+#       .doit.db
+#       1.txt
+#       README.txt
+#       cache/
+#       conf.py
+#       conf.pyc
+#       conf.py~
+#       files/
+#       galleries/
+#       listings/
+#       new_site/
+#       output/
+#       posts/
+#       stephanieahiga.wordpress.2013-05-05.xml
+#       stories/
+nothing added to commit but untracked files present (use "git add" to track)
+&lt;/pre&gt;
+&lt;p&gt;Right now there's "nothing added to commit," meaning the local repository is empty. This is because you've just initialized it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="start-tracking-your-files"&gt;
+&lt;h2&gt;Start tracking your files&lt;/h2&gt;
+&lt;p&gt;Next, add version control tracking to your files. To add individual files, write &lt;tt class="docutils literal"&gt;git add&lt;/tt&gt; and then the filename. To add everything in the directory to your commit:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git add .
+&lt;/pre&gt;
+&lt;p&gt;Now it's time to commit the change. The basic commit command is &lt;tt class="docutils literal"&gt;git commit&lt;/tt&gt;, which will launch your preferred text editor. The &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-m&lt;/span&gt;&lt;/tt&gt; flag allows you to skip the text editor and type your commit message inline; the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-a&lt;/span&gt;&lt;/tt&gt; flag tells Git to automatically stage your tracked files, skipping the staging area.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git commit -a -m "Added Nikola site files"
+&lt;/pre&gt;
+&lt;p&gt;See &lt;a class="reference external" href="http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository"&gt;Git Basics - Recording Changes to the Repository&lt;/a&gt; for more information on committing changes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="merge-and-sync-your-branches"&gt;
+&lt;h2&gt;Merge and sync your branches&lt;/h2&gt;
+&lt;p&gt;Merge the remote branch (the GitHub copy of the repository) with your local branch (the local copy of the repository). This consolidates the two branches and ensures that they are identical.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git pull https://github.com/sahiga/sah.git
+&lt;/pre&gt;
+&lt;p&gt;You should see a message like this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+From https://github.com/sahiga/sah
+ * branch            HEAD       -&amp;gt; FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ README.md |    4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 README.md
+
+**Note:** ``git pull`` automatically merges commits from the "pulled" branch into your current branch. This works fine on an empty GitHub repository, but it could cause `merge conflicts &amp;lt;https://help.github.com/articles/fetching-a-remote&amp;gt;`_.
+&lt;/pre&gt;
+&lt;p&gt;Push your commit on the local branch to the remote branch:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git push origin master
+&lt;/pre&gt;
+&lt;p&gt;If you're using HTTPS, GitHub will prompt you for credentials. To switch to SSH, &lt;a class="reference external" href="https://help.github.com/articles/why-is-git-always-asking-for-my-password"&gt;follow these instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;Note:&lt;/strong&gt; I originally attempted &lt;tt class="docutils literal"&gt;git push origin master&lt;/tt&gt; before &lt;tt class="docutils literal"&gt;git pull&lt;/tt&gt;, resulting in a "non-fast-forward" error. This error occurs when the local branch is behind the remote branch, and therefore Git can't push the local commits without losing commits on the remote branch. GitHub has an &lt;a class="reference external" href="https://help.github.com/articles/dealing-with-non-fast-forward-errors"&gt;article on non-fast-forward errors&lt;/a&gt; that I wish I'd found when I made this mistake.&lt;/blockquote&gt;
+&lt;p&gt;The two branches are now in sync! Check the commit history in your local branch with &lt;tt class="docutils literal"&gt;git log&lt;/tt&gt;. The most recent commit should have a "Merge" attribute, identical to what you'll find in the "Commits" tab in your GitHub account:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+    commit e9bcc38554dd930b4bd1f557e45c92f8f65e0a98
+    Merge: 3e653b4 96d590b
+    Author: sahiga
+    Date:   Sat May 4 23:51:39 2013 -0700
+
+Merge https://github.com/sahiga/sah
+&lt;/pre&gt;
+&lt;p&gt;Tutorials for Git and GitHub:&lt;/p&gt;
+&lt;ul class="simple"&gt;&lt;li&gt;&lt;a class="reference external" href="http://git-scm.com/book"&gt;Pro Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://help.github.com/"&gt;GitHub Help&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.floraworley.com/2013/03/11/get-started-with-git-and-github/"&gt;Diary of a Future Dev&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>linux</category><category>git</category><category>version control</category><guid>http://www.stephaniehiga.com/posts/github-for-linux-mint.html</guid><pubDate>Sun, 05 May 2013 21:05:00 GMT</pubDate></item></channel></rss>

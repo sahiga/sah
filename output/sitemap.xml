@@ -6,7 +6,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.stephaniehiga.com</loc>
-  <lastmod>2013-05-04</lastmod>
+  <lastmod>2013-05-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -36,7 +36,7 @@
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/</loc>
-  <lastmod>2013-05-04</lastmod>
+  <lastmod>2013-05-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -50,18 +50,43 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://www.stephaniehiga.com/categories/git.html</loc>
+  <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://www.stephaniehiga.com/categories/index.html</loc>
-  <lastmod>2013-05-04</lastmod>
+  <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/categories/linux.html</loc>
+  <lastmod>2013-05-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/nikola.html</loc>
-  <lastmod>2013-05-04</lastmod>
+  <lastmod>2013-05-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/python.html</loc>
   <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/categories/static-site-generators.html</loc>
+  <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/categories/version-control.html</loc>
+  <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/categories/wordpress.html</loc>
+  <lastmod>2013-05-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -86,7 +111,7 @@
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/index.html</loc>
-  <lastmod>2013-05-04</lastmod>
+  <lastmod>2013-05-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -105,8 +130,173 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.stephaniehiga.com/posts/goodbye-wordpress-hello-nikola.html</loc>
+  <loc>http://www.stephaniehiga.com/output/</loc>
+  <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/2012/</loc>
+  <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/2012/index.html</loc>
   <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/2013/</loc>
+  <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/2013/index.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/archive.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/categories/</loc>
+  <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/categories/blog.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/categories/demo.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/categories/index.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/categories/nikola.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/categories/python.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/galleries/</loc>
+  <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/galleries/demo/</loc>
+  <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/galleries/demo/index.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/galleries/index.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/index.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/listings/</loc>
+  <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/listings/hello.py.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/listings/index.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/posts/goodbye-wordpress-hello-nikola.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/posts/welcome-to-nikola.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/stories/about-nikola.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/stories/about.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/stories/creating-a-theme.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/stories/handbook.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/stories/listings-demo.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/stories/quickref.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/stories/quickstart.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/stories/sampleconfig.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/stories/slides-demo.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/output/stories/theming.html</loc>
+  <lastmod>2013-05-04</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/posts/github-for-linux-mint.html</loc>
+  <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/posts/goodbye-wordpress-hello-nikola.html</loc>
+  <lastmod>2013-05-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -121,7 +311,7 @@
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/stories/about.html</loc>
-  <lastmod>2013-05-04</lastmod>
+  <lastmod>2013-05-05</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>

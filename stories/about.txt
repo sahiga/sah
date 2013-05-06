@@ -5,10 +5,20 @@
 .. title: About
 .. slug: about
 
-Hello! I'm a writer and web developer based in Los Angeles, California.
+Hello! I'm Stephanie, a writer and web developer based in Los Angeles, California.
 
 I currently work at a mobile technology incubator-accelerator on the Sunset Strip.
 
 In my spare time, I wrangle text, symbols, and pictures.
 
 Samuel R. Delany's `Dhalgren <https://en.wikipedia.org/wiki/Dhalgren>`_ is my favorite novel, followed closely by `V. <https://en.wikipedia.org/wiki/V.>`_ and `Hard-Boiled Wonderland and the End of the World <https://en.wikipedia.org/wiki/Hard-Boiled_Wonderland_and_the_End_of_the_World>`_.
+
+Around the web
+==============
+
+- `Illustrations <http://sahiga.carbonmade.com>`_
+- `LinkedIn <http://www.linkedin.com/in/sahiga>`_
+- `Daytum <http://www.daytum.com/sahiga>`_
+- `GitHub <http://www.github.com/sahiga>`_
+- `About.me <http://about.me/sahiga>`_
+- `Goodreads <http://www.goodreads.com>`_ (in the process of switching to `Open Library <http://openlibrary.org/people/sahiga>`_ because of the `Amazon acquisition <http://www.goodreads.com/blog/show/413-exciting-news-about-goodreads-we-re-joining-the-amazon-family>`_)

@@ -1,6 +1,6 @@
 .. link: 
 .. description: 
-.. tags: 
+.. tags: static site generators, nikola, wordpress
 .. date: 2013/05/04 14:09:26
 .. title: Goodbye, WordPress! Hello, Nikola!
 .. slug: goodbye-wordpress-hello-nikola
@@ -24,7 +24,7 @@ Shortly after I installed Pelican, someone posted a link to `Nikola <http://niko
 Goodbye, WordPress
 ==================
 
-Nikola has an ``import_wordpress`` function to ease the transition from WordPress to Nikola. I grabbed an XML dump of my site (**Tools > Export > All Content** in the WP admin panel) and saved it in my Nikola site folder.
+Nikola has an ``import_wordpress`` function to ease the transition to WordPress. I grabbed an XML dump of my site (**Tools > Export > All Content** in the WP admin panel) and saved it in my Nikola site folder.
 
 I installed the Python `requests <https://pypi.python.org/pypi/requests>`_ package (import_wordpress depends on requests):
 

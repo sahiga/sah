@@ -35,6 +35,113 @@
     <div class="span8">
     
         <div class="postbox">
+        <h1><a href="posts/github-for-linux-mint.html">GitHub for Linux Mint</a>
+        <small>  
+             Posted: <time class="published" datetime="2013-05-05T21:05:00">2013-05-05 21:05</time></small></h1>
+        <hr><p>Version control terrifies me.</p>
+<p>But you know what else terrifies me? Losing files. I've lost enough of them and endured enough filename headaches (story-1.doc, story-2.doc, story-final, story-new.doc, story-newEST.doc, etc.) in my lifetime to realize that <strong>version control is extremely important</strong>, and I need to develop better version control habits.</p>
+<p>So, I added the files for this site to <a class="reference external" href="https://github.com/sahiga/sah">my GitHub account</a>. The following guide details the steps I took, minus the legion of errors I made. I've named it "GitHub for <a class="reference external" href="http://www.linuxmint.com">Linux Mint</a>," in honor of my operating system and the fact that GitHub offers <a class="reference external" href="http://mac.github.com">GitHub for Mac</a> and <a class="reference external" href="http://windows.github.com">GitHub for Windows</a>, but no GitHub for GNU/Linux (even though, hey, some of us GNU/Linux users could use a little point-and-click help over here).</p>
+<blockquote>
+<p>Note: Afterward, I realized I could have had a <a class="reference external" href="https://help.github.com/articles/fetching-a-remote">much easier time</a> cloning the repository. This command is identical to the "Clone in Windows" and "Clone in Mac" buttons in the corresponding GitHub GUI applications:</p>
+<pre class="literal-block">
+git clone &lt;URL&gt;
+</pre>
+</blockquote>
+<div class="section" id="connect-your-computer-to-github">
+<h2>Connect your computer to GitHub</h2>
+<p>First, you need a secure method of connecting your computer to GitHub. You can do this through SSH (generate a new public/private SSH key pair and add it to your GitHub account) or through HTTPS (configure the Git credential helper).</p>
+<ul class="simple"><li><a class="reference external" href="https://help.github.com/articles/set-up-git">Instructions for using HTTPS with GitHub</a></li>
+<li><a class="reference external" href="https://help.github.com/articles/generating-ssh-keys">Instructions for using SSH with GitHub</a></li>
+</ul></div>
+<div class="section" id="prepare-the-branches">
+<h2>Prepare the branches</h2>
+<p><a class="reference external" href="https://github.com/new">Create a new repository on GitHub</a>. This is the <strong>remote branch</strong>.</p>
+<p>Fire up your command line. Move to the directory containing your version control files (if you're not there already), e.g., <tt class="docutils literal">cd sah</tt>.</p>
+<p>Initialize a Git repository in this directory. This is the <strong>local branch</strong>.</p>
+<pre class="literal-block">
+git init
+</pre>
+<p>Check the status of your new repository.</p>
+<pre class="literal-block">
+git status
+</pre>
+<p>(or <tt class="docutils literal">git st</tt> if you've set up <a class="reference external" href="http://git-scm.com/book/ch2-7.html#Git-Aliases">aliases</a>). This is optional, but I like checking the status to see which branch I'm working on and which files will be included in the next commit.</p>
+<pre class="literal-block">
+# On branch master
+# Untracked files:
+#   (use "git add &lt;file&gt;..." to include in what will be committed)
+#
+#       .doit.db
+#       1.txt
+#       README.txt
+#       cache/
+#       conf.py
+#       conf.pyc
+#       conf.py~
+#       files/
+#       galleries/
+#       listings/
+#       new_site/
+#       output/
+#       posts/
+#       stephanieahiga.wordpress.2013-05-05.xml
+#       stories/
+nothing added to commit but untracked files present (use "git add" to track)
+</pre>
+<p>Right now there's "nothing added to commit," meaning the local repository is empty. This is because you've just initialized it.</p>
+</div>
+<div class="section" id="start-tracking-your-files">
+<h2>Start tracking your files</h2>
+<p>Next, add version control tracking to your files. To add individual files, write <tt class="docutils literal">git add</tt> and then the filename. To add everything in the directory to your commit:</p>
+<pre class="literal-block">
+git add .
+</pre>
+<p>Now it's time to commit the change. The basic commit command is <tt class="docutils literal">git commit</tt>, which will launch your preferred text editor. The <tt class="docutils literal"><span class="pre">-m</span></tt> flag allows you to skip the text editor and type your commit message inline; the <tt class="docutils literal"><span class="pre">-a</span></tt> flag tells Git to automatically stage your tracked files, skipping the staging area.</p>
+<pre class="literal-block">
+git commit -a -m "Added Nikola site files"
+</pre>
+<p>See <a class="reference external" href="http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository">Git Basics - Recording Changes to the Repository</a> for more information on committing changes.</p>
+</div>
+<div class="section" id="merge-and-sync-your-branches">
+<h2>Merge and sync your branches</h2>
+<p>Merge the remote branch (the GitHub copy of the repository) with your local branch (the local copy of the repository). This consolidates the two branches and ensures that they are identical.</p>
+<pre class="literal-block">
+git pull https://github.com/sahiga/sah.git
+</pre>
+<p>You should see a message like this:</p>
+<pre class="literal-block">
+From https://github.com/sahiga/sah
+ * branch            HEAD       -&gt; FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ README.md |    4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 README.md
+
+**Note:** ``git pull`` automatically merges commits from the "pulled" branch into your current branch. This works fine on an empty GitHub repository, but it could cause `merge conflicts &lt;https://help.github.com/articles/fetching-a-remote&gt;`_.
+</pre>
+<p>Push your commit on the local branch to the remote branch:</p>
+<pre class="literal-block">
+git push origin master
+</pre>
+<p>If you're using HTTPS, GitHub will prompt you for credentials. To switch to SSH, <a class="reference external" href="https://help.github.com/articles/why-is-git-always-asking-for-my-password">follow these instructions</a>.</p>
+<blockquote>
+<strong>Note:</strong> I originally attempted <tt class="docutils literal">git push origin master</tt> before <tt class="docutils literal">git pull</tt>, resulting in a "non-fast-forward" error. This error occurs when the local branch is behind the remote branch, and therefore Git can't push the local commits without losing commits on the remote branch. GitHub has an <a class="reference external" href="https://help.github.com/articles/dealing-with-non-fast-forward-errors">article on non-fast-forward errors</a> that I wish I'd found when I made this mistake.</blockquote>
+<p>The two branches are now in sync! Check the commit history in your local branch with <tt class="docutils literal">git log</tt>. The most recent commit should have a "Merge" attribute, identical to what you'll find in the "Commits" tab in your GitHub account:</p>
+<pre class="literal-block">
+    commit e9bcc38554dd930b4bd1f557e45c92f8f65e0a98
+    Merge: 3e653b4 96d590b
+    Author: sahiga
+    Date:   Sat May 4 23:51:39 2013 -0700
+
+Merge https://github.com/sahiga/sah
+</pre>
+<p>Tutorials for Git and GitHub:</p>
+<ul class="simple"><li><a class="reference external" href="http://git-scm.com/book">Pro Git</a></li>
+<li><a class="reference external" href="https://help.github.com/">GitHub Help</a></li>
+<li><a class="reference external" href="http://www.floraworley.com/2013/03/11/get-started-with-git-and-github/">Diary of a Future Dev</a></li>
+</ul></div>
+        </div>
+        <div class="postbox">
         <h1><a href="posts/goodbye-wordpress-hello-nikola.html">Goodbye, WordPress! Hello, Nikola!</a>
         <small>  
              Posted: <time class="published" datetime="2013-05-04T14:09:26">2013-05-04 14:09</time></small></h1>
@@ -50,7 +157,7 @@
 </div>
 <div class="section" id="goodbye-wordpress">
 <h2>Goodbye, WordPress</h2>
-<p>Nikola has an <tt class="docutils literal">import_wordpress</tt> function to ease the transition from WordPress to Nikola. I grabbed an XML dump of my site (<strong>Tools &gt; Export &gt; All Content</strong> in the WP admin panel) and saved it in my Nikola site folder.</p>
+<p>Nikola has an <tt class="docutils literal">import_wordpress</tt> function to ease the transition to WordPress. I grabbed an XML dump of my site (<strong>Tools &gt; Export &gt; All Content</strong> in the WP admin panel) and saved it in my Nikola site folder.</p>
 <p>I installed the Python <a class="reference external" href="https://pypi.python.org/pypi/requests">requests</a> package (import_wordpress depends on requests):</p>
 <pre class="literal-block">
 sudo pip install requests

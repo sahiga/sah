@@ -43,7 +43,16 @@
     <h1>Goodbye, WordPress! Hello, Nikola!</h1>
 
     <hr><small>
-        Posted: <time class="published" datetime="2013-05-04T14:09:26">2013-05-04 14:09</time></small>
+        Posted: <time class="published" datetime="2013-05-04T14:09:26">2013-05-04 14:09</time>
+        
+
+        
+          |  More posts about
+            <a class="tag" href="../categories/static-site-generators.html"><span class="badge badge-info">static site generators</span></a>
+            <a class="tag" href="../categories/nikola.html"><span class="badge badge-info">nikola</span></a>
+            <a class="tag" href="../categories/wordpress.html"><span class="badge badge-info">wordpress</span></a>
+
+    </small>
     <hr><p>It's official: I've finally migrated my personal website from <a class="reference external" href="http://www.wordpress.org">WordPress</a> to <a class="reference external" href="http://nikola.ralsina.com.ar">Nikola</a>, a static site generator. In my 53432099809th attempt to return to writing, I'll use this bit of nerd news to jumpstart what I hope will become a regular blogging habit.</p>
 <div class="section" id="the-quest-for-static">
 <h2>The quest for static</h2>
@@ -56,7 +65,7 @@
 </div>
 <div class="section" id="goodbye-wordpress">
 <h2>Goodbye, WordPress</h2>
-<p>Nikola has an <tt class="docutils literal">import_wordpress</tt> function to ease the transition from WordPress to Nikola. I grabbed an XML dump of my site (<strong>Tools &gt; Export &gt; All Content</strong> in the WP admin panel) and saved it in my Nikola site folder.</p>
+<p>Nikola has an <tt class="docutils literal">import_wordpress</tt> function to ease the transition to WordPress. I grabbed an XML dump of my site (<strong>Tools &gt; Export &gt; All Content</strong> in the WP admin panel) and saved it in my Nikola site folder.</p>
 <p>I installed the Python <a class="reference external" href="https://pypi.python.org/pypi/requests">requests</a> package (import_wordpress depends on requests):</p>
 <pre class="literal-block">
 sudo pip install requests
@@ -78,7 +87,10 @@ nikola import_wordpress stephanieahiga.wordpress.2013-05-05.xml
 <p>I assume that the next step is to upload the Nikola site folder to my domain server. If you're reading this post, you can assume that my assumption turned out to be true.</p>
 </div>
     
-    <ul class="pager"></ul></div>
+    <ul class="pager"><li class="next">
+            <a href="github-for-linux-mint.html">Next post →</a>
+        </li>
+    </ul></div>
 
     </div>
     </div>
