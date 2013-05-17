@@ -106,6 +106,7 @@ You should see a message like this:
 	 1 file changed, 4 insertions(+)
 	 create mode 100644 README.md
 
+
 	**Note:** ``git pull`` automatically merges commits from the "pulled" branch into your current branch. This works fine on an empty GitHub repository, but it could cause `merge conflicts <https://help.github.com/articles/fetching-a-remote>`_.
 
 Push your commit on the local branch to the remote branch::
