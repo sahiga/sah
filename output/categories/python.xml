@@ -1,12 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Demo Site (python)</title><link>http://nikola.ralsina.com.ar</link><description>This is a demo site for Nikola.</description><lastBuildDate>Sat, 04 May 2013 14:04:59 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Welcome to Nikola</title><link>http://nikola.ralsina.com.ar/posts/welcome-to-nikola.html</link><description>&lt;div class="figure"&gt;
-&lt;a class="reference external image-reference" href="http://farm1.staticflickr.com/138/352972944_4f9d568680_z.jpg?zz=1"&gt;&lt;img alt="Nikola Tesla Corner by nicwest, on Flickr" class="thumbnail" src="http://farm1.staticflickr.com/138/352972944_4f9d568680.jpg"&gt;&lt;/a&gt;
+<rss version="2.0"><channel><title>sahiga (python)</title><link>http://www.stephaniehiga.com</link><description>The personal website of Stephanie A. Higa.</description><lastBuildDate>Sun, 19 May 2013 00:09:34 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Analyzing Rap Lyrics with Python</title><link>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</link><description>&lt;p&gt;Yesterday my company held a hack day for the developers to work on independent projects. I used the opportunity to jumpstart a text mining project I've had on my mind for months: an analysis of rap lyrics. More specifically, I ran a quick-and-dirty experiment to find the most beloved car brand in hip-hop.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://stephaniehiga.com/cars.html#results"&gt;Skip to the results here.&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="why-hip-hop"&gt;
+&lt;h2&gt;Why hip-hop?&lt;/h2&gt;
+&lt;p&gt;Hip-hop is by far my favorite genre of music. I don't listen to much else. On the road, I tune the radio to 93.5 KDAY; otherwise, I'm plugged into my Pandora account, which is heavy on Golden Age, Midwestern, East Coast, Bay Area, and (recently) indie rap. Someday I'll give podcasts/NPR/classical music a whirl. But that someday is a long while away.&lt;/p&gt;
+&lt;p&gt;Hip-hop also seems to be lyrically denser than other types of music. It's wordy, which means it contains quite a bit of text to analyze.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;If you can see this in a web browser, it means you have managed to install Nikola,
-and build a site using it. Congratulations!&lt;/p&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;You can read the manual &lt;a class="reference external" href="/stories/handbook.html"&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;You can learn more about Nikola at &lt;a class="reference external" href="http://nikola.ralsina.com.ar"&gt;http://nikola.ralsina.com.ar&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;You can see a demo photo gallery &lt;a class="reference external" href="/galleries/demo/index.html"&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Demo usage of listings &lt;a class="reference external" href="/stories/listings-demo.html"&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Demo of slideshows &lt;a class="reference external" href="/stories/slides-demo.html"&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;Send feedback to &lt;a class="reference external" href="mailto:ralsina@netmanagers.com.ar"&gt;ralsina@netmanagers.com.ar&lt;/a&gt;!&lt;/p&gt;</description><category>nikola</category><category>python</category><category>demo</category><category>blog</category><guid>http://nikola.ralsina.com.ar/posts/welcome-to-nikola.html</guid><pubDate>Fri, 30 Mar 2012 23:00:00 GMT</pubDate></item></channel></rss>
+&lt;div class="section" id="why-car-brands"&gt;
+&lt;h2&gt;Why car brands?&lt;/h2&gt;
+&lt;p&gt;Rappers talk about cars. A lot. Now, maybe it's because I like Chevy trucks, but I've heard plenty of songs that mention "Chevy" (okay, and Benz and Cadillac too). So I decided to find out once and for all which car brand rappers loved the most. Chevy was, of course, my pick.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="my-method"&gt;
+&lt;h2&gt;My method&lt;/h2&gt;
+&lt;p&gt;To find the answer, I needed a sizeable sample of car brand names, a searchable database of hip-hop lyrics, a script to search for the brands within the lyrics database, and a way of displaying the results. Fortunately, all the necessary tools were readily available:&lt;/p&gt;
+&lt;ul class="simple"&gt;&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Wikipedia&lt;/li&gt;
+&lt;li&gt;LibreOffice Calc&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://research.blackyouthproject.com/raplyrics/"&gt;Rap Lyrics Database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://developers.google.com/chart/"&gt;Google Charts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bootstrap&lt;/li&gt;
+&lt;/ul&gt;&lt;div class="section" id="gathering-the-data"&gt;
+&lt;h3&gt;Gathering the data&lt;/h3&gt;
+&lt;p&gt;Wikipedia blocks web scrapers, understandably. So I manually downloaded all of Wikipedia's lists of car manufacturers and brands by country. To reduce the amount of HTML I would have to parse, I selected the &lt;a class="reference external" href="http://en.m.wikipedia.org/wiki/Main_Page"&gt;Mobile View&lt;/a&gt; for each page.&lt;/p&gt;
+&lt;p&gt;I downloaded ten files in total: a general list of car manufacturers plus individual lists for China, France, Germany, Italy, Japan, Spain, Sweden, the United Kingdom, and the United States.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cleaning-the-data"&gt;
+&lt;h3&gt;Cleaning the data&lt;/h3&gt;
+&lt;p&gt;Wikipedia's Mobile View pages contain search bars at the top and the usual "See also," "References," and "Read in another language" links. I started by erasing these (manually again), reducing the files to structural markup and the lists themselves.&lt;/p&gt;
+&lt;p&gt;With the Python &lt;a class="reference external" href="http://www.crummy.com/software/BeautifulSoup/"&gt;Beautiful Soup&lt;/a&gt; library, I extracted the brand name tags by selecting all list elements. Then I used &lt;a class="reference external" href="http://www.nltk.org"&gt;NLTK&lt;/a&gt; to remove the HTML tags and regular expressions to remove excess whitespace and text (such as notes about the brand, the brand's years of operation, etc.). This is what I came up with:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+def clean_wikilist(filename):
+    # open saved html file
+    html = open(filename).read()
+
+    # collect bulleted items only
+    bullets = SoupStrainer("li")
+
+    # make soup out of the bulleted items
+    soup = BeautifulSoup(html, 'lxml', parse_only = bullets).prettify()
+
+    # remove html from soup
+    raw = nltk.clean_html(soup)
+
+    # remove extra lines
+    raw = re.sub(r'\n \n \n \n \n', r'\n', raw)
+    raw = re.sub(r'\n \n \n', r'\n', raw)
+
+    # create and clean tokens
+    tokens = raw.split('\n')
+    tokens = [re.sub(r'^\s+(?=[\S]+)', r'', token) for token in tokens]
+    tokens = [token for token in tokens if not re.findall(r'\[[0-9]+\]|\([\S\s]+[\(\)]?|^\s+$|^[\s\[\]\(\)0-9]+$', token)]
+    tokens = list(set(tokens))
+
+    return tokens
+&lt;/pre&gt;
+&lt;p&gt;After running my script on all ten lists, I had a whopping &lt;strong&gt;2599 results&lt;/strong&gt;. So I decided to limit the set to Germany, Japan, the UK, and the US. The pages for Germany, the UK, and the US separate current brands from defunct brands, so for those countries I used current brands only. The Japan page mixes current and defunct brands into one list, and I didn't have time to distinguish them, so I ended up using all of them.&lt;/p&gt;
+&lt;p&gt;These four pages had slightly different structures. The &lt;tt class="docutils literal"&gt;clean_wikilist()&lt;/tt&gt; script worked nicely for Japan, but captured too much information on the others, so I wrote three additional scripts. Here's the one for Germany:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+def autos_ge():
+        # open saved html file
+        html = open('autos-ge.html').read()
+
+        # create soup object
+        soup = BeautifulSoup(html)
+
+        # select current major manufacturers
+        majors = soup.select('span.mw-headline')
+        majors = [w for w in majors if w.parent.parent.previous_sibling.contents[0]['id'] == 'Current_major_manufacturers']
+        major_tokens = [nltk.clean_html(str(w)) for w in majors]
+        major_tokens = [re.sub(r'\[\s\S\s\]', r'', token) for token in major_tokens]
+
+        # select current minor manufacturers
+        minors = soup.select('li')
+        minors = [w for w in minors if w.parent.parent.previous_sibling.contents[0]['id'] == 'Current_minor_manufacturers']
+        minor_tokens = [nltk.clean_html(str(w)) for w in minors]
+        minor_tokens = [re.sub(r'\s\(\S+\)', r'', token) for token in minor_tokens]
+
+        # combine lists
+        tokens = list(set(minor_tokens + major_tokens))
+
+        return tokens
+&lt;/pre&gt;
+&lt;p&gt;One notable difference between this and the original script is the usage of Beautiful Soup. In &lt;tt class="docutils literal"&gt;clean_wikilist()&lt;/tt&gt;, the desired elements are selected first, with SoupStrainer, and then used to create a list of the matching HTML tags in unicode format. &lt;tt class="docutils literal"&gt;autos_ge()&lt;/tt&gt;, on the other hand, creates a Beautiful Soup object out of the entire page; the desired elements are selected via DOM traversal.&lt;/p&gt;
+&lt;p&gt;The number of the results from this limited dataset? Just 178.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="analyzing-the-data"&gt;
+&lt;h3&gt;Analyzing the data&lt;/h3&gt;
+&lt;p&gt;The Rap Lyrics Database contains lyrics for all of Billboard Music's rap songs from 1989 through 2009. It's the only searchable database of hip-hop lyrics (exclusively).&lt;/p&gt;
+&lt;p&gt;The result pages share the same URL, with the search term appended to the end: &lt;em&gt;http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/&lt;/em&gt;. This made it much easier to automate the search and saving process:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+def rap_search(auto_list):
+    # search for each brand name
+    for brand in auto_list:
+        url = 'http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/' + word
+
+        # save the search results page
+        results_html = urllib2.urlopen(url).read()
+
+        # save it as a file named after the brand
+        results = word + '.html'
+
+        with open(results, 'w') as results_file:
+            results_file.write(results_html)
+&lt;/pre&gt;
+&lt;p&gt;This saved 178 HTML pages, each named after the appropriate brand search term, onto my computer. I also searched for known nicknames of the brands (e.g. "Bimmer/Beemer/Beamer" for BMW and "Chevy" for Chevrolet, etc.).&lt;/p&gt;
+&lt;p&gt;I used Beautiful Soup again to count the number of results on each page:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+def count_rap_results():
+        # for all html files in current directory
+        for filename in os.listdir('.'):
+        if filename.endswith('html'):
+
+        # select song titles
+        html = open(filename).read()
+        soup = BeautifulSoup(html)
+        songs = soup.select('.title')
+
+        # count number of song titles
+        count = len(songs)
+
+        # write brand names and number of songs into a text file
+        with open('count_rap_autos.txt', 'a') as counter_file:
+                counter_file.write('%s%15d\n' % (filename[:-5], count))
+&lt;/pre&gt;
+&lt;p&gt;This got me a pretty messy-looking text file of each brand and the number of songs in which it was mentioned:&lt;/p&gt;
+&lt;blockquote&gt;
+Lea-Francis              1
+Ewing              0
+Efini              0
+Scion              0
+Tommy Kaira             15
+...&lt;/blockquote&gt;
+&lt;p&gt;It turned out that the Rap Lyrics Database doesn't recognize spaces. So, a search for "Art and Tech" became a search for "Art"--which of course is a popular word that is often used in a non-automobile context. I removed ambiguous names from the list and combined the results from brands and their nicknames. LibreOffice Calc was helpful in fixing the columns and sorting the results.&lt;/p&gt;
+&lt;p&gt;The final number of usable brands came out to 153.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="who-won"&gt;
+&lt;h2&gt;Who won?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Mercedes-Benz&lt;/strong&gt;, with &lt;strong&gt;93 song mentions&lt;/strong&gt;--and remember, that's only counting a small segment of rap songs between 1989-2009.&lt;/p&gt;
+&lt;p&gt;Jeep came in second, at 34 songs. Then came Cadillac with 25 songs, and finally Chevy at 24.&lt;/p&gt;
+&lt;p&gt;So, Chevy isn't as popular as I expected. But the biggest surprise here is Jeep. I can't recall a single song that mentions Jeep.&lt;/p&gt;
+&lt;p&gt;I made a &lt;a class="reference external" href="http://stephaniehiga.com/cars.html#results"&gt;graph and table&lt;/a&gt; to display the results. (I'd add them here, but I've yet to learn how to embed JavaScript into reStructuredText.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pain-points"&gt;
+&lt;h2&gt;Pain points&lt;/h2&gt;
+&lt;p&gt;I'm new to programming. While I enjoy it very much, I spend about 90% of my time immersed in pain. The text analysis took me four nights (Monday through Thursday) to complete. On the actual hack day, I made the graph and web page, with a lot of Bootstrap help. Along the way, I encountered many problems:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;p class="first"&gt;Selecting specific subsets of HTML tags with no classes or ids.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Accidentally passing list items with the newline character to the &lt;tt class="docutils literal"&gt;rap_search()&lt;/tt&gt; script, resulting in 178 filenames split off from their extensions. Fortunately there was an easy fix:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+for filename in os.listdir("."):
+        if '\n' in filename:
+        os.rename(filename, re.sub(r'\n', r'', filename))
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Reformatting the final list of brands into an HTML table.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Reformatting the final list of brands into a list of dictionaries to create a graph with &lt;a class="reference external" href="http://philogb.github.io/jit/"&gt;JavaScript InfoVis Toolkit&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Not knowing how to build a non-stacked bar graph with the InfoVis Toolkit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Switching to Google Charts and reformatting the final list of brands into a list of lists to create a Google Charts graph.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;div class="section" id="notes-for-the-future"&gt;
+&lt;h2&gt;Notes for the future&lt;/h2&gt;
+&lt;div class="section" id="more-complete-data"&gt;
+&lt;h3&gt;More complete data&lt;/h3&gt;
+&lt;p&gt;I slashed the set of brand names to less than 7% of its original size and conflated "car manufacturers" with "car brands." Wikipedia also has a lengthy &lt;a class="reference external" href="https://en.wikipedia.org/wiki/List_of_automobile_marques"&gt;list of automobile marques&lt;/a&gt;, which I didn't even touch.&lt;/p&gt;
+&lt;p&gt;I'd like to go deeper than brands, into the actual names of cars, and match them against an even bigger database of lyrics. &lt;a class="reference external" href="http://www.rapgenius.com"&gt;RapGenius&lt;/a&gt; and the &lt;a class="reference external" href="http://www.last.fm/api"&gt;Last.fm API&lt;/a&gt; are possible alternatives to the Rap Lyrics Database. RapGenius has an excellent database, but it contains a significant amount of lyrics from non-hip-hop artists as well.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="semantic-orientation"&gt;
+&lt;h3&gt;Semantic orientation&lt;/h3&gt;
+&lt;p&gt;I equated "beloved" to "number of songs mentions." This is obviously not always the case, as rappers name-drop plenty of things they dislike. It's true that rappers generally mention cars in a positive manner, but a more accurate experiment would take into account not just how many times the brand was used, but in what way the brand was used--i.e., the semantic orientation of the brand.&lt;/p&gt;
+&lt;p&gt;I might have to attempt a &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Sentiment_analysis"&gt;sentiment analysis&lt;/a&gt; for this.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="multi-word-brands"&gt;
+&lt;h3&gt;Multi-word brands&lt;/h3&gt;
+&lt;p&gt;The Rap Lyrics Database turns up blank if you search for, say "Aston Martin" (with the quotes and the space), even though Aston Martin is mentioned in a few songs. So multi-word brands with spaces in them turned up short. (Mercedes-Benz doesn't have this issue because it has a hyphen, not a space.)&lt;/p&gt;
+&lt;p&gt;If I were to use the Rap Lyrics Database again, I'd have to search for "Aston" and "Martin" separately and compare the songs on each results page. Otherwise, RapGenius seems to do spaces nicely.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="nicknames-and-duplicates"&gt;
+&lt;h3&gt;Nicknames and duplicates&lt;/h3&gt;
+&lt;p&gt;Mercedes-Benz is often referred to as just "Mercedes" or just "Benz." While I searched for the full name and both nicknames, I ended up using the results for the full name only to minimize the possibility of duplicates (as I found the number of results, but not the actual song titles).&lt;/p&gt;
+&lt;p&gt;Again, I'll have to compare song results against each other to ensure that there are no duplicates in the count.&lt;/p&gt;
+&lt;p&gt;I also missed some nicknames--for instance, I completely neglected "Caddy" and "Lac" (sorry, Cadillac), "Lex," etc.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="misspellings-plurals-etc"&gt;
+&lt;h3&gt;Misspellings, plurals, etc.&lt;/h3&gt;
+&lt;p&gt;I did search for "Beamer" and "Beemer," but there's also "Bima" and probably countless other misspellings of "Bimmer" and other car brands, too. I ignored plurals to save time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="disambiguation"&gt;
+&lt;h3&gt;Disambiguation&lt;/h3&gt;
+&lt;p&gt;Many car brands double as common words or unrelated proper names: Prince, Radical, Ram, MINI, Oakland, etc. I discarded these instead of determining whether or not they were referring to the car brand.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="last-thoughts"&gt;
+&lt;h3&gt;Last thoughts&lt;/h3&gt;
+&lt;p&gt;A few months ago, when I first got the idea for this project, I thought it would be ridiculously hard. I'd have to build a large corpus of hip-hop lyrics and determine the classification and orientation of each word to uncover the truth.&lt;/p&gt;
+&lt;p&gt;After going about this somewhat backwards, I think my initial impression remains correct. I'm happy I finally took a stab at this project, and I'm really excited to continue working on it. There's so much more to analyze and discover in hip-hop!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>hip-hop + rap</category><category>python</category><category>text mining</category><guid>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</guid><pubDate>Sat, 18 May 2013 18:32:32 GMT</pubDate></item></channel></rss>
