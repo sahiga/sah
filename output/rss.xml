@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>sahiga</title><link>http://www.stephaniehiga.com</link><description>The personal website of Stephanie A. Higa.</description><lastBuildDate>Sun, 19 May 2013 00:09:34 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Analyzing Rap Lyrics with Python</title><link>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</link><description>&lt;p&gt;Yesterday my company held a hack day for the developers to work on independent projects. I used the opportunity to jumpstart a text mining project I've had on my mind for months: an analysis of rap lyrics. More specifically, I ran a quick-and-dirty experiment to find the most beloved car brand in hip-hop.&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://stephaniehiga.com/cars.html#results"&gt;Skip to the results here.&lt;/a&gt;&lt;/p&gt;
+<rss version="2.0"><channel><title>sahiga</title><link>http://www.stephaniehiga.com</link><description>The personal website of Stephanie A. Higa.</description><lastBuildDate>Sun, 19 May 2013 21:25:53 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Analyzing Rap Lyrics with Python</title><link>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</link><description>&lt;p&gt;On Friday, my company held a hack day for the developers to work on independent projects. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: &lt;strong&gt;What's the most beloved car brand in hip-hop?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;What follows is an excessively detailed replay of the entire experiment. &lt;a class="reference external" href="http://stephaniehiga.com/cars.html#results"&gt;Click here to skip the boring stuff and go straight to the results.&lt;/a&gt;&lt;/p&gt;
 &lt;div class="section" id="why-hip-hop"&gt;
 &lt;h2&gt;Why hip-hop?&lt;/h2&gt;
-&lt;p&gt;Hip-hop is by far my favorite genre of music. I don't listen to much else. On the road, I tune the radio to 93.5 KDAY; otherwise, I'm plugged into my Pandora account, which is heavy on Golden Age, Midwestern, East Coast, Bay Area, and (recently) indie rap. Someday I'll give podcasts/NPR/classical music a whirl. But that someday is a long while away.&lt;/p&gt;
-&lt;p&gt;Hip-hop also seems to be lyrically denser than other types of music. It's wordy, which means it contains quite a bit of text to analyze.&lt;/p&gt;
+&lt;p&gt;Hip-hop is by far my favorite genre of music. I don't listen to much else. On the road, I tune the radio to &lt;a class="reference external" href="http://www.935kday.com/"&gt;93.5 KDAY&lt;/a&gt;; otherwise, I'm plugged into my Pandora account, which is heavy on Golden Age, Midwestern, East Coast, Bay Area, and (recently) indie rap. Someday I'll give podcasts/NPR/classical music a whirl. But that someday is a long while away.&lt;/p&gt;
+&lt;p&gt;Hip-hop is also lyrically dense, which makes it a great source for a text mining project.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="why-car-brands"&gt;
 &lt;h2&gt;Why car brands?&lt;/h2&gt;
-&lt;p&gt;Rappers talk about cars. A lot. Now, maybe it's because I like Chevy trucks, but I've heard plenty of songs that mention "Chevy" (okay, and Benz and Cadillac too). So I decided to find out once and for all which car brand rappers loved the most. Chevy was, of course, my pick.&lt;/p&gt;
+&lt;p&gt;Rappers talk about cars. A lot. So I decided to find out once and for all which brand they love the most, with &lt;strong&gt;Chevy&lt;/strong&gt; as my hypothesis. Maybe it's because of my fondness for Chevy trucks, but it seems like Chevy pops up in every other song I hear these days.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="my-method"&gt;
-&lt;h2&gt;My method&lt;/h2&gt;
+&lt;div class="section" id="mining-hip-hop-lyrics"&gt;
+&lt;h2&gt;Mining hip-hop lyrics&lt;/h2&gt;
 &lt;p&gt;To find the answer, I needed a sizeable sample of car brand names, a searchable database of hip-hop lyrics, a script to search for the brands within the lyrics database, and a way of displaying the results. Fortunately, all the necessary tools were readily available:&lt;/p&gt;
 &lt;ul class="simple"&gt;&lt;li&gt;Python&lt;/li&gt;
 &lt;li&gt;Wikipedia&lt;/li&gt;
@@ -54,8 +54,8 @@ def clean_wikilist(filename):
 
     return tokens
 &lt;/pre&gt;
-&lt;p&gt;After running my script on all ten lists, I had a whopping &lt;strong&gt;2599 results&lt;/strong&gt;. So I decided to limit the set to Germany, Japan, the UK, and the US. The pages for Germany, the UK, and the US separate current brands from defunct brands, so for those countries I used current brands only. The Japan page mixes current and defunct brands into one list, and I didn't have time to distinguish them, so I ended up using all of them.&lt;/p&gt;
-&lt;p&gt;These four pages had slightly different structures. The &lt;tt class="docutils literal"&gt;clean_wikilist()&lt;/tt&gt; script worked nicely for Japan, but captured too much information on the others, so I wrote three additional scripts. Here's the one for Germany:&lt;/p&gt;
+&lt;p&gt;After running my script on all ten lists, I had a whopping &lt;strong&gt;2599 brand names&lt;/strong&gt;. So I decided to limit the set to Germany, Japan, the UK, and the US. The pages for Germany, the UK, and the US separate current brands from defunct brands, so for those countries I used current brands only. The Japan page mixes current and defunct brands into one list; to save time, I used all of them.&lt;/p&gt;
+&lt;p&gt;These four pages have slightly different structures. The &lt;tt class="docutils literal"&gt;clean_wikilist()&lt;/tt&gt; script worked nicely for Japan, but captured too much information on the others, so I wrote three additional scripts. Here's the one for Germany:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 def autos_ge():
         # open saved html file
@@ -82,12 +82,12 @@ def autos_ge():
         return tokens
 &lt;/pre&gt;
 &lt;p&gt;One notable difference between this and the original script is the usage of Beautiful Soup. In &lt;tt class="docutils literal"&gt;clean_wikilist()&lt;/tt&gt;, the desired elements are selected first, with SoupStrainer, and then used to create a list of the matching HTML tags in unicode format. &lt;tt class="docutils literal"&gt;autos_ge()&lt;/tt&gt;, on the other hand, creates a Beautiful Soup object out of the entire page; the desired elements are selected via DOM traversal.&lt;/p&gt;
-&lt;p&gt;The number of the results from this limited dataset? Just 178.&lt;/p&gt;
+&lt;p&gt;The number of brand names from this limited dataset? Just 178.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="analyzing-the-data"&gt;
 &lt;h3&gt;Analyzing the data&lt;/h3&gt;
 &lt;p&gt;The Rap Lyrics Database contains lyrics for all of Billboard Music's rap songs from 1989 through 2009. It's the only searchable database of hip-hop lyrics (exclusively).&lt;/p&gt;
-&lt;p&gt;The result pages share the same URL, with the search term appended to the end: &lt;em&gt;http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/&lt;/em&gt;. This made it much easier to automate the search and saving process:&lt;/p&gt;
+&lt;p&gt;The result pages share the same URL, with the search term appended to the end: &lt;em&gt;http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/&lt;/em&gt;. This made it much easier to automate the search and saving process.&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 def rap_search(auto_list):
     # search for each brand name
@@ -103,7 +103,7 @@ def rap_search(auto_list):
         with open(results, 'w') as results_file:
             results_file.write(results_html)
 &lt;/pre&gt;
-&lt;p&gt;This saved 178 HTML pages, each named after the appropriate brand search term, onto my computer. I also searched for known nicknames of the brands (e.g. "Bimmer/Beemer/Beamer" for BMW and "Chevy" for Chevrolet, etc.).&lt;/p&gt;
+&lt;p&gt;This saved 178 HTML pages, each named after the appropriate brand search term, onto my computer. I also searched for known nicknames of the brands (e.g., "Bimmer/Beemer/Beamer" for BMW and "Chevy" for Chevrolet).&lt;/p&gt;
 &lt;p&gt;I used Beautiful Soup again to count the number of results on each page:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 def count_rap_results():
@@ -125,12 +125,13 @@ def count_rap_results():
 &lt;/pre&gt;
 &lt;p&gt;This got me a pretty messy-looking text file of each brand and the number of songs in which it was mentioned:&lt;/p&gt;
 &lt;blockquote&gt;
-Lea-Francis              1
-Ewing              0
-Efini              0
-Scion              0
-Tommy Kaira             15
-...&lt;/blockquote&gt;
+&lt;p&gt;Lea-Francis               1&lt;/p&gt;
+&lt;p&gt;Ewing      0&lt;/p&gt;
+&lt;p&gt;Efini         0&lt;/p&gt;
+&lt;p&gt;Scion       0&lt;/p&gt;
+&lt;p&gt;Tommy Kaira            15&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;It turned out that the Rap Lyrics Database doesn't recognize spaces. So, a search for "Art and Tech" became a search for "Art"--which of course is a popular word that is often used in a non-automobile context. I removed ambiguous names from the list and combined the results from brands and their nicknames. LibreOffice Calc was helpful in fixing the columns and sorting the results.&lt;/p&gt;
 &lt;p&gt;The final number of usable brands came out to 153.&lt;/p&gt;
 &lt;/div&gt;
@@ -139,12 +140,12 @@ Tommy Kaira             15
 &lt;h2&gt;Who won?&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Mercedes-Benz&lt;/strong&gt;, with &lt;strong&gt;93 song mentions&lt;/strong&gt;--and remember, that's only counting a small segment of rap songs between 1989-2009.&lt;/p&gt;
 &lt;p&gt;Jeep came in second, at 34 songs. Then came Cadillac with 25 songs, and finally Chevy at 24.&lt;/p&gt;
-&lt;p&gt;So, Chevy isn't as popular as I expected. But the biggest surprise here is Jeep. I can't recall a single song that mentions Jeep.&lt;/p&gt;
-&lt;p&gt;I made a &lt;a class="reference external" href="http://stephaniehiga.com/cars.html#results"&gt;graph and table&lt;/a&gt; to display the results. (I'd add them here, but I've yet to learn how to embed JavaScript into reStructuredText.)&lt;/p&gt;
+&lt;p&gt;So, Chevy isn't as popular as I expected. But the biggest shocker is Jeep. I can't recall a single song that mentions Jeep.&lt;/p&gt;
+&lt;p&gt;To display the results, I made a &lt;a class="reference external" href="http://stephaniehiga.com/cars.html#results"&gt;graph&lt;/a&gt; with Google Charts. (I'd add them here, but I've yet to learn how to embed JavaScript into reStructuredText.)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="pain-points"&gt;
 &lt;h2&gt;Pain points&lt;/h2&gt;
-&lt;p&gt;I'm new to programming. While I enjoy it very much, I spend about 90% of my time immersed in pain. The text analysis took me four nights (Monday through Thursday) to complete. On the actual hack day, I made the graph and web page, with a lot of Bootstrap help. Along the way, I encountered many problems:&lt;/p&gt;
+&lt;p&gt;I'm new to programming. While I enjoy it very much, I spend about 90% of my time immersed in pain. The text analysis took me four nights (Monday through Thursday) to complete. On the actual hack day, I made the graph and web page, with a lot of help from Bootstrap. Along the way, I encountered many problems:&lt;/p&gt;
 &lt;ul&gt;&lt;li&gt;&lt;p class="first"&gt;Selecting specific subsets of HTML tags with no classes or ids.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Accidentally passing list items with the newline character to the &lt;tt class="docutils literal"&gt;rap_search()&lt;/tt&gt; script, resulting in 178 filenames split off from their extensions. Fortunately there was an easy fix:&lt;/p&gt;
@@ -172,8 +173,7 @@ for filename in os.listdir("."):
 &lt;/div&gt;
 &lt;div class="section" id="semantic-orientation"&gt;
 &lt;h3&gt;Semantic orientation&lt;/h3&gt;
-&lt;p&gt;I equated "beloved" to "number of songs mentions." This is obviously not always the case, as rappers name-drop plenty of things they dislike. It's true that rappers generally mention cars in a positive manner, but a more accurate experiment would take into account not just how many times the brand was used, but in what way the brand was used--i.e., the semantic orientation of the brand.&lt;/p&gt;
-&lt;p&gt;I might have to attempt a &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Sentiment_analysis"&gt;sentiment analysis&lt;/a&gt; for this.&lt;/p&gt;
+&lt;p&gt;I equated "beloved" to "number of songs mentions." This is obviously not always the case, as rappers name-drop plenty of things they dislike. It's true that rappers generally mention cars in a positive manner, but a more accurate experiment would take into account not just how many times the brand was used, but in what way the brand was used--i.e., the semantic orientation of the brand. A &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Sentiment_analysis"&gt;sentiment analysis&lt;/a&gt; might be the way to go.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="multi-word-brands"&gt;
 &lt;h3&gt;Multi-word brands&lt;/h3&gt;
@@ -182,45 +182,22 @@ for filename in os.listdir("."):
 &lt;/div&gt;
 &lt;div class="section" id="nicknames-and-duplicates"&gt;
 &lt;h3&gt;Nicknames and duplicates&lt;/h3&gt;
-&lt;p&gt;Mercedes-Benz is often referred to as just "Mercedes" or just "Benz." While I searched for the full name and both nicknames, I ended up using the results for the full name only to minimize the possibility of duplicates (as I found the number of results, but not the actual song titles).&lt;/p&gt;
-&lt;p&gt;Again, I'll have to compare song results against each other to ensure that there are no duplicates in the count.&lt;/p&gt;
-&lt;p&gt;I also missed some nicknames--for instance, I completely neglected "Caddy" and "Lac" (sorry, Cadillac), "Lex," etc.&lt;/p&gt;
+&lt;p&gt;I searched for "Mercedes-Benz" as well as just "Mercedes" and "Benz." However, again, because I didn't compare song names, I ended up nixing the counts for the nicknames to minimize the possibility of duplicates. I also missed some nicknames--for instance, I completely neglected "Caddy" and "Lac" (sorry, Cadillac), "Lex," etc.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="misspellings-plurals-etc"&gt;
 &lt;h3&gt;Misspellings, plurals, etc.&lt;/h3&gt;
-&lt;p&gt;I did search for "Beamer" and "Beemer," but there's also "Bima" and probably countless other misspellings of "Bimmer" and other car brands, too. I ignored plurals to save time.&lt;/p&gt;
+&lt;p&gt;I did search for "Beamer" and "Beemer," but there's also "Bima" and probably countless other misspellings of "Bimmer" and other car brands. I ignored plurals, whether spelled correctly ("Bimmers") or not ("Bimaz").&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="disambiguation"&gt;
 &lt;h3&gt;Disambiguation&lt;/h3&gt;
-&lt;p&gt;Many car brands double as common words or unrelated proper names: Prince, Radical, Ram, MINI, Oakland, etc. I discarded these instead of determining whether or not they were referring to the car brand.&lt;/p&gt;
+&lt;p&gt;Many car brands double as common words or unrelated proper names, e.g., Prince, Radical, Ram, MINI, Oakland. I discarded these instead of determining whether or not they were referring to the car brand.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="last-thoughts"&gt;
 &lt;h3&gt;Last thoughts&lt;/h3&gt;
-&lt;p&gt;A few months ago, when I first got the idea for this project, I thought it would be ridiculously hard. I'd have to build a large corpus of hip-hop lyrics and determine the classification and orientation of each word to uncover the truth.&lt;/p&gt;
-&lt;p&gt;After going about this somewhat backwards, I think my initial impression remains correct. I'm happy I finally took a stab at this project, and I'm really excited to continue working on it. There's so much more to analyze and discover in hip-hop!&lt;/p&gt;
+&lt;p&gt;A few months ago, when I first got the idea for this project, I thought it would be ridiculously hard. I envisioned building a large corpus of hip-hop lyrics and determining the classification, meaning, and orientation of each word to uncover the truth.&lt;/p&gt;
+&lt;p&gt;After going about this somewhat backwards, I think my initial impression remains correct. I'm happy I finally took a stab at this project, and I'm excited to continue working on it. This is just the first of a long series of experiments (and blog posts)!&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>hip-hop + rap</category><category>python</category><category>text mining</category><guid>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</guid><pubDate>Sat, 18 May 2013 18:32:32 GMT</pubDate></item><item><title>Text-Based Web Browsing</title><link>http://www.stephaniehiga.com/posts/text-based-web-browsing.html</link><description>&lt;div class="section" id="w3m"&gt;
-&lt;h2&gt;w3m&lt;/h2&gt;
-&lt;p&gt;w3m is a text-based web browser, first released in 1995.&lt;/p&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;"Opening socket"&lt;/li&gt;
-&lt;li&gt;Viewing[SSL]&lt;/li&gt;
-&lt;li&gt;shows you the names of cookies you're receiving&lt;/li&gt;
-&lt;li&gt;lowercase "v" shows HTML source of webpage&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;What I like about w3m:&lt;/p&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;No ads&lt;/li&gt;
-&lt;li&gt;Consistent, uniform fonts and colors.&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;What I don't like:&lt;/p&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;No omnibox: Pressing &lt;strong&gt;Shift + U&lt;/strong&gt; gets you into the address bar, but, obviously, you can't type in a search term and have it redirect to a DuckDuckGo (Google, Bing, etc.) search for that term.&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;
-&lt;div class="section" id="textonly"&gt;
-&lt;h2&gt;TextOnly&lt;/h2&gt;
-&lt;p&gt;Now, I could &lt;strong&gt;really&lt;/strong&gt; use something like w3m on my phone[*]. The closest I could find is &lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.spacenext.textonly"&gt;TextOnly&lt;/a&gt;, a text-based web browser for Android 1.6+.&lt;/p&gt;
-&lt;p&gt;Unfortunately, w3m it's not. The interface is befuddling. It offers three different options for viewing a page: RSS Feed, Links, and Normal. I prefer the "Normal" dislay to the other two.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;tbody valign="top"&gt;&lt;tr&gt;&lt;td class="label"&gt;[*]&lt;/td&gt;&lt;td&gt;My phone is an HTC Droid Eris, &lt;cite&gt;one of the first ten Android phones released and one of the first two Android phones released by Verizon &amp;lt;http://www.androidphonesarena.com/2009-android-phones.php&amp;gt;&lt;/cite&gt;, along with the Motorola Droid. It does wonderfully for a 3.5-year old phone, but it chokes on resource-heavy websites.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 45)&lt;/p&gt;
-Explicit markup ends without a blank line; unexpected unindent.&lt;/div&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://www.dolphin-browser.com"&gt;Dolphin&lt;/a&gt; is a beautiful and intuitive browser&lt;/p&gt;
-&lt;/div&gt;</description><category>w3m</category><guid>http://www.stephaniehiga.com/posts/text-based-web-browsing.html</guid><pubDate>Tue, 07 May 2013 20:18:24 GMT</pubDate></item><item><title>GitHub for Linux Mint</title><link>http://www.stephaniehiga.com/posts/github-for-linux-mint.html</link><description>&lt;p&gt;Version control terrifies me.&lt;/p&gt;
+&lt;/div&gt;</description><category>hip-hop + rap</category><category>python</category><category>text mining</category><guid>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</guid><pubDate>Sat, 18 May 2013 18:32:32 GMT</pubDate></item><item><title>GitHub for Linux Mint</title><link>http://www.stephaniehiga.com/posts/github-for-linux-mint.html</link><description>&lt;p&gt;Version control terrifies me.&lt;/p&gt;
 &lt;p&gt;But you know what else terrifies me? Losing files. I've lost enough of them and endured enough filename headaches (story-1.doc, story-2.doc, story-final, story-new.doc, story-newEST.doc, etc.) in my lifetime to realize that &lt;strong&gt;version control is extremely important&lt;/strong&gt;, and I need to develop better version control habits.&lt;/p&gt;
 &lt;p&gt;So, I added the files for this site to &lt;a class="reference external" href="https://github.com/sahiga/sah"&gt;my GitHub account&lt;/a&gt;. The following guide details the steps I took, minus the legion of errors I made. I've named it "GitHub for &lt;a class="reference external" href="http://www.linuxmint.com"&gt;Linux Mint&lt;/a&gt;," in honor of my operating system and the fact that GitHub offers &lt;a class="reference external" href="http://mac.github.com"&gt;GitHub for Mac&lt;/a&gt; and &lt;a class="reference external" href="http://windows.github.com"&gt;GitHub for Windows&lt;/a&gt;, but no GitHub for GNU/Linux (even though, hey, some of us GNU/Linux users could use a little point-and-click help over here).&lt;/p&gt;
 &lt;blockquote&gt;

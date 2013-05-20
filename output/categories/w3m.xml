@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>sahiga (w3m)</title><link>http://www.stephaniehiga.com</link><description>The personal website of Stephanie A. Higa.</description><lastBuildDate>Sun, 19 May 2013 00:09:34 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Text-Based Web Browsing</title><link>http://www.stephaniehiga.com/posts/text-based-web-browsing.html</link><description>&lt;div class="section" id="w3m"&gt;
+&lt;h2&gt;w3m&lt;/h2&gt;
+&lt;p&gt;w3m is a text-based web browser, first released in 1995.&lt;/p&gt;
+&lt;ul class="simple"&gt;&lt;li&gt;"Opening socket"&lt;/li&gt;
+&lt;li&gt;Viewing[SSL]&lt;/li&gt;
+&lt;li&gt;shows you the names of cookies you're receiving&lt;/li&gt;
+&lt;li&gt;lowercase "v" shows HTML source of webpage&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;What I like about w3m:&lt;/p&gt;
+&lt;ul class="simple"&gt;&lt;li&gt;No ads&lt;/li&gt;
+&lt;li&gt;Consistent, uniform fonts and colors.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;What I don't like:&lt;/p&gt;
+&lt;ul class="simple"&gt;&lt;li&gt;No omnibox: Pressing &lt;strong&gt;Shift + U&lt;/strong&gt; gets you into the address bar, but, obviously, you can't type in a search term and have it redirect to a DuckDuckGo (Google, Bing, etc.) search for that term.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;div class="section" id="textonly"&gt;
+&lt;h2&gt;TextOnly&lt;/h2&gt;
+&lt;p&gt;Now, I could &lt;strong&gt;really&lt;/strong&gt; use something like w3m on my phone[*]. The closest I could find is &lt;a class="reference external" href="https://play.google.com/store/apps/details?id=com.spacenext.textonly"&gt;TextOnly&lt;/a&gt;, a text-based web browser for Android 1.6+.&lt;/p&gt;
+&lt;p&gt;Unfortunately, w3m it's not. The interface is befuddling. It offers three different options for viewing a page: RSS Feed, Links, and Normal. I prefer the "Normal" dislay to the other two.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;&lt;tbody valign="top"&gt;&lt;tr&gt;&lt;td class="label"&gt;[*]&lt;/td&gt;&lt;td&gt;My phone is an HTC Droid Eris, &lt;cite&gt;one of the first ten Android phones released and one of the first two Android phones released by Verizon &amp;lt;http://www.androidphonesarena.com/2009-android-phones.php&amp;gt;&lt;/cite&gt;, along with the Motorola Droid. It does wonderfully for a 3.5-year old phone, but it chokes on resource-heavy websites.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 45)&lt;/p&gt;
+Explicit markup ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.dolphin-browser.com"&gt;Dolphin&lt;/a&gt; is a beautiful and intuitive browser&lt;/p&gt;
+&lt;/div&gt;</description><category>w3m</category><guid>http://www.stephaniehiga.com/posts/text-based-web-browsing.html</guid><pubDate>Tue, 07 May 2013 20:18:24 GMT</pubDate></item></channel></rss>

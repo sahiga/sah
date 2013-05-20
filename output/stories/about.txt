@@ -7,11 +7,12 @@
 
 Hello! I'm Stephanie, a writer and web developer based in Los Angeles, California.
 
-I currently work at a mobile technology incubator-accelerator on the Sunset Strip.
-
-In my spare time, I wrangle text, symbols, and pictures.
-
 Samuel R. Delany's `Dhalgren <https://en.wikipedia.org/wiki/Dhalgren>`_ is my favorite novel, followed closely by `V. <https://en.wikipedia.org/wiki/V.>`_ and `Hard-Boiled Wonderland and the End of the World <https://en.wikipedia.org/wiki/Hard-Boiled_Wonderland_and_the_End_of_the_World>`_.
+
+About the blog
+==============
+
+For now, this is my technical learning blog. I'm currently tackling several technologies for work or for play--Python (mainly natural language processing techniques with NLTK), JavaScript + jQuery, Git, Bash, Haml + Sass (integrating with Rails)--and the sheer volume of information available is overwhelming. Writing about what I've learned helps me to track my progress, identify areas of improvement, and provide an easy-to-find reference if I ever encounter the same issues in the future.
 
 Around the web
 ==============

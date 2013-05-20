@@ -1,0 +1,52 @@
+.. link: 
+.. description: 
+.. tags: w3m
+.. date: 2013/05/07 20:18:24
+.. title: Text-Based Web Browsing
+.. slug: text-based-web-browsing
+.. nocomments: true
+
+
+w3m
+=== 
+
+w3m is a text-based web browser, first released in 1995.
+
+- "Opening socket"
+
+- Viewing[SSL]
+
+- shows you the names of cookies you're receiving
+
+- lowercase "v" shows HTML source of webpage
+
+What I like about w3m:
+
+- No ads
+- Consistent, uniform fonts and colors. 
+
+What I don't like:
+
+- No omnibox: Pressing **Shift + U** gets you into the address bar, but, obviously, you can't type in a search term and have it redirect to a DuckDuckGo (Google, Bing, etc.) search for that term.
+
+TextOnly
+========
+
+Now, I could **really** use something like w3m on my phone[*]. The closest I could find is `TextOnly <https://play.google.com/store/apps/details?id=com.spacenext.textonly>`_, a text-based web browser for Android 1.6+.
+
+Unfortunately, w3m it's not. The interface is befuddling. It offers three different options for viewing a page: RSS Feed, Links, and Normal. I prefer the "Normal" dislay to the other two.
+
+
+
+
+
+
+.. [*] My phone is an HTC Droid Eris, `one of the first ten Android phones released and one of the first two Android phones released by Verizon <http://www.androidphonesarena.com/2009-android-phones.php>`, along with the Motorola Droid. It does wonderfully for a 3.5-year old phone, but it chokes on resource-heavy websites. 
+`Dolphin <http://www.dolphin-browser.com>`_ is a beautiful and intuitive browser
+
+
+
+
+
+
+
