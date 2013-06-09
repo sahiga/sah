@@ -126,7 +126,7 @@
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/index.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-06-09</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -306,7 +306,7 @@
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-06-09</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -317,6 +317,11 @@
  <url>
   <loc>http://www.stephaniehiga.com/posts/goodbye-wordpress-hello-nikola.html</loc>
   <lastmod>2013-05-05</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/posts/read-only-text-how-to-write-every-day.html</loc>
+  <lastmod>2013-06-09</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>

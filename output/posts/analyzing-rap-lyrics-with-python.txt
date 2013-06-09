@@ -6,7 +6,7 @@
 .. slug: analyzing-rap-lyrics-with-python
 .. nocomments: true
 
-On Friday, my company held a hack day for the developers to work on independent projects. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: **What's the most beloved car brand in hip-hop?**
+On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: **What's the most beloved car brand in hip-hop?**
 
 What follows is an excessively detailed replay of the entire experiment. `Click here to skip the boring stuff and go straight to the results. <http://stephaniehiga.com/cars.html#results>`_
 
@@ -237,7 +237,7 @@ Last thoughts
 
 A few months ago, when I first got the idea for this project, I thought it would be ridiculously hard. I envisioned building a large corpus of hip-hop lyrics and determining the classification, meaning, and orientation of each word to uncover the truth.
 
-After going about this somewhat backwards, I think my initial impression remains correct. I'm happy I finally took a stab at this project, and I'm excited to continue working on it. This is just the first of a long series of experiments (and blog posts)!
+After going about this somewhat backwards, I think my initial impression remains correct. I'm happy I finally took a stab at the project, and I'm excited to continue working on it. This is just the first of a long series of experiments (and blog posts)!
 
 .. |nbsp| unicode:: U+00A0
 	:trim:

@@ -6,7 +6,7 @@
 .. slug: analyzing-rap-lyrics-with-python
 .. nocomments: true
 
-On Friday, my company held a hack day for the developers to work on independent projects. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: **What's the most beloved car brand in hip-hop?**
+On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: **What's the most beloved car brand in hip-hop?**
 
 What follows is an excessively detailed replay of the entire experiment. `Click here to skip the boring stuff and go straight to the results. <http://stephaniehiga.com/cars.html#results>`_
 
