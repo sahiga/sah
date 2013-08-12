@@ -12,7 +12,7 @@ Samuel R. Delany's `Dhalgren <https://en.wikipedia.org/wiki/Dhalgren>`_ is my fa
 About the blog
 ==============
 
-For now, this is my technical learning blog. I'm currently tackling several technologies for work or for play--Python (mainly natural language processing techniques with NLTK), JavaScript + jQuery, Git, Bash, Haml + Sass (integrating with Rails)--and the sheer volume of information available is overwhelming. Writing about what I've learned helps me to track my progress, identify areas of improvement, and provide an easy-to-find reference if I ever encounter the same issues in the future.
+For now, this is my technical learning blog. I'm currently tackling several technologies for work or for play--Python (mainly natural language processing techniques with NLTK), JavaScript + jQuery, Git, Bash, Haml + Sass (integrating with Rails), Parse Cloud Code + Express JS--and the sheer volume of information available is overwhelming. Writing about what I've learned helps me to track my progress, identify areas of improvement, and provide an easy-to-find reference if I ever encounter the same issues in the future.
 
 Around the web
 ==============

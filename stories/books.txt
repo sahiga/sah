@@ -1,0 +1,83 @@
+.. link: 
+.. description: 
+.. tags: 
+.. date: 2013/07/09 21:15:15
+.. title: Reading List
+.. slug: books
+
+This list was inspired by `Pamela Fox's reading list <http://www.pamelafox.org/readinglist>`_. I've ordered these books by the date I finished them.
+
+2013
+====
+
+`The House on the Strand <http://openlibrary.org/works/OL10421719W/The_house_on_the_strand>`_
+	Daphne du Maurier
+
+	Read 7/29/2013 - ✪✪✪
+
+`Neuromancer <http://openlibrary.org/works/OL27258W/Neuromancer>`_
+	William Gibson
+
+	Read 7/11/2013 - ✪
+
+`Super Brain <http://www.randomhouse.com/book/215684/super-brain-by-rudolph-e-tanzi-and-deepak-chopra>`_
+	Deepak Chopra, MD & Rudolph E. Tanzi, PhD
+
+	Read 7/5/2013 - ✪✪
+
+`The Temple of the Golden Pavilion <http://openlibrary.org/works/ia:templeofgolden00mish/The_temple_of_the_golden_pavilion>`_
+	Yukio Mishima
+
+	Read 6/10/2013 - ✪✪✪✪
+
+`Thirst for Love <http://openlibrary.org/works/ia:thirstforlove00mish/Thirst_for_love>`_
+	Yukio Mishima
+
+	Read 5/23/2013 - ✪✪✪✪
+
+`The Lean Startup <http://openlibrary.org/works/OL16086010W/The_Lean_Startup>`_
+	Eric Ries
+
+	Read 5/22/2013 - ✪✪
+
+`Snow Crash <http://openlibrary.org/works/OL38501W/Snow_Crash>`_
+	Neal Stephenson
+
+	Read 5/11/2013 - ✪✪
+
+`The Manual of Detection <http://openlibrary.org/works/OL13646923W/The_manual_of_detection>`_
+	Jedediah Berry
+
+	Read 3/23/2013 - ✪✪✪
+
+`Tesla <http://openlibrary.org/works/OL3459175W/Tesla>`_
+	Tad Wise
+
+	Read 3/17/2013 - ✪✪✪
+
+`The More Than Complete Hitchhiker's Guide <http://openlibrary.org/works/OL2163713W/The_more_than_complete_hitchhiker%27s_guide>`_
+	Douglas Adams
+
+	Read 3/12/2013 - ✪✪✪
+
+`Sexing the Cherry <http://openlibrary.org/works/OL1918838W/Sexing_the_cherry>`_
+	Jeanette Winterson
+
+	Read 1/12/2013 - ✪✪✪✪
+
+`When You are Engulfed in Flames <http://openlibrary.org/works/OL2693090W/When_You_Are_Engulfed_in_Flames>`_
+	David Sedaris
+
+	Read 1/11/2013 - ✪✪✪
+
+`The Painted Veil <http://openlibrary.org/works/OL505940W/The_painted_veil>`_
+	W. Somerset Maugham
+
+	Read 1/5/2013 - ✪✪✪
+
+`An Anthropologist on Mars <http://openlibrary.org/works/OL1811905W/An_anthropologist_on_Mars>`_
+	Oliver Sacks
+
+	Read 1/5/2013 - ✪✪✪✪
+
+

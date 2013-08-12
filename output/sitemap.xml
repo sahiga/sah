@@ -26,12 +26,12 @@
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/2013/index.html</loc>
-  <lastmod>2013-05-04</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/archive.html</loc>
-  <lastmod>2013-05-04</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -51,47 +51,47 @@
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/git.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/hip-hop-rap.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/index.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/linux.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/nikola.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/python.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/static-site-generators.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/text-mining.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/version-control.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -101,7 +101,7 @@
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/categories/wordpress.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -126,7 +126,7 @@
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/index.html</loc>
-  <lastmod>2013-06-09</lastmod>
+  <lastmod>2013-08-11</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -306,22 +306,22 @@
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</loc>
-  <lastmod>2013-06-09</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/posts/github-for-linux-mint.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/posts/goodbye-wordpress-hello-nikola.html</loc>
-  <lastmod>2013-05-05</lastmod>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/posts/read-only-text-how-to-write-every-day.html</loc>
-  <lastmod>2013-06-09</lastmod>
+  <lastmod>2013-08-11</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -341,7 +341,12 @@
  </url>
  <url>
   <loc>http://www.stephaniehiga.com/stories/about.html</loc>
-  <lastmod>2013-05-19</lastmod>
+  <lastmod>2013-08-06</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://www.stephaniehiga.com/stories/books.html</loc>
+  <lastmod>2013-08-06</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>

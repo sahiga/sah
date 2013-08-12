@@ -56,6 +56,8 @@ TRANSLATIONS = {
 SIDEBAR_LINKS = {
     DEFAULT_LANG: (
         ('/stories/about.html', 'About'),
+        ('/stories/books.html', 'Reading List'),
+        ('http://sahiga.github.io/wiki/tiddlywiki.html', 'Wiki'),
         ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
         ('/rss.xml', 'RSS'),
