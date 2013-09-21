@@ -8,22 +8,17 @@
 
 On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: **What's the most beloved car brand in hip-hop?**
 
-What follows is an excessively detailed replay of the entire experiment. `Click here to skip the boring stuff and go straight to the results. <http://stephaniehiga.com/cars.html#results>`_
+In this post, I'll explain how I came up with a possible answer to that question. `To skip to the results, click here <http://stephaniehiga.com/cars.html#results>`_.
 
-Why hip-hop?
-============
+Why hip-hop / why cars
+======================
 
-Hip-hop is by far my favorite genre of music. I don't listen to much else. On the road, I tune the radio to `93.5 KDAY <http://www.935kday.com/>`_; otherwise, I'm plugged into my Pandora account, which is heavy on Golden Age, Midwestern, East Coast, Bay Area, and (recently) indie rap. Someday I'll give podcasts/NPR/classical music a whirl. But that someday is a long while away.
+Hip-hop is my favorite genre of music. On the road, I tune the radio to `93.5 KDAY <http://www.935kday.com/>`_; otherwise, I'm plugged into my Pandora account, which is heavy on Golden Age, Midwestern, East Coast, Bay Area, and (recently) indie rap. Rap is also lyrically dense, which makes it a great source for text mining.
 
-Hip-hop is also lyrically dense, which makes it a great source for a text mining project.
+I got curious about cars because rappers talk about them--a lot. So I decided to find out once and for all which brand they love the most, with **Chevy** (the brand I kept hearing) as my hypothesis.
 
-Why car brands?
-===============
-
-Rappers talk about cars. A lot. So I decided to find out once and for all which brand they love the most, with **Chevy** as my hypothesis. Maybe it's because of my fondness for Chevy trucks, but it seems like Chevy pops up in every other song I hear these days.
-
-Mining hip-hop lyrics
-=====================
+The lyrics mining process
+=========================
 
 To find the answer, I needed a sizeable sample of car brand names, a searchable database of hip-hop lyrics, a script to search for the brands within the lyrics database, and a way of displaying the results. Fortunately, all the necessary tools were readily available:
 
@@ -238,6 +233,8 @@ Last thoughts
 A few months ago, when I first got the idea for this project, I thought it would be ridiculously hard. I envisioned building a large corpus of hip-hop lyrics and determining the classification, meaning, and orientation of each word to uncover the truth.
 
 After going about this somewhat backwards, I think my initial impression remains correct. I'm happy I finally took a stab at the project, and I'm excited to continue working on it. This is just the first of a long series of experiments (and blog posts)!
+
+`Source files on GitHub <https://github.com/sahiga/rap-analysis>`_
 
 .. |nbsp| unicode:: U+00A0
 	:trim:

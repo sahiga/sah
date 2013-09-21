@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>sahiga (hip-hop + rap)</title><link>http://www.stephaniehiga.com</link><description>The personal website of Stephanie A. Higa.</description><lastBuildDate>Sun, 19 May 2013 22:56:31 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Analyzing Rap Lyrics with Python</title><link>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</link><description>&lt;p&gt;On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: &lt;strong&gt;What's the most beloved car brand in hip-hop?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;What follows is an excessively detailed replay of the entire experiment. &lt;a class="reference external" href="http://stephaniehiga.com/cars.html#results"&gt;Click here to skip the boring stuff and go straight to the results.&lt;/a&gt;&lt;/p&gt;
-&lt;div class="section" id="why-hip-hop"&gt;
-&lt;h2&gt;Why hip-hop?&lt;/h2&gt;
-&lt;p&gt;Hip-hop is by far my favorite genre of music. I don't listen to much else. On the road, I tune the radio to &lt;a class="reference external" href="http://www.935kday.com/"&gt;93.5 KDAY&lt;/a&gt;; otherwise, I'm plugged into my Pandora account, which is heavy on Golden Age, Midwestern, East Coast, Bay Area, and (recently) indie rap. Someday I'll give podcasts/NPR/classical music a whirl. But that someday is a long while away.&lt;/p&gt;
-&lt;p&gt;Hip-hop is also lyrically dense, which makes it a great source for a text mining project.&lt;/p&gt;
+<rss version="2.0"><channel><title>sahiga (hip-hop + rap)</title><link>http://www.stephaniehiga.com</link><description>The personal website of Stephanie A. Higa.</description><lastBuildDate>Fri, 20 Sep 2013 23:51:48 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Analyzing Rap Lyrics with Python</title><link>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</link><description>&lt;p&gt;On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: &lt;strong&gt;What's the most beloved car brand in hip-hop?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In this post, I'll explain how I came up with a possible answer to that question. &lt;a class="reference external" href="http://stephaniehiga.com/cars.html#results"&gt;To skip to the results, click here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="why-hip-hop-why-cars"&gt;
+&lt;h2&gt;Why hip-hop / why cars&lt;/h2&gt;
+&lt;p&gt;Hip-hop is my favorite genre of music. On the road, I tune the radio to &lt;a class="reference external" href="http://www.935kday.com/"&gt;93.5 KDAY&lt;/a&gt;; otherwise, I'm plugged into my Pandora account, which is heavy on Golden Age, Midwestern, East Coast, Bay Area, and (recently) indie rap. Rap is also lyrically dense, which makes it a great source for text mining.&lt;/p&gt;
+&lt;p&gt;I got curious about cars because rappers talk about them--a lot. So I decided to find out once and for all which brand they love the most, with &lt;strong&gt;Chevy&lt;/strong&gt; (the brand I kept hearing) as my hypothesis.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="why-car-brands"&gt;
-&lt;h2&gt;Why car brands?&lt;/h2&gt;
-&lt;p&gt;Rappers talk about cars. A lot. So I decided to find out once and for all which brand they love the most, with &lt;strong&gt;Chevy&lt;/strong&gt; as my hypothesis. Maybe it's because of my fondness for Chevy trucks, but it seems like Chevy pops up in every other song I hear these days.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="mining-hip-hop-lyrics"&gt;
-&lt;h2&gt;Mining hip-hop lyrics&lt;/h2&gt;
+&lt;div class="section" id="the-lyrics-mining-process"&gt;
+&lt;h2&gt;The lyrics mining process&lt;/h2&gt;
 &lt;p&gt;To find the answer, I needed a sizeable sample of car brand names, a searchable database of hip-hop lyrics, a script to search for the brands within the lyrics database, and a way of displaying the results. Fortunately, all the necessary tools were readily available:&lt;/p&gt;
 &lt;ul class="simple"&gt;&lt;li&gt;Python&lt;/li&gt;
 &lt;li&gt;Wikipedia&lt;/li&gt;
@@ -196,5 +192,6 @@ for filename in os.listdir("."):
 &lt;h3&gt;Last thoughts&lt;/h3&gt;
 &lt;p&gt;A few months ago, when I first got the idea for this project, I thought it would be ridiculously hard. I envisioned building a large corpus of hip-hop lyrics and determining the classification, meaning, and orientation of each word to uncover the truth.&lt;/p&gt;
 &lt;p&gt;After going about this somewhat backwards, I think my initial impression remains correct. I'm happy I finally took a stab at the project, and I'm excited to continue working on it. This is just the first of a long series of experiments (and blog posts)!&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/sahiga/rap-analysis"&gt;Source files on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description><category>hip-hop + rap</category><category>python</category><category>text mining</category><guid>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</guid><pubDate>Sat, 18 May 2013 18:32:32 GMT</pubDate></item></channel></rss>

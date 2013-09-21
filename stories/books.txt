@@ -10,6 +10,11 @@ This list was inspired by `Pamela Fox's reading list <http://www.pamelafox.org/r
 2013
 ====
 
+`Running Lean <http://openlibrary.org/works/OL16605567W/Running_lean>`_
+	Ash Maurya
+
+	Read 9/16/2013 - ✪✪✪
+
 `The House on the Strand <http://openlibrary.org/works/OL10421719W/The_house_on_the_strand>`_
 	Daphne du Maurier
 

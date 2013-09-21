@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="Stephanie A. Higa"><title>Movable AND/OR Statements | sahiga</title><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            sahiga
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav"><li><a href="../stories/about.html">About</a>
+            </li><li><a href="../stories/books.html">Reading List</a>
+            </li><li><a href="http://sahiga.github.io/wiki/tiddlywiki.html">Wiki</a>
+            </li><li><a href="../archive.html">Archives</a>
+            </li><li><a href="../categories/index.html">Tags</a>
+            </li><li><a href="../rss.xml">RSS</a>
+
+                </li></ul><ul class="nav pull-right"><li>
+    <a href="movable-andor-statements.txt" id="sourcelink">Source</a>
+    </li>
+
+                </ul></div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>Movable AND/OR Statements</h1>
+
+    <hr><small>
+        Posted: <time class="published" datetime="2013-09-20T20:07:16">2013-09-20 20:07</time>
+        
+
+        
+          |  More posts about
+            <a class="tag" href="../categories/javascript.html"><span class="badge badge-info">javascript</span></a>
+            <a class="tag" href="../categories/jquery.html"><span class="badge badge-info">jquery</span></a>
+
+    </small>
+    <hr><p>Recently at work I wrote a messy bit of JavaScript (jQuery really) to create movable AND/OR statements. I learned how to code less than a year ago and haven't done any intense programming (yet, just wait), so this is probably the most difficult, headache-inducing, neck-wringing problem I've worked on to date. The last time I encountered this much trouble was when I learned about recursion and <a class="reference external" href="https://en.wikipedia.org/wiki/Trie">tries</a>. I figure I'll outline my thought process here in case it's useful to anyone else.</p>
+<div class="section" id="the-assignment">
+<h2>The assignment</h2>
+<p>The reason behind these AND/OR statements was to allow users to perform searches with custom parameters. On the right side of the page would be two lists: one containing the available parameters (Location, Category, Subcategory) and the other containing the two operators (AND, OR). On the left two-thirds of the page would be where the user would drag the parameters and operators to build a full search statement.</p>
+<p>Full, well-formed search statements would have this format:
+<strong>Location OR Category AND Subcategory</strong></p>
+<p>Making elements sortable is fairly simple. Two words: <a class="reference external" href="http://jqueryui.com/sortable/">jQuery UI</a>. No, that wasn't the hard part at all. The hard part was following the rules given to me, which involved much tweaking of the sortable interaction and, as always, fighting with the DOM.</p>
+<p>The rules:</p>
+<ul class="simple"><li>Parameters should never be next to parameters, and operators should never be next to operators, e.g., it shouldn't be possible to build statements like <strong>Location Category AND OR Subcategory</strong>.</li>
+<li>Operators should never be at the beginning or ending of a statement, e.g., <strong>AND Category AND Subcategory OR</strong>. Pretty much anything that doesn't make sense in natural language shouldn't be possible.</li>
+<li>When a parameter or operator (for brevity's sake I'll call them "items" from now on) is dragged from the sidebar into a statement, the sidebar should repopulate with the missing item.</li>
+<li>Parameters can be dragged into statements, and operators can be dragged into statements. All other dragging between lists should not be allowed. In other words, a parameter can't be dragged into the list of operators, an operator can't be dragged into the list of parameters, and blocks in statements can't be dragged back into the lists (to be honest, I implemented this last rule to make it slightly easier for me). Also, items can't be dragged from one statement to another.</li>
+<li>Since items in statements can't be dragged back into the list, there needs to be a way to clear a statement and start over.</li>
+<li>Each statement begins with an empty dotted box, to indicate that a new item can be placed there. As items are placed in the statement, the dotted box should move over to the right until the statement reaches its item limit. The item limit is five, as there are only three parameters and two operators.</li>
+<li>Items can be dragged within a statement, but again, parameters should never be next to parameters, and operators should never be next to operators.</li>
+<li>Within a statement, if an item is dragged over a like block, it should switch with the like item. In other words, if "Location" is dragged over "Category," the two items should switch places.</li>
+<li>When parameters are placed into a statement, they should become editable input boxes, so that the user can enter her preferred location, category, and subcategory.</li>
+<li>When a user types into the "Location" input box, this should trigger an autocomplete place search. (I'd been playing with the <a class="reference external" href="https://developers.google.com/places/">Google Places API</a> the week prior to this for my <a class="reference external" href="http://www.wehoeatmo.com">WeHo Eat Mo</a> project, so this was fairly easy to implement.)</li>
+</ul><p>That's about it. I created some of the rules as I went along based on the issues I faced while interacting with the interface. Bugs just kept on cropping up. (In fact, while writing this, I discovered a few more. Code is never finished.)</p>
+</div>
+<div class="section" id="if-else-and-nothing-else">
+<h2>If, else, and nothing else</h2>
+<p>The code I ended up writing is almost entirely made up of if–else blocks. Here's the nested conditional monster that controls the "sortability" of items (variables are defined at the beginning of the sort):</p>
+<pre class="literal-block">
+function sortRules(event, ui) {
+        targetParent = ui.item.parent();
+        targetParent.children('.ui-state-dotted').remove();
+
+        // If the to-list is a statement and (1) the from-list is a item list or (2) the to-list and from-list are identical
+        // Items can be rearranged within a single statement and dragged from a item list to a statement
+        // Items cannot be dragged from one statement to another or from a statement to a item list
+        if (targetParent.hasClass('fullStatement') &amp;&amp; (originalParent.hasClass('piece'))) {
+                // Add a dotted box (implying that another item can be added) if the total statement length is shorter than five items
+                // If the total statement length is equal to five items, don't add another dotted box, but don't cancel the sort, either
+                if (targetParent.children('li:not(.delete):not(.ui-state-dotted)').length &lt; 5) {
+                        targetParent.append('&lt;li class="ui-state-dotted"&gt;&lt;/li&gt;');
+                // Cancel the sort if the statement length has six or more items (including the current item)
+                } else if (targetParent.children('li:not(.delete):not(.ui-state-dotted)').length &gt;= 6) {
+                        $(this).sortable('cancel');
+                }
+
+                // Add a delete button if the statement does not already have it
+                if (targetParent.children('.delete').length === 0) {
+                        $('&lt;li class="delete"&gt;x&lt;/li&gt;').insertBefore(targetParent.children('li:first-child'));
+                }
+
+                // Prevent like items from being placed next to each other
+                // i.e., operators should never be next to operators, and parameters should never be next to parameters
+                // Check if the item has the same class as the item before it or the item after it
+                // or if the item is an operator and (1) the previous item is not a parameter (e.g., operator or undefined),
+                // (2) the next item is an operator, and (3) the next item is undefined
+                // This prevents operators from being placed next to each other, at the beginning or end of a statement,
+                // but allows them to appear before a dotted box
+                if ((ui.item.attr('class') === ui.item.prev().attr('class')) || (ui.item.attr('class') === ui.item.next().attr('class')) || (ui.item.hasClass('operator') &amp;&amp; (!ui.item.prev().hasClass('parameter') || ui.item.next().hasClass('operator') || ui.item.next().attr('class') === undefined)) || ui.item.prev().hasClass('ui-state-dotted')) {
+                        $(this).sortable('cancel');
+                        checkCanceled(targetParent);
+                // Otherwise, if the sort arrangement is allowed, continue with the sort
+                } else {
+                        if (ui.item.hasClass('parameter')) {
+                                ui.item.html('&lt;form class="handler"&gt;&lt;input type="text" class="search-input" name="search-input" value=""&gt;&lt;/form&gt;');
+                                ui.item.css('padding', '5px');
+                        }
+                        if (originalText === 'Location') {
+                                ui.item.children('form').children('input').attr({
+                                        'id': 'locationInput',
+                                        'placeholder': 'Enter your city'
+                                });
+                                locationSearch();
+                        } else {
+                                ui.item.children('form').children('input').attr('placeholder', originalText);
+                        }
+
+                        originalParent.append('&lt;li class="' + ui.item.attr('class') + '"&gt;' + originalHTML + '&lt;/li&gt;');
+                        deleteParameter(targetParent);
+                }
+        } else if (targetParent.attr('id') === originalParent.attr('id')) {
+                // Grab the new target index of the item (after the sort ends)
+                newIndex = ui.item.index();
+                // Swap the current item with the item at its target index
+                // if the target item is an even number away from the current item,
+                // so that only like items are swapped with each other
+                if (Math.abs(originalIndex - newIndex) % 2 === 0 &amp;&amp; (ui.item.hasClass('operator') &amp;&amp; !ui.item.prev().hasClass('operator'))) {
+                        ui.item.next().insertAfter(originalParent.children('li').eq(originalIndex));
+                } else {
+                        $(this).sortable('cancel');
+                        checkCanceled(targetParent);
+                }
+        // Prevent items from being dragged from statements back into item lists
+        } else {
+                $(this).sortable('cancel');
+                checkCanceled(targetParent);
+        }
+}
+</pre>
+<p>Yes, this function consists of one if–else block with...I don't even know how many nested if–else blocks inside of each of those conditions. It's terrifying. But it does the trick. Eventually I'd like to refactor this using a hash table, if that's possible. To see my progress on this project, <a class="reference external" href="https://github.com/sahiga/movable-logic">check out my source code on GitHub</a>.</p>
+</div>
+    
+    <ul class="pager"><li class="previous">
+            <a href="read-only-text-how-to-write-every-day.html">← Previous post</a>
+        </li>
+    </ul></div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013 <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul></div>
+    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
