@@ -10,7 +10,7 @@ Recently at work I wrote a messy bit of JavaScript (jQuery really) to create mov
 
 The assignment
 ==============
-The reason behind these AND/OR statements was to allow users to perform searches with custom parameters. On the right side of the page would be two lists: one containing the available parameters (Location, Category, Subcategory) and the other containing the two operators (AND, OR). On the left two-thirds of the page would be where the user would drag the parameters and operators to build a full search statement.
+The goal of these AND/OR statements was to allow users to perform searches with custom parameters. On the right side of the page would be two lists: one containing the available parameters (Location, Category, Subcategory) and the other containing the two operators (AND, OR). On the left two-thirds of the page would be where the user would drag the parameters and operators to build a full search statement.
 
 Full, well-formed search statements would have this format:
 **Location OR Category AND Subcategory**

@@ -10,6 +10,16 @@ This list was inspired by `Pamela Fox's reading list <http://www.pamelafox.org/r
 2013
 ====
 
+`Lean UX <http://shop.oreilly.com/product/0636920021827.do>`_
+	Jeff Gothelf with Josh Seiden
+	
+	Read 9/24/2013 - ✪✪✪
+
+`UX for Lean Startups <http://shop.oreilly.com/product/0636920026242.do>`_
+	Laura Klein
+
+	Read 9/23/2013 - ✪✪✪✪
+
 `Running Lean <http://openlibrary.org/works/OL16605567W/Running_lean>`_
 	Ash Maurya
 
