@@ -13,10 +13,10 @@ BLOG_AUTHOR = "Stephanie A. Higa"
 BLOG_TITLE = "sahiga"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://www.stephaniehiga.com"
+SITE_URL = "http://www.stephaniehiga.com/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://www.stephaniehiga.com"
+# BASE_URL = "http://www.stephaniehiga.com/"
 BLOG_EMAIL = "sahiga@gmail.com"
 BLOG_DESCRIPTION = "The personal website of Stephanie A. Higa."
 
@@ -275,7 +275,7 @@ post_compilers = {
 
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
-CONTENT_FOOTER = 'Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>'
+CONTENT_FOOTER = 'Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by <a href="http://www.getnikola.com">Nikola</a>'
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
                                        author=BLOG_AUTHOR,
                                        date=time.gmtime().tm_year)

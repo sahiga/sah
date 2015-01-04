@@ -1,10 +1,3 @@
-<!-- link: -->
-<!-- description: -->
-<!-- tags: linux, git, version control -->
-<!-- date: 2013/05/05 21:05:00 -->
-<!-- title: GitHub for Linux Mint -->
-<!-- slug: github-for-linux-mint -->
-<!-- nocomments: true -->
 <p>Version control terrifies me.</p>
 <p>But you know what else terrifies me? Losing files. I've lost enough of them and endured enough filename headaches (story-1.doc, story-2.doc, story-final, story-new.doc, story-newEST.doc, etc.) in my lifetime to realize that <strong>version control is extremely important</strong>, and I need to develop better version control habits.</p>
 <p>So, I added the files for this site to <a class="reference external" href="https://github.com/sahiga/sah">my GitHub account</a>. The following guide details the steps I took, minus the legion of errors I made. I've named it &quot;GitHub for <a class="reference external" href="http://www.linuxmint.com">Linux Mint</a>,&quot; in honor of my operating system and the fact that GitHub offers <a class="reference external" href="http://mac.github.com">GitHub for Mac</a> and <a class="reference external" href="http://windows.github.com">GitHub for Windows</a>, but no GitHub for GNU/Linux (even though, hey, some of us GNU/Linux users could use a little point-and-click help over here).</p>
@@ -15,7 +8,7 @@ git clone &lt;URL&gt;
 </pre>
 </blockquote>
 <div class="section" id="connect-your-computer-to-github">
-<h2>Connect your computer to GitHub</h2>
+<h1>Connect your computer to GitHub</h1>
 <p>First, you need a secure method of connecting your computer to GitHub. You can do this through SSH (generate a new public/private SSH key pair and add it to your GitHub account) or through HTTPS (configure the Git credential helper).</p>
 <ul class="simple">
 <li><a class="reference external" href="https://help.github.com/articles/set-up-git">Instructions for using HTTPS with GitHub</a></li>
@@ -23,7 +16,7 @@ git clone &lt;URL&gt;
 </ul>
 </div>
 <div class="section" id="prepare-the-branches">
-<h2>Prepare the branches</h2>
+<h1>Prepare the branches</h1>
 <p><a class="reference external" href="https://github.com/new">Create a new repository on GitHub</a>. This is the <strong>remote branch</strong>.</p>
 <p>Fire up your command line. Move to the directory containing your version control files (if you're not there already), e.g., <tt class="docutils literal">cd sah</tt>.</p>
 <p>Initialize a Git repository in this directory. This is the <strong>local branch</strong>.</p>
@@ -60,7 +53,7 @@ nothing added to commit but untracked files present (use &quot;git add&quot; to 
 <p>Right now there's &quot;nothing added to commit,&quot; meaning the local repository is empty. This is because you've just initialized it.</p>
 </div>
 <div class="section" id="start-tracking-your-files">
-<h2>Start tracking your files</h2>
+<h1>Start tracking your files</h1>
 <p>Next, add version control tracking to your files. To add individual files, write <tt class="docutils literal">git add</tt> and then the filename. To add everything in the directory to your commit:</p>
 <pre class="literal-block">
 git add .
@@ -72,7 +65,7 @@ git commit -a -m &quot;Added Nikola site files&quot;
 <p>See <a class="reference external" href="http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository">Git Basics - Recording Changes to the Repository</a> for more information on committing changes.</p>
 </div>
 <div class="section" id="merge-and-sync-your-branches">
-<h2>Merge and sync your branches</h2>
+<h1>Merge and sync your branches</h1>
 <p>Merge the remote branch (the GitHub copy of the repository) with your local branch (the local copy of the repository). This consolidates the two branches and ensures that they are identical.</p>
 <pre class="literal-block">
 git pull https://github.com/sahiga/sah.git

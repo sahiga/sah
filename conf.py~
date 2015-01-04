@@ -13,10 +13,10 @@ BLOG_AUTHOR = "Stephanie A. Higa"
 BLOG_TITLE = "sahiga"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://www.stephaniehiga.com"
+SITE_URL = "http://www.stephaniehiga.com/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://www.stephaniehiga.com"
+# BASE_URL = "http://www.stephaniehiga.com/"
 BLOG_EMAIL = "sahiga@gmail.com"
 BLOG_DESCRIPTION = "The personal website of Stephanie A. Higa."
 
@@ -55,7 +55,10 @@ TRANSLATIONS = {
 # You should provide a key-value pair for each used language.
 SIDEBAR_LINKS = {
     DEFAULT_LANG: (
-        ('/about.html', 'About'),
+        ('/stories/about.html', 'About'),
+        ('/stories/books.html', 'Reading List'),
+        ('/stories/diy-data-science.html', 'DIY Data Science'),
+        ('http://sahiga.github.io/wiki/tiddlywiki.html', 'Wiki'),
         ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
         ('/rss.xml', 'RSS'),

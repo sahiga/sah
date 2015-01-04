@@ -1,13 +1,6 @@
-<!-- link: -->
-<!-- description: -->
-<!-- tags: javascript, jquery -->
-<!-- date: 2013/09/20 20:07:16 -->
-<!-- title: Movable AND/OR Statements -->
-<!-- slug: movable-andor-statements -->
-<!-- nocomments: true -->
 <p>Recently at work I wrote a messy bit of JavaScript (jQuery really) to create movable AND/OR statements. I learned how to code less than a year ago and haven't done any intense programming (yet, just wait), so this is probably the most difficult, headache-inducing, neck-wringing problem I've worked on to date. The last time I encountered this much trouble was when I learned about recursion and <a class="reference external" href="https://en.wikipedia.org/wiki/Trie">tries</a>. I figure I'll outline my thought process here in case it's useful to anyone else.</p>
 <div class="section" id="the-assignment">
-<h2>The assignment</h2>
+<h1>The assignment</h1>
 <p>The goal of these AND/OR statements was to allow users to perform searches with custom parameters. On the right side of the page would be two lists: one containing the available parameters (Location, Category, Subcategory) and the other containing the two operators (AND, OR). On the left two-thirds of the page would be where the user would drag the parameters and operators to build a full search statement.</p>
 <p>Full, well-formed search statements would have this format:
 <strong>Location OR Category AND Subcategory</strong></p>
@@ -28,7 +21,7 @@
 <p>That's about it. I created some of the rules as I went along based on the issues I faced while interacting with the interface. Bugs just kept on cropping up. (In fact, while writing this, I discovered a few more. Code is never finished.)</p>
 </div>
 <div class="section" id="if-else-and-nothing-else">
-<h2>If, else, and nothing else</h2>
+<h1>If, else, and nothing else</h1>
 <p>The code I ended up writing is almost entirely made up of if–else blocks. Here's the nested conditional monster that controls the &quot;sortability&quot; of items (variables are defined at the beginning of the sort):</p>
 <pre class="literal-block">
 function sortRules(event, ui) {

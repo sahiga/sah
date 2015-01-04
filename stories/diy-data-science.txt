@@ -1,0 +1,77 @@
+.. link: 
+.. description: 
+.. tags: 
+.. date: 2013/11/12 22:38:11
+.. title: DIY Data Science
+.. slug: diy-data-science
+
+Data Analysis
+=============
+`Coursera: Computing for Data Analysis <https://www.coursera.org/course/compdata>`_
+	Roger Peng, Johns Hopkins University - *Completed 10/2013*
+
+`Coursera: Data Analysis <https://www.coursera.org/course/dataanalysis>`_
+	Jeff Leek, Johns Hopkins University - *Completed 12/2013*
+
+`Python for Data Analysis <http://shop.oreilly.com/product/0636920023784.do>`_
+	Wes McKinney
+
+Machine Learning
+================
+`Coursera: Machine Learning <https://www.coursera.org/course/ml>`_
+	Andrew Ng, Stanford - *Completed 1/2014*
+
+`Stanford: Machine Learning <http://see.stanford.edu/see/courseInfo.aspx?coll=348ca38a-3a6d-4052-937d-cb017338d7b1>`_
+	Andrew Ng
+
+`Caltech: Learning from Data <http://work.caltech.edu/telecourse>`_
+	Yaser Abu-Mostafa, edX
+
+Natural Language Processing
+===========================
+`Natural Language Processing with Python <http://www.nltk.org/book>`_
+	Steven Bird, Ewan Klein, and Edward Loper
+
+`Natural Language Processsing for the Working Programmer <http://nlpwp.org/book>`_
+	Daniël de Kok & Harm Brouwer
+
+`Text Processing in Python <http://gnosis.cx/TPiP/>`_
+	David Mertz
+
+Statistics
+==========
+`Think Stats <http://www.greenteapress.com/thinkstats/index.html>`_
+	Allen B. Downey
+
+`Think Bayes <http://www.greenteapress.com/thinkbayes/index.html>`_
+	Allen B. Downey
+
+`Udacity: Introduction to Statistics <https://www.udacity.com/course/st101>`_
+	Sebastian Thrun
+
+Databases
+=========
+`Coursera: Introduction to Databases <https://www.coursera.org/course/db>`_
+	Jennifer Widom, Stanford
+
+`Learn SQL the Hard Way <http://sql.learncodethehardway.org/book/>`_
+	Zed A. Shaw - *Completed 9/2013*
+
+`SQLZOO <http://sqlzoo.net/wiki/Main_Page>`_
+	Interactive SQL Tutorial - *Completed 9/2013*
+
+Data Mining
+===========
+`MIT OpenCourseWare: Data Mining <http://ocw.mit.edu/courses/sloan-school-of-management/15-062-data-mining-spring-2003/index.htm>`_
+	Nitin Patel
+
+`A Programmer's Guide to Data Mining <http://guidetodatamining.com/>`_
+	Ron Zacharski
+
+Data Visualization
+==================
+`UC Berkeley: Visualization <http://vis.berkeley.edu/courses/cs294-10-sp11/wiki/index.php/CS294-10_Visualization>`_
+	Maneesh Agrawala
+
+`Rice University: Data Visualization <http://had.co.nz/stat645>`_
+	Hadley Wickham

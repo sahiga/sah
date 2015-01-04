@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sahiga (programming)</title><link>http://www.stephaniehiga.com/</link><description></description><atom:link href="http://www.stephaniehiga.com/categories/programming.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 03 Jan 2015 20:41:16 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Review: Introduction to Functional Programming</title><link>http://www.stephaniehiga.com/posts/review-introduction-to-functional-programming.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Recently I completed Delft University's fall 2014 offering of &lt;a class="reference external" href="https://www.edx.org/course/introduction-functional-programming-delftx-fp101x"&gt;Introduction to Functional Programming (FP101x)&lt;/a&gt; on edX. I've been interested in functional programming for a while (caught the bug when I learned about Python list comprehensions), so I was really excited for this class. It turned out to be one of the better MOOCs I've taken, and definitely the most challenging.&lt;/p&gt;
+&lt;p&gt;My takeaways from the class:&lt;/p&gt;
+&lt;div class="section" id="functional-programming-is-cool"&gt;
+&lt;h2&gt;Functional programming is cool&lt;/h2&gt;
+&lt;p&gt;Erik Meijer, the professor, is funny and brilliant, and I came away from many of his lectures thinking, wow, that was fascinating. I've read before that learning how to program in a functional style is like learning how to code all over again, which I found to be true. This class opened my mind to a totally different way of reasoning about the structure and composition of programs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="beginners-beware"&gt;
+&lt;h2&gt;Beginners, beware&lt;/h2&gt;
+&lt;p&gt;The prerequisite for FP101x is at least one year of experience programming in an imperative language. I've been working with JavaScript since early 2013, and I learned basic Python and C before that, so you'd think I would be fine. NOPE. Both the homework (multiple choice) and labs (programming assignments) started off simple but got mind-numbingly difficult toward the end. The last two labs in particular really stumped me -- we had to implement Poor Man's Concurrency and rose trees, two subjects that weren't even hinted at in the lectures. And don't even get me started on monads.&lt;/p&gt;
+&lt;p&gt;I got the sense that Prof. Meijer doesn't typically teach beginners. Based on the assignments and his forum posts, he seemed to have really high expectations of what a MOOC student would be able to accomplish with little guidance and limited time. For me, a total novice, the second half of the class was a struggle. Fortunately, there were plenty of kind, generous folks who took the time to help out their classmates in the forums.&lt;/p&gt;
+&lt;p&gt;To anyone who's considering taking FP101x: learn a bit about &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Category_theory"&gt;category theory&lt;/a&gt; first. Also, &lt;a class="reference external" href="http://learnyouahaskell.com/"&gt;basic Haskell&lt;/a&gt; would be good. The class is language-agnostic, but Prof. Meijer used Haskell in all the lectures and homework assignments. From my travels around the discussion forums I'd wager that most of us ended up solving the labs in Haskell, too, although the instructions were provided in multiple languages (Scala, F#, Groovy, Frege, Ruby). It would have been much easier for me to digest the concepts in this class if I hadn't had to learn an entirely new language as well.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="but-speaking-of-haskell"&gt;
+&lt;h2&gt;But, speaking of Haskell...&lt;/h2&gt;
+&lt;p&gt;Seriously, what a gorgeous language.&lt;/p&gt;
+&lt;p&gt;I don't understand it. That is, I understand enough of it to know I don't understand it at all. Regardless, I can still appreciate it on a superficial level.&lt;/p&gt;
+&lt;p&gt;Say you have a list, and you want to apply one function to the members of the list in odd positions, and another function to the members of the list in even positions. Here's a quick JavaScript implementation:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+function oddEvenMap(list, oddFunc, evenFunc) {
+  for (var i = 0; i &amp;lt; list.length; i++) {
+    if (i % 2 === 0) {
+      evenFunc(list[i]);
+    } else {
+      oddFunc(list[i]);
+    }
+  }
+}
+&lt;/pre&gt;
+&lt;p&gt;And here it is in Haskell:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+oddEvenMap :: (a -&amp;gt; b) -&amp;gt; (a -&amp;gt; b) -&amp;gt; [a] -&amp;gt; [b]
+oddEvenMap f g [] = []
+oddEvenMap f g (x : xs) = f x : oddEvenMap g f xs
+&lt;/pre&gt;
+&lt;p&gt;No variable assignments. No for loops. Haskell is stunningly beautiful and concise. (I realize the comparison to JavaScript isn't fair, but that's the language I know best.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lastly-edx-is-a-great-mooc-platform"&gt;
+&lt;h2&gt;Lastly, edX is a great MOOC platform&lt;/h2&gt;
+&lt;p&gt;In 2014, Coursera was my MOOC platform of choice, as I'd finished three classes through it at the end of 2013 (&lt;a class="reference external" href="https://www.coursera.org/course/compdata"&gt;Computing for Data Analysis&lt;/a&gt;, &lt;a class="reference external" href="https://www.coursera.org/course/dataanalysis"&gt;Data Analysis&lt;/a&gt;, and &lt;a class="reference external" href="https://www.coursera.org/course/ml"&gt;Machine Learning&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Now edX has taken its place, primarily for usability reasons. Coursera's interface is passable, with many Bootstrappy elements; the videos seem to go on forever. edX's interface is thoughtful and intuitive. Two of my favorite aspects: the video player, which has speed controls and highlighted subtitles that scroll in unison with the instructor's speech, and the homework submission system, which checks each answer individually.&lt;/p&gt;
+&lt;p&gt;I will definitely be returning to edX for more classes later this year.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>programming</category><guid>http://www.stephaniehiga.com/posts/review-introduction-to-functional-programming.html</guid><pubDate>Sat, 03 Jan 2015 05:47:51 GMT</pubDate></item></channel></rss>
