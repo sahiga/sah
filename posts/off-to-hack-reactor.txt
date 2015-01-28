@@ -1,7 +1,7 @@
 .. title: Off to Hack Reactor
 .. slug: off-to-hack-reactor
 .. date: 2015-01-26 23:45:45 UTC
-.. tags: 
+.. tags: hack reactor, programming
 .. link: 
 .. description: 
 .. type: text
@@ -9,18 +9,17 @@
 
 I'm going to `Hack Reactor <http://www.hackreactor.com>`_ next week!
 
-It's the most intense programming bootcamp in existence: eleven hours a day, six days a week, for twelve weeks. Pretty much everyone I've mentioned it to has recoiled in horror, imagining what it would be like to spend so much time cooped up in front of a screen. But I think I'll be fine. I like screens.
+Hack Reactor is a programming bootcamp -- the most intense of its kind, at eleven hours a day, six days a week, for twelve weeks. Pretty much everyone I've mentioned it to has recoiled in horror, imagining what it would be like to spend so much time cooped up in front of a screen. Yeah, I know. It sounds terrible. It might even sound nonsensical. But here I am anyway: packing my bags, preparing to fly to San Francisco in a few days, and writing about the program that will take over my life for the next three months.
 
-1. The discovery
-================
+----
 
-Several months ago I happened upon Smashing Magazine during work hours, likely in search of CSS help. I'm sure I found what I was looking for, but what caught my eye was an ad for Hack Reactor. Twelve-week immersive programming bootcamp! Six-figure average starting salary! It seemed too good to be true.
+Last August I happened upon Smashing Magazine during work hours, likely in search of CSS help. I'm sure I found what I was looking for, but what caught my eye was an ad for Hack Reactor. Twelve-week immersive programming bootcamp! Six-figure average starting salary! It seemed too good to be true.
 
 The only programming bootcamp I'd heard of was General Assembly's Web Development Immersive, which had briefly interested me until I lucked into a front-end development role at my company back in 2013. I'd even taken a couple of General Assembly classes -- Intro to Data Science and Analysis (at their Santa Monica campus) and Optimizing Landing Pages for Conversion (online) -- neither of which had impressed me.
 
 But Hack Reactor looked like a completely different species of bootcamp. It looked like something I needed.
 
-Many people have questioned why I would need a bootcamp when I already have a career in web development. So I feel the need to explain my reasoning here.
+Many people have questioned why I would need a bootcamp when I already have a career in web development. So I feel compelled to explain my reasoning here.
 
 I may not be a novice programmer, but I learned to code recently enough that I remember what it was like to be a novice programmer and how much I struggled to even get to that point. I'm a late bloomer: after years of grappling with for loops and other basic concepts, I finally managed to make sense of programming at the ripe old age of 23. (In fact, I was weeks, maybe even days, away from 24 at that point.) The book that did it for me is `Natural Language Processing with Python <http://www.nltk.org/book/>`_ -- a truly wonderful read, if you're more inclined to language than math, as I am.
 
@@ -36,8 +35,7 @@ Here's my history with computers prior to the age of 23. When I was eleven, I fe
 
 When I graduated at 21, I had a strange epiphany that I would make my living off computers. What's even stranger is that it turned out to be true. But I still haven't shaken off the Luddite cloak, which is ultimately why I decided to apply to Hack Reactor.
 
-2. The application process
-==========================
+----
 
 After seeing the Smashing Magazine ad, I researched all the programming bootcamps I could find. I immediately ruled out the ones that taught Ruby on Rails (which, by the way, is nearly all of them). Eventually I settled on two: Hack Reactor, my first choice by a long shot, and MakerSquare, as a backup. Hack Reactor appealed to me because of its laser focus on one language, JavaScript, and its intensity.
 
@@ -53,18 +51,14 @@ I wrote back to the HR admission team. I deluged them with questions. I connecte
 
 Then I decided to go.
 
-3. A word on the precourse work
-===============================
+----
 
 Hack Reactor used to devote the first two weeks of the course to JavaScript fundamentals. Now they require students to complete a separate precourse curriculum, ensuring that everyone possesses a certain level of JavaScript knowledge before starting the program. I'm under oath not to reveal details about the precourse work, but, as other bloggers have mentioned, it involves cloning a popular functional JavaScript library as well as the front-end of a popular social media site.
 
 My advice for the precourse work? Complete it as soon as possible so you don't have to worry about it. The estimated amount of time is 50-80 hours. I'm pretty sure I completed the precourse work in fewer hours than that, but I also rushed through it to make time for the edX functional programming class I mentioned in my last entry. Looking back, I'm happy I stayed with the functional programming class, as it sharpened my brain and made the precourse work look quite simple by comparison. But I'm not sure I would recommend doing this, especially around the holidays. It was stressful.
 
-4. Final thoughts
-=================
+----
 
 Deciding to attend Hack Reactor isn't like deciding to go to college, or deciding to accept a job offer. It's an expensive, unaccredited program, and people will wonder if it's a scam when you tell them about it.
-
-I'm giving up my whole life to attend: my job as a front-end developer, at a great company with great coworkers; my volunteer position at a hospital; and memberships with a local Toastmasters club and a local YMCA service club.
 
 Career-wise, it's probably the most difficult decision I've ever made. To be honest, I'm still not sure it's the right choice, but all I can really do at this point is look forward to the future. I'm beyond excited. Plus, Hack Reactor encourages blogging, so I'll be posting here more frequently!

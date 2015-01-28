@@ -4,9 +4,9 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1420346476.371862
+_modified_time = 1422406605.765634
 _enable_loop = True
-_template_filename = u'/usr/local/lib/python2.7/dist-packages/nikola/data/themes/bootstrap/templates/base_helper.tmpl'
+_template_filename = u'/usr/local/lib/python2.7/dist-packages/nikola/data/themes/bootstrap3/templates/base_helper.tmpl'
 _template_uri = u'base_helper.tmpl'
 _source_encoding = 'utf-8'
 _exports = ['late_load_js', 'html_headstart', 'html_navigation_links', 'html_stylesheets', 'html_translations', 'html_feedlinks']
@@ -18,9 +18,9 @@ def render_body(context,**pageargs):
         __M_locals = __M_dict_builtin(pageargs=pageargs)
         __M_writer = context.writer()
         __M_writer(u'\n')
+        __M_writer(u'\n\n')
         __M_writer(u'\n\n\n')
-        __M_writer(u'\n\n\n')
-        __M_writer(u'\n\n\n')
+        __M_writer(u'\n\n')
         __M_writer(u'\n\n')
         __M_writer(u'\n\n')
         __M_writer(u'\n')
@@ -41,12 +41,12 @@ def render_late_load_js(context):
         __M_writer(u'\n')
         if use_bundles:
             if use_cdn:
-                __M_writer(u'            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>\n            <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>\n            <script src="/assets/js/all.js"></script>\n')
+                __M_writer(u'            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>\n            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>\n            <script src="/assets/js/all.js"></script>\n')
             else:
                 __M_writer(u'            <script src="/assets/js/all-nocdn.js"></script>\n')
         else:
             if use_cdn:
-                __M_writer(u'            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>\n            <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>\n')
+                __M_writer(u'            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>\n            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>\n')
             else:
                 __M_writer(u'            <script src="/assets/js/jquery.min.js"></script>\n            <script src="/assets/js/bootstrap.min.js"></script>\n            <script src="/assets/js/moment-with-locales.min.js"></script>\n            <script src="/assets/js/fancydates.js"></script>\n')
             __M_writer(u'        <script src="/assets/js/jquery.colorbox-min.js"></script>\n')
@@ -108,7 +108,7 @@ def render_html_headstart(context):
             __M_writer(u'    <meta name="description" content="')
             __M_writer(unicode(description))
             __M_writer(u'">\n')
-        __M_writer(u'    <meta name="viewport" content="width=device-width">\n    <title>')
+        __M_writer(u'    <meta name="viewport" content="width=device-width, initial-scale=1">\n    <title>')
         __M_writer(striphtml(unicode(title)))
         __M_writer(u' | ')
         __M_writer(striphtml(unicode(blog_title)))
@@ -223,14 +223,14 @@ def render_html_stylesheets(context):
         __M_writer(u'\n')
         if use_bundles:
             if use_cdn:
-                __M_writer(u'            <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">\n            <link href="/assets/css/all.css" rel="stylesheet" type="text/css">\n')
+                __M_writer(u'            <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">\n            <link href="/assets/css/all.css" rel="stylesheet" type="text/css">\n')
             else:
                 __M_writer(u'            <link href="/assets/css/all-nocdn.css" rel="stylesheet" type="text/css">\n')
         else:
             if use_cdn:
-                __M_writer(u'            <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">\n')
+                __M_writer(u'            <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">\n')
             else:
-                __M_writer(u'            <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">\n            <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">\n')
+                __M_writer(u'            <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">\n')
             __M_writer(u'        <link href="/assets/css/rst.css" rel="stylesheet" type="text/css">\n        <link href="/assets/css/code.css" rel="stylesheet" type="text/css">\n        <link href="/assets/css/colorbox.css" rel="stylesheet" type="text/css">\n        <link href="/assets/css/theme.css" rel="stylesheet" type="text/css">\n')
             if has_custom_css:
                 __M_writer(u'            <link href="/assets/css/custom.css" rel="stylesheet" type="text/css">\n')
@@ -303,6 +303,6 @@ def render_html_feedlinks(context):
 
 """
 __M_BEGIN_METADATA
-{"source_encoding": "utf-8", "line_map": {"15": 0, "20": 2, "21": 65, "22": 93, "23": 124, "24": 148, "25": 162, "26": 170, "32": 68, "41": 68, "42": 69, "43": 70, "44": 71, "45": 74, "46": 75, "47": 77, "48": 78, "49": 79, "50": 81, "51": 82, "52": 87, "53": 89, "54": 90, "55": 90, "56": 90, "57": 92, "58": 92, "59": 92, "65": 3, "92": 3, "93": 7, "94": 8, "95": 9, "96": 10, "97": 12, "98": 13, "99": 15, "100": 16, "101": 18, "102": 21, "103": 22, "104": 25, "105": 25, "106": 25, "107": 28, "108": 29, "109": 29, "110": 29, "111": 31, "112": 32, "113": 32, "114": 32, "115": 32, "116": 34, "117": 34, "118": 35, "119": 35, "120": 36, "121": 37, "122": 37, "123": 37, "124": 39, "125": 40, "126": 41, "127": 42, "128": 42, "129": 42, "130": 42, "131": 42, "132": 42, "133": 42, "134": 45, "135": 46, "136": 47, "137": 47, "138": 47, "139": 49, "140": 50, "141": 51, "142": 51, "143": 51, "144": 53, "145": 54, "146": 54, "147": 54, "148": 56, "149": 57, "150": 57, "151": 58, "152": 59, "153": 60, "154": 61, "155": 61, "156": 61, "157": 63, "158": 64, "159": 64, "165": 127, "175": 127, "176": 128, "177": 129, "178": 130, "179": 130, "180": 130, "181": 132, "182": 133, "183": 134, "184": 134, "185": 134, "186": 134, "187": 134, "188": 135, "189": 136, "190": 136, "191": 136, "192": 136, "193": 136, "194": 139, "195": 140, "196": 141, "197": 142, "198": 142, "199": 142, "200": 142, "201": 142, "202": 143, "203": 144, "204": 144, "205": 144, "206": 144, "207": 144, "213": 96, "223": 96, "224": 97, "225": 98, "226": 99, "227": 101, "228": 102, "229": 104, "230": 105, "231": 106, "232": 107, "233": 108, "234": 111, "235": 115, "236": 116, "237": 119, "238": 120, "239": 120, "240": 120, "241": 121, "242": 122, "243": 122, "244": 122, "250": 164, "258": 164, "259": 165, "260": 166, "261": 167, "262": 167, "263": 167, "264": 167, "265": 167, "266": 167, "267": 167, "273": 150, "282": 150, "283": 151, "284": 152, "285": 152, "286": 152, "287": 153, "288": 154, "289": 155, "290": 156, "291": 156, "292": 156, "293": 156, "294": 156, "295": 158, "296": 159, "297": 159, "298": 159, "304": 298}, "uri": "base_helper.tmpl", "filename": "/usr/local/lib/python2.7/dist-packages/nikola/data/themes/bootstrap/templates/base_helper.tmpl"}
+{"source_encoding": "utf-8", "line_map": {"15": 0, "20": 2, "21": 65, "22": 92, "23": 122, "24": 145, "25": 159, "26": 167, "32": 67, "41": 67, "42": 68, "43": 69, "44": 70, "45": 73, "46": 74, "47": 76, "48": 77, "49": 78, "50": 80, "51": 81, "52": 86, "53": 88, "54": 89, "55": 89, "56": 89, "57": 91, "58": 91, "59": 91, "65": 3, "92": 3, "93": 7, "94": 8, "95": 9, "96": 10, "97": 12, "98": 13, "99": 15, "100": 16, "101": 18, "102": 21, "103": 22, "104": 25, "105": 25, "106": 25, "107": 28, "108": 29, "109": 29, "110": 29, "111": 31, "112": 32, "113": 32, "114": 32, "115": 32, "116": 34, "117": 34, "118": 35, "119": 35, "120": 36, "121": 37, "122": 37, "123": 37, "124": 39, "125": 40, "126": 41, "127": 42, "128": 42, "129": 42, "130": 42, "131": 42, "132": 42, "133": 42, "134": 45, "135": 46, "136": 47, "137": 47, "138": 47, "139": 49, "140": 50, "141": 51, "142": 51, "143": 51, "144": 53, "145": 54, "146": 54, "147": 54, "148": 56, "149": 57, "150": 57, "151": 58, "152": 59, "153": 60, "154": 61, "155": 61, "156": 61, "157": 63, "158": 64, "159": 64, "165": 124, "175": 124, "176": 125, "177": 126, "178": 127, "179": 127, "180": 127, "181": 129, "182": 130, "183": 131, "184": 131, "185": 131, "186": 131, "187": 131, "188": 132, "189": 133, "190": 133, "191": 133, "192": 133, "193": 133, "194": 136, "195": 137, "196": 138, "197": 139, "198": 139, "199": 139, "200": 139, "201": 139, "202": 140, "203": 141, "204": 141, "205": 141, "206": 141, "207": 141, "213": 95, "223": 95, "224": 96, "225": 97, "226": 98, "227": 100, "228": 101, "229": 103, "230": 104, "231": 105, "232": 106, "233": 107, "234": 109, "235": 113, "236": 114, "237": 117, "238": 118, "239": 118, "240": 118, "241": 119, "242": 120, "243": 120, "244": 120, "250": 161, "258": 161, "259": 162, "260": 163, "261": 164, "262": 164, "263": 164, "264": 164, "265": 164, "266": 164, "267": 164, "273": 147, "282": 147, "283": 148, "284": 149, "285": 149, "286": 149, "287": 150, "288": 151, "289": 152, "290": 153, "291": 153, "292": 153, "293": 153, "294": 153, "295": 155, "296": 156, "297": 156, "298": 156, "304": 298}, "uri": "base_helper.tmpl", "filename": "/usr/local/lib/python2.7/dist-packages/nikola/data/themes/bootstrap3/templates/base_helper.tmpl"}
 __M_END_METADATA
 """
