@@ -1,97 +1,66 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " vocab="http://ogp.me/ns" lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width">
 <title>Movable AND/OR Statements | sahiga</title>
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <link rel="canonical" href="http://www.stephaniehiga.com/posts/movable-andor-statements.html">
-<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="Stephanie A. Higa">
-<link rel="prev" href="read-only-text-how-to-write-every-day.html" title="Read-Only Text: How to Write Every Day" type="text/html">
-<link rel="next" href="review-introduction-to-functional-programming.html" title="Review: Introduction to Functional Programming" type="text/html">
-<meta property="og:site_name" content="sahiga">
-<meta property="og:title" content="Movable AND/OR Statements">
-<meta property="og:url" content="http://www.stephaniehiga.com/posts/movable-andor-statements.html">
-<meta property="og:description" content="Recently at work I wrote a messy bit of JavaScript (jQuery really) to create movable AND/OR statements. I learned how to code less than a year ago and haven't done any intense programming (yet, just w">
-<meta property="og:type" content="article">
-<meta property="article:published_time" content="2013-09-20T20:07:16+00:00">
-<meta property="article:tag" content="javascript">
-<meta property="article:tag" content="jquery">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
 </head>
 <body>
-<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
-
-<!-- Menubar -->
-
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><div class="container">
-<!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://www.stephaniehiga.com/">
-
-                <span id="blog-title">sahiga</span>
-            </a>
-        </div>
-<!-- /.navbar-header -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-<li>
+<div id="wrapper">
+  <nav class="navigation"><div class="container clearfix">          
+      <h1 class="blog-title">
+          <a href="http://www.stephaniehiga.com/" title="sahiga">sahiga</a>
+      </h1>
+      <ul class="nav-list">
+<li class="nav-list-item">
 <a href="../stories/about.html">About</a>
-                </li>
-<li>
+            
+            
+          </li>
+<li class="nav-list-item">
 <a href="../stories/books.html">Reading List</a>
-                </li>
-<li>
+            
+            
+          </li>
+<li class="nav-list-item">
 <a href="http://sahiga.github.io/wiki/tiddlywiki.html">Wiki</a>
-                </li>
-<li>
+            
+            
+          </li>
+<li class="nav-list-item">
 <a href="../archive.html">Archives</a>
-                </li>
-<li>
+            
+            
+          </li>
+<li class="nav-list-item">
 <a href="../categories/index.html">Tags</a>
-                </li>
-<li>
+            
+            
+          </li>
+<li class="nav-list-item">
 <a href="../rss.xml">RSS</a>
-
-                
-            </li>
+            
+            
+      </li>
 </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
-    <a href="movable-andor-statements.txt" id="sourcelink">Source</a>
-    </li>
-
-                
-            </ul>
 </div>
-<!-- /.navbar-collapse -->
-    </div>
-<!-- /.container -->
-</nav><!-- End of Menubar --><div class="container" id="content">
-    <div class="body-content">
-        <!--Body content-->
-        <div class="row">
+  </nav><!-- #primary .theme_sidebar --><div class="container">
+        <div class="content">
+            <div id="header">
+                
+                
+            </div>
+        <div class="hfeed">
+            <!--Body content-->
             
-            
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Movable AND/OR Statements</a></h1>
-
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">Stephanie A. Higa</span></p>
-            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2013-09-20T20:07:16+00:00" itemprop="datePublished" title="2013-09-20 20:07">2013-09-20 20:07</time></a></p>
-            
-        <p class="sourceline"><a href="movable-andor-statements.txt" id="sourcelink">Source</a></p>
-
-        </div>
-        
-
-    </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
+  <div id="post-movable-andor-statements" class="post hfeed">
+    <h2 class="entry-title"><a href="#">Movable AND/OR Statements</a></h2>
+    <div class="entry-content">
+        <div>
 <p>Recently at work I wrote a messy bit of JavaScript (jQuery really) to create movable AND/OR statements. I learned how to code less than a year ago and haven't done any intense programming (yet, just wait), so this is probably the most difficult, headache-inducing, neck-wringing problem I've worked on to date. The last time I encountered this much trouble was when I learned about recursion and <a class="reference external" href="https://en.wikipedia.org/wiki/Trie">tries</a>. I figure I'll outline my thought process here in case it's useful to anyone else.</p>
 <div class="section" id="the-assignment">
 <h2>The assignment</h2>
@@ -192,30 +161,42 @@ function sortRules(event, ui) {
 </div>
 </div>
     </div>
-    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+    <div class="archive-meta">
+        Posted: <time class="published" datetime="2013-09-20T20:07:16+00:00">2013-09-20 20:07</time><a href="movable-andor-statements.txt" id="sourcelink">Source</a>
+        
+            
+        <ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../categories/javascript.html" rel="tag">javascript</a></li>
            <li><a class="tag p-category" href="../categories/jquery.html" rel="tag">jquery</a></li>
         </ul>
-<ul class="pager">
+<span class="entry-tags">
+        </span>
+      <hr>
+</div>
+  </div>
+  
+        <ul class="pager">
 <li class="previous">
                 <a href="read-only-text-how-to-write-every-day.html" rel="prev" title="Read-Only Text: How to Write Every Day">Previous post</a>
             </li>
             <li class="next">
                 <a href="review-introduction-to-functional-programming.html" rel="next" title="Review: Introduction to Functional Programming">Next post</a>
             </li>
-        </ul></nav></aside></article>
+        </ul>
 </div>
-        <!--End of body content-->
 
-        <footer>
-            Contents © 2015         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+            <!--End of body content-->
+        </div>
+<!-- .hfeed -->
+    </div>
+<!-- #content -->
+</div>
+<!-- #container -->
+
+<footer class="footer"><small>Contents © 2015         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
             
-        </footer>
-</div>
-</div>
-
-
-            <script src="../assets/js/all-nocdn.js"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ </small><p>
+</p></footer><!-- #footer --><!-- #wrapper --><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 <a class="addthis_button_more">Share</a>
 <ul>
 <li>
@@ -232,9 +213,6 @@ function sortRules(event, ui) {
 </li>
 </ul>
 </div>
-<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
-    moment.locale("");
-    fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates -->
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons -->
 </body>
 </html>

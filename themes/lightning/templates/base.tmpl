@@ -1,0 +1,61 @@
+## -*- coding: utf-8 -*-
+<%namespace name="base" file="base_helper.tmpl" import="*"/>
+${set_locale(lang)}
+${base.html_headstart()}
+<%block name="extra_head">
+### Leave this block alone.
+</%block>
+${template_hooks['extra_head']()}
+</head>
+<body>
+<div id="wrapper">
+  <nav class="navigation">
+    <div class="container clearfix">          
+      <h1 class="blog-title">
+          <a href="${blog_url}" title="${blog_title}">${blog_title}</a>
+      </h1>
+      <ul class="nav-list">
+        %for url, text in navigation_links[lang]:
+          <li class="nav-list-item"><a href="${rel_link(permalink, url)}">${text}</a>
+            ${template_hooks['menu']()}
+            ${template_hooks['menu_alt']()}
+        %endfor
+      </ul>
+    </div>
+  </nav><!-- #primary .theme_sidebar -->
+    <div class="container">
+        <div class="content">
+            <div id="header">
+                <%block name="belowtitle">
+                %if len(translations) > 1:
+                <small>
+                    ${messages("Also available in:")}&nbsp;
+                    %for langname in translations.keys():
+                        %if langname != lang:
+                            <a href="${_link("index", None, langname)}">${messages[langname]["LANGUAGE"]}</a>
+                        %endif
+                    %endfor
+                </small>
+                %endif
+                </%block>
+            </div>
+        <div class="hfeed">
+            <!--Body content-->
+            <%block name="content"></%block>
+            <!--End of body content-->
+        </div><!-- .hfeed -->
+    </div><!-- #content -->
+</div><!-- #container -->
+
+<footer class="footer">
+    <small>${content_footer}
+            ${template_hooks['page_footer']()}
+ </small><p>
+</footer><!-- #footer -->
+
+</div><!-- #wrapper -->
+    ${body_end}
+    ${template_hooks['body_end']()}
+    ${base.late_load_js()}
+</body>
+</html>

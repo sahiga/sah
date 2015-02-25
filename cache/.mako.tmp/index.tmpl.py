@@ -4,9 +4,9 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1422406605.906983
+_modified_time = 1424849921.877804
 _enable_loop = True
-_template_filename = u'/usr/local/lib/python2.7/dist-packages/nikola/data/themes/base/templates/index.tmpl'
+_template_filename = u'themes/lightning/templates/index.tmpl'
 _template_uri = u'index.tmpl'
 _source_encoding = 'utf-8'
 _exports = [u'content']
@@ -32,23 +32,23 @@ def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
+        lang = context.get('lang', UNDEFINED)
         date_format = context.get('date_format', UNDEFINED)
         helper = _mako_get_namespace(context, 'helper')
+        messages = context.get('messages', UNDEFINED)
         posts = context.get('posts', UNDEFINED)
         comments = _mako_get_namespace(context, 'comments')
         def content():
             return render_content(context._locals(__M_locals))
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
         index_teasers = context.get('index_teasers', UNDEFINED)
         __M_writer = context.writer()
         __M_writer(u'\n')
         __M_writer(u'\n')
-        __M_writer(u'\n\n')
+        __M_writer(u'\n')
         if 'parent' not in context._data or not hasattr(context._data['parent'], 'content'):
             context['self'].content(**pageargs)
         
 
-        __M_writer(u'\n')
         return ''
     finally:
         context.caller_stack._pop_frame()
@@ -57,53 +57,41 @@ def render_body(context,**pageargs):
 def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
+        lang = context.get('lang', UNDEFINED)
         date_format = context.get('date_format', UNDEFINED)
         helper = _mako_get_namespace(context, 'helper')
+        messages = context.get('messages', UNDEFINED)
         posts = context.get('posts', UNDEFINED)
         comments = _mako_get_namespace(context, 'comments')
         def content():
             return render_content(context)
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
         index_teasers = context.get('index_teasers', UNDEFINED)
         __M_writer = context.writer()
-        __M_writer(u'\n<div class="postindex">\n')
+        __M_writer(u'\n')
         for post in posts:
-            __M_writer(u'    <article class="h-entry post-')
-            __M_writer(unicode(post.meta('type')))
-            __M_writer(u'">\n    <header>\n        <h1 class="p-name entry-title"><a href="')
+            __M_writer(u'    <div class="post hfeed">\n      <h2 class="entry-title"><a href="')
             __M_writer(unicode(post.permalink()))
-            __M_writer(u'" class="u-url">')
+            __M_writer(u'">')
             __M_writer(unicode(post.title()))
-            __M_writer(u'</h1></a>\n        <div class="metadata">\n            <p class="byline author vcard"><span class="byline-name fn">')
-            __M_writer(unicode(post.author()))
-            __M_writer(u'</span></p>\n            <p class="dateline"><a href="')
-            __M_writer(unicode(post.permalink()))
-            __M_writer(u'" rel="bookmark"><time class="published dt-published" datetime="')
+            __M_writer(u'</a></h2>\n      <div class="entry-content">\n        ')
+            __M_writer(unicode(post.text(lang,index_teasers)))
+            __M_writer(u'\n      </div>\n      <div class="entry-meta">\n        <span class="entry-date">')
+            __M_writer(unicode(messages("Posted:")))
+            __M_writer(u' <time class="published" datetime="')
             __M_writer(unicode(post.date.isoformat()))
-            __M_writer(u'" itemprop="datePublished" title="')
-            __M_writer(unicode(post.formatted_date(date_format)))
             __M_writer(u'">')
             __M_writer(unicode(post.formatted_date(date_format)))
-            __M_writer(u'</time></a></p>\n')
-            if not post.meta('nocomments') and site_has_comments:
-                __M_writer(u'                <p class="commentline">')
-                __M_writer(unicode(comments.comment_link(post.permalink(), post._base_path)))
+            __M_writer(u'</time></span>\n')
+            if not post.meta('nocomments'):
+                __M_writer(u'            ')
+                __M_writer(unicode(comments.comment_link(post.permalink(), post.base_path)))
                 __M_writer(u'\n')
-            __M_writer(u'        </div>\n    </header>\n')
-            if index_teasers:
-                __M_writer(u'    <div class="p-summary entry-summary">\n    ')
-                __M_writer(unicode(post.text(teaser_only=True)))
-                __M_writer(u'\n')
-            else:
-                __M_writer(u'    <div class="e-content entry-content">\n    ')
-                __M_writer(unicode(post.text(teaser_only=False)))
-                __M_writer(u'\n')
-            __M_writer(u'    </div>\n    </article>\n')
-        __M_writer(u'</div>\n')
+            __M_writer(u'      </div>\n      <hr class="double-spacing" />\n    </div>\n')
+        __M_writer(u'  ')
         __M_writer(unicode(helper.html_pager()))
-        __M_writer(u'\n')
+        __M_writer(u'\n  ')
         __M_writer(unicode(comments.comment_link_script()))
-        __M_writer(u'\n')
+        __M_writer(u'\n  ')
         __M_writer(unicode(helper.mathjax_script(posts)))
         __M_writer(u'\n')
         return ''
@@ -113,6 +101,6 @@ def render_content(context,**pageargs):
 
 """
 __M_BEGIN_METADATA
-{"source_encoding": "utf-8", "line_map": {"22": 3, "25": 2, "31": 0, "44": 2, "45": 3, "46": 4, "51": 34, "57": 6, "69": 6, "70": 8, "71": 9, "72": 9, "73": 9, "74": 11, "75": 11, "76": 11, "77": 11, "78": 13, "79": 13, "80": 14, "81": 14, "82": 14, "83": 14, "84": 14, "85": 14, "86": 14, "87": 14, "88": 15, "89": 16, "90": 16, "91": 16, "92": 18, "93": 20, "94": 21, "95": 22, "96": 22, "97": 23, "98": 24, "99": 25, "100": 25, "101": 27, "102": 30, "103": 31, "104": 31, "105": 32, "106": 32, "107": 33, "108": 33, "114": 108}, "uri": "index.tmpl", "filename": "/usr/local/lib/python2.7/dist-packages/nikola/data/themes/base/templates/index.tmpl"}
+{"source_encoding": "utf-8", "line_map": {"22": 3, "25": 2, "31": 0, "45": 2, "46": 3, "47": 4, "57": 5, "70": 5, "71": 6, "72": 7, "73": 8, "74": 8, "75": 8, "76": 8, "77": 10, "78": 10, "79": 13, "80": 13, "81": 13, "82": 13, "83": 13, "84": 13, "85": 14, "86": 15, "87": 15, "88": 15, "89": 17, "90": 21, "91": 21, "92": 21, "93": 22, "94": 22, "95": 23, "96": 23, "102": 96}, "uri": "index.tmpl", "filename": "themes/lightning/templates/index.tmpl"}
 __M_END_METADATA
 """

@@ -4,9 +4,9 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1422406605.841738
+_modified_time = 1424849921.815344
 _enable_loop = True
-_template_filename = u'/usr/local/lib/python2.7/dist-packages/nikola/data/themes/bootstrap/templates/tags.tmpl'
+_template_filename = u'/usr/local/lib/python2.7/dist-packages/nikola/data/themes/base/templates/tags.tmpl'
 _template_uri = u'tags.tmpl'
 _source_encoding = 'utf-8'
 _exports = [u'content']
@@ -55,34 +55,35 @@ def render_content(context,**pageargs):
         messages = context.get('messages', UNDEFINED)
         title = context.get('title', UNDEFINED)
         __M_writer = context.writer()
-        __M_writer(u'\n<h1>')
+        __M_writer(u'\n<article class="tagindex">\n    <header>\n        <h1>')
         __M_writer(unicode(title))
-        __M_writer(u'</h1>\n')
+        __M_writer(u'</h1>\n    </header>\n')
         if cat_items:
-            __M_writer(u'    <h2>')
+            __M_writer(u'        <h2>')
             __M_writer(unicode(messages("Categories")))
-            __M_writer(u'</h2>\n    <ul class="unstyled">\n')
+            __M_writer(u'</h2>\n        <ul class="postlist">\n')
             for text, link in cat_items:
                 if text:
-                    __M_writer(u'            <li><a class="reference badge" href="')
+                    __M_writer(u'                <li><a class="reference" href="')
                     __M_writer(unicode(link))
                     __M_writer(u'">')
                     __M_writer(unicode(text))
                     __M_writer(u'</a></li>\n')
-            __M_writer(u'    </ul>\n')
+            __M_writer(u'        </ul>\n')
             if items:
-                __M_writer(u'        <h2>')
+                __M_writer(u'            <h2>')
                 __M_writer(unicode(messages("Tags")))
                 __M_writer(u'</h2>\n')
         if items:
-            __M_writer(u'    <ul class="list-inline">\n')
+            __M_writer(u'        <ul class="postlist">\n')
             for text, link in items:
-                __M_writer(u'        <li><a class="reference badge" href="')
+                __M_writer(u'            <li><a class="reference listtitle" href="')
                 __M_writer(unicode(link))
                 __M_writer(u'">')
                 __M_writer(unicode(text))
                 __M_writer(u'</a></li>\n')
-            __M_writer(u'    </ul>\n')
+            __M_writer(u'        </ul>\n')
+        __M_writer(u'</article>\n')
         return ''
     finally:
         context.caller_stack._pop_frame()
@@ -90,6 +91,6 @@ def render_content(context,**pageargs):
 
 """
 __M_BEGIN_METADATA
-{"source_encoding": "utf-8", "line_map": {"26": 0, "37": 2, "42": 26, "48": 4, "58": 4, "59": 5, "60": 5, "61": 6, "62": 7, "63": 7, "64": 7, "65": 9, "66": 10, "67": 11, "68": 11, "69": 11, "70": 11, "71": 11, "72": 14, "73": 15, "74": 16, "75": 16, "76": 16, "77": 19, "78": 20, "79": 21, "80": 22, "81": 22, "82": 22, "83": 22, "84": 22, "85": 24, "91": 85}, "uri": "tags.tmpl", "filename": "/usr/local/lib/python2.7/dist-packages/nikola/data/themes/bootstrap/templates/tags.tmpl"}
+{"source_encoding": "utf-8", "line_map": {"26": 0, "37": 2, "42": 30, "48": 4, "58": 4, "59": 7, "60": 7, "61": 9, "62": 10, "63": 10, "64": 10, "65": 12, "66": 13, "67": 14, "68": 14, "69": 14, "70": 14, "71": 14, "72": 17, "73": 18, "74": 19, "75": 19, "76": 19, "77": 22, "78": 23, "79": 24, "80": 25, "81": 25, "82": 25, "83": 25, "84": 25, "85": 27, "86": 29, "92": 86}, "uri": "tags.tmpl", "filename": "/usr/local/lib/python2.7/dist-packages/nikola/data/themes/base/templates/tags.tmpl"}
 __M_END_METADATA
 """
