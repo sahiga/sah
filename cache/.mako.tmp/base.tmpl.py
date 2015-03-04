@@ -4,7 +4,7 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1424849921.729949
+_modified_time = 1425427875.041953
 _enable_loop = True
 _template_filename = u'themes/lightning/templates/base.tmpl'
 _template_uri = u'base.tmpl'
@@ -61,7 +61,7 @@ def render_body(context,**pageargs):
 
         __M_writer(u'\n')
         __M_writer(unicode(template_hooks['extra_head']()))
-        __M_writer(u'\n</head>\n<body>\n<div id="wrapper">\n  <nav class="navigation">\n    <div class="container clearfix">          \n      <h1 class="blog-title">\n          <a href="')
+        __M_writer(u'\n<link href=\'http://fonts.googleapis.com/css?family=Lato:400,700\' rel=\'stylesheet\' type=\'text/css\'>\n<link href=\'http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic\' rel=\'stylesheet\' type=\'text/css\'>\n</head>\n<body>\n<div id="wrapper">\n  <div class="container">\n  <nav class="navigation">\n    <div class="clearfix">          \n      <h1 class="blog-title">\n          <a href="')
         __M_writer(unicode(blog_url))
         __M_writer(u'" title="')
         __M_writer(unicode(blog_title))
@@ -78,7 +78,7 @@ def render_body(context,**pageargs):
             __M_writer(u'\n            ')
             __M_writer(unicode(template_hooks['menu_alt']()))
             __M_writer(u'\n')
-        __M_writer(u'      </ul>\n    </div>\n  </nav><!-- #primary .theme_sidebar -->\n    <div class="container">\n        <div class="content">\n            <div id="header">\n                ')
+        __M_writer(u'      </ul>\n    </div>\n  </nav><!-- #primary .theme_sidebar -->\n        <div class="content">\n            <div id="header">\n                ')
         if 'parent' not in context._data or not hasattr(context._data['parent'], 'belowtitle'):
             context['self'].belowtitle(**pageargs)
         
@@ -88,11 +88,11 @@ def render_body(context,**pageargs):
             context['self'].content(**pageargs)
         
 
-        __M_writer(u'\n            <!--End of body content-->\n        </div><!-- .hfeed -->\n    </div><!-- #content -->\n</div><!-- #container -->\n\n<footer class="footer">\n    <small>')
+        __M_writer(u'\n            <!--End of body content-->\n        </div><!-- .hfeed -->\n    </div><!-- #content -->\n<footer class="footer">\n  <small>\n    ')
         __M_writer(unicode(content_footer))
-        __M_writer(u'\n            ')
+        __M_writer(u'\n    ')
         __M_writer(unicode(template_hooks['page_footer']()))
-        __M_writer(u'\n </small><p>\n</footer><!-- #footer -->\n\n</div><!-- #wrapper -->\n    ')
+        __M_writer(u'\n  </small>\n</footer><!-- #footer -->\n</div><!-- #container -->\n\n\n</div><!-- #wrapper -->\n    ')
         __M_writer(unicode(body_end))
         __M_writer(u'\n    ')
         __M_writer(unicode(template_hooks['body_end']()))
@@ -165,6 +165,6 @@ def render_belowtitle(context,**pageargs):
 
 """
 __M_BEGIN_METADATA
-{"source_encoding": "utf-8", "line_map": {"128": 5, "150": 32, "134": 29, "147": 29, "148": 30, "149": 31, "22": 2, "151": 32, "152": 33, "25": 0, "154": 35, "155": 35, "156": 35, "157": 35, "158": 35, "159": 38, "160": 40, "166": 160, "53": 2, "54": 3, "55": 3, "56": 4, "57": 4, "62": 7, "63": 8, "64": 8, "65": 15, "66": 15, "67": 15, "68": 15, "69": 15, "70": 15, "71": 18, "72": 19, "73": 19, "74": 19, "75": 19, "76": 19, "77": 20, "78": 20, "79": 21, "80": 21, "81": 23, "86": 40, "153": 34, "91": 44, "92": 51, "93": 51, "94": 52, "95": 52, "96": 57, "97": 57, "98": 58, "99": 58, "100": 59, "101": 59, "107": 44, "120": 5}, "uri": "base.tmpl", "filename": "themes/lightning/templates/base.tmpl"}
+{"source_encoding": "utf-8", "line_map": {"128": 5, "150": 34, "134": 31, "147": 31, "148": 32, "149": 33, "22": 2, "151": 34, "152": 35, "25": 0, "154": 37, "155": 37, "156": 37, "157": 37, "158": 37, "159": 40, "160": 42, "166": 160, "53": 2, "54": 3, "55": 3, "56": 4, "57": 4, "62": 7, "63": 8, "64": 8, "65": 18, "66": 18, "67": 18, "68": 18, "69": 18, "70": 18, "71": 21, "72": 22, "73": 22, "74": 22, "75": 22, "76": 22, "77": 23, "78": 23, "79": 24, "80": 24, "81": 26, "86": 42, "153": 36, "91": 46, "92": 52, "93": 52, "94": 53, "95": 53, "96": 60, "97": 60, "98": 61, "99": 61, "100": 62, "101": 62, "107": 46, "120": 5}, "uri": "base.tmpl", "filename": "themes/lightning/templates/base.tmpl"}
 __M_END_METADATA
 """

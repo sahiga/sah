@@ -164,7 +164,7 @@ TIMEZONE = "UTC"
 # 2 = using a string like “2 days ago”
 #
 # Your theme must support it, bootstrap and bootstrap3 already do.
-# DATE_FANCINESS = 0
+DATE_FANCINESS = 2
 
 # While Nikola can select a sensible locale for each language,
 # sometimes explicit control can come handy.
@@ -474,12 +474,12 @@ REDIRECTIONS = []
 # "source/" and the results will be located in
 # "OUTPUT_PATH/relative_destination/gallery_name"
 # Default is:
-# GALLERY_FOLDERS = {"galleries": "galleries"}
+GALLERY_FOLDERS = {"galleries": "galleries"}
 # More gallery options:
-# THUMBNAIL_SIZE = 180
-# MAX_IMAGE_SIZE = 1280
-# USE_FILENAME_AS_TITLE = True
-# EXTRA_IMAGE_EXTENSIONS = []
+THUMBNAIL_SIZE = 180
+MAX_IMAGE_SIZE = 1280
+USE_FILENAME_AS_TITLE = True
+EXTRA_IMAGE_EXTENSIONS = []
 #
 # If set to False, it will sort by filename instead. Defaults to True
 # GALLERY_SORT_BY_DATE = True
@@ -490,7 +490,7 @@ REDIRECTIONS = []
 # be visible on the site. The format is a dictionary of {source:
 # relative destination}.
 #
-# IMAGE_FOLDERS = {'images': ''}
+IMAGE_FOLDERS = {'images': 'images'}
 
 # #############################################################################
 # HTML fragments and diverse things that are used by the templates
@@ -537,7 +537,7 @@ REDIRECTIONS = []
 # Note that in case INDEXES_PAGES_MAIN is set to True, a redirection will be created
 # for the full URL with the page number of the main page to the normal (shorter) main
 # page URL.
-# INDEXES_PRETTY_PAGE_URL = False
+INDEXES_PRETTY_PAGE_URL = True
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
@@ -746,10 +746,7 @@ COMMENT_SYSTEM_ID = "nikolademo"
 # Social buttons. This is sample code for AddThis (which was the default for a
 # long time). Insert anything you want here, or even make it empty.
 # (translatable)
-# SOCIAL_BUTTONS_CODE = """
-# <!-- Social buttons -->
-# <!-- End of social buttons -->
-# """
+SOCIAL_BUTTONS_CODE = ""
 
 # Show link to source for the posts?
 # Formerly known as HIDE_SOURCELINK (inverse)
@@ -760,7 +757,7 @@ COMMENT_SYSTEM_ID = "nikolademo"
 
 # Modify the number of Post per Index Page
 # Defaults to 10
-# INDEX_DISPLAY_POST_COUNT = 10
+INDEX_DISPLAY_POST_COUNT = 5
 
 # By default, Nikola generates RSS files for the website and for tags, and
 # links to it.  Set this to False to disable everything RSS-related.

@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sahiga</title><link>http://www.stephaniehiga.com/</link><description>The personal website of Stephanie A. Higa</description><atom:link href="http://www.stephaniehiga.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 24 Feb 2015 22:09:59 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Off to Hack Reactor</title><link>http://www.stephaniehiga.com/posts/off-to-hack-reactor.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;I'm going to &lt;a class="reference external" href="http://www.hackreactor.com"&gt;Hack Reactor&lt;/a&gt; next week!&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sahiga</title><link>http://www.stephaniehiga.com/</link><description>The personal website of Stephanie A. Higa</description><atom:link href="http://www.stephaniehiga.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 03 Mar 2015 16:11:15 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The Design of Everyday Blogs</title><link>http://www.stephaniehiga.com/posts/the-design-of-everyday-blogs.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;At the risk of losing all my design cred, I'll admit I put practically no effort or even thought into the way my blog looked until about a week ago. To put that into perspective: I wrote my first post here in May 2013. For most of the time since that point, it's been some variation of this default Bootstrap theme provided by Nikola, the static site generator I use:&lt;/p&gt;
+&lt;img alt="My blog, circa February 2015" src="http://www.stephaniehiga.com/images/2015-02-24-site.png"&gt;&lt;p&gt;Nikola, while excellent, has &lt;a class="reference external" href="http://themes.getnikola.com/"&gt;slim pickings for themes&lt;/a&gt;, and none of them are quite what I want my blog to look like. So when it came time for the big overhaul, I started (almost) from scratch with a new theme.&lt;/p&gt;
+&lt;div class="section" id="the-process"&gt;
+&lt;h2&gt;The process&lt;/h2&gt;
+&lt;p&gt;Nikola themes live within the appropriately named &lt;strong&gt;themes&lt;/strong&gt; directory. My files are structured as follows:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+/theme-name
+  /assets
+    /css
+      theme.css
+  /templates
+    base.tmpl
+    index.tmpl
+    post.tmpl
+  engine
+  parent
+&lt;/pre&gt;
+&lt;p&gt;Here's an overview of what these files do (taken from the &lt;a class="reference external" href="http://getnikola.com/theming.html"&gt;Nikola theming reference&lt;/a&gt;):&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;&lt;colgroup&gt;&lt;col width="11%"&gt;&lt;col width="89%"&gt;&lt;/colgroup&gt;&lt;thead valign="bottom"&gt;&lt;tr&gt;&lt;th class="head"&gt;File Name&lt;/th&gt;
+&lt;th class="head"&gt;Purpose&lt;/th&gt;
+&lt;/tr&gt;&lt;/thead&gt;&lt;tbody valign="top"&gt;&lt;tr&gt;&lt;td&gt;theme.css&lt;/td&gt;
+&lt;td&gt;Custom CSS&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;base.tmpl&lt;/td&gt;
+&lt;td&gt;Defines the basic layout for all pages&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;index.tmpl&lt;/td&gt;
+&lt;td&gt;Defines pages that contain multiple posts (the "index" pages)&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;post.tmpl&lt;/td&gt;
+&lt;td&gt;Defines an individual post&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;engine&lt;/td&gt;
+&lt;td&gt;Text file containing the name of the templating engine your theme uses. The two options are &lt;strong&gt;mako&lt;/strong&gt; and &lt;strong&gt;jinja&lt;/strong&gt;.&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;parent&lt;/td&gt;
+&lt;td&gt;Text file containing the name of the theme from which your theme inherits. Mine inherits from &lt;strong&gt;base&lt;/strong&gt;.&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;That's it! I used the similarly bare &lt;a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/blogtxt"&gt;monospace theme&lt;/a&gt; as a guide. You can spruce up your theme with additional templates (see the &lt;a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen"&gt;zen theme&lt;/a&gt; for an example), but I decided to keep mine simple.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="now-for-the-fun-stuff"&gt;
+&lt;h2&gt;Now for the fun stuff!&lt;/h2&gt;
+&lt;p&gt;There's another reason why the default theme didn't work that well for my blog: I'm wordy as hell. I don't write posts; I write &lt;em&gt;essays&lt;/em&gt;. So, rather than change my style of blogging, I thought I'd pull off an illusion. My main objective in redesigning this blog was to make it resemble a series of digestible sentences, as opposed to the giant wall of text that it actually is.&lt;/p&gt;
+&lt;p&gt;For inspiration, I looked at &lt;a class="reference external" href="http://www.medium.com"&gt;Medium&lt;/a&gt;, &lt;a class="reference external" href="http://longreads.com/"&gt;Longreads&lt;/a&gt;, &lt;a class="reference external" href="http://nautil.us/"&gt;Nautilus&lt;/a&gt;, &lt;a class="reference external" href="http://aeon.co"&gt;Aeon&lt;/a&gt;, and all the other beautiful text-heavy sites that have cropped up in recent years.&lt;/p&gt;
+&lt;div class="section" id="fonts"&gt;
+&lt;h3&gt;Fonts&lt;/h3&gt;
+&lt;p&gt;Typefaces can make or break a design. For the headers, I picked &lt;strong&gt;Lato&lt;/strong&gt;, my favorite web font of all time; for regular text, &lt;strong&gt;Lora&lt;/strong&gt;, my other favorite web font of all time. Both are available on &lt;a class="reference external" href="https://www.google.com/fonts"&gt;Google Fonts&lt;/a&gt;. To improve readability, I increased the size of the text and the space between each line.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="colors"&gt;
+&lt;h3&gt;Colors&lt;/h3&gt;
+&lt;p&gt;The link styles (salmon color + hover transitions) are from an old WordPress theme I created back in 2012, before I became a front-end developer. My CSS may have improved since then, but my visual tastes haven't changed much.&lt;/p&gt;
+&lt;p&gt;My first pass at the new theme had an entirely white background, which tested poorly. "It's &lt;strong&gt;really&lt;/strong&gt; white," commented one of my Hack Reactor classmates, as he shielded his eyes from the glare.&lt;sup&gt;*&lt;/sup&gt; I subsequently reduced the white space and added a background from &lt;a class="reference external" href="http://www.subtlepatterns.com"&gt;Subtle Patterns&lt;/a&gt;. I picked a food icon pattern because, well, I love food.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="other-changes"&gt;
+&lt;h3&gt;Other changes&lt;/h3&gt;
+&lt;p&gt;I removed the Share button that used to sit in the bottom right corner. It took me forever to figure out how to do this, but all I had to do was uncomment the &lt;tt class="docutils literal"&gt;SOCIAL_BUTTONS_CODE = ""&lt;/tt&gt; line in &lt;strong&gt;conf.py&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="final-thoughts"&gt;
+&lt;h2&gt;Final thoughts&lt;/h2&gt;
+&lt;p&gt;Designs are never finished, but I'm happy with how my blog looks right now. I plan to implement a hamburger menu for smaller screens within the upcoming weeks. If you have any suggestions, or find your viewing experience to be less than optimal, please let me know.&lt;/p&gt;
+&lt;hr class="docutils"&gt;&lt;p&gt;&lt;sup&gt;*&lt;/sup&gt; With much gratitude to my Hack Reactor classmates for giving me the necessary push to redesign my blog.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>design</category><category>nikola</category><guid>http://www.stephaniehiga.com/posts/the-design-of-everyday-blogs.html</guid><pubDate>Mon, 02 Mar 2015 00:27:26 GMT</pubDate></item><item><title>Off to Hack Reactor</title><link>http://www.stephaniehiga.com/posts/off-to-hack-reactor.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;I'm going to &lt;a class="reference external" href="http://www.hackreactor.com"&gt;Hack Reactor&lt;/a&gt; next week!&lt;/p&gt;
 &lt;p&gt;Hack Reactor is a programming bootcamp -- the most intense of its kind, at eleven hours a day, six days a week, for twelve weeks. Pretty much everyone I've mentioned it to has recoiled in horror, imagining what it would be like to spend so much time cooped up in front of a screen. Yeah, I know. It sounds terrible. It might even sound nonsensical. But here I am anyway: packing my bags, preparing to fly to San Francisco in a few days, and writing about the program that will take over my life for the next three months.&lt;/p&gt;
 &lt;hr class="docutils"&gt;&lt;p&gt;Last August I happened upon Smashing Magazine during work hours, likely in search of CSS help. I'm sure I found what I was looking for, but what caught my eye was an ad for Hack Reactor. Twelve-week immersive programming bootcamp! Six-figure average starting salary! It seemed too good to be true.&lt;/p&gt;
 &lt;p&gt;The only programming bootcamp I'd heard of was General Assembly's Web Development Immersive, which had briefly interested me until I lucked into a front-end development role at my company back in 2013. I'd even taken a couple of General Assembly classes -- Intro to Data Science and Analysis (at their Santa Monica campus) and Optimizing Landing Pages for Conversion (online) -- neither of which had impressed me.&lt;/p&gt;
@@ -458,10 +514,8 @@ Merge made by the 'recursive' strategy.
  README.md |    4 ++++
  1 file changed, 4 insertions(+)
  create mode 100644 README.md
-
-
-**Note:** ``git pull`` automatically merges commits from the "pulled" branch into your current branch. This works fine on an empty GitHub repository, but it could cause `merge conflicts &amp;lt;https://help.github.com/articles/fetching-a-remote&amp;gt;`_.
 &lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;tt class="docutils literal"&gt;git pull&lt;/tt&gt; automatically merges commits from the "pulled" branch into your current branch. This works fine on an empty GitHub repository, but it could cause &lt;a class="reference external" href="https://help.github.com/articles/fetching-a-remote"&gt;merge conflicts&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Push your commit on the local branch to the remote branch:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 git push origin master

@@ -6,11 +6,14 @@ ${base.html_headstart()}
 ### Leave this block alone.
 </%block>
 ${template_hooks['extra_head']()}
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div id="wrapper">
+  <div class="container">
   <nav class="navigation">
-    <div class="container clearfix">          
+    <div class="clearfix">          
       <h1 class="blog-title">
           <a href="${blog_url}" title="${blog_title}">${blog_title}</a>
       </h1>
@@ -23,7 +26,6 @@ ${template_hooks['extra_head']()}
       </ul>
     </div>
   </nav><!-- #primary .theme_sidebar -->
-    <div class="container">
         <div class="content">
             <div id="header">
                 <%block name="belowtitle">
@@ -45,13 +47,14 @@ ${template_hooks['extra_head']()}
             <!--End of body content-->
         </div><!-- .hfeed -->
     </div><!-- #content -->
+<footer class="footer">
+  <small>
+    ${content_footer}
+    ${template_hooks['page_footer']()}
+  </small>
+</footer><!-- #footer -->
 </div><!-- #container -->
 
-<footer class="footer">
-    <small>${content_footer}
-            ${template_hooks['page_footer']()}
- </small><p>
-</footer><!-- #footer -->
 
 </div><!-- #wrapper -->
     ${body_end}

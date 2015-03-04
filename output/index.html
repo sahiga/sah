@@ -8,11 +8,14 @@
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://www.stephaniehiga.com/index.html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]-->
+<link rel="next" href="index-1.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="wrapper">
-  <nav class="navigation"><div class="container clearfix">          
+  <div class="container">
+  <nav class="navigation"><div class="clearfix">          
       <h1 class="blog-title">
           <a href="http://www.stephaniehiga.com/" title="sahiga">sahiga</a>
       </h1>
@@ -49,8 +52,7 @@
       </li>
 </ul>
 </div>
-  </nav><!-- #primary .theme_sidebar --><div class="container">
-        <div class="content">
+  </nav><!-- #primary .theme_sidebar --><div class="content">
             <div id="header">
                 
                 
@@ -58,6 +60,99 @@
         <div class="hfeed">
             <!--Body content-->
             
+    <div class="post hfeed">
+      <h2 class="entry-title"><a href="posts/the-design-of-everyday-blogs.html">The Design of Everyday Blogs</a></h2>
+      <div class="entry-content">
+        <div>
+<p>At the risk of losing all my design cred, I'll admit I put practically no effort or even thought into the way my blog looked until about a week ago. To put that into perspective: I wrote my first post here in May 2013. For most of the time since that point, it's been some variation of this default Bootstrap theme provided by Nikola, the static site generator I use:</p>
+<img alt="My blog, circa February 2015" src="images/2015-02-24-site.png"><p>Nikola, while excellent, has <a class="reference external" href="http://themes.getnikola.com/">slim pickings for themes</a>, and none of them are quite what I want my blog to look like. So when it came time for the big overhaul, I started (almost) from scratch with a new theme.</p>
+<div class="section" id="the-process">
+<h2>The process</h2>
+<p>Nikola themes live within the appropriately named <strong>themes</strong> directory. My files are structured as follows:</p>
+<pre class="literal-block">
+/theme-name
+  /assets
+    /css
+      theme.css
+  /templates
+    base.tmpl
+    index.tmpl
+    post.tmpl
+  engine
+  parent
+</pre>
+<p>Here's an overview of what these files do (taken from the <a class="reference external" href="http://getnikola.com/theming.html">Nikola theming reference</a>):</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%">
+<col width="89%">
+</colgroup>
+<thead valign="bottom"><tr>
+<th class="head">File Name</th>
+<th class="head">Purpose</th>
+</tr></thead>
+<tbody valign="top">
+<tr>
+<td>theme.css</td>
+<td>Custom CSS</td>
+</tr>
+<tr>
+<td>base.tmpl</td>
+<td>Defines the basic layout for all pages</td>
+</tr>
+<tr>
+<td>index.tmpl</td>
+<td>Defines pages that contain multiple posts (the "index" pages)</td>
+</tr>
+<tr>
+<td>post.tmpl</td>
+<td>Defines an individual post</td>
+</tr>
+<tr>
+<td>engine</td>
+<td>Text file containing the name of the templating engine your theme uses. The two options are <strong>mako</strong> and <strong>jinja</strong>.</td>
+</tr>
+<tr>
+<td>parent</td>
+<td>Text file containing the name of the theme from which your theme inherits. Mine inherits from <strong>base</strong>.</td>
+</tr>
+</tbody>
+</table>
+<p>That's it! I used the similarly bare <a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/blogtxt">monospace theme</a> as a guide. You can spruce up your theme with additional templates (see the <a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen">zen theme</a> for an example), but I decided to keep mine simple.</p>
+</div>
+<div class="section" id="now-for-the-fun-stuff">
+<h2>Now for the fun stuff!</h2>
+<p>There's another reason why the default theme didn't work that well for my blog: I'm wordy as hell. I don't write posts; I write <em>essays</em>. So, rather than change my style of blogging, I thought I'd pull off an illusion. My main objective in redesigning this blog was to make it resemble a series of digestible sentences, as opposed to the giant wall of text that it actually is.</p>
+<p>For inspiration, I looked at <a class="reference external" href="http://www.medium.com">Medium</a>, <a class="reference external" href="http://longreads.com/">Longreads</a>, <a class="reference external" href="http://nautil.us/">Nautilus</a>, <a class="reference external" href="http://aeon.co">Aeon</a>, and all the other beautiful text-heavy sites that have cropped up in recent years.</p>
+<div class="section" id="fonts">
+<h3>Fonts</h3>
+<p>Typefaces can make or break a design. For the headers, I picked <strong>Lato</strong>, my favorite web font of all time; for regular text, <strong>Lora</strong>, my other favorite web font of all time. Both are available on <a class="reference external" href="https://www.google.com/fonts">Google Fonts</a>. To improve readability, I increased the size of the text and the space between each line.</p>
+</div>
+<div class="section" id="colors">
+<h3>Colors</h3>
+<p>The link styles (salmon color + hover transitions) are from an old WordPress theme I created back in 2012, before I became a front-end developer. My CSS may have improved since then, but my visual tastes haven't changed much.</p>
+<p>My first pass at the new theme had an entirely white background, which tested poorly. "It's <strong>really</strong> white," commented one of my Hack Reactor classmates, as he shielded his eyes from the glare.<sup>*</sup> I subsequently reduced the white space and added a background from <a class="reference external" href="http://www.subtlepatterns.com">Subtle Patterns</a>. I picked a food icon pattern because, well, I love food.</p>
+</div>
+<div class="section" id="other-changes">
+<h3>Other changes</h3>
+<p>I removed the Share button that used to sit in the bottom right corner. It took me forever to figure out how to do this, but all I had to do was uncomment the <tt class="docutils literal">SOCIAL_BUTTONS_CODE = ""</tt> line in <strong>conf.py</strong>.</p>
+</div>
+</div>
+<div class="section" id="final-thoughts">
+<h2>Final thoughts</h2>
+<p>Designs are never finished, but I'm happy with how my blog looks right now. I plan to implement a hamburger menu for smaller screens within the upcoming weeks. If you have any suggestions, or find your viewing experience to be less than optimal, please let me know.</p>
+<hr class="docutils">
+<p><sup>*</sup> With much gratitude to my Hack Reactor classmates for giving me the necessary push to redesign my blog.</p>
+</div>
+</div>
+      </div>
+      <div class="entry-meta">
+        <span class="entry-date">Posted: <time class="published" datetime="2015-03-02T00:27:26+00:00">2015-03-02 00:27</time></span>
+            
+
+      </div>
+      <hr class="double-spacing">
+</div>
     <div class="post hfeed">
       <h2 class="entry-title"><a href="posts/off-to-hack-reactor.html">Off to Hack Reactor</a></h2>
       <div class="entry-content">
@@ -301,435 +396,31 @@ function sortRules(event, ui) {
       </div>
       <hr class="double-spacing">
 </div>
-    <div class="post hfeed">
-      <h2 class="entry-title"><a href="posts/analyzing-rap-lyrics-with-python.html">Analyzing Rap Lyrics with Python</a></h2>
-      <div class="entry-content">
-        <div>
-<p>On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: <strong>What's the most beloved car brand in hip-hop?</strong></p>
-<p>In this post, I'll explain how I came up with a possible answer to that question. <a class="reference external" href="http://stephaniehiga.com/cars.html#results">To skip to the results, click here</a>.</p>
-<div class="section" id="why-hip-hop-why-cars">
-<h2>Why hip-hop / why cars</h2>
-<p>Hip-hop is my favorite genre of music. On the road, I tune the radio to <a class="reference external" href="http://www.935kday.com/">93.5 KDAY</a>; otherwise, I'm plugged into my Pandora account, which is heavy on Golden Age, Midwestern, East Coast, Bay Area, and (recently) indie rap. Rap is also lyrically dense, which makes it a great source for text mining.</p>
-<p>I got curious about cars because rappers talk about them--a lot. So I decided to find out once and for all which brand they love the most, with <strong>Chevy</strong> (the brand I kept hearing) as my hypothesis.</p>
-</div>
-<div class="section" id="the-lyrics-mining-process">
-<h2>The lyrics mining process</h2>
-<p>To find the answer, I needed a sizeable sample of car brand names, a searchable database of hip-hop lyrics, a script to search for the brands within the lyrics database, and a way of displaying the results. Fortunately, all the necessary tools were readily available:</p>
-<ul class="simple">
-<li>Python</li>
-<li>Wikipedia</li>
-<li>LibreOffice Calc</li>
-<li><a class="reference external" href="http://research.blackyouthproject.com/raplyrics/">Rap Lyrics Database</a></li>
-<li><a class="reference external" href="https://developers.google.com/chart/">Google Charts</a></li>
-<li>Bootstrap</li>
-</ul>
-<div class="section" id="gathering-the-data">
-<h3>Gathering the data</h3>
-<p>Wikipedia blocks web scrapers, understandably. So I manually downloaded all of Wikipedia's lists of car manufacturers and brands by country. To reduce the amount of HTML I would have to parse, I selected the <a class="reference external" href="http://en.m.wikipedia.org/wiki/Main_Page">Mobile View</a> for each page.</p>
-<p>I downloaded ten files in total: a general list of car manufacturers plus individual lists for China, France, Germany, Italy, Japan, Spain, Sweden, the United Kingdom, and the United States.</p>
-</div>
-<div class="section" id="cleaning-the-data">
-<h3>Cleaning the data</h3>
-<p>Wikipedia's Mobile View pages contain search bars at the top and the usual "See also," "References," and "Read in another language" links. I started by erasing these (manually again), reducing the files to structural markup and the lists themselves.</p>
-<p>With the Python <a class="reference external" href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a> library, I extracted the brand name tags by selecting all list elements. Then I used <a class="reference external" href="http://www.nltk.org">NLTK</a> to remove the HTML tags and regular expressions to remove excess whitespace and text (such as notes about the brand, the brand's years of operation, etc.). This is what I came up with:</p>
-<pre class="literal-block">
-def clean_wikilist(filename):
-    # open saved html file
-    html = open(filename).read()
-
-    # collect bulleted items only
-    bullets = SoupStrainer("li")
-
-    # make soup out of the bulleted items
-    soup = BeautifulSoup(html, 'lxml', parse_only = bullets).prettify()
-
-    # remove html from soup
-    raw = nltk.clean_html(soup)
-
-    # remove extra lines
-    raw = re.sub(r'\n \n \n \n \n', r'\n', raw)
-    raw = re.sub(r'\n \n \n', r'\n', raw)
-
-    # create and clean tokens
-    tokens = raw.split('\n')
-    tokens = [re.sub(r'^\s+(?=[\S]+)', r'', token) for token in tokens]
-    tokens = [token for token in tokens if not re.findall(r'\[[0-9]+\]|\([\S\s]+[\(\)]?|^\s+$|^[\s\[\]\(\)0-9]+$', token)]
-    tokens = list(set(tokens))
-
-    return tokens
-</pre>
-<p>After running my script on all ten lists, I had a whopping <strong>2599 brand names</strong>. So I decided to limit the set to Germany, Japan, the UK, and the US. The pages for Germany, the UK, and the US separate current brands from defunct brands, so for those countries I used current brands only. The Japan page mixes current and defunct brands into one list; to save time, I used all of them.</p>
-<p>These four pages have slightly different structures. The <tt class="docutils literal">clean_wikilist()</tt> script worked nicely for Japan, but captured too much information on the others, so I wrote three additional scripts. Here's the one for Germany:</p>
-<pre class="literal-block">
-def autos_ge():
-        # open saved html file
-        html = open('autos-ge.html').read()
-
-        # create soup object
-        soup = BeautifulSoup(html)
-
-        # select current major manufacturers
-        majors = soup.select('span.mw-headline')
-        majors = [w for w in majors if w.parent.parent.previous_sibling.contents[0]['id'] == 'Current_major_manufacturers']
-        major_tokens = [nltk.clean_html(str(w)) for w in majors]
-        major_tokens = [re.sub(r'\[\s\S\s\]', r'', token) for token in major_tokens]
-
-        # select current minor manufacturers
-        minors = soup.select('li')
-        minors = [w for w in minors if w.parent.parent.previous_sibling.contents[0]['id'] == 'Current_minor_manufacturers']
-        minor_tokens = [nltk.clean_html(str(w)) for w in minors]
-        minor_tokens = [re.sub(r'\s\(\S+\)', r'', token) for token in minor_tokens]
-
-        # combine lists
-        tokens = list(set(minor_tokens + major_tokens))
-
-        return tokens
-</pre>
-<p>One notable difference between this and the original script is the usage of Beautiful Soup. In <tt class="docutils literal">clean_wikilist()</tt>, the desired elements are selected first, with SoupStrainer, and then used to create a list of the matching HTML tags in unicode format. <tt class="docutils literal">autos_ge()</tt>, on the other hand, creates a Beautiful Soup object out of the entire page; the desired elements are selected via DOM traversal.</p>
-<p>The number of brand names from this limited dataset? Just 178.</p>
-</div>
-<div class="section" id="analyzing-the-data">
-<h3>Analyzing the data</h3>
-<p>The Rap Lyrics Database contains lyrics for all of Billboard Music's rap songs from 1989 through 2009. It's the only searchable database of hip-hop lyrics (exclusively).</p>
-<p>The result pages share the same URL, with the search term appended to the end: <em>http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/</em>. This made it much easier to automate the search and saving process.</p>
-<pre class="literal-block">
-def rap_search(auto_list):
-    # search for each brand name
-    for brand in auto_list:
-        url = 'http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/' + word
-
-        # save the search results page
-        results_html = urllib2.urlopen(url).read()
-
-        # save it as a file named after the brand
-        results = word + '.html'
-
-        with open(results, 'w') as results_file:
-            results_file.write(results_html)
-</pre>
-<p>This saved 178 HTML pages, each named after the appropriate brand search term, onto my computer. I also searched for known nicknames of the brands (e.g., "Bimmer/Beemer/Beamer" for BMW and "Chevy" for Chevrolet).</p>
-<p>I used Beautiful Soup again to count the number of results on each page:</p>
-<pre class="literal-block">
-def count_rap_results():
-        # for all html files in current directory
-        for filename in os.listdir('.'):
-        if filename.endswith('html'):
-
-        # select song titles
-        html = open(filename).read()
-        soup = BeautifulSoup(html)
-        songs = soup.select('.title')
-
-        # count number of song titles
-        count = len(songs)
-
-        # write brand names and number of songs into a text file
-        with open('count_rap_autos.txt', 'a') as counter_file:
-                counter_file.write('%s%15d\n' % (filename[:-5], count))
-</pre>
-<p>This got me a pretty messy-looking text file of each brand and the number of songs in which it was mentioned:</p>
-<blockquote>
-<p>Lea-Francis               1</p>
-<p>Ewing      0</p>
-<p>Efini         0</p>
-<p>Scion       0</p>
-<p>Tommy Kaira            15</p>
-<p>...</p>
-</blockquote>
-<p>It turned out that the Rap Lyrics Database doesn't recognize spaces. So, a search for "Art and Tech" became a search for "Art"--which of course is a popular word that is often used in a non-automobile context. I removed ambiguous names from the list and combined the results from brands and their nicknames. LibreOffice Calc was helpful in fixing the columns and sorting the results.</p>
-<p>The final number of usable brands came out to 153.</p>
-</div>
-</div>
-<div class="section" id="who-won">
-<h2>Who won?</h2>
-<p><strong>Mercedes-Benz</strong>, with <strong>93 song mentions</strong>--and remember, that's only counting a small segment of rap songs between 1989-2009.</p>
-<p>Jeep came in second, at 34 songs. Then came Cadillac with 25 songs, and finally Chevy at 24.</p>
-<p>So, Chevy isn't as popular as I expected. But the biggest shocker is Jeep. I can't recall a single song that mentions Jeep.</p>
-<p>To display the results, I made a <a class="reference external" href="http://stephaniehiga.com/cars.html#results">graph</a> with Google Charts. (I'd add them here, but I've yet to learn how to embed JavaScript into reStructuredText.)</p>
-</div>
-<div class="section" id="pain-points">
-<h2>Pain points</h2>
-<p>I'm new to programming. While I enjoy it very much, I spend about 90% of my time immersed in pain. The text analysis took me four nights (Monday through Thursday) to complete. On the actual hack day, I made the graph and web page, with a lot of help from Bootstrap. Along the way, I encountered many problems:</p>
-<ul>
-<li>
-<p class="first">Selecting specific subsets of HTML tags with no classes or ids.</p>
-</li>
-<li>
-<p class="first">Accidentally passing list items with the newline character to the <tt class="docutils literal">rap_search()</tt> script, resulting in 178 filenames split off from their extensions. Fortunately there was an easy fix:</p>
-<pre class="literal-block">
-for filename in os.listdir("."):
-        if '\n' in filename:
-        os.rename(filename, re.sub(r'\n', r'', filename))
-</pre>
-</li>
-<li>
-<p class="first">Reformatting the final list of brands into an HTML table.</p>
-</li>
-<li>
-<p class="first">Reformatting the final list of brands into a list of dictionaries to create a graph with <a class="reference external" href="http://philogb.github.io/jit/">JavaScript InfoVis Toolkit</a>.</p>
-</li>
-<li>
-<p class="first">Not knowing how to build a non-stacked bar graph with the InfoVis Toolkit.</p>
-</li>
-<li>
-<p class="first">Switching to Google Charts and reformatting the final list of brands into a list of lists to create a Google Charts graph.</p>
-</li>
-</ul>
-</div>
-<div class="section" id="notes-for-the-future">
-<h2>Notes for the future</h2>
-<div class="section" id="more-complete-data">
-<h3>More complete data</h3>
-<p>I slashed the set of brand names to less than 7% of its original size and conflated "car manufacturers" with "car brands." Wikipedia also has a lengthy <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_automobile_marques">list of automobile marques</a>, which I didn't even touch.</p>
-<p>I'd like to go deeper than brands, into the actual names of cars, and match them against an even bigger database of lyrics. <a class="reference external" href="http://www.rapgenius.com">RapGenius</a> and the <a class="reference external" href="http://www.last.fm/api">Last.fm API</a> are possible alternatives to the Rap Lyrics Database. RapGenius has an excellent database, but it contains a significant amount of lyrics from non-hip-hop artists as well.</p>
-</div>
-<div class="section" id="semantic-orientation">
-<h3>Semantic orientation</h3>
-<p>I equated "beloved" to "number of songs mentions." This is obviously not always the case, as rappers name-drop plenty of things they dislike. It's true that rappers generally mention cars in a positive manner, but a more accurate experiment would take into account not just how many times the brand was used, but in what way the brand was used--i.e., the semantic orientation of the brand. A <a class="reference external" href="https://en.wikipedia.org/wiki/Sentiment_analysis">sentiment analysis</a> might be the way to go.</p>
-</div>
-<div class="section" id="multi-word-brands">
-<h3>Multi-word brands</h3>
-<p>The Rap Lyrics Database turns up blank if you search for, say "Aston Martin" (with the quotes and the space), even though Aston Martin is mentioned in a few songs. So multi-word brands with spaces in them turned up short. (Mercedes-Benz doesn't have this issue because it has a hyphen, not a space.)</p>
-<p>If I were to use the Rap Lyrics Database again, I'd have to search for "Aston" and "Martin" separately and compare the songs on each results page. Otherwise, RapGenius seems to do spaces nicely.</p>
-</div>
-<div class="section" id="nicknames-and-duplicates">
-<h3>Nicknames and duplicates</h3>
-<p>I searched for "Mercedes-Benz" as well as just "Mercedes" and "Benz." However, again, because I didn't compare song names, I ended up nixing the counts for the nicknames to minimize the possibility of duplicates. I also missed some nicknames--for instance, I completely neglected "Caddy" and "Lac" (sorry, Cadillac), "Lex," etc.</p>
-</div>
-<div class="section" id="misspellings-plurals-etc">
-<h3>Misspellings, plurals, etc.</h3>
-<p>I did search for "Beamer" and "Beemer," but there's also "Bima" and probably countless other misspellings of "Bimmer" and other car brands. I ignored plurals, whether spelled correctly ("Bimmers") or not ("Bimaz").</p>
-</div>
-<div class="section" id="disambiguation">
-<h3>Disambiguation</h3>
-<p>Many car brands double as common words or unrelated proper names, e.g., Prince, Radical, Ram, MINI, Oakland. I discarded these instead of determining whether or not they were referring to the car brand.</p>
-</div>
-<div class="section" id="last-thoughts">
-<h3>Last thoughts</h3>
-<p>A few months ago, when I first got the idea for this project, I thought it would be ridiculously hard. I envisioned building a large corpus of hip-hop lyrics and determining the classification, meaning, and orientation of each word to uncover the truth.</p>
-<p>After going about this somewhat backwards, I think my initial impression remains correct. I'm happy I finally took a stab at the project, and I'm excited to continue working on it. This is just the first of a long series of experiments (and blog posts)!</p>
-<p><a class="reference external" href="https://github.com/sahiga/rap-analysis">Source files on GitHub</a></p>
-</div>
-</div>
-</div>
-      </div>
-      <div class="entry-meta">
-        <span class="entry-date">Posted: <time class="published" datetime="2013-05-18T18:32:32+00:00">2013-05-18 18:32</time></span>
-      </div>
-      <hr class="double-spacing">
-</div>
-    <div class="post hfeed">
-      <h2 class="entry-title"><a href="posts/github-for-linux-mint.html">GitHub for Linux Mint</a></h2>
-      <div class="entry-content">
-        <div>
-<p>Version control terrifies me.</p>
-<p>But you know what else terrifies me? Losing files. I've lost enough of them and endured enough filename headaches (story-1.doc, story-2.doc, story-final, story-new.doc, story-newEST.doc, etc.) in my lifetime to realize that <strong>version control is extremely important</strong>, and I need to develop better version control habits.</p>
-<p>So, I added the files for this site to <a class="reference external" href="https://github.com/sahiga/sah">my GitHub account</a>. The following guide details the steps I took, minus the legion of errors I made. I've named it "GitHub for <a class="reference external" href="http://www.linuxmint.com">Linux Mint</a>," in honor of my operating system and the fact that GitHub offers <a class="reference external" href="http://mac.github.com">GitHub for Mac</a> and <a class="reference external" href="http://windows.github.com">GitHub for Windows</a>, but no GitHub for GNU/Linux (even though, hey, some of us GNU/Linux users could use a little point-and-click help over here).</p>
-<blockquote>
-<p>Note: Afterward, I realized I could have had a <a class="reference external" href="https://help.github.com/articles/fetching-a-remote">much easier time</a> cloning the repository. This command is identical to the "Clone in Windows" and "Clone in Mac" buttons in the corresponding GitHub GUI applications:</p>
-<pre class="literal-block">
-git clone &lt;URL&gt;
-</pre>
-</blockquote>
-<div class="section" id="connect-your-computer-to-github">
-<h2>Connect your computer to GitHub</h2>
-<p>First, you need a secure method of connecting your computer to GitHub. You can do this through SSH (generate a new public/private SSH key pair and add it to your GitHub account) or through HTTPS (configure the Git credential helper).</p>
-<ul class="simple">
-<li><a class="reference external" href="https://help.github.com/articles/set-up-git">Instructions for using HTTPS with GitHub</a></li>
-<li><a class="reference external" href="https://help.github.com/articles/generating-ssh-keys">Instructions for using SSH with GitHub</a></li>
-</ul>
-</div>
-<div class="section" id="prepare-the-branches">
-<h2>Prepare the branches</h2>
-<p><a class="reference external" href="https://github.com/new">Create a new repository on GitHub</a>. This is the <strong>remote branch</strong>.</p>
-<p>Fire up your command line. Move to the directory containing your version control files (if you're not there already), e.g., <tt class="docutils literal">cd sah</tt>.</p>
-<p>Initialize a Git repository in this directory. This is the <strong>local branch</strong>.</p>
-<pre class="literal-block">
-git init
-</pre>
-<p>Check the status of your new repository.</p>
-<pre class="literal-block">
-git status
-</pre>
-<p>(or <tt class="docutils literal">git st</tt> if you've set up <a class="reference external" href="http://git-scm.com/book/ch2-7.html#Git-Aliases">aliases</a>). This is optional, but I like checking the status to see which branch I'm working on and which files will be included in the next commit.</p>
-<pre class="literal-block">
-# On branch master
-# Untracked files:
-#   (use "git add &lt;file&gt;..." to include in what will be committed)
-#
-#       .doit.db
-#       1.txt
-#       README.txt
-#       cache/
-#       conf.py
-#       conf.pyc
-#       conf.py~
-#       files/
-#       galleries/
-#       listings/
-#       new_site/
-#       output/
-#       posts/
-#       stephanieahiga.wordpress.2013-05-05.xml
-#       stories/
-nothing added to commit but untracked files present (use "git add" to track)
-</pre>
-<p>Right now there's "nothing added to commit," meaning the local repository is empty. This is because you've just initialized it.</p>
-</div>
-<div class="section" id="start-tracking-your-files">
-<h2>Start tracking your files</h2>
-<p>Next, add version control tracking to your files. To add individual files, write <tt class="docutils literal">git add</tt> and then the filename. To add everything in the directory to your commit:</p>
-<pre class="literal-block">
-git add .
-</pre>
-<p>Now it's time to commit the change. The basic commit command is <tt class="docutils literal">git commit</tt>, which will launch your preferred text editor. The <tt class="docutils literal"><span class="pre">-m</span></tt> flag allows you to skip the text editor and type your commit message inline; the <tt class="docutils literal"><span class="pre">-a</span></tt> flag tells Git to automatically stage your tracked files, skipping the staging area.</p>
-<pre class="literal-block">
-git commit -a -m "Added Nikola site files"
-</pre>
-<p>See <a class="reference external" href="http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository">Git Basics - Recording Changes to the Repository</a> for more information on committing changes.</p>
-</div>
-<div class="section" id="merge-and-sync-your-branches">
-<h2>Merge and sync your branches</h2>
-<p>Merge the remote branch (the GitHub copy of the repository) with your local branch (the local copy of the repository). This consolidates the two branches and ensures that they are identical.</p>
-<pre class="literal-block">
-git pull https://github.com/sahiga/sah.git
-</pre>
-<p>You should see a message like this:</p>
-<pre class="literal-block">
-From https://github.com/sahiga/sah
- * branch            HEAD       -&gt; FETCH_HEAD
-Merge made by the 'recursive' strategy.
- README.md |    4 ++++
- 1 file changed, 4 insertions(+)
- create mode 100644 README.md
-
-
-**Note:** ``git pull`` automatically merges commits from the "pulled" branch into your current branch. This works fine on an empty GitHub repository, but it could cause `merge conflicts &lt;https://help.github.com/articles/fetching-a-remote&gt;`_.
-</pre>
-<p>Push your commit on the local branch to the remote branch:</p>
-<pre class="literal-block">
-git push origin master
-</pre>
-<p>If you're using HTTPS, GitHub will prompt you for credentials. To switch to SSH, <a class="reference external" href="https://help.github.com/articles/why-is-git-always-asking-for-my-password">follow these instructions</a>.</p>
-<blockquote>
-<strong>Note:</strong> I originally attempted <tt class="docutils literal">git push origin master</tt> before <tt class="docutils literal">git pull</tt>, resulting in a "non-fast-forward" error. This error occurs when the local branch is behind the remote branch, and therefore Git can't push the local commits without losing commits on the remote branch. GitHub has an <a class="reference external" href="https://help.github.com/articles/dealing-with-non-fast-forward-errors">article on non-fast-forward errors</a> that I wish I'd found when I made this mistake.</blockquote>
-<p>The two branches are now in sync! Check the commit history in your local branch with <tt class="docutils literal">git log</tt>. The most recent commit should have a "Merge" attribute, identical to what you'll find in the "Commits" tab in your GitHub account:</p>
-<pre class="literal-block">
-    commit e9bcc38554dd930b4bd1f557e45c92f8f65e0a98
-    Merge: 3e653b4 96d590b
-    Author: sahiga
-    Date:   Sat May 4 23:51:39 2013 -0700
-
-Merge https://github.com/sahiga/sah
-</pre>
-<p>Tutorials for Git and GitHub:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://git-scm.com/book">Pro Git</a></li>
-<li><a class="reference external" href="https://help.github.com/">GitHub Help</a></li>
-<li><a class="reference external" href="http://www.floraworley.com/2013/03/11/get-started-with-git-and-github/">Diary of a Future Dev</a></li>
-</ul>
-</div>
-</div>
-      </div>
-      <div class="entry-meta">
-        <span class="entry-date">Posted: <time class="published" datetime="2013-05-05T21:05:00+00:00">2013-05-05 21:05</time></span>
-      </div>
-      <hr class="double-spacing">
-</div>
-    <div class="post hfeed">
-      <h2 class="entry-title"><a href="posts/goodbye-wordpress-hello-nikola.html">Goodbye, WordPress! Hello, Nikola!</a></h2>
-      <div class="entry-content">
-        <div>
-<p>It's official: I've finally migrated my personal website from <a class="reference external" href="http://www.wordpress.org">WordPress</a> to <a class="reference external" href="http://nikola.ralsina.com.ar">Nikola</a>, a static site generator. In my 53432099809th attempt to return to writing, I'll use this bit of nerd news to jumpstart what I hope will become a regular blogging habit.</p>
-<div class="section" id="the-quest-for-static">
-<h2>The quest for static</h2>
-<p>WordPress gets a lot of hate in the development community. Let me say upfront that this is absolutely not the reason I decided to leave it (I have the softest of spots for WordPress). It's just that one day I woke up and realized I didn't need a database and a gazillion server queries to post text on my website.</p>
-<p>So I started looking into static site generators. A static site generator does exactly what's written on the box: it creates a static site. It combines the best of Web 1.0 (fast, portable, secure HTML pages) with the best of Web 2.0 (templates). I considered:</p>
-<ul class="simple">
-<li>
-<a class="reference external" href="http://jekyllrb.com/">Jekyll</a> + <a class="reference external" href="http://www.octopress.org">Octopress</a>: Hooks directly into <a class="reference external" href="http://pages.github.com/">GitHub Pages</a> and is apparently very good. But I don't know Ruby, so I kept looking.</li>
-<li>
-<a class="reference external" href="http://ringce.com/hyde">Hyde</a>: A Python port of Jekyll. Ultimately, I passed on it because of the lack of documentation. When it comes to technology, this Luddite needs a lot of hand-holding.</li>
-<li>
-<a class="reference external" href="http://docs.getpelican.com">Pelican</a>: Also Python-based, with complete, well-written documentation. I installed it and got lost while trying to generate files. Pelican looks like a great choice, but I think it's meant for people who are much more tech-savvy than I am.</li>
-</ul>
-<p>Shortly after I installed Pelican, someone posted a link to <a class="reference external" href="http://nikola.ralsina.com.ar">Nikola</a> on Hacker News. I'm not sure why it didn't come up in all my searches for Python-based static site generators, because so far it's proven to be a dream come true. The documentation is amazing. It's easy to use and in active development. And it was named after <a class="reference external" href="http://theoatmeal.com/comics/tesla">Nikola Tesla</a>. (<strong>Huge</strong> Nikola Tesla fan here.)</p>
-</div>
-<div class="section" id="goodbye-wordpress">
-<h2>Goodbye, WordPress</h2>
-<p>Nikola has an <tt class="docutils literal">import_wordpress</tt> function to ease the transition to WordPress. I grabbed an XML dump of my site (<strong>Tools &gt; Export &gt; All Content</strong> in the WP admin panel) and saved it in my Nikola site folder.</p>
-<p>I installed the Python <a class="reference external" href="https://pypi.python.org/pypi/requests">requests</a> package (import_wordpress depends on requests):</p>
-<pre class="literal-block">
-sudo pip install requests
-</pre>
-<p>Then I ran import_wordpress on the file:</p>
-<pre class="literal-block">
-nikola import_wordpress stephanieahiga.wordpress.2013-05-05.xml
-</pre>
-<p>This created a new folder, <strong>new_site</strong>, within the Nikola folder. I had no posts and only a handful of pages in my WordPress database, so I recreated the pages manually using the page command: <tt class="docutils literal">nikola new_post <span class="pre">-p</span></tt>. Similar to WordPress, Nikola differentiates between posts and pages: posts are in the <strong>posts</strong> folder and pages are in the <strong>stories</strong> folder.</p>
-<p>Finally, I uninstalled WordPress from my domain via <a class="reference external" href="https://www.simplescripts.com">SimpleScripts</a> on my cPanel.</p>
-<p>import_wordpress saves all posts and pages with the <tt class="docutils literal">.wp</tt> extension (read by my computer as WordPerfect files). The XML dump, and therefore the folder created by import_wordpress, save the contents of the WordPress database, but <strong>not</strong> the theme files. So it's important to backup any custom themes before uninstalling WordPress.</p>
-<p>Tutorials on importing WordPress posts into Nikola:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://nikola.ralsina.com.ar/handbook.html#importing-your-wordpress-site-into-nikola">Official site</a></li>
-<li><a class="reference external" href="http://flexion.org/posts/2012-10-migrating-wordpress-to-nikola.html">Flexion.Org</a></li>
-<li><a class="reference external" href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html">Kushal Das</a></li>
-</ul>
-</div>
-<div class="section" id="hello-nikola">
-<h2>Hello, Nikola</h2>
-<p>I assume that the next step is to upload the Nikola site folder to my domain server. If you're reading this post, you can assume that my assumption turned out to be true.</p>
-</div>
-</div>
-      </div>
-      <div class="entry-meta">
-        <span class="entry-date">Posted: <time class="published" datetime="2013-05-04T14:09:26+00:00">2013-05-04 14:09</time></span>
-      </div>
-      <hr class="double-spacing">
-</div>
   
-
-  
-
-  
-
-
-            <!--End of body content-->
-        </div>
+        <nav class="postindexpager"><ul class="pager">
+<li class="next">
+                <a href="index-1.html" rel="next">Older posts</a>
+            </li>
+        </ul></nav><!--End of body content-->
+</div>
 <!-- .hfeed -->
     </div>
 <!-- #content -->
+<footer class="footer"><small>
+    Contents © 2015         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+    
+  </small>
+</footer><!-- #footer -->
 </div>
 <!-- #container -->
 
-<footer class="footer"><small>Contents © 2015         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
-            
- </small><p>
-</p></footer><!-- #footer -->
+
 </div>
 <!-- #wrapper -->
     
     
     
     
-<!-- Social buttons -->
-<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
-<a class="addthis_button_more">Share</a>
-<ul>
-<li>
-<a class="addthis_button_facebook"></a>
-</li>
-<li>
-<a class="addthis_button_google_plusone_share"></a>
-</li>
-<li>
-<a class="addthis_button_linkedin"></a>
-</li>
-<li>
-<a class="addthis_button_twitter"></a>
-</li>
-</ul>
-</div>
-<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons -->
+
 </body>
 </html>
