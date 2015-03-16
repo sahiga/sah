@@ -13,7 +13,7 @@ Hack Reactor is a programming bootcamp -- the most intense of its kind, at eleve
 
 ----
 
-Last August I happened upon Smashing Magazine during work hours, likely in search of CSS help. I'm sure I found what I was looking for, but what caught my eye was an ad for Hack Reactor. Twelve-week immersive programming bootcamp! Six-figure average starting salary! It seemed too good to be true.
+Last August I happened upon A List Apart during work hours, likely in search of CSS help. I'm sure I found what I was looking for, but what caught my eye was an ad for Hack Reactor. Twelve-week immersive programming bootcamp! Six-figure average starting salary! It seemed too good to be true.
 
 The only programming bootcamp I'd heard of was General Assembly's Web Development Immersive, which had briefly interested me until I lucked into a front-end development role at my company back in 2013. I'd even taken a couple of General Assembly classes -- Intro to Data Science and Analysis (at their Santa Monica campus) and Optimizing Landing Pages for Conversion (online) -- neither of which had impressed me.
 
