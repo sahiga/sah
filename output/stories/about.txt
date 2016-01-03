@@ -5,21 +5,13 @@
 .. title: About
 .. slug: about
 
-Hello! I'm Stephanie, a writer and web developer based in Los Angeles, California.
-
-Samuel R. Delany's `Dhalgren <https://en.wikipedia.org/wiki/Dhalgren>`_ is my favorite novel, followed closely by `V. <https://en.wikipedia.org/wiki/V.>`_ and `Hard-Boiled Wonderland and the End of the World <https://en.wikipedia.org/wiki/Hard-Boiled_Wonderland_and_the_End_of_the_World>`_.
-
-About the blog
-==============
-
-For now, this is my technical learning blog. I'm currently tackling several technologies for work or for play--Python (mainly natural language processing techniques with NLTK), JavaScript + jQuery, Git, Bash, Haml + Sass (integrating with Rails), Parse Cloud Code + Express JS--and the sheer volume of information available is overwhelming. Writing about what I've learned helps me to track my progress, identify areas of improvement, and provide an easy-to-find reference if I ever encounter the same issues in the future.
-
-Around the web
-==============
+I'm a software developer based in San Mateo, California. You can find me in a few other places on the web:
 
 - `Illustrations <http://sahiga.carbonmade.com>`_
 - `LinkedIn <http://www.linkedin.com/in/sahiga>`_
 - `Daytum <http://www.daytum.com/sahiga>`_
 - `GitHub <http://www.github.com/sahiga>`_
 - `About.me <http://about.me/sahiga>`_
-- `Goodreads <http://www.goodreads.com>`_ (in the process of switching to `Open Library <http://openlibrary.org/people/sahiga>`_ because of the `Amazon acquisition <http://www.goodreads.com/blog/show/413-exciting-news-about-goodreads-we-re-joining-the-amazon-family>`_)
+- `Goodreads <http://www.goodreads.com>`_
+
+I love meeting new people, so feel free to get in touch! Topics I'm passionate about: waste management, water conservation, education, productivity, and all the issues Samuel R. Delany talks about in *Dhalgren*.
