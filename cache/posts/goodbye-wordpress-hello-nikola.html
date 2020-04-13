@@ -4,31 +4,27 @@
 <p>WordPress gets a lot of hate in the development community. Let me say upfront that this is absolutely not the reason I decided to leave it (I have the softest of spots for WordPress). It's just that one day I woke up and realized I didn't need a database and a gazillion server queries to post text on my website.</p>
 <p>So I started looking into static site generators. A static site generator does exactly what's written on the box: it creates a static site. It combines the best of Web 1.0 (fast, portable, secure HTML pages) with the best of Web 2.0 (templates). I considered:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://jekyllrb.com/">Jekyll</a> + <a class="reference external" href="http://www.octopress.org">Octopress</a>: Hooks directly into <a class="reference external" href="http://pages.github.com/">GitHub Pages</a> and is apparently very good. But I don't know Ruby, so I kept looking.</li>
-<li><a class="reference external" href="http://ringce.com/hyde">Hyde</a>: A Python port of Jekyll. Ultimately, I passed on it because of the lack of documentation. When it comes to technology, this Luddite needs a lot of hand-holding.</li>
-<li><a class="reference external" href="http://docs.getpelican.com">Pelican</a>: Also Python-based, with complete, well-written documentation. I installed it and got lost while trying to generate files. Pelican looks like a great choice, but I think it's meant for people who are much more tech-savvy than I am.</li>
+<li><p><a class="reference external" href="http://jekyllrb.com/">Jekyll</a> + <a class="reference external" href="http://www.octopress.org">Octopress</a>: Hooks directly into <a class="reference external" href="http://pages.github.com/">GitHub Pages</a> and is apparently very good. But I don't know Ruby, so I kept looking.</p></li>
+<li><p><a class="reference external" href="http://ringce.com/hyde">Hyde</a>: A Python port of Jekyll. Ultimately, I passed on it because of the lack of documentation. When it comes to technology, this Luddite needs a lot of hand-holding.</p></li>
+<li><p><a class="reference external" href="http://docs.getpelican.com">Pelican</a>: Also Python-based, with complete, well-written documentation. I installed it and got lost while trying to generate files. Pelican looks like a great choice, but I think it's meant for people who are much more tech-savvy than I am.</p></li>
 </ul>
 <p>Shortly after I installed Pelican, someone posted a link to <a class="reference external" href="http://nikola.ralsina.com.ar">Nikola</a> on Hacker News. I'm not sure why it didn't come up in all my searches for Python-based static site generators, because so far it's proven to be a dream come true. The documentation is amazing. It's easy to use and in active development. And it was named after <a class="reference external" href="http://theoatmeal.com/comics/tesla">Nikola Tesla</a>. (<strong>Huge</strong> Nikola Tesla fan here.)</p>
 </div>
 <div class="section" id="goodbye-wordpress">
 <h1>Goodbye, WordPress</h1>
-<p>Nikola has an <tt class="docutils literal">import_wordpress</tt> function to ease the transition to WordPress. I grabbed an XML dump of my site (<strong>Tools &gt; Export &gt; All Content</strong> in the WP admin panel) and saved it in my Nikola site folder.</p>
+<p>Nikola has an <code class="docutils literal">import_wordpress</code> function to ease the transition to WordPress. I grabbed an XML dump of my site (<strong>Tools &gt; Export &gt; All Content</strong> in the WP admin panel) and saved it in my Nikola site folder.</p>
 <p>I installed the Python <a class="reference external" href="https://pypi.python.org/pypi/requests">requests</a> package (import_wordpress depends on requests):</p>
-<pre class="literal-block">
-sudo pip install requests
-</pre>
+<pre class="literal-block">sudo pip install requests</pre>
 <p>Then I ran import_wordpress on the file:</p>
-<pre class="literal-block">
-nikola import_wordpress stephanieahiga.wordpress.2013-05-05.xml
-</pre>
-<p>This created a new folder, <strong>new_site</strong>, within the Nikola folder. I had no posts and only a handful of pages in my WordPress database, so I recreated the pages manually using the page command: <tt class="docutils literal">nikola new_post <span class="pre">-p</span></tt>. Similar to WordPress, Nikola differentiates between posts and pages: posts are in the <strong>posts</strong> folder and pages are in the <strong>stories</strong> folder.</p>
+<pre class="literal-block">nikola import_wordpress stephanieahiga.wordpress.2013-05-05.xml</pre>
+<p>This created a new folder, <strong>new_site</strong>, within the Nikola folder. I had no posts and only a handful of pages in my WordPress database, so I recreated the pages manually using the page command: <code class="docutils literal">nikola new_post <span class="pre">-p</span></code>. Similar to WordPress, Nikola differentiates between posts and pages: posts are in the <strong>posts</strong> folder and pages are in the <strong>stories</strong> folder.</p>
 <p>Finally, I uninstalled WordPress from my domain via <a class="reference external" href="https://www.simplescripts.com">SimpleScripts</a> on my cPanel.</p>
-<p>import_wordpress saves all posts and pages with the <tt class="docutils literal">.wp</tt> extension (read by my computer as WordPerfect files). The XML dump, and therefore the folder created by import_wordpress, save the contents of the WordPress database, but <strong>not</strong> the theme files. So it's important to backup any custom themes before uninstalling WordPress.</p>
+<p>import_wordpress saves all posts and pages with the <code class="docutils literal">.wp</code> extension (read by my computer as WordPerfect files). The XML dump, and therefore the folder created by import_wordpress, save the contents of the WordPress database, but <strong>not</strong> the theme files. So it's important to backup any custom themes before uninstalling WordPress.</p>
 <p>Tutorials on importing WordPress posts into Nikola:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://nikola.ralsina.com.ar/handbook.html#importing-your-wordpress-site-into-nikola">Official site</a></li>
-<li><a class="reference external" href="http://flexion.org/posts/2012-10-migrating-wordpress-to-nikola.html">Flexion.Org</a></li>
-<li><a class="reference external" href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html">Kushal Das</a></li>
+<li><p><a class="reference external" href="http://nikola.ralsina.com.ar/handbook.html#importing-your-wordpress-site-into-nikola">Official site</a></p></li>
+<li><p><a class="reference external" href="http://flexion.org/posts/2012-10-migrating-wordpress-to-nikola.html">Flexion.Org</a></p></li>
+<li><p><a class="reference external" href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html">Kushal Das</a></p></li>
 </ul>
 </div>
 <div class="section" id="hello-nikola">

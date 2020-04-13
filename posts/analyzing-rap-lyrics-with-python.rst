@@ -8,7 +8,7 @@
 
 On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: **What's the most beloved car brand in hip-hop?**
 
-In this post, I'll explain how I came up with a possible answer to that question. `To skip to the results, click here <http://stephaniehiga.com/cars.html#results>`_.
+In this post, I'll explain how I came up with a possible answer to that question. `To skip to the results, click here <https://www.stephaniehiga.com/cars.html>`_.
 
 Why hip-hop / why cars
 ======================

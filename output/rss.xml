@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sahiga</title><link>http://www.stephaniehiga.com/</link><description>The personal website of Stephanie A. Higa</description><atom:link href="http://www.stephaniehiga.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 02 Jan 2016 22:13:13 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A tale of two Silicon Valley experiences</title><link>http://www.stephaniehiga.com/posts/a-tale-of-two-silicon-valley-experiences.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Many months have passed since I graduated from Hack Reactor. Since then, I've undertaken a job search, moved to San Mateo, and started my new job as a software engineer at &lt;a class="reference external" href="http://www.kryptnostic.com"&gt;Kryptnostic&lt;/a&gt;, an early-stage startup building secure cloud-based applications. It's been a wonderful ride, and I feel very lucky to be where I am today.&lt;/p&gt;
-&lt;p&gt;This post is twofold. First up will be my long overdue review of Hack Reactor, and after that I'll share a few of the many lessons I learned while hunting for a job in Silicon Valley.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sahiga</title><link>https://www.stephaniehiga.com/</link><description>The personal website of Stephanie A. Higa</description><atom:link href="https://www.stephaniehiga.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 13 Apr 2020 03:41:39 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A tale of two Silicon Valley experiences</title><link>https://www.stephaniehiga.com/posts/a-tale-of-two-silicon-valley-experiences/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;This post is twofold. First up will be my long overdue review of Hack Reactor, and after that I'll share a few of the many lessons I learned while hunting for a job in Silicon Valley.&lt;/p&gt;
 &lt;div class="section" id="was-hack-reactor-worth-it"&gt;
 &lt;h2&gt;Was Hack Reactor worth it?&lt;/h2&gt;
 &lt;p&gt;Short answer: Yes.&lt;/p&gt;
@@ -41,7 +40,7 @@
 &lt;/div&gt;
 &lt;div class="section" id="angellist-is-awesome"&gt;
 &lt;h3&gt;AngelList is awesome&lt;/h3&gt;
-&lt;p&gt;AngelList introduced me to a ton of interesting startups, including the one I ended up joining. If you're on the hunt for a software job, make sure you've created a candidate profile and set it to &lt;strong&gt;actively looking&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;AngelList introduced me to a ton of interesting startups. If you're on the hunt for a software job, make sure you've created a candidate profile and set it to &lt;strong&gt;actively looking&lt;/strong&gt;!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="failing-an-interview-is-not-the-end-of-the-world"&gt;
 &lt;h3&gt;Failing an interview is not the end of the world&lt;/h3&gt;
@@ -51,7 +50,7 @@
 &lt;div class="section" id="employers-will-read-your-blog"&gt;
 &lt;h3&gt;Employers will read your blog&lt;/h3&gt;
 &lt;p&gt;(very meta, I know)&lt;/p&gt;
-&lt;p&gt;Multiple employers referenced specific posts on my blog during my interviews. The &lt;a class="reference external" href="http://www.stephaniehiga.com/posts/degrees-of-pynchon.html"&gt;Degrees of Pynchon&lt;/a&gt; post came up most often, followed by the one on &lt;a class="reference external" href="http://www.stephaniehiga.com/posts/off-to-hack-reactor.html"&gt;my decision to go to Hack Reactor&lt;/a&gt; and &lt;a class="reference external" href="http://www.stephaniehiga.com/posts/review-introduction-to-functional-programming.html"&gt;my review of the functional programming class I took last year&lt;/a&gt;. I only wish I'd taken the time to post about the three group projects I did at Hack Reactor. I still have a lot to say about those projects, so maybe I'll write about them soon!&lt;/p&gt;
+&lt;p&gt;Multiple employers referenced specific posts on my blog during my interviews. The &lt;a class="reference external" href="https://www.stephaniehiga.com/posts/degrees-of-pynchon.html"&gt;Degrees of Pynchon&lt;/a&gt; post came up most often, followed by the one on &lt;a class="reference external" href="https://www.stephaniehiga.com/posts/off-to-hack-reactor.html"&gt;my decision to go to Hack Reactor&lt;/a&gt; and &lt;a class="reference external" href="https://www.stephaniehiga.com/posts/review-introduction-to-functional-programming.html"&gt;my review of the functional programming class I took last year&lt;/a&gt;. I only wish I'd taken the time to post about the three group projects I did at Hack Reactor. I still have a lot to say about those projects, so maybe I'll write about them soon!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="being-different-can-be-a-good-thing"&gt;
 &lt;h3&gt;Being different can be a good thing&lt;/h3&gt;
@@ -66,14 +65,14 @@
 &lt;p&gt;I wrote the bulk of this post in June 2015, right after I started my new job. I still stand by everything I wrote above, but with one clarification. I realize I may have given the impression that being a smooth talker and keeping a blog will make up for a lack of technical ability, which is &lt;em&gt;absolutely not true&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;During the past few months, I've switched over to the other side of the technical interview process. While evaluating 20+ candidates for front-end positions at my company, I've found that the most successful candidates possess strong technical skills as well as strong soft skills. (Big surprise there!)&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>hack reactor</category><category>hiring</category><guid>http://www.stephaniehiga.com/posts/a-tale-of-two-silicon-valley-experiences.html</guid><pubDate>Sat, 02 Jan 2016 02:05:16 GMT</pubDate></item><item><title>Degrees of Pynchon</title><link>http://www.stephaniehiga.com/posts/degrees-of-pynchon.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;We spent two days last week working on solo projects at Hack Reactor. I built a visualization of literary influences, beginning with &lt;a class="reference external" href="http://thomaspynchon.com/"&gt;Thomas Pynchon&lt;/a&gt; -- who, aside from being totally amazing, a genius, and one of my personal role models, also has a &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Thomas_Pynchon#Influence"&gt;lengthy section on Wikipedia&lt;/a&gt; full of writers who influenced him and writers he's influenced.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>hack reactor</category><category>hiring</category><guid>https://www.stephaniehiga.com/posts/a-tale-of-two-silicon-valley-experiences/</guid><pubDate>Sat, 02 Jan 2016 02:05:16 GMT</pubDate></item><item><title>Degrees of Pynchon</title><link>https://www.stephaniehiga.com/posts/degrees-of-pynchon/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;We spent two days last week working on solo projects at Hack Reactor. I built a visualization of literary influences, beginning with &lt;a class="reference external" href="http://thomaspynchon.com/"&gt;Thomas Pynchon&lt;/a&gt; -- who, aside from being totally amazing, a genius, and one of my personal role models, also has a &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Thomas_Pynchon#Influence"&gt;lengthy section on Wikipedia&lt;/a&gt; full of writers who influenced him and writers he's influenced.&lt;/p&gt;
 &lt;div class="section" id="thomas-pynchon-s-circle-of-influence"&gt;
 &lt;h2&gt;Thomas Pynchon's circle of influence&lt;/h2&gt;
 &lt;p&gt;To visualize the relationships between Pynchon and the writers connected to him, I created an arc diagram  in &lt;a class="reference external" href="http://www.d3js.org"&gt;D3&lt;/a&gt;. Initially, I planned on using D3's built-in &lt;a class="reference external" href="https://github.com/mbostock/d3/wiki/Chord-Layout"&gt;chord layout&lt;/a&gt; generator, but I fell in love with arc diagrams after seeing so many beautiful examples online (e.g., &lt;a class="reference external" href="http://www.chrisharrison.net/index.php/Visualizations/BibleViz"&gt;Bible Cross-References&lt;/a&gt;, &lt;a class="reference external" href="http://www.autodeskresearch.com/pages/infovis/command_usage_arc"&gt;Command Usage Arc Diagrams&lt;/a&gt;, &lt;a class="reference external" href="http://www.turbulence.org/Works/song/gallery/gallery.html"&gt;The Shape of Song&lt;/a&gt;, among others).&lt;/p&gt;
 &lt;p&gt;I went down a few rabbit holes, including creating a matrix dataset similar to those required by the chord layout and plotting the writers as nodes on a scale. Thankfully, there's this wonderful &lt;a class="reference external" href="http://bl.ocks.org/sjengle/5431779"&gt;Les Misérables character co-ocurrences arc diagram&lt;/a&gt;, also in D3, which set me on the right track.&lt;/p&gt;
 &lt;p&gt;I formatted the influence data into an object with two arrays, &lt;strong&gt;nodes&lt;/strong&gt; and &lt;strong&gt;links&lt;/strong&gt;. Each node contains the name of a writer and a number indicating the writer's category (influencer or influencee), and each link contains a connection between Thomas Pynchon and another writer.&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;a class="reference external image-reference" href="http://sahiga.github.io/degrees-of-pynchon"&gt;&lt;img alt="Thomas Pynchon's literary influences" src="http://www.stephaniehiga.com/images/degrees-of-pynchon.png"&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="http://sahiga.github.io/degrees-of-pynchon"&gt;&lt;img alt="Thomas Pynchon's literary influences" src="https://www.stephaniehiga.com/images/degrees-of-pynchon.png"&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;Click for the interactive version. I stole the quote from the Simpsons episode in which Thomas Pynchon reviews Marge's book. For anyone unfamiliar with Pynchon: he does not love cameras.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;All the influencers appear to the left of Pynchon, with an arc above the horizontal; all the influencees appear to the right, with an arc below the horizontal. The colors were generated by D3's &lt;a class="reference external" href="https://github.com/mbostock/d3/wiki/Ordinal-Scales#category20b"&gt;category20b scale&lt;/a&gt;.&lt;/p&gt;
@@ -83,7 +82,8 @@
 &lt;p&gt;I also wanted to visualize the influences of the other writers. Initially, I added all their connections to Pynchon's graph. This worked for Vladimir Nabokov but failed for Emily Dickinson, who was influenced by a writer who appeared to the right of her (Ralph Waldo Emerson) -- resulting in a backwards connection.&lt;/p&gt;
 &lt;p&gt;The solution was to create new graphs and layer them on top of Pynchon's. So, clicking on Nabokov's name (for instance) will fade out Pynchon's graph, increase the size of Nabokov's name, move his name and dot to the center of the page, draw a line from his name to the center dot, and display his influence graph around that new center. Mousing away from Nabokov's graph will delete his graph and bring back Pynchon's.&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="Vladimir Nabokov's literary influences" src="http://www.stephaniehiga.com/images/degrees-of-pynchon-new-graph.png"&gt;&lt;p class="caption"&gt;Vladimir Nabokov's literary influences&lt;/p&gt;
+&lt;img alt="Vladimir Nabokov's literary influences" src="https://www.stephaniehiga.com/images/degrees-of-pynchon-new-graph.png"&gt;
+&lt;p class="caption"&gt;Vladimir Nabokov's literary influences&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Figuring out how to rearrange the new graph around the new center dot was probably the most difficult part of the entire project. I passed the center position to the new graph and gave the influencer dots a negative x-axis position so that they appeared to the left of the center dot.&lt;/p&gt;
 &lt;/div&gt;
@@ -91,10 +91,11 @@
 &lt;h2&gt;Hover selections&lt;/h2&gt;
 &lt;p&gt;The last feature I added was a hover selection event. Mousing over a writer's name will fade out the entire diagram except for the name, dot, and arc belonging to that writer.&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="Hovering over William S. Burroughs" src="http://www.stephaniehiga.com/images/degrees-of-pynchon-hover.png"&gt;&lt;p class="caption"&gt;Hovering over William S. Burroughs&lt;/p&gt;
+&lt;img alt="Hovering over William S. Burroughs" src="https://www.stephaniehiga.com/images/degrees-of-pynchon-hover.png"&gt;
+&lt;p class="caption"&gt;Hovering over William S. Burroughs&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;This was the second most difficult part of the project, because of the preexisting fade effects associated with the click event. The entire graph fades out upon clicking a name, and the entire graph fades back in when the mouse leaves the new graph.&lt;/p&gt;
-&lt;p&gt;I ended up initializing a boolean to keep everything in check: &lt;tt class="docutils literal"&gt;multipleGraphsOnPage&lt;/tt&gt; starts off as false, becomes true when a new graph is created, and reverts to false when the new graph is deleted. The hover selection event is enabled only when &lt;tt class="docutils literal"&gt;multipleGraphsOnPage&lt;/tt&gt; is false.&lt;/p&gt;
+&lt;p&gt;I ended up initializing a boolean to keep everything in check: &lt;code class="docutils literal"&gt;multipleGraphsOnPage&lt;/code&gt; starts off as false, becomes true when a new graph is created, and reverts to false when the new graph is deleted. The hover selection event is enabled only when &lt;code class="docutils literal"&gt;multipleGraphsOnPage&lt;/code&gt; is false.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="my-project-completion-strategy"&gt;
 &lt;h2&gt;My project completion strategy&lt;/h2&gt;
@@ -103,17 +104,19 @@
 &lt;/div&gt;
 &lt;div class="section" id="more-d3-svg-resources"&gt;
 &lt;h2&gt;More D3 &amp;amp; SVG resources&lt;/h2&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;&lt;a class="reference external" href="https://www.dashingd3js.com/d3-examples/1-d3-and-javascript-working-with-json"&gt;D3 and JavaScript: Working with JSON&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.d3noob.org/2013/01/how-to-rotate-text-labels-for-x-axis-of.html"&gt;How to rotate the text labels for the x-axis of a D3.js graph&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://www.dashingd3js.com/svg-text-element"&gt;SVG Text Element&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://tutorials.jenkov.com/svg/path-element.html#arcs"&gt;SVG Path Element&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</description><category>d3</category><category>hack reactor</category><category>javascript</category><guid>http://www.stephaniehiga.com/posts/degrees-of-pynchon.html</guid><pubDate>Mon, 16 Mar 2015 02:12:30 GMT</pubDate></item><item><title>The Design of Everyday Blogs</title><link>http://www.stephaniehiga.com/posts/the-design-of-everyday-blogs.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;At the risk of losing all my design cred, I'll admit I put practically no effort or even thought into the way my blog looked until about a week ago. To put that into perspective: I wrote my first post here in May 2013. For most of the time since that point, it's been some variation of this default Bootstrap theme provided by Nikola, the static site generator I use:&lt;/p&gt;
-&lt;img alt="My blog, circa February 2015" src="http://www.stephaniehiga.com/images/2015-02-24-site.png"&gt;&lt;p&gt;Nikola, while excellent, has &lt;a class="reference external" href="http://themes.getnikola.com/"&gt;slim pickings for themes&lt;/a&gt;, and none of them are quite what I want my blog to look like. So when it came time for the big overhaul, I started (almost) from scratch with a new theme.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.dashingd3js.com/d3-examples/1-d3-and-javascript-working-with-json"&gt;D3 and JavaScript: Working with JSON&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://www.d3noob.org/2013/01/how-to-rotate-text-labels-for-x-axis-of.html"&gt;How to rotate the text labels for the x-axis of a D3.js graph&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.dashingd3js.com/svg-text-element"&gt;SVG Text Element&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://tutorials.jenkov.com/svg/path-element.html#arcs"&gt;SVG Path Element&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>d3</category><category>hack reactor</category><category>javascript</category><guid>https://www.stephaniehiga.com/posts/degrees-of-pynchon/</guid><pubDate>Mon, 16 Mar 2015 02:12:30 GMT</pubDate></item><item><title>The Design of Everyday Blogs</title><link>https://www.stephaniehiga.com/posts/the-design-of-everyday-blogs/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;At the risk of losing all my design cred, I'll admit I put practically no effort or even thought into the way my blog looked until about a week ago. To put that into perspective: I wrote my first post here in May 2013. For most of the time since that point, it's been some variation of this default Bootstrap theme provided by Nikola, the static site generator I use:&lt;/p&gt;
+&lt;img alt="My blog, circa February 2015" src="https://www.stephaniehiga.com/images/2015-02-24-site.png"&gt;
+&lt;p&gt;Nikola, while excellent, has &lt;a class="reference external" href="http://themes.getnikola.com/"&gt;slim pickings for themes&lt;/a&gt;, and none of them are quite what I want my blog to look like. So when it came time for the big overhaul, I started (almost) from scratch with a new theme.&lt;/p&gt;
 &lt;div class="section" id="the-process"&gt;
 &lt;h2&gt;The process&lt;/h2&gt;
 &lt;p&gt;Nikola themes live within the appropriately named &lt;strong&gt;themes&lt;/strong&gt; directory. My files are structured as follows:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-/theme-name
+&lt;pre class="literal-block"&gt;/theme-name
   /assets
     /css
       theme.css
@@ -122,24 +125,40 @@
     index.tmpl
     post.tmpl
   engine
-  parent
-&lt;/pre&gt;
+  parent&lt;/pre&gt;
 &lt;p&gt;Here's an overview of what these files do (taken from the &lt;a class="reference external" href="http://getnikola.com/theming.html"&gt;Nikola theming reference&lt;/a&gt;):&lt;/p&gt;
-&lt;table border="1" class="docutils"&gt;&lt;colgroup&gt;&lt;col width="11%"&gt;&lt;col width="89%"&gt;&lt;/colgroup&gt;&lt;thead valign="bottom"&gt;&lt;tr&gt;&lt;th class="head"&gt;File Name&lt;/th&gt;
-&lt;th class="head"&gt;Purpose&lt;/th&gt;
-&lt;/tr&gt;&lt;/thead&gt;&lt;tbody valign="top"&gt;&lt;tr&gt;&lt;td&gt;theme.css&lt;/td&gt;
-&lt;td&gt;Custom CSS&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;base.tmpl&lt;/td&gt;
-&lt;td&gt;Defines the basic layout for all pages&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;index.tmpl&lt;/td&gt;
-&lt;td&gt;Defines pages that contain multiple posts (the "index" pages)&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;post.tmpl&lt;/td&gt;
-&lt;td&gt;Defines an individual post&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;engine&lt;/td&gt;
-&lt;td&gt;Text file containing the name of the templating engine your theme uses. The two options are &lt;strong&gt;mako&lt;/strong&gt; and &lt;strong&gt;jinja&lt;/strong&gt;.&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;parent&lt;/td&gt;
-&lt;td&gt;Text file containing the name of the theme from which your theme inherits. Mine inherits from &lt;strong&gt;base&lt;/strong&gt;.&lt;/td&gt;
-&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;That's it! I used the similarly bare &lt;a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/blogtxt"&gt;monospace theme&lt;/a&gt; as a guide. You can spruce up your theme with additional templates (see the &lt;a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen"&gt;zen theme&lt;/a&gt; for an example), but I decided to keep mine simple.&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 11%"&gt;
+&lt;col style="width: 89%"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th class="head"&gt;&lt;p&gt;File Name&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;p&gt;Purpose&lt;/p&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;theme.css&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Custom CSS&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;base.tmpl&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Defines the basic layout for all pages&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;index.tmpl&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Defines pages that contain multiple posts (the "index" pages)&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;post.tmpl&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Defines an individual post&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;engine&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Text file containing the name of the templating engine your theme uses. The two options are &lt;strong&gt;mako&lt;/strong&gt; and &lt;strong&gt;jinja&lt;/strong&gt;.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;parent&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Text file containing the name of the theme from which your theme inherits. Mine inherits from &lt;strong&gt;base&lt;/strong&gt;.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;That's it! I used the similarly bare &lt;a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/blogtxt"&gt;monospace theme&lt;/a&gt; as a guide. You can spruce up your theme with additional templates (see the &lt;a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen"&gt;zen theme&lt;/a&gt; for an example), but I decided to keep mine simple.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="now-for-the-fun-stuff"&gt;
 &lt;h2&gt;Now for the fun stuff!&lt;/h2&gt;
@@ -156,16 +175,18 @@
 &lt;/div&gt;
 &lt;div class="section" id="other-changes"&gt;
 &lt;h3&gt;Other changes&lt;/h3&gt;
-&lt;p&gt;I removed the Share button that used to sit in the bottom right corner. It took me forever to figure out how to do this, but all I had to do was uncomment the &lt;tt class="docutils literal"&gt;SOCIAL_BUTTONS_CODE = ""&lt;/tt&gt; line in &lt;strong&gt;conf.py&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I removed the Share button that used to sit in the bottom right corner. It took me forever to figure out how to do this, but all I had to do was uncomment the &lt;code class="docutils literal"&gt;SOCIAL_BUTTONS_CODE = ""&lt;/code&gt; line in &lt;strong&gt;conf.py&lt;/strong&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="final-thoughts"&gt;
 &lt;h2&gt;Final thoughts&lt;/h2&gt;
 &lt;p&gt;Designs are never finished, but I'm happy with how my blog looks right now. I plan to implement a hamburger menu for smaller screens within the upcoming weeks. If you have any suggestions, or find your viewing experience to be less than optimal, please let me know.&lt;/p&gt;
-&lt;hr class="docutils"&gt;&lt;p&gt;&lt;sup&gt;*&lt;/sup&gt; With much gratitude to my Hack Reactor classmates for giving me the necessary push to redesign my blog.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>design</category><category>nikola</category><guid>http://www.stephaniehiga.com/posts/the-design-of-everyday-blogs.html</guid><pubDate>Mon, 02 Mar 2015 00:27:26 GMT</pubDate></item><item><title>Off to Hack Reactor</title><link>http://www.stephaniehiga.com/posts/off-to-hack-reactor.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;I'm going to &lt;a class="reference external" href="http://www.hackreactor.com"&gt;Hack Reactor&lt;/a&gt; next week!&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;&lt;sup&gt;*&lt;/sup&gt; With much gratitude to my Hack Reactor classmates for giving me the necessary push to redesign my blog.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>design</category><category>nikola</category><guid>https://www.stephaniehiga.com/posts/the-design-of-everyday-blogs/</guid><pubDate>Mon, 02 Mar 2015 00:27:26 GMT</pubDate></item><item><title>Off to Hack Reactor</title><link>https://www.stephaniehiga.com/posts/off-to-hack-reactor/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;I'm going to &lt;a class="reference external" href="http://www.hackreactor.com"&gt;Hack Reactor&lt;/a&gt; next week!&lt;/p&gt;
 &lt;p&gt;Hack Reactor is a programming bootcamp -- the most intense of its kind, at eleven hours a day, six days a week, for twelve weeks. Pretty much everyone I've mentioned it to has recoiled in horror, imagining what it would be like to spend so much time cooped up in front of a screen. Yeah, I know. It sounds terrible. It might even sound nonsensical. But here I am anyway: packing my bags, preparing to fly to San Francisco in a few days, and writing about the program that will take over my life for the next three months.&lt;/p&gt;
-&lt;hr class="docutils"&gt;&lt;p&gt;Last August I happened upon A List Apart during work hours, likely in search of CSS help. I'm sure I found what I was looking for, but what caught my eye was an ad for Hack Reactor. Twelve-week immersive programming bootcamp! Six-figure average starting salary! It seemed too good to be true.&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;Last August I happened upon A List Apart during work hours, likely in search of CSS help. I'm sure I found what I was looking for, but what caught my eye was an ad for Hack Reactor. Twelve-week immersive programming bootcamp! Six-figure average starting salary! It seemed too good to be true.&lt;/p&gt;
 &lt;p&gt;The only programming bootcamp I'd heard of was General Assembly's Web Development Immersive, which had briefly interested me until I lucked into a front-end development role at my company back in 2013. I'd even taken a couple of General Assembly classes -- Intro to Data Science and Analysis (at their Santa Monica campus) and Optimizing Landing Pages for Conversion (online) -- neither of which had impressed me.&lt;/p&gt;
 &lt;p&gt;But Hack Reactor looked like a completely different species of bootcamp. It looked like something I needed.&lt;/p&gt;
 &lt;p&gt;Many people have questioned why I would need a bootcamp when I already have a career in web development. So I feel compelled to explain my reasoning here.&lt;/p&gt;
@@ -176,17 +197,20 @@
 &lt;p&gt;Before you start thinking I've got impostor syndrome, let me bring up &lt;a class="reference external" href="https://medium.com/@aliciatweet/overcoming-impostor-syndrome-bdae04e46ec5"&gt;this post&lt;/a&gt;, which Hack Reactor recommended. I don't identify with this mindset at all. For one, I actually &lt;em&gt;am&lt;/em&gt; an impostor. And second, I actually &lt;em&gt;don't&lt;/em&gt; have a background in computer science or anything related to it. Unlike the author, I didn't take programming classes in high school, didn't study CS/CE in college, never cofounded a software startup, and never worked for a tech giant.&lt;/p&gt;
 &lt;p&gt;Here's my history with computers prior to the age of 23. When I was eleven, I fell in love with the Geocities-era web and taught myself HTML and CSS. But I had no interest in programming whatsoever. In high school, I was convinced that I would be a novelist (that didn't pan out). In college, I was convinced that I would be an architect (that didn't pan out either), and I was the most Luddite architecture major you could imagine. When our professors told us to use Photoshop, I stuck with Microsoft Paint; when I saw my classmates saving time by using the AutoCAD command line, I turned up my nose. I produced hand drawings whenever possible. I put off learning Rhino, the school-sanctioned 3D drawing program, until mere days leading up to my final review. And my 3D renderings were wretched: oddly colored, unrealistic, physically unsound boxes. Needless to say, I had no future as an architect.&lt;/p&gt;
 &lt;p&gt;When I graduated at 21, I had a strange epiphany that I would make my living off computers. What's even stranger is that it turned out to be true. But I still haven't shaken off the Luddite cloak, which is ultimately why I decided to apply to Hack Reactor.&lt;/p&gt;
-&lt;hr class="docutils"&gt;&lt;p&gt;After seeing the Smashing Magazine ad, I researched all the programming bootcamps I could find. I immediately ruled out the ones that taught Ruby on Rails (which, by the way, is nearly all of them). Eventually I settled on two: Hack Reactor, my first choice by a long shot, and MakerSquare, as a backup. Hack Reactor appealed to me because of its laser focus on one language, JavaScript, and its intensity.&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;After seeing the Smashing Magazine ad, I researched all the programming bootcamps I could find. I immediately ruled out the ones that taught Ruby on Rails (which, by the way, is nearly all of them). Eventually I settled on two: Hack Reactor, my first choice by a long shot, and MakerSquare, as a backup. Hack Reactor appealed to me because of its laser focus on one language, JavaScript, and its intensity.&lt;/p&gt;
 &lt;p&gt;The MakerSquare interview came first. They stood me up. The admissions coordinator scheduled another interview, but alas, no one showed up to that one, either. How ridiculously unprofessional! So I canceled my application. (The funny part is that Hack Reactor recently acquired MakerSquare.)&lt;/p&gt;
 &lt;p&gt;When my Hack Reactor interview rolled around, at 10 a.m. on a bleak September Saturday, I was pessimistic. I downloaded Skype onto my computer about half an hour before the interview. The last time I'd used Skype was in 2011 or so, and I'd never used it for video calls. At 9:50, my interviewer messaged me, saying that he would begin the interview soon. Around that time, I checked the calendar confirmation email, and that's when I realized it would be a technical interview.&lt;/p&gt;
 &lt;p&gt;That's right. I confess to having done zero preparation whatsoever for my Hack Reactor interview. &lt;strong&gt;DO NOT DO THIS.&lt;/strong&gt; It was a dreadful mistake on my part, and the only reason I managed to cope with coding in real-time on a Google Doc with zero prep was because I'd been writing JavaScript nearly every day for over a year at that point. I was nervous as hell. Fortunately, my interviewer was really cool. He gave me plenty of hints and encouraged me to talk through my thought process. Thanks to his help, I managed to complete the functions he asked me to write, but I came away feeling like I'd bombed the interview. He told me I would hear back within a week.&lt;/p&gt;
 &lt;p&gt;Two days later, I got to work, fired up my email, and what did I find? An enrollment agreement and acceptance letter from Hack Reactor. I checked the email headers and freaked out. They'd sent the decision to me within &lt;em&gt;three hours&lt;/em&gt; of the end of my interview; I simply hadn't seen it because my application was tied to my GitHub account, which was in turn tied to my work email address.&lt;/p&gt;
 &lt;p&gt;I wrote back to the HR admission team. I deluged them with questions. I connected with HR alumni on LinkedIn and deluged &lt;em&gt;them&lt;/em&gt; with questions. I pushed back my start date from December 8, the cohort I'd applied for, to February 2. I sat on the enrollment agreement for a couple of months.&lt;/p&gt;
 &lt;p&gt;Then I decided to go.&lt;/p&gt;
-&lt;hr class="docutils"&gt;&lt;p&gt;Hack Reactor used to devote the first two weeks of the course to JavaScript fundamentals. Now they require students to complete a separate precourse curriculum, ensuring that everyone possesses a certain level of JavaScript knowledge before starting the program. I'm under oath not to reveal details about the precourse work, but, as other bloggers have mentioned, it involves cloning a popular functional JavaScript library as well as the front-end of a popular social media site.&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;Hack Reactor used to devote the first two weeks of the course to JavaScript fundamentals. Now they require students to complete a separate precourse curriculum, ensuring that everyone possesses a certain level of JavaScript knowledge before starting the program. I'm under oath not to reveal details about the precourse work, but, as other bloggers have mentioned, it involves cloning a popular functional JavaScript library as well as the front-end of a popular social media site.&lt;/p&gt;
 &lt;p&gt;My advice for the precourse work? Complete it as soon as possible so you don't have to worry about it. The estimated amount of time is 50-80 hours. I'm pretty sure I completed the precourse work in fewer hours than that, but I also rushed through it to make time for the edX functional programming class I mentioned in my last entry. Looking back, I'm happy I stayed with the functional programming class, as it sharpened my brain and made the precourse work look quite simple by comparison. But I'm not sure I would recommend doing this, especially around the holidays. It was stressful.&lt;/p&gt;
-&lt;hr class="docutils"&gt;&lt;p&gt;Deciding to attend Hack Reactor isn't like deciding to go to college, or deciding to accept a job offer. It's an expensive, unaccredited program, and people will wonder if it's a scam when you tell them about it.&lt;/p&gt;
-&lt;p&gt;Career-wise, it's probably the most difficult decision I've ever made. To be honest, I'm still not sure it's the right choice, but all I can really do at this point is look forward to the future. I'm beyond excited. Plus, Hack Reactor encourages blogging, so I'll be posting here more frequently!&lt;/p&gt;&lt;/div&gt;</description><category>hack reactor</category><category>programming</category><guid>http://www.stephaniehiga.com/posts/off-to-hack-reactor.html</guid><pubDate>Mon, 26 Jan 2015 23:45:45 GMT</pubDate></item><item><title>Review: Introduction to Functional Programming</title><link>http://www.stephaniehiga.com/posts/review-introduction-to-functional-programming.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Recently I completed Delft University's fall 2014 offering of &lt;a class="reference external" href="https://www.edx.org/course/introduction-functional-programming-delftx-fp101x"&gt;Introduction to Functional Programming (FP101x)&lt;/a&gt; on edX. I've been interested in functional programming for a while (caught the bug when I learned about Python list comprehensions), so I was really excited for this class. It turned out to be one of the better MOOCs I've taken, and definitely the most challenging.&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;Deciding to attend Hack Reactor isn't like deciding to go to college, or deciding to accept a job offer. It's an expensive, unaccredited program, and people will wonder if it's a scam when you tell them about it.&lt;/p&gt;
+&lt;p&gt;Career-wise, it's probably the most difficult decision I've ever made. To be honest, I'm still not sure it's the right choice, but all I can really do at this point is look forward to the future. I'm beyond excited. Plus, Hack Reactor encourages blogging, so I'll be posting here more frequently!&lt;/p&gt;&lt;/div&gt;</description><category>hack reactor</category><category>programming</category><guid>https://www.stephaniehiga.com/posts/off-to-hack-reactor/</guid><pubDate>Mon, 26 Jan 2015 23:45:45 GMT</pubDate></item><item><title>Review: Introduction to Functional Programming</title><link>https://www.stephaniehiga.com/posts/review-introduction-to-functional-programming/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Recently I completed Delft University's fall 2014 offering of &lt;a class="reference external" href="https://www.edx.org/course/introduction-functional-programming-delftx-fp101x"&gt;Introduction to Functional Programming (FP101x)&lt;/a&gt; on edX. I've been interested in functional programming for a while (caught the bug when I learned about Python list comprehensions), so I was really excited for this class. It turned out to be one of the better MOOCs I've taken, and definitely the most challenging.&lt;/p&gt;
 &lt;p&gt;My takeaways from the class:&lt;/p&gt;
 &lt;div class="section" id="functional-programming-is-cool"&gt;
 &lt;h2&gt;Functional programming is cool&lt;/h2&gt;
@@ -203,8 +227,7 @@
 &lt;p&gt;Seriously, what a gorgeous language.&lt;/p&gt;
 &lt;p&gt;I don't understand it. That is, I understand enough of it to know I don't understand it at all. Regardless, I can still appreciate it on a superficial level.&lt;/p&gt;
 &lt;p&gt;Say you have a list, and you want to apply one function to the members of the list in odd positions, and another function to the members of the list in even positions. Here's a quick JavaScript implementation:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-function oddEvenMap(list, oddFunc, evenFunc) {
+&lt;pre class="literal-block"&gt;function oddEvenMap(list, oddFunc, evenFunc) {
   for (var i = 0; i &amp;lt; list.length; i++) {
     if (i % 2 === 0) {
       evenFunc(list[i]);
@@ -212,14 +235,11 @@ function oddEvenMap(list, oddFunc, evenFunc) {
       oddFunc(list[i]);
     }
   }
-}
-&lt;/pre&gt;
+}&lt;/pre&gt;
 &lt;p&gt;And here it is in Haskell:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-oddEvenMap :: (a -&amp;gt; b) -&amp;gt; (a -&amp;gt; b) -&amp;gt; [a] -&amp;gt; [b]
+&lt;pre class="literal-block"&gt;oddEvenMap :: (a -&amp;gt; b) -&amp;gt; (a -&amp;gt; b) -&amp;gt; [a] -&amp;gt; [b]
 oddEvenMap f g [] = []
-oddEvenMap f g (x : xs) = f x : oddEvenMap g f xs
-&lt;/pre&gt;
+oddEvenMap f g (x : xs) = f x : oddEvenMap g f xs&lt;/pre&gt;
 &lt;p&gt;No variable assignments. No for loops. Haskell is stunningly beautiful and concise. (I realize the comparison to JavaScript isn't fair, but that's the language I know best.)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="lastly-edx-is-a-great-mooc-platform"&gt;
@@ -227,7 +247,7 @@ oddEvenMap f g (x : xs) = f x : oddEvenMap g f xs
 &lt;p&gt;In 2014, Coursera was my MOOC platform of choice, as I'd finished three classes through it at the end of 2013 (&lt;a class="reference external" href="https://www.coursera.org/course/compdata"&gt;Computing for Data Analysis&lt;/a&gt;, &lt;a class="reference external" href="https://www.coursera.org/course/dataanalysis"&gt;Data Analysis&lt;/a&gt;, and &lt;a class="reference external" href="https://www.coursera.org/course/ml"&gt;Machine Learning&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Now edX has taken its place, primarily for usability reasons. Coursera's interface is passable, with many Bootstrappy elements; the videos seem to go on forever. edX's interface is thoughtful and intuitive. Two of my favorite aspects: the video player, which has speed controls and highlighted subtitles that scroll in unison with the instructor's speech, and the homework submission system, which checks each answer individually.&lt;/p&gt;
 &lt;p&gt;I will definitely be returning to edX for more classes later this year.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>programming</category><guid>http://www.stephaniehiga.com/posts/review-introduction-to-functional-programming.html</guid><pubDate>Sat, 03 Jan 2015 05:47:51 GMT</pubDate></item><item><title>Movable AND/OR Statements</title><link>http://www.stephaniehiga.com/posts/movable-andor-statements.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Recently at work I wrote a messy bit of JavaScript (jQuery really) to create movable AND/OR statements. I learned how to code less than a year ago and haven't done any intense programming (yet, just wait), so this is probably the most difficult, headache-inducing, neck-wringing problem I've worked on to date. The last time I encountered this much trouble was when I learned about recursion and &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Trie"&gt;tries&lt;/a&gt;. I figure I'll outline my thought process here in case it's useful to anyone else.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>programming</category><guid>https://www.stephaniehiga.com/posts/review-introduction-to-functional-programming/</guid><pubDate>Sat, 03 Jan 2015 05:47:51 GMT</pubDate></item><item><title>Movable AND/OR Statements</title><link>https://www.stephaniehiga.com/posts/movable-andor-statements/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Recently at work I wrote a messy bit of JavaScript (jQuery really) to create movable AND/OR statements. I learned how to code less than a year ago and haven't done any intense programming (yet, just wait), so this is probably the most difficult, headache-inducing, neck-wringing problem I've worked on to date. The last time I encountered this much trouble was when I learned about recursion and &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Trie"&gt;tries&lt;/a&gt;. I figure I'll outline my thought process here in case it's useful to anyone else.&lt;/p&gt;
 &lt;div class="section" id="the-assignment"&gt;
 &lt;h2&gt;The assignment&lt;/h2&gt;
 &lt;p&gt;The goal of these AND/OR statements was to allow users to perform searches with custom parameters. On the right side of the page would be two lists: one containing the available parameters (Location, Category, Subcategory) and the other containing the two operators (AND, OR). On the left two-thirds of the page would be where the user would drag the parameters and operators to build a full search statement.&lt;/p&gt;
@@ -235,23 +255,24 @@ oddEvenMap f g (x : xs) = f x : oddEvenMap g f xs
 &lt;strong&gt;Location OR Category AND Subcategory&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Making elements sortable is fairly simple. Two words: &lt;a class="reference external" href="http://jqueryui.com/sortable/"&gt;jQuery UI&lt;/a&gt;. No, that wasn't the hard part at all. The hard part was following the rules given to me, which involved much tweaking of the sortable interaction and, as always, fighting with the DOM.&lt;/p&gt;
 &lt;p&gt;The rules:&lt;/p&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;Parameters should never be next to parameters, and operators should never be next to operators, e.g., it shouldn't be possible to build statements like &lt;strong&gt;Location Category AND OR Subcategory&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Operators should never be at the beginning or ending of a statement, e.g., &lt;strong&gt;AND Category AND Subcategory OR&lt;/strong&gt;. Pretty much anything that doesn't make sense in natural language shouldn't be possible.&lt;/li&gt;
-&lt;li&gt;When a parameter or operator (for brevity's sake I'll call them "items" from now on) is dragged from the sidebar into a statement, the sidebar should repopulate with the missing item.&lt;/li&gt;
-&lt;li&gt;Parameters can be dragged into statements, and operators can be dragged into statements. All other dragging between lists should not be allowed. In other words, a parameter can't be dragged into the list of operators, an operator can't be dragged into the list of parameters, and blocks in statements can't be dragged back into the lists (to be honest, I implemented this last rule to make it slightly easier for me). Also, items can't be dragged from one statement to another.&lt;/li&gt;
-&lt;li&gt;Since items in statements can't be dragged back into the list, there needs to be a way to clear a statement and start over.&lt;/li&gt;
-&lt;li&gt;Each statement begins with an empty dotted box, to indicate that a new item can be placed there. As items are placed in the statement, the dotted box should move over to the right until the statement reaches its item limit. The item limit is five, as there are only three parameters and two operators.&lt;/li&gt;
-&lt;li&gt;Items can be dragged within a statement, but again, parameters should never be next to parameters, and operators should never be next to operators.&lt;/li&gt;
-&lt;li&gt;Within a statement, if an item is dragged over a like block, it should switch with the like item. In other words, if "Location" is dragged over "Category," the two items should switch places.&lt;/li&gt;
-&lt;li&gt;When parameters are placed into a statement, they should become editable input boxes, so that the user can enter her preferred location, category, and subcategory.&lt;/li&gt;
-&lt;li&gt;When a user types into the "Location" input box, this should trigger an autocomplete place search. (I'd been playing with the &lt;a class="reference external" href="https://developers.google.com/places/"&gt;Google Places API&lt;/a&gt; the week prior to this for my &lt;a class="reference external" href="http://www.wehoeatmo.com"&gt;WeHo Eat Mo&lt;/a&gt; project, so this was fairly easy to implement.)&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;That's about it. I created some of the rules as I went along based on the issues I faced while interacting with the interface. Bugs just kept on cropping up. (In fact, while writing this, I discovered a few more. Code is never finished.)&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Parameters should never be next to parameters, and operators should never be next to operators, e.g., it shouldn't be possible to build statements like &lt;strong&gt;Location Category AND OR Subcategory&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Operators should never be at the beginning or ending of a statement, e.g., &lt;strong&gt;AND Category AND Subcategory OR&lt;/strong&gt;. Pretty much anything that doesn't make sense in natural language shouldn't be possible.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;When a parameter or operator (for brevity's sake I'll call them "items" from now on) is dragged from the sidebar into a statement, the sidebar should repopulate with the missing item.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Parameters can be dragged into statements, and operators can be dragged into statements. All other dragging between lists should not be allowed. In other words, a parameter can't be dragged into the list of operators, an operator can't be dragged into the list of parameters, and blocks in statements can't be dragged back into the lists (to be honest, I implemented this last rule to make it slightly easier for me). Also, items can't be dragged from one statement to another.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Since items in statements can't be dragged back into the list, there needs to be a way to clear a statement and start over.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Each statement begins with an empty dotted box, to indicate that a new item can be placed there. As items are placed in the statement, the dotted box should move over to the right until the statement reaches its item limit. The item limit is five, as there are only three parameters and two operators.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Items can be dragged within a statement, but again, parameters should never be next to parameters, and operators should never be next to operators.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Within a statement, if an item is dragged over a like block, it should switch with the like item. In other words, if "Location" is dragged over "Category," the two items should switch places.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;When parameters are placed into a statement, they should become editable input boxes, so that the user can enter her preferred location, category, and subcategory.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;When a user types into the "Location" input box, this should trigger an autocomplete place search. (I'd been playing with the &lt;a class="reference external" href="https://developers.google.com/places/"&gt;Google Places API&lt;/a&gt; the week prior to this for my &lt;a class="reference external" href="http://www.wehoeatmo.com"&gt;WeHo Eat Mo&lt;/a&gt; project, so this was fairly easy to implement.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That's about it. I created some of the rules as I went along based on the issues I faced while interacting with the interface. Bugs just kept on cropping up. (In fact, while writing this, I discovered a few more. Code is never finished.)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="if-else-and-nothing-else"&gt;
 &lt;h2&gt;If, else, and nothing else&lt;/h2&gt;
 &lt;p&gt;The code I ended up writing is almost entirely made up of if–else blocks. Here's the nested conditional monster that controls the "sortability" of items (variables are defined at the beginning of the sort):&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-function sortRules(event, ui) {
+&lt;pre class="literal-block"&gt;function sortRules(event, ui) {
         targetParent = ui.item.parent();
         targetParent.children('.ui-state-dotted').remove();
 
@@ -319,10 +340,9 @@ function sortRules(event, ui) {
                 $(this).sortable('cancel');
                 checkCanceled(targetParent);
         }
-}
-&lt;/pre&gt;
+}&lt;/pre&gt;
 &lt;p&gt;Yes, this function consists of one if–else block with...I don't even know how many nested if–else blocks inside of each of those conditions. It's terrifying. But it does the trick. Eventually I'd like to refactor this using a hash table, if that's possible. To see my progress on this project, &lt;a class="reference external" href="https://github.com/sahiga/movable-logic"&gt;check out my source code on GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>javascript</category><category>jquery</category><guid>http://www.stephaniehiga.com/posts/movable-andor-statements.html</guid><pubDate>Fri, 20 Sep 2013 20:07:16 GMT</pubDate></item><item><title>Read-Only Text: How to Write Every Day</title><link>http://www.stephaniehiga.com/posts/read-only-text-how-to-write-every-day.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Three months ago I decided to start writing consistently.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>javascript</category><category>jquery</category><guid>https://www.stephaniehiga.com/posts/movable-andor-statements/</guid><pubDate>Fri, 20 Sep 2013 20:07:16 GMT</pubDate></item><item><title>Read-Only Text: How to Write Every Day</title><link>https://www.stephaniehiga.com/posts/read-only-text-how-to-write-every-day/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Three months ago I decided to start writing consistently.&lt;/p&gt;
 &lt;p&gt;Since then, I've worked on my novel every single day without fail. In the past, I would have used any sort of negative feeling – laziness, exhaustion, simply "not wanting to write" – as my cue to step back and let writer's block take over, but now I fight through it. All I have to do is start.&lt;/p&gt;
 &lt;p&gt;Before, I thought of writing every day as some monstrous, impossible feat. But I've found that it's just the opposite. &lt;strong&gt;Writing only when you're inspired is ridiculously hard compared to writing daily.&lt;/strong&gt; Inspiration doesn't strike often, and if you rely on it to dictate your writing schedule, then you're not going to write very often. And when you don't practice, you stagnate.&lt;/p&gt;
 &lt;p&gt;So if you want to write, don't let yourself stagnate. Here are the rules I came up with to jumpstart my writing habit.&lt;/p&gt;
@@ -344,13 +364,16 @@ function sortRules(event, ui) {
 &lt;h2&gt;RULE #3: Begin where you left off the previous day&lt;/h2&gt;
 &lt;p&gt;Treat your scenes as if they were read-only, too. You can't write a new sentence in the middle of a paragraph from a previous day. If you choose to do this anyway, then that sentence doesn't count.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Reasoning:&lt;/strong&gt; Rule #2 prevents destructive editing; this rule prevents &lt;em&gt;constructive&lt;/em&gt; editing. It ensures that each new sentence is subsequent, which increases the likelihood that the new sentence will push the story forward.&lt;/p&gt;
-&lt;hr class="docutils"&gt;&lt;p&gt;I've been following these rules for twelve weeks. Today is the first day of week 13, which means I'll write a minimum of 13 sentences every day this week. At this rate, I should have written 546 sentences by now. Instead I've written 34,043 words, which, at an average of 15 words per sentence, translates to about &lt;strong&gt;2270 sentences, over four times what I projected&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;I've been following these rules for twelve weeks. Today is the first day of week 13, which means I'll write a minimum of 13 sentences every day this week. At this rate, I should have written 546 sentences by now. Instead I've written 34,043 words, which, at an average of 15 words per sentence, translates to about &lt;strong&gt;2270 sentences, over four times what I projected&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;For reference, before I started this habit, the novel clocked in at 49,091 words. It took me well over a year to write that much. Within the past three months, I've written 70% of that amount, and despite my focus on quantity, I've also made strides in quality.&lt;/p&gt;
 &lt;p&gt;I highly recommend this sentence-based system to anyone who wants to write. For more ideas on how to write every day, check out these articles:&lt;/p&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;&lt;a class="reference external" href="http://abuckfifty.tumblr.com/"&gt;It's Not a Sprint, It's a Marathon&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://zenhabits.net/write-daily/"&gt;Zen Habits: Why You Should Write Daily&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</description><category>writing</category><guid>http://www.stephaniehiga.com/posts/read-only-text-how-to-write-every-day.html</guid><pubDate>Sun, 11 Aug 2013 19:15:09 GMT</pubDate></item><item><title>Analyzing Rap Lyrics with Python</title><link>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: &lt;strong&gt;What's the most beloved car brand in hip-hop?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In this post, I'll explain how I came up with a possible answer to that question. &lt;a class="reference external" href="http://stephaniehiga.com/cars.html#results"&gt;To skip to the results, click here&lt;/a&gt;.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://abuckfifty.tumblr.com/"&gt;It's Not a Sprint, It's a Marathon&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://zenhabits.net/write-daily/"&gt;Zen Habits: Why You Should Write Daily&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>writing</category><guid>https://www.stephaniehiga.com/posts/read-only-text-how-to-write-every-day/</guid><pubDate>Sun, 11 Aug 2013 19:15:09 GMT</pubDate></item><item><title>Analyzing Rap Lyrics with Python</title><link>https://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: &lt;strong&gt;What's the most beloved car brand in hip-hop?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In this post, I'll explain how I came up with a possible answer to that question. &lt;a class="reference external" href="https://www.stephaniehiga.com/cars.html"&gt;To skip to the results, click here&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="section" id="why-hip-hop-why-cars"&gt;
 &lt;h2&gt;Why hip-hop / why cars&lt;/h2&gt;
 &lt;p&gt;Hip-hop is my favorite genre of music. On the road, I tune the radio to &lt;a class="reference external" href="http://www.935kday.com/"&gt;93.5 KDAY&lt;/a&gt;; otherwise, I'm plugged into my Pandora account, which is heavy on Golden Age, Midwestern, East Coast, Bay Area, and (recently) indie rap. Rap is also lyrically dense, which makes it a great source for text mining.&lt;/p&gt;
@@ -359,13 +382,15 @@ function sortRules(event, ui) {
 &lt;div class="section" id="the-lyrics-mining-process"&gt;
 &lt;h2&gt;The lyrics mining process&lt;/h2&gt;
 &lt;p&gt;To find the answer, I needed a sizeable sample of car brand names, a searchable database of hip-hop lyrics, a script to search for the brands within the lyrics database, and a way of displaying the results. Fortunately, all the necessary tools were readily available:&lt;/p&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;Python&lt;/li&gt;
-&lt;li&gt;Wikipedia&lt;/li&gt;
-&lt;li&gt;LibreOffice Calc&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://research.blackyouthproject.com/raplyrics/"&gt;Rap Lyrics Database&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://developers.google.com/chart/"&gt;Google Charts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bootstrap&lt;/li&gt;
-&lt;/ul&gt;&lt;div class="section" id="gathering-the-data"&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Python&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Wikipedia&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;LibreOffice Calc&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://research.blackyouthproject.com/raplyrics/"&gt;Rap Lyrics Database&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://developers.google.com/chart/"&gt;Google Charts&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bootstrap&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="section" id="gathering-the-data"&gt;
 &lt;h3&gt;Gathering the data&lt;/h3&gt;
 &lt;p&gt;Wikipedia blocks web scrapers, understandably. So I manually downloaded all of Wikipedia's lists of car manufacturers and brands by country. To reduce the amount of HTML I would have to parse, I selected the &lt;a class="reference external" href="http://en.m.wikipedia.org/wiki/Main_Page"&gt;Mobile View&lt;/a&gt; for each page.&lt;/p&gt;
 &lt;p&gt;I downloaded ten files in total: a general list of car manufacturers plus individual lists for China, France, Germany, Italy, Japan, Spain, Sweden, the United Kingdom, and the United States.&lt;/p&gt;
@@ -374,8 +399,7 @@ function sortRules(event, ui) {
 &lt;h3&gt;Cleaning the data&lt;/h3&gt;
 &lt;p&gt;Wikipedia's Mobile View pages contain search bars at the top and the usual "See also," "References," and "Read in another language" links. I started by erasing these (manually again), reducing the files to structural markup and the lists themselves.&lt;/p&gt;
 &lt;p&gt;With the Python &lt;a class="reference external" href="http://www.crummy.com/software/BeautifulSoup/"&gt;Beautiful Soup&lt;/a&gt; library, I extracted the brand name tags by selecting all list elements. Then I used &lt;a class="reference external" href="http://www.nltk.org"&gt;NLTK&lt;/a&gt; to remove the HTML tags and regular expressions to remove excess whitespace and text (such as notes about the brand, the brand's years of operation, etc.). This is what I came up with:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-def clean_wikilist(filename):
+&lt;pre class="literal-block"&gt;def clean_wikilist(filename):
     # open saved html file
     html = open(filename).read()
 
@@ -398,12 +422,10 @@ def clean_wikilist(filename):
     tokens = [token for token in tokens if not re.findall(r'\[[0-9]+\]|\([\S\s]+[\(\)]?|^\s+$|^[\s\[\]\(\)0-9]+$', token)]
     tokens = list(set(tokens))
 
-    return tokens
-&lt;/pre&gt;
+    return tokens&lt;/pre&gt;
 &lt;p&gt;After running my script on all ten lists, I had a whopping &lt;strong&gt;2599 brand names&lt;/strong&gt;. So I decided to limit the set to Germany, Japan, the UK, and the US. The pages for Germany, the UK, and the US separate current brands from defunct brands, so for those countries I used current brands only. The Japan page mixes current and defunct brands into one list; to save time, I used all of them.&lt;/p&gt;
-&lt;p&gt;These four pages have slightly different structures. The &lt;tt class="docutils literal"&gt;clean_wikilist()&lt;/tt&gt; script worked nicely for Japan, but captured too much information on the others, so I wrote three additional scripts. Here's the one for Germany:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-def autos_ge():
+&lt;p&gt;These four pages have slightly different structures. The &lt;code class="docutils literal"&gt;clean_wikilist()&lt;/code&gt; script worked nicely for Japan, but captured too much information on the others, so I wrote three additional scripts. Here's the one for Germany:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;def autos_ge():
         # open saved html file
         html = open('autos-ge.html').read()
 
@@ -425,17 +447,15 @@ def autos_ge():
         # combine lists
         tokens = list(set(minor_tokens + major_tokens))
 
-        return tokens
-&lt;/pre&gt;
-&lt;p&gt;One notable difference between this and the original script is the usage of Beautiful Soup. In &lt;tt class="docutils literal"&gt;clean_wikilist()&lt;/tt&gt;, the desired elements are selected first, with SoupStrainer, and then used to create a list of the matching HTML tags in unicode format. &lt;tt class="docutils literal"&gt;autos_ge()&lt;/tt&gt;, on the other hand, creates a Beautiful Soup object out of the entire page; the desired elements are selected via DOM traversal.&lt;/p&gt;
+        return tokens&lt;/pre&gt;
+&lt;p&gt;One notable difference between this and the original script is the usage of Beautiful Soup. In &lt;code class="docutils literal"&gt;clean_wikilist()&lt;/code&gt;, the desired elements are selected first, with SoupStrainer, and then used to create a list of the matching HTML tags in unicode format. &lt;code class="docutils literal"&gt;autos_ge()&lt;/code&gt;, on the other hand, creates a Beautiful Soup object out of the entire page; the desired elements are selected via DOM traversal.&lt;/p&gt;
 &lt;p&gt;The number of brand names from this limited dataset? Just 178.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="analyzing-the-data"&gt;
 &lt;h3&gt;Analyzing the data&lt;/h3&gt;
 &lt;p&gt;The Rap Lyrics Database contains lyrics for all of Billboard Music's rap songs from 1989 through 2009. It's the only searchable database of hip-hop lyrics (exclusively).&lt;/p&gt;
 &lt;p&gt;The result pages share the same URL, with the search term appended to the end: &lt;em&gt;http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/&lt;/em&gt;. This made it much easier to automate the search and saving process.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-def rap_search(auto_list):
+&lt;pre class="literal-block"&gt;def rap_search(auto_list):
     # search for each brand name
     for brand in auto_list:
         url = 'http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/' + word
@@ -447,12 +467,10 @@ def rap_search(auto_list):
         results = word + '.html'
 
         with open(results, 'w') as results_file:
-            results_file.write(results_html)
-&lt;/pre&gt;
+            results_file.write(results_html)&lt;/pre&gt;
 &lt;p&gt;This saved 178 HTML pages, each named after the appropriate brand search term, onto my computer. I also searched for known nicknames of the brands (e.g., "Bimmer/Beemer/Beamer" for BMW and "Chevy" for Chevrolet).&lt;/p&gt;
 &lt;p&gt;I used Beautiful Soup again to count the number of results on each page:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-def count_rap_results():
+&lt;pre class="literal-block"&gt;def count_rap_results():
         # for all html files in current directory
         for filename in os.listdir('.'):
         if filename.endswith('html'):
@@ -467,8 +485,7 @@ def count_rap_results():
 
         # write brand names and number of songs into a text file
         with open('count_rap_autos.txt', 'a') as counter_file:
-                counter_file.write('%s%15d\n' % (filename[:-5], count))
-&lt;/pre&gt;
+                counter_file.write('%s%15d\n' % (filename[:-5], count))&lt;/pre&gt;
 &lt;p&gt;This got me a pretty messy-looking text file of each brand and the number of songs in which it was mentioned:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Lea-Francis               1&lt;/p&gt;
@@ -492,24 +509,19 @@ def count_rap_results():
 &lt;div class="section" id="pain-points"&gt;
 &lt;h2&gt;Pain points&lt;/h2&gt;
 &lt;p&gt;I'm new to programming. While I enjoy it very much, I spend about 90% of my time immersed in pain. The text analysis took me four nights (Monday through Thursday) to complete. On the actual hack day, I made the graph and web page, with a lot of help from Bootstrap. Along the way, I encountered many problems:&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;&lt;p class="first"&gt;Selecting specific subsets of HTML tags with no classes or ids.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Accidentally passing list items with the newline character to the &lt;tt class="docutils literal"&gt;rap_search()&lt;/tt&gt; script, resulting in 178 filenames split off from their extensions. Fortunately there was an easy fix:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-for filename in os.listdir("."):
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Selecting specific subsets of HTML tags with no classes or ids.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Accidentally passing list items with the newline character to the &lt;code class="docutils literal"&gt;rap_search()&lt;/code&gt; script, resulting in 178 filenames split off from their extensions. Fortunately there was an easy fix:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;for filename in os.listdir("."):
         if '\n' in filename:
-        os.rename(filename, re.sub(r'\n', r'', filename))
-&lt;/pre&gt;
+        os.rename(filename, re.sub(r'\n', r'', filename))&lt;/pre&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Reformatting the final list of brands into an HTML table.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Reformatting the final list of brands into a list of dictionaries to create a graph with &lt;a class="reference external" href="http://philogb.github.io/jit/"&gt;JavaScript InfoVis Toolkit&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Not knowing how to build a non-stacked bar graph with the InfoVis Toolkit.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Switching to Google Charts and reformatting the final list of brands into a list of lists to create a Google Charts graph.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;
+&lt;li&gt;&lt;p&gt;Reformatting the final list of brands into an HTML table.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reformatting the final list of brands into a list of dictionaries to create a graph with &lt;a class="reference external" href="http://philogb.github.io/jit/"&gt;JavaScript InfoVis Toolkit&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Not knowing how to build a non-stacked bar graph with the InfoVis Toolkit.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Switching to Google Charts and reformatting the final list of brands into a list of lists to create a Google Charts graph.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;div class="section" id="notes-for-the-future"&gt;
 &lt;h2&gt;Notes for the future&lt;/h2&gt;
 &lt;div class="section" id="more-complete-data"&gt;
@@ -544,36 +556,31 @@ for filename in os.listdir("."):
 &lt;p&gt;After going about this somewhat backwards, I think my initial impression remains correct. I'm happy I finally took a stab at the project, and I'm excited to continue working on it. This is just the first of a long series of experiments (and blog posts)!&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/sahiga/rap-analysis"&gt;Source files on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>hip-hop + rap</category><category>python</category><category>text mining</category><guid>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</guid><pubDate>Sat, 18 May 2013 18:32:32 GMT</pubDate></item><item><title>GitHub for Linux Mint</title><link>http://www.stephaniehiga.com/posts/github-for-linux-mint.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Version control terrifies me.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>hip-hop + rap</category><category>python</category><category>text mining</category><guid>https://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python/</guid><pubDate>Sat, 18 May 2013 18:32:32 GMT</pubDate></item><item><title>GitHub for Linux Mint</title><link>https://www.stephaniehiga.com/posts/github-for-linux-mint/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Version control terrifies me.&lt;/p&gt;
 &lt;p&gt;But you know what else terrifies me? Losing files. I've lost enough of them and endured enough filename headaches (story-1.doc, story-2.doc, story-final, story-new.doc, story-newEST.doc, etc.) in my lifetime to realize that &lt;strong&gt;version control is extremely important&lt;/strong&gt;, and I need to develop better version control habits.&lt;/p&gt;
 &lt;p&gt;So, I added the files for this site to &lt;a class="reference external" href="https://github.com/sahiga/sah"&gt;my GitHub account&lt;/a&gt;. The following guide details the steps I took, minus the legion of errors I made. I've named it "GitHub for &lt;a class="reference external" href="http://www.linuxmint.com"&gt;Linux Mint&lt;/a&gt;," in honor of my operating system and the fact that GitHub offers &lt;a class="reference external" href="http://mac.github.com"&gt;GitHub for Mac&lt;/a&gt; and &lt;a class="reference external" href="http://windows.github.com"&gt;GitHub for Windows&lt;/a&gt;, but no GitHub for GNU/Linux (even though, hey, some of us GNU/Linux users could use a little point-and-click help over here).&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note: Afterward, I realized I could have had a &lt;a class="reference external" href="https://help.github.com/articles/fetching-a-remote"&gt;much easier time&lt;/a&gt; cloning the repository. This command is identical to the "Clone in Windows" and "Clone in Mac" buttons in the corresponding GitHub GUI applications:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-git clone &amp;lt;URL&amp;gt;
-&lt;/pre&gt;
+&lt;pre class="literal-block"&gt;git clone &amp;lt;URL&amp;gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 &lt;div class="section" id="connect-your-computer-to-github"&gt;
 &lt;h2&gt;Connect your computer to GitHub&lt;/h2&gt;
 &lt;p&gt;First, you need a secure method of connecting your computer to GitHub. You can do this through SSH (generate a new public/private SSH key pair and add it to your GitHub account) or through HTTPS (configure the Git credential helper).&lt;/p&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;&lt;a class="reference external" href="https://help.github.com/articles/set-up-git"&gt;Instructions for using HTTPS with GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://help.github.com/articles/generating-ssh-keys"&gt;Instructions for using SSH with GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://help.github.com/articles/set-up-git"&gt;Instructions for using HTTPS with GitHub&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://help.github.com/articles/generating-ssh-keys"&gt;Instructions for using SSH with GitHub&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;div class="section" id="prepare-the-branches"&gt;
 &lt;h2&gt;Prepare the branches&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/new"&gt;Create a new repository on GitHub&lt;/a&gt;. This is the &lt;strong&gt;remote branch&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Fire up your command line. Move to the directory containing your version control files (if you're not there already), e.g., &lt;tt class="docutils literal"&gt;cd sah&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;Fire up your command line. Move to the directory containing your version control files (if you're not there already), e.g., &lt;code class="docutils literal"&gt;cd sah&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Initialize a Git repository in this directory. This is the &lt;strong&gt;local branch&lt;/strong&gt;.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-git init
-&lt;/pre&gt;
+&lt;pre class="literal-block"&gt;git init&lt;/pre&gt;
 &lt;p&gt;Check the status of your new repository.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-git status
-&lt;/pre&gt;
-&lt;p&gt;(or &lt;tt class="docutils literal"&gt;git st&lt;/tt&gt; if you've set up &lt;a class="reference external" href="http://git-scm.com/book/ch2-7.html#Git-Aliases"&gt;aliases&lt;/a&gt;). This is optional, but I like checking the status to see which branch I'm working on and which files will be included in the next commit.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-# On branch master
+&lt;pre class="literal-block"&gt;git status&lt;/pre&gt;
+&lt;p&gt;(or &lt;code class="docutils literal"&gt;git st&lt;/code&gt; if you've set up &lt;a class="reference external" href="http://git-scm.com/book/ch2-7.html#Git-Aliases"&gt;aliases&lt;/a&gt;). This is optional, but I like checking the status to see which branch I'm working on and which files will be included in the next commit.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;# On branch master
 # Untracked files:
 #   (use "git add &amp;lt;file&amp;gt;..." to include in what will be committed)
 #
@@ -592,88 +599,78 @@ git status
 #       posts/
 #       stephanieahiga.wordpress.2013-05-05.xml
 #       stories/
-nothing added to commit but untracked files present (use "git add" to track)
-&lt;/pre&gt;
+nothing added to commit but untracked files present (use "git add" to track)&lt;/pre&gt;
 &lt;p&gt;Right now there's "nothing added to commit," meaning the local repository is empty. This is because you've just initialized it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="start-tracking-your-files"&gt;
 &lt;h2&gt;Start tracking your files&lt;/h2&gt;
-&lt;p&gt;Next, add version control tracking to your files. To add individual files, write &lt;tt class="docutils literal"&gt;git add&lt;/tt&gt; and then the filename. To add everything in the directory to your commit:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-git add .
-&lt;/pre&gt;
-&lt;p&gt;Now it's time to commit the change. The basic commit command is &lt;tt class="docutils literal"&gt;git commit&lt;/tt&gt;, which will launch your preferred text editor. The &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-m&lt;/span&gt;&lt;/tt&gt; flag allows you to skip the text editor and type your commit message inline; the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-a&lt;/span&gt;&lt;/tt&gt; flag tells Git to automatically stage your tracked files, skipping the staging area.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-git commit -a -m "Added Nikola site files"
-&lt;/pre&gt;
+&lt;p&gt;Next, add version control tracking to your files. To add individual files, write &lt;code class="docutils literal"&gt;git add&lt;/code&gt; and then the filename. To add everything in the directory to your commit:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;git add .&lt;/pre&gt;
+&lt;p&gt;Now it's time to commit the change. The basic commit command is &lt;code class="docutils literal"&gt;git commit&lt;/code&gt;, which will launch your preferred text editor. The &lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;-m&lt;/span&gt;&lt;/code&gt; flag allows you to skip the text editor and type your commit message inline; the &lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;-a&lt;/span&gt;&lt;/code&gt; flag tells Git to automatically stage your tracked files, skipping the staging area.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;git commit -a -m "Added Nikola site files"&lt;/pre&gt;
 &lt;p&gt;See &lt;a class="reference external" href="http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository"&gt;Git Basics - Recording Changes to the Repository&lt;/a&gt; for more information on committing changes.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="merge-and-sync-your-branches"&gt;
 &lt;h2&gt;Merge and sync your branches&lt;/h2&gt;
 &lt;p&gt;Merge the remote branch (the GitHub copy of the repository) with your local branch (the local copy of the repository). This consolidates the two branches and ensures that they are identical.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-git pull https://github.com/sahiga/sah.git
-&lt;/pre&gt;
+&lt;pre class="literal-block"&gt;git pull https://github.com/sahiga/sah.git&lt;/pre&gt;
 &lt;p&gt;You should see a message like this:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-From https://github.com/sahiga/sah
+&lt;pre class="literal-block"&gt;From https://github.com/sahiga/sah
  * branch            HEAD       -&amp;gt; FETCH_HEAD
 Merge made by the 'recursive' strategy.
  README.md |    4 ++++
  1 file changed, 4 insertions(+)
- create mode 100644 README.md
-&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;tt class="docutils literal"&gt;git pull&lt;/tt&gt; automatically merges commits from the "pulled" branch into your current branch. This works fine on an empty GitHub repository, but it could cause &lt;a class="reference external" href="https://help.github.com/articles/fetching-a-remote"&gt;merge conflicts&lt;/a&gt;.&lt;/p&gt;
+ create mode 100644 README.md&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class="docutils literal"&gt;git pull&lt;/code&gt; automatically merges commits from the "pulled" branch into your current branch. This works fine on an empty GitHub repository, but it could cause &lt;a class="reference external" href="https://help.github.com/articles/fetching-a-remote"&gt;merge conflicts&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Push your commit on the local branch to the remote branch:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-git push origin master
-&lt;/pre&gt;
+&lt;pre class="literal-block"&gt;git push origin master&lt;/pre&gt;
 &lt;p&gt;If you're using HTTPS, GitHub will prompt you for credentials. To switch to SSH, &lt;a class="reference external" href="https://help.github.com/articles/why-is-git-always-asking-for-my-password"&gt;follow these instructions&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;strong&gt;Note:&lt;/strong&gt; I originally attempted &lt;tt class="docutils literal"&gt;git push origin master&lt;/tt&gt; before &lt;tt class="docutils literal"&gt;git pull&lt;/tt&gt;, resulting in a "non-fast-forward" error. This error occurs when the local branch is behind the remote branch, and therefore Git can't push the local commits without losing commits on the remote branch. GitHub has an &lt;a class="reference external" href="https://help.github.com/articles/dealing-with-non-fast-forward-errors"&gt;article on non-fast-forward errors&lt;/a&gt; that I wish I'd found when I made this mistake.&lt;/blockquote&gt;
-&lt;p&gt;The two branches are now in sync! Check the commit history in your local branch with &lt;tt class="docutils literal"&gt;git log&lt;/tt&gt;. The most recent commit should have a "Merge" attribute, identical to what you'll find in the "Commits" tab in your GitHub account:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-    commit e9bcc38554dd930b4bd1f557e45c92f8f65e0a98
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; I originally attempted &lt;code class="docutils literal"&gt;git push origin master&lt;/code&gt; before &lt;code class="docutils literal"&gt;git pull&lt;/code&gt;, resulting in a "non-fast-forward" error. This error occurs when the local branch is behind the remote branch, and therefore Git can't push the local commits without losing commits on the remote branch. GitHub has an &lt;a class="reference external" href="https://help.github.com/articles/dealing-with-non-fast-forward-errors"&gt;article on non-fast-forward errors&lt;/a&gt; that I wish I'd found when I made this mistake.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The two branches are now in sync! Check the commit history in your local branch with &lt;code class="docutils literal"&gt;git log&lt;/code&gt;. The most recent commit should have a "Merge" attribute, identical to what you'll find in the "Commits" tab in your GitHub account:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;    commit e9bcc38554dd930b4bd1f557e45c92f8f65e0a98
     Merge: 3e653b4 96d590b
     Author: sahiga
     Date:   Sat May 4 23:51:39 2013 -0700
 
-Merge https://github.com/sahiga/sah
-&lt;/pre&gt;
+Merge https://github.com/sahiga/sah&lt;/pre&gt;
 &lt;p&gt;Tutorials for Git and GitHub:&lt;/p&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;&lt;a class="reference external" href="http://git-scm.com/book"&gt;Pro Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://help.github.com/"&gt;GitHub Help&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.floraworley.com/2013/03/11/get-started-with-git-and-github/"&gt;Diary of a Future Dev&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</description><category>git</category><category>linux</category><category>version control</category><guid>http://www.stephaniehiga.com/posts/github-for-linux-mint.html</guid><pubDate>Sun, 05 May 2013 21:05:00 GMT</pubDate></item><item><title>Goodbye, WordPress! Hello, Nikola!</title><link>http://www.stephaniehiga.com/posts/goodbye-wordpress-hello-nikola.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;It's official: I've finally migrated my personal website from &lt;a class="reference external" href="http://www.wordpress.org"&gt;WordPress&lt;/a&gt; to &lt;a class="reference external" href="http://nikola.ralsina.com.ar"&gt;Nikola&lt;/a&gt;, a static site generator. In my 53432099809th attempt to return to writing, I'll use this bit of nerd news to jumpstart what I hope will become a regular blogging habit.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://git-scm.com/book"&gt;Pro Git&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://help.github.com/"&gt;GitHub Help&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://www.floraworley.com/2013/03/11/get-started-with-git-and-github/"&gt;Diary of a Future Dev&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><category>linux</category><category>version control</category><guid>https://www.stephaniehiga.com/posts/github-for-linux-mint/</guid><pubDate>Sun, 05 May 2013 21:05:00 GMT</pubDate></item><item><title>Goodbye, WordPress! Hello, Nikola!</title><link>https://www.stephaniehiga.com/posts/goodbye-wordpress-hello-nikola/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;It's official: I've finally migrated my personal website from &lt;a class="reference external" href="http://www.wordpress.org"&gt;WordPress&lt;/a&gt; to &lt;a class="reference external" href="http://nikola.ralsina.com.ar"&gt;Nikola&lt;/a&gt;, a static site generator. In my 53432099809th attempt to return to writing, I'll use this bit of nerd news to jumpstart what I hope will become a regular blogging habit.&lt;/p&gt;
 &lt;div class="section" id="the-quest-for-static"&gt;
 &lt;h2&gt;The quest for static&lt;/h2&gt;
 &lt;p&gt;WordPress gets a lot of hate in the development community. Let me say upfront that this is absolutely not the reason I decided to leave it (I have the softest of spots for WordPress). It's just that one day I woke up and realized I didn't need a database and a gazillion server queries to post text on my website.&lt;/p&gt;
 &lt;p&gt;So I started looking into static site generators. A static site generator does exactly what's written on the box: it creates a static site. It combines the best of Web 1.0 (fast, portable, secure HTML pages) with the best of Web 2.0 (templates). I considered:&lt;/p&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;&lt;a class="reference external" href="http://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; + &lt;a class="reference external" href="http://www.octopress.org"&gt;Octopress&lt;/a&gt;: Hooks directly into &lt;a class="reference external" href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; and is apparently very good. But I don't know Ruby, so I kept looking.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://ringce.com/hyde"&gt;Hyde&lt;/a&gt;: A Python port of Jekyll. Ultimately, I passed on it because of the lack of documentation. When it comes to technology, this Luddite needs a lot of hand-holding.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://docs.getpelican.com"&gt;Pelican&lt;/a&gt;: Also Python-based, with complete, well-written documentation. I installed it and got lost while trying to generate files. Pelican looks like a great choice, but I think it's meant for people who are much more tech-savvy than I am.&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;Shortly after I installed Pelican, someone posted a link to &lt;a class="reference external" href="http://nikola.ralsina.com.ar"&gt;Nikola&lt;/a&gt; on Hacker News. I'm not sure why it didn't come up in all my searches for Python-based static site generators, because so far it's proven to be a dream come true. The documentation is amazing. It's easy to use and in active development. And it was named after &lt;a class="reference external" href="http://theoatmeal.com/comics/tesla"&gt;Nikola Tesla&lt;/a&gt;. (&lt;strong&gt;Huge&lt;/strong&gt; Nikola Tesla fan here.)&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; + &lt;a class="reference external" href="http://www.octopress.org"&gt;Octopress&lt;/a&gt;: Hooks directly into &lt;a class="reference external" href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; and is apparently very good. But I don't know Ruby, so I kept looking.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://ringce.com/hyde"&gt;Hyde&lt;/a&gt;: A Python port of Jekyll. Ultimately, I passed on it because of the lack of documentation. When it comes to technology, this Luddite needs a lot of hand-holding.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://docs.getpelican.com"&gt;Pelican&lt;/a&gt;: Also Python-based, with complete, well-written documentation. I installed it and got lost while trying to generate files. Pelican looks like a great choice, but I think it's meant for people who are much more tech-savvy than I am.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Shortly after I installed Pelican, someone posted a link to &lt;a class="reference external" href="http://nikola.ralsina.com.ar"&gt;Nikola&lt;/a&gt; on Hacker News. I'm not sure why it didn't come up in all my searches for Python-based static site generators, because so far it's proven to be a dream come true. The documentation is amazing. It's easy to use and in active development. And it was named after &lt;a class="reference external" href="http://theoatmeal.com/comics/tesla"&gt;Nikola Tesla&lt;/a&gt;. (&lt;strong&gt;Huge&lt;/strong&gt; Nikola Tesla fan here.)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="goodbye-wordpress"&gt;
 &lt;h2&gt;Goodbye, WordPress&lt;/h2&gt;
-&lt;p&gt;Nikola has an &lt;tt class="docutils literal"&gt;import_wordpress&lt;/tt&gt; function to ease the transition to WordPress. I grabbed an XML dump of my site (&lt;strong&gt;Tools &amp;gt; Export &amp;gt; All Content&lt;/strong&gt; in the WP admin panel) and saved it in my Nikola site folder.&lt;/p&gt;
+&lt;p&gt;Nikola has an &lt;code class="docutils literal"&gt;import_wordpress&lt;/code&gt; function to ease the transition to WordPress. I grabbed an XML dump of my site (&lt;strong&gt;Tools &amp;gt; Export &amp;gt; All Content&lt;/strong&gt; in the WP admin panel) and saved it in my Nikola site folder.&lt;/p&gt;
 &lt;p&gt;I installed the Python &lt;a class="reference external" href="https://pypi.python.org/pypi/requests"&gt;requests&lt;/a&gt; package (import_wordpress depends on requests):&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-sudo pip install requests
-&lt;/pre&gt;
+&lt;pre class="literal-block"&gt;sudo pip install requests&lt;/pre&gt;
 &lt;p&gt;Then I ran import_wordpress on the file:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-nikola import_wordpress stephanieahiga.wordpress.2013-05-05.xml
-&lt;/pre&gt;
-&lt;p&gt;This created a new folder, &lt;strong&gt;new_site&lt;/strong&gt;, within the Nikola folder. I had no posts and only a handful of pages in my WordPress database, so I recreated the pages manually using the page command: &lt;tt class="docutils literal"&gt;nikola new_post &lt;span class="pre"&gt;-p&lt;/span&gt;&lt;/tt&gt;. Similar to WordPress, Nikola differentiates between posts and pages: posts are in the &lt;strong&gt;posts&lt;/strong&gt; folder and pages are in the &lt;strong&gt;stories&lt;/strong&gt; folder.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;nikola import_wordpress stephanieahiga.wordpress.2013-05-05.xml&lt;/pre&gt;
+&lt;p&gt;This created a new folder, &lt;strong&gt;new_site&lt;/strong&gt;, within the Nikola folder. I had no posts and only a handful of pages in my WordPress database, so I recreated the pages manually using the page command: &lt;code class="docutils literal"&gt;nikola new_post &lt;span class="pre"&gt;-p&lt;/span&gt;&lt;/code&gt;. Similar to WordPress, Nikola differentiates between posts and pages: posts are in the &lt;strong&gt;posts&lt;/strong&gt; folder and pages are in the &lt;strong&gt;stories&lt;/strong&gt; folder.&lt;/p&gt;
 &lt;p&gt;Finally, I uninstalled WordPress from my domain via &lt;a class="reference external" href="https://www.simplescripts.com"&gt;SimpleScripts&lt;/a&gt; on my cPanel.&lt;/p&gt;
-&lt;p&gt;import_wordpress saves all posts and pages with the &lt;tt class="docutils literal"&gt;.wp&lt;/tt&gt; extension (read by my computer as WordPerfect files). The XML dump, and therefore the folder created by import_wordpress, save the contents of the WordPress database, but &lt;strong&gt;not&lt;/strong&gt; the theme files. So it's important to backup any custom themes before uninstalling WordPress.&lt;/p&gt;
+&lt;p&gt;import_wordpress saves all posts and pages with the &lt;code class="docutils literal"&gt;.wp&lt;/code&gt; extension (read by my computer as WordPerfect files). The XML dump, and therefore the folder created by import_wordpress, save the contents of the WordPress database, but &lt;strong&gt;not&lt;/strong&gt; the theme files. So it's important to backup any custom themes before uninstalling WordPress.&lt;/p&gt;
 &lt;p&gt;Tutorials on importing WordPress posts into Nikola:&lt;/p&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;&lt;a class="reference external" href="http://nikola.ralsina.com.ar/handbook.html#importing-your-wordpress-site-into-nikola"&gt;Official site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://flexion.org/posts/2012-10-migrating-wordpress-to-nikola.html"&gt;Flexion.Org&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html"&gt;Kushal Das&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://nikola.ralsina.com.ar/handbook.html#importing-your-wordpress-site-into-nikola"&gt;Official site&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://flexion.org/posts/2012-10-migrating-wordpress-to-nikola.html"&gt;Flexion.Org&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html"&gt;Kushal Das&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;div class="section" id="hello-nikola"&gt;
 &lt;h2&gt;Hello, Nikola&lt;/h2&gt;
 &lt;p&gt;I assume that the next step is to upload the Nikola site folder to my domain server. If you're reading this post, you can assume that my assumption turned out to be true.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>nikola</category><category>static site generators</category><category>wordpress</category><guid>http://www.stephaniehiga.com/posts/goodbye-wordpress-hello-nikola.html</guid><pubDate>Sat, 04 May 2013 14:09:26 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><category>nikola</category><category>static site generators</category><category>wordpress</category><guid>https://www.stephaniehiga.com/posts/goodbye-wordpress-hello-nikola/</guid><pubDate>Sat, 04 May 2013 14:09:26 GMT</pubDate></item></channel></rss>

@@ -1,135 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/blog.xml</loc>
-  <lastmod>2013-05-04</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/blog.xml</loc>
+  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/books.xml</loc>
-  <lastmod>2015-02-21</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/d3.xml</loc>
+  <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/css.xml</loc>
-  <lastmod>2015-06-27</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/demo.xml</loc>
+  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/d3.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/design.xml</loc>
+  <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/demo.xml</loc>
-  <lastmod>2013-05-04</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/git.xml</loc>
+  <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/design.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/hack-reactor.xml</loc>
+  <lastmod>2020-04-13T02:18:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/git.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/hip-hop-%2B-rap.xml</loc>
+  <lastmod>2020-04-13T03:41:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/hack-reactor.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/hip-hop-rap.xml</loc>
+  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/hip-hop-+-rap.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/hiring.xml</loc>
+  <lastmod>2020-04-13T02:18:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/hip-hop-rap.xml</loc>
-  <lastmod>2013-09-20</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/javascript.xml</loc>
+  <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/hiring.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/jquery.xml</loc>
+  <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/javascript.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/linux.xml</loc>
+  <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/job-search.xml</loc>
-  <lastmod>2016-01-01</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/nikola.xml</loc>
+  <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/jquery.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/programming.xml</loc>
+  <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/linux.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/python.xml</loc>
+  <lastmod>2020-04-13T03:41:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/nikola.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/static-site-generators.xml</loc>
+  <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/programming.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/text-mining.xml</loc>
+  <lastmod>2020-04-13T03:41:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/python.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/version-control.xml</loc>
+  <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/static-site-generators.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/w3m.xml</loc>
+  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/text-mining.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/wordpress.xml</loc>
+  <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/version-control.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/categories/writing.xml</loc>
+  <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/w3m.xml</loc>
-  <lastmod>2013-05-19</lastmod>
+  <loc>https://www.stephaniehiga.com/galleries/rss.xml</loc>
+  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/wordpress.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/output/categories/blog.xml</loc>
+  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/categories/writing.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/output/categories/demo.xml</loc>
+  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/galleries/rss.xml</loc>
-  <lastmod>2015-03-03</lastmod>
+  <loc>https://www.stephaniehiga.com/output/categories/nikola.xml</loc>
+  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/output/categories/blog.xml</loc>
-  <lastmod>2013-05-04</lastmod>
+  <loc>https://www.stephaniehiga.com/output/categories/python.xml</loc>
+  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/output/categories/demo.xml</loc>
-  <lastmod>2013-05-04</lastmod>
+  <loc>https://www.stephaniehiga.com/output/rss.xml</loc>
+  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/output/categories/nikola.xml</loc>
-  <lastmod>2013-05-04</lastmod>
+  <loc>https://www.stephaniehiga.com/rss.xml</loc>
+  <lastmod>2020-04-13T03:41:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.stephaniehiga.com/output/categories/python.xml</loc>
-  <lastmod>2013-05-04</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://www.stephaniehiga.com/output/rss.xml</loc>
-  <lastmod>2013-05-04</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://www.stephaniehiga.com/rss.xml</loc>
-  <lastmod>2016-01-02</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://www.stephaniehiga.com/sitemap.xml</loc>
-  <lastmod>2016-01-02</lastmod>
+  <loc>https://www.stephaniehiga.com/sitemap.xml</loc>
+  <lastmod>2020-04-13T03:41:00Z</lastmod>
  </sitemap>
 </sitemapindex>

@@ -15,8 +15,7 @@
 <p>Seriously, what a gorgeous language.</p>
 <p>I don't understand it. That is, I understand enough of it to know I don't understand it at all. Regardless, I can still appreciate it on a superficial level.</p>
 <p>Say you have a list, and you want to apply one function to the members of the list in odd positions, and another function to the members of the list in even positions. Here's a quick JavaScript implementation:</p>
-<pre class="literal-block">
-function oddEvenMap(list, oddFunc, evenFunc) {
+<pre class="literal-block">function oddEvenMap(list, oddFunc, evenFunc) {
   for (var i = 0; i &lt; list.length; i++) {
     if (i % 2 === 0) {
       evenFunc(list[i]);
@@ -24,14 +23,11 @@ function oddEvenMap(list, oddFunc, evenFunc) {
       oddFunc(list[i]);
     }
   }
-}
-</pre>
+}</pre>
 <p>And here it is in Haskell:</p>
-<pre class="literal-block">
-oddEvenMap :: (a -&gt; b) -&gt; (a -&gt; b) -&gt; [a] -&gt; [b]
+<pre class="literal-block">oddEvenMap :: (a -&gt; b) -&gt; (a -&gt; b) -&gt; [a] -&gt; [b]
 oddEvenMap f g [] = []
-oddEvenMap f g (x : xs) = f x : oddEvenMap g f xs
-</pre>
+oddEvenMap f g (x : xs) = f x : oddEvenMap g f xs</pre>
 <p>No variable assignments. No for loops. Haskell is stunningly beautiful and concise. (I realize the comparison to JavaScript isn't fair, but that's the language I know best.)</p>
 </div>
 <div class="section" id="lastly-edx-is-a-great-mooc-platform">

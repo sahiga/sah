@@ -3,33 +3,26 @@
 <p>So, I added the files for this site to <a class="reference external" href="https://github.com/sahiga/sah">my GitHub account</a>. The following guide details the steps I took, minus the legion of errors I made. I've named it &quot;GitHub for <a class="reference external" href="http://www.linuxmint.com">Linux Mint</a>,&quot; in honor of my operating system and the fact that GitHub offers <a class="reference external" href="http://mac.github.com">GitHub for Mac</a> and <a class="reference external" href="http://windows.github.com">GitHub for Windows</a>, but no GitHub for GNU/Linux (even though, hey, some of us GNU/Linux users could use a little point-and-click help over here).</p>
 <blockquote>
 <p>Note: Afterward, I realized I could have had a <a class="reference external" href="https://help.github.com/articles/fetching-a-remote">much easier time</a> cloning the repository. This command is identical to the &quot;Clone in Windows&quot; and &quot;Clone in Mac&quot; buttons in the corresponding GitHub GUI applications:</p>
-<pre class="literal-block">
-git clone &lt;URL&gt;
-</pre>
+<pre class="literal-block">git clone &lt;URL&gt;</pre>
 </blockquote>
 <div class="section" id="connect-your-computer-to-github">
 <h1>Connect your computer to GitHub</h1>
 <p>First, you need a secure method of connecting your computer to GitHub. You can do this through SSH (generate a new public/private SSH key pair and add it to your GitHub account) or through HTTPS (configure the Git credential helper).</p>
 <ul class="simple">
-<li><a class="reference external" href="https://help.github.com/articles/set-up-git">Instructions for using HTTPS with GitHub</a></li>
-<li><a class="reference external" href="https://help.github.com/articles/generating-ssh-keys">Instructions for using SSH with GitHub</a></li>
+<li><p><a class="reference external" href="https://help.github.com/articles/set-up-git">Instructions for using HTTPS with GitHub</a></p></li>
+<li><p><a class="reference external" href="https://help.github.com/articles/generating-ssh-keys">Instructions for using SSH with GitHub</a></p></li>
 </ul>
 </div>
 <div class="section" id="prepare-the-branches">
 <h1>Prepare the branches</h1>
 <p><a class="reference external" href="https://github.com/new">Create a new repository on GitHub</a>. This is the <strong>remote branch</strong>.</p>
-<p>Fire up your command line. Move to the directory containing your version control files (if you're not there already), e.g., <tt class="docutils literal">cd sah</tt>.</p>
+<p>Fire up your command line. Move to the directory containing your version control files (if you're not there already), e.g., <code class="docutils literal">cd sah</code>.</p>
 <p>Initialize a Git repository in this directory. This is the <strong>local branch</strong>.</p>
-<pre class="literal-block">
-git init
-</pre>
+<pre class="literal-block">git init</pre>
 <p>Check the status of your new repository.</p>
-<pre class="literal-block">
-git status
-</pre>
-<p>(or <tt class="docutils literal">git st</tt> if you've set up <a class="reference external" href="http://git-scm.com/book/ch2-7.html#Git-Aliases">aliases</a>). This is optional, but I like checking the status to see which branch I'm working on and which files will be included in the next commit.</p>
-<pre class="literal-block">
-# On branch master
+<pre class="literal-block">git status</pre>
+<p>(or <code class="docutils literal">git st</code> if you've set up <a class="reference external" href="http://git-scm.com/book/ch2-7.html#Git-Aliases">aliases</a>). This is optional, but I like checking the status to see which branch I'm working on and which files will be included in the next commit.</p>
+<pre class="literal-block"># On branch master
 # Untracked files:
 #   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
 #
@@ -48,58 +41,46 @@ git status
 #       posts/
 #       stephanieahiga.wordpress.2013-05-05.xml
 #       stories/
-nothing added to commit but untracked files present (use &quot;git add&quot; to track)
-</pre>
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)</pre>
 <p>Right now there's &quot;nothing added to commit,&quot; meaning the local repository is empty. This is because you've just initialized it.</p>
 </div>
 <div class="section" id="start-tracking-your-files">
 <h1>Start tracking your files</h1>
-<p>Next, add version control tracking to your files. To add individual files, write <tt class="docutils literal">git add</tt> and then the filename. To add everything in the directory to your commit:</p>
-<pre class="literal-block">
-git add .
-</pre>
-<p>Now it's time to commit the change. The basic commit command is <tt class="docutils literal">git commit</tt>, which will launch your preferred text editor. The <tt class="docutils literal"><span class="pre">-m</span></tt> flag allows you to skip the text editor and type your commit message inline; the <tt class="docutils literal"><span class="pre">-a</span></tt> flag tells Git to automatically stage your tracked files, skipping the staging area.</p>
-<pre class="literal-block">
-git commit -a -m &quot;Added Nikola site files&quot;
-</pre>
+<p>Next, add version control tracking to your files. To add individual files, write <code class="docutils literal">git add</code> and then the filename. To add everything in the directory to your commit:</p>
+<pre class="literal-block">git add .</pre>
+<p>Now it's time to commit the change. The basic commit command is <code class="docutils literal">git commit</code>, which will launch your preferred text editor. The <code class="docutils literal"><span class="pre">-m</span></code> flag allows you to skip the text editor and type your commit message inline; the <code class="docutils literal"><span class="pre">-a</span></code> flag tells Git to automatically stage your tracked files, skipping the staging area.</p>
+<pre class="literal-block">git commit -a -m &quot;Added Nikola site files&quot;</pre>
 <p>See <a class="reference external" href="http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository">Git Basics - Recording Changes to the Repository</a> for more information on committing changes.</p>
 </div>
 <div class="section" id="merge-and-sync-your-branches">
 <h1>Merge and sync your branches</h1>
 <p>Merge the remote branch (the GitHub copy of the repository) with your local branch (the local copy of the repository). This consolidates the two branches and ensures that they are identical.</p>
-<pre class="literal-block">
-git pull https://github.com/sahiga/sah.git
-</pre>
+<pre class="literal-block">git pull https://github.com/sahiga/sah.git</pre>
 <p>You should see a message like this:</p>
-<pre class="literal-block">
-From https://github.com/sahiga/sah
+<pre class="literal-block">From https://github.com/sahiga/sah
  * branch            HEAD       -&gt; FETCH_HEAD
 Merge made by the 'recursive' strategy.
  README.md |    4 ++++
  1 file changed, 4 insertions(+)
- create mode 100644 README.md
-</pre>
-<p><strong>Note:</strong> <tt class="docutils literal">git pull</tt> automatically merges commits from the &quot;pulled&quot; branch into your current branch. This works fine on an empty GitHub repository, but it could cause <a class="reference external" href="https://help.github.com/articles/fetching-a-remote">merge conflicts</a>.</p>
+ create mode 100644 README.md</pre>
+<p><strong>Note:</strong> <code class="docutils literal">git pull</code> automatically merges commits from the &quot;pulled&quot; branch into your current branch. This works fine on an empty GitHub repository, but it could cause <a class="reference external" href="https://help.github.com/articles/fetching-a-remote">merge conflicts</a>.</p>
 <p>Push your commit on the local branch to the remote branch:</p>
-<pre class="literal-block">
-git push origin master
-</pre>
+<pre class="literal-block">git push origin master</pre>
 <p>If you're using HTTPS, GitHub will prompt you for credentials. To switch to SSH, <a class="reference external" href="https://help.github.com/articles/why-is-git-always-asking-for-my-password">follow these instructions</a>.</p>
 <blockquote>
-<strong>Note:</strong> I originally attempted <tt class="docutils literal">git push origin master</tt> before <tt class="docutils literal">git pull</tt>, resulting in a &quot;non-fast-forward&quot; error. This error occurs when the local branch is behind the remote branch, and therefore Git can't push the local commits without losing commits on the remote branch. GitHub has an <a class="reference external" href="https://help.github.com/articles/dealing-with-non-fast-forward-errors">article on non-fast-forward errors</a> that I wish I'd found when I made this mistake.</blockquote>
-<p>The two branches are now in sync! Check the commit history in your local branch with <tt class="docutils literal">git log</tt>. The most recent commit should have a &quot;Merge&quot; attribute, identical to what you'll find in the &quot;Commits&quot; tab in your GitHub account:</p>
-<pre class="literal-block">
-    commit e9bcc38554dd930b4bd1f557e45c92f8f65e0a98
+<p><strong>Note:</strong> I originally attempted <code class="docutils literal">git push origin master</code> before <code class="docutils literal">git pull</code>, resulting in a &quot;non-fast-forward&quot; error. This error occurs when the local branch is behind the remote branch, and therefore Git can't push the local commits without losing commits on the remote branch. GitHub has an <a class="reference external" href="https://help.github.com/articles/dealing-with-non-fast-forward-errors">article on non-fast-forward errors</a> that I wish I'd found when I made this mistake.</p>
+</blockquote>
+<p>The two branches are now in sync! Check the commit history in your local branch with <code class="docutils literal">git log</code>. The most recent commit should have a &quot;Merge&quot; attribute, identical to what you'll find in the &quot;Commits&quot; tab in your GitHub account:</p>
+<pre class="literal-block">    commit e9bcc38554dd930b4bd1f557e45c92f8f65e0a98
     Merge: 3e653b4 96d590b
     Author: sahiga
     Date:   Sat May 4 23:51:39 2013 -0700
 
-Merge https://github.com/sahiga/sah
-</pre>
+Merge https://github.com/sahiga/sah</pre>
 <p>Tutorials for Git and GitHub:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://git-scm.com/book">Pro Git</a></li>
-<li><a class="reference external" href="https://help.github.com/">GitHub Help</a></li>
-<li><a class="reference external" href="http://www.floraworley.com/2013/03/11/get-started-with-git-and-github/">Diary of a Future Dev</a></li>
+<li><p><a class="reference external" href="http://git-scm.com/book">Pro Git</a></p></li>
+<li><p><a class="reference external" href="https://help.github.com/">GitHub Help</a></p></li>
+<li><p><a class="reference external" href="http://www.floraworley.com/2013/03/11/get-started-with-git-and-github/">Diary of a Future Dev</a></p></li>
 </ul>
 </div>

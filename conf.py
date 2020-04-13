@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import unicode_literals
 import time
 
 # !! This is the configuration of Nikola. !! #
@@ -21,7 +20,7 @@ BLOG_AUTHOR = "Stephanie A. Higa"  # (translatable)
 BLOG_TITLE = "sahiga"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://www.stephaniehiga.com/"
+SITE_URL = "https://www.stephaniehiga.com/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://getnikola.com/"
@@ -121,17 +120,64 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/stories/about.html', 'About'),
-        ('/stories/books.html', 'Reading List'),
+        ('/pages/about', 'About'),
+        ('/pages/books', 'Reading List'),
         ('http://sahiga.github.io/wiki/tiddlywiki.html', 'Wiki'),
         ('/archive.html', 'Archives'),
-        ('/categories/index.html', 'Tags'),
+        ('/categories', 'Tags'),
         ('/rss.xml', 'RSS'),
     ),
 }
 
 # Name of the theme to use.
 THEME = "lightning"
+
+# POSTS and PAGES contains (wildcard, destination, template) tuples.
+# (translatable)
+#
+# The wildcard is used to generate a list of source files
+# (whatever/thing.rst, for example).
+#
+# That fragment could have an associated metadata file (whatever/thing.meta),
+# and optionally translated files (example for Spanish, with code "es"):
+#     whatever/thing.es.rst and whatever/thing.es.meta
+#
+#     This assumes you use the default TRANSLATIONS_PATTERN.
+#
+# From those files, a set of HTML fragment files will be generated:
+# cache/whatever/thing.html (and maybe cache/whatever/thing.html.es)
+#
+# These files are combined with the template to produce rendered
+# pages, which will be placed at
+# output/TRANSLATIONS[lang]/destination/pagename.html
+#
+# where "pagename" is the "slug" specified in the metadata file.
+# The page might also be placed in /destination/pagename/index.html
+# if PRETTY_URLS are enabled.
+#
+# The difference between POSTS and PAGES is that POSTS are added
+# to feeds, indexes, tag lists and archives and are considered part
+# of a blog, while PAGES are just independent HTML pages.
+#
+# Finally, note that destination can be translated, i.e. you can
+# specify a different translation folder per language. Example:
+#     PAGES = (
+#         ("pages/*.rst", {"en": "pages", "de": "seiten"}, "page.tmpl"),
+#         ("pages/*.md", {"en": "pages", "de": "seiten"}, "page.tmpl"),
+#     )
+
+POSTS = (
+    ("posts/*.rst", "posts", "post.tmpl"),
+    ("posts/*.md", "posts", "post.tmpl"),
+    ("posts/*.txt", "posts", "post.tmpl"),
+    ("posts/*.html", "posts", "post.tmpl"),
+)
+PAGES = (
+    ("pages/*.rst", "pages", "page.tmpl"),
+    ("pages/*.md", "pages", "page.tmpl"),
+    ("pages/*.txt", "pages", "page.tmpl"),
+    ("pages/*.html", "pages", "page.tmpl"),
+)
 
 # Below this point, everything is optional
 
@@ -176,40 +222,6 @@ DATE_FANCINESS = 2
 # LOCALE_FALLBACK = locale to use when an explicit locale is unavailable
 # LOCALE_DEFAULT = locale to use for languages not mentioned in LOCALES; if
 # not set the default Nikola mapping is used.
-
-# POSTS and PAGES contains (wildcard, destination, template) tuples.
-#
-# The wildcard is used to generate a list of reSt source files
-# (whatever/thing.txt).
-#
-# That fragment could have an associated metadata file (whatever/thing.meta),
-# and optionally translated files (example for Spanish, with code "es"):
-#     whatever/thing.es.txt and whatever/thing.es.meta
-#
-#     This assumes you use the default TRANSLATIONS_PATTERN.
-#
-# From those files, a set of HTML fragment files will be generated:
-# cache/whatever/thing.html (and maybe cache/whatever/thing.html.es)
-#
-# These files are combined with the template to produce rendered
-# pages, which will be placed at
-# output / TRANSLATIONS[lang] / destination / pagename.html
-#
-# where "pagename" is the "slug" specified in the metadata file.
-#
-# The difference between POSTS and PAGES is that POSTS are added
-# to feeds and are considered part of a blog, while PAGES are
-# just independent HTML pages.
-#
-
-POSTS = (
-    ("posts/*.rst", "posts", "post.tmpl"),
-    ("posts/*.txt", "posts", "post.tmpl"),
-)
-PAGES = (
-    ("stories/*.rst", "stories", "story.tmpl"),
-    ("stories/*.txt", "stories", "story.tmpl"),
-)
 
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of {source: relative destination}.
@@ -269,9 +281,15 @@ COMPILERS = {
 # already contains the text), set this to False.
 # SHOW_BLOG_TITLE = True
 
-# Writes tag cloud data in form of tag_cloud_data.json.
-# Warning: this option will change its default value to False in v8!
-WRITE_TAG_CLOUD = True
+# If CATEGORY_ALLOW_HIERARCHIES is set to True, categories can be organized in
+# hierarchies. For a post, the whole path in the hierarchy must be specified,
+# using a forward slash ('/') to separate paths. Use a backslash ('\') to escape
+# a forward slash or a backslash (i.e. '\//\\' is a path specifying the
+# subcategory called '\' of the top-level category called '/').
+CATEGORY_ALLOW_HIERARCHIES = False
+# If CATEGORY_OUTPUT_FLAT_HIERARCHY is set to True, the output written to output
+# contains only the name of the leaf category and not the whole path.
+CATEGORY_OUTPUT_FLAT_HIERARCHY = False
 
 # Paths for different autogenerated bits. These are combined with the
 # translation paths.
@@ -537,7 +555,6 @@ IMAGE_FOLDERS = {'images': 'images'}
 # Note that in case INDEXES_PAGES_MAIN is set to True, a redirection will be created
 # for the full URL with the page number of the main page to the normal (shorter) main
 # page URL.
-INDEXES_PRETTY_PAGE_URL = True
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
@@ -686,7 +703,7 @@ COMMENT_SYSTEM_ID = "nikolademo"
 # This can be disabled on a per-page/post basis by adding
 #    .. pretty_url: False
 # to the metadata
-# PRETTY_URLS = False
+PRETTY_URLS = True
 
 # If True, publish future dated posts right away instead of scheduling them.
 # Defaults to False.
@@ -849,7 +866,7 @@ INDEX_DISPLAY_POST_COUNT = 5
 
 # If you hate "Filenames with Capital Letters and Spaces.md", you should
 # set this to true.
-UNSLUGIFY_TITLES = True
+FILE_METADATA_UNSLUGIFY_TITLES = True
 
 # Additional metadata that is added to a post when creating a new_post
 # ADDITIONAL_METADATA = {}

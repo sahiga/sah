@@ -6,8 +6,6 @@
 .. description: 
 .. type: text
 
-Many months have passed since I graduated from Hack Reactor. Since then, I've undertaken a job search, moved to San Mateo, and started my new job as a software engineer at `Kryptnostic <http://www.kryptnostic.com>`_, an early-stage startup building secure cloud-based applications. It's been a wonderful ride, and I feel very lucky to be where I am today.
-
 This post is twofold. First up will be my long overdue review of Hack Reactor, and after that I'll share a few of the many lessons I learned while hunting for a job in Silicon Valley.
 
 Was Hack Reactor worth it?
@@ -73,7 +71,7 @@ Looking for a job is a degrading and stressful experience. Mine would have been 
 AngelList is awesome
 --------------------
 
-AngelList introduced me to a ton of interesting startups, including the one I ended up joining. If you're on the hunt for a software job, make sure you've created a candidate profile and set it to **actively looking**!
+AngelList introduced me to a ton of interesting startups. If you're on the hunt for a software job, make sure you've created a candidate profile and set it to **actively looking**!
 
 Failing an interview is not the end of the world
 ------------------------------------------------

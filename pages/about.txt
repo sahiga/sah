@@ -1,0 +1,15 @@
+.. link: 
+.. description: 
+.. tags: 
+.. date: 2013/05/04 19:05:14
+.. title: About
+.. slug: about
+
+I'm a software developer based in San Mateo, California. You can find me in a few other places on the web (my LinkedIn and GitHub profiles are generally up to date; everything else is a time capsule):
+
+- `Illustrations <https://sahiga.carbonmade.com>`_
+- `LinkedIn <https://www.linkedin.com/in/sahiga>`_
+- `Daytum <https://www.daytum.com/sahiga>`_
+- `GitHub <https://www.github.com/sahiga>`_
+- `About.me <https://about.me/sahiga>`_
+- `Goodreads <https://www.goodreads.com/sahiga>`_

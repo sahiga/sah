@@ -1,2 +1,4 @@
-Sitemap: http://www.stephaniehiga.com/sitemapindex.xml
+Sitemap: https://www.stephaniehiga.com/sitemapindex.xml
 
+User-Agent: *
+Host: www.stephaniehiga.com

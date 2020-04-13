@@ -1,1104 +1,1191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>sahiga | hip hop analysis</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-		font-size: 1.4em;
-		line-height: 1.6em;
-		color: #222;
-      }
+<head>
+	<meta charset="utf-8">
+	<title>sahiga | hip hop analysis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 700px;
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+		type="text/css">
 
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 60px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 72px;
-        line-height: 1;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-
-	  .emph {
-		color: #c40a32;
-		font-weight: 800;
-	  }
-
-	  .table thead {
-		background: #c40a32;
-		color: #fff;
-	  }
-
-	  .nav-pills > .active > a,
-	  .nav-pills > .active > a:hover {
-		background: #c40a32;
-	  }
-
-		.nav-pills > li > a {
-padding: 10px 20px;
-margin: 2px auto;
-			color: #93e6a9;
-			border: 0;
-		}
-
-		.nav-pills > li > a:hover {
-color: #fff;
-background: transparent;
-border-radius: 0;
-border-bottom: 2px solid #c40a32;
-		}
-
-		a {
-			color: #c40a32;
-			border-bottom: 2px solid #93e6a9;
-		}
-
-		a:hover {
-			text-decoration: none;
-			color: inherit;
-		}
-
-		li {
-			line-height: 1.6em;
-		}
-
+	<link href="output/assets/css/theme.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
 		.jumbotron {
-position: relative;
-padding: 60px 0;
-}
+			margin: 5em 0 0;
+			text-align: center;
+		}
 
-	.masthead {
-margin: 36px 0 0;
-background: #93e6a9;
-text-align: center;
-color: #fff;
-text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
-}
+		h1 {
+			font-size: 50px;
+			line-height: 1.2;
+		}
 
-	.navbar-fixed-top {
-		background: #222;
-		padding: 10px 0;
-		box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-	}
+		h2,
+		h3 {
+			line-height: 1.5;
+			margin: 1em 0 0;
+		}
 
-	.nav {
-		margin-bottom: 0;
-	}
+		.content {
+			margin: 2em 0;
+		}
 
-	section:not(.jumbotron) {
-		border-bottom: 10px solid #c40a32;
-		padding: 20px 0;
-	}
+		strong {
+			font-weight: 700;
+		}
 
-	h1 {
-		font-size: 2.2em;
-		line-height: 2em;
-		border-bottom: 5px dotted #93e6a9;
-	}
+		table {
+			width: 100%;
+		}
 
-	h2 {
-		font-size: 1.8em;
-		line-height: 2em;
-	}
+		.hidden {
+			background: #eee;
+			color: transparent;
+			cursor: pointer;
+			padding: 0 0.1em;
+			transition: color 0.5s;
+		}
 
-	h3 {
-		font-size: 1.6em;
-		line-height: 2em;
-	}
+		.hidden:hover {
+			color: #222;
+		}
+	</style>
+</head>
 
-    </style>
-    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<body>
+	<a href="https://www.github.com/sahiga" class="github-corner" aria-label="View source on GitHub">
+		<svg width="80" height="80" viewBox="0 0 250 250" class="github-corner-svg" aria-hidden="true">
+			<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+			<path
+				d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+				fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+			<path
+				d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+				fill="currentColor" class="octo-body"></path>
+		</svg>
+	</a>
+	<main class="container">
+		<section class="jumbotron">
+			<h1>What is the most beloved car brand in hip-hop?</h1>
+			<p>(May 2013)</p>
+		</section>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
+		<section class="content">
+			<h2>Hypothesis</h2>
+			<p>My guess was <strong>Chevy</strong>.</p>
+			<p>After all:</p>
+			<ul>
+				<li>"<strong>Chevy</strong> Ridin' High" (Rick Ross ft. Dre)</li>
+				<li>"Hop into My <strong>Chevy</strong>" (Gonzoe ft. A-Wax)</li>
+				<li>"Heavy <strong>Chevys</strong>" (T.I.)</li>
+			</ul>
+			<p>Plus mentions in:</p>
+			<ul>
+				<li>"Shoulder Lean" (Young Dro)</li>
+				<li>"Still Ballin" (2Pac ft. Trick Daddy)</li>
+				<li>"Get Down" (Craig Mack)</li>
+				<li>"Money in the Bank" (Lil Scrappy ft. Young Buck)</li>
+				<li>"It's Goin' Down" (Yung Joc)</li>
+				<li>"Believe It" (Meek Mill ft. Rick Ross)</li>
+				<li>"My Trunk" (Big KRIT ft. Trinidad James)</li>
+				<li>"The City" (Game ft. Kendrick Lamar)</li>
+				<li>"Welcome to My Hood" (DJ Khaled)</li>
+				<li>"Pornographic" (Tech N9ne ft. E-40, Krizz Kaliko, & Snoop Dogg)</li>
+			</ul>
 
-    <!--Load the AJAX API-->
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
+			<h3>
+				HOVER FOR SPOILERS:
+				<span class="hidden">It turns out that hip-hop's most beloved car brand is NOT Chevy. 😢</span>
+			</h3>
+		</section>
 
-      // Load the Visualization API and the piechart package.
-      google.load('visualization', '1.0', {'packages':['corechart']});
+		<section class="content">
+			<h2>Method</h2>
+			<h3>Tools</h3>
+			<ul>
+				<li>Python</li>
+				<li>Wikipedia</li>
+				<li><a href="http://research.blackyouthproject.com/raplyrics/">Rap Lyrics Database</a></li>
+				<li><a href="https://developers.google.com/chart/">Google Charts</a></li>
+			</ul>
 
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.setOnLoadCallback(drawChart);
+			<h3>Gathering the data</h3>
+			<p>
+				I downloaded Wikipedia's lists of car manufacturers and brands by country and decided to limit the set
+				to
+				brands in <strong>Germany, Japan, the United Kingdom, and the United States</strong>. I had to
+				download the lists because Wikipedia blocks web scraping. The number of usable brands came out to
+				<strong>153</strong>. I also searched for known nicknames of the brands (e.g.
+				"Bimmer/Beemer/Beamer"
+				for BMW and "Chevy" for Chevrolet, etc.).
+			</p>
 
-      // Callback that creates and popliates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-      function drawChart() {
+			<h3>Cleaning the data</h3>
+			<p>
+				With the Python <a href="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a> library, I
+				extracted the brand names from the Wikipedia pages. Then I used <a href="http://www.nltk.org">NLTK</a>
+				to
+				remove the HTML tags and regular expressions to remove excess whitespace and text (such as notes about
+				the
+				brand, the brand's years of operation, etc.).
+			</p>
 
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Brand');
-        data.addColumn('number', 'Number of Songs');
-        data.addRows(
-			[['Mercedes-Benz', 93], ['Jeep', 34], ['Cadillac', 25], ['Chevrolet (Chevy)', 24], ['Lexus', 22], ['Rolls-Royce', 22], ['Bentley', 20], ['Tommy Kaira', 15], ['ASL', 15], ['Welch-Detroit', 13], ['BMW (Bimmer, Beemer, Beamer)', 12], ['Chalmers-Detroit', 12], ['Dodge', 8], ['Imperial', 8], ['Eagle', 8], ['Lincoln', 7], ['Jaguar', 7], ['Audi', 6], ['Nova', 6], ['Honda', 5], ['Hummer', 5], ['Maxwell', 4], ['Continental', 3], ['Acura', 3], ['Nissan', 3], ['Lotus', 3], ['Aston Martin', 2], ['Mazda', 2], ['Porsche', 2], ['Ford', 2], ['Buick', 2], ['Lea-Francis', 1], ['Maybach', 1], ['Saturn', 1], ['Cony', 1], ['Toyota', 1], ['Yamaha', 1], ['McLaren', 1], ['Plymouth', 1], ['Suzuki', 1], ['Mitsubishi', 1], ['Viking', 1], ['Welch', 1], ['TGE', 1]]);
+			<h3>Analyzing the data</h3>
+			<p>
+				The Rap Lyrics Database contains lyrics for all of Billboard Music's rap songs from 1989 through 2009.
+				It's
+				the only (as far as I know) searchable database of hip-hop lyrics (exclusively).
+				<p>
+					<p>
+						I wrote a few Python scripts to search for all 153+ brands in the Rap Lyrics database, saved the
+						resulting pages, and used BeautifulSoup again to count the number of results on each page. I
+						saved
+						the brands with their counts to a file, which I then sorted using LibreOffice Calc. I
+						reformatted
+						the results with Python to create the Google Chart below.
+					</p>
 
-        // Set chart options
-        var options = {	'title':'Car Brands Mentioned in Hip-Hop Music',
-                       	'width':840,
-                       	'height':600,
-						'colors':['#c40a32'],
-						'fontSize':12,
-						'fontName':'Helvetica',
-						titleTextStyle: {
-							fontSize: 22
-						},
-						hAxis: {
-							title: 'Car Brands',
-							showTextEvery: 1,
-							slantedText: true,
-							slantedTextAngle: 90
-						},
-						vAxis: {
-							title: 'Number of Songs'
-						},
-						legend: {
-							position: 'none'
-						}
-		};
+		</section>
 
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
-  </head>
+		<section class="content">
 
-  <body>
-		<header class="navbar-fixed-top">
-		 <div class="container-narrow">
-        <ul class="nav nav-pills pull-left">
-          <li><a href="#hypothesis">Hypothesis</a></li>
-          <li><a href="#method">Method</a></li>
-		  <li><a href="#results">Results</a></li>
-		  <li><a href="#errors">Errors</a></li>
-        </ul>
-		</div>
-		</header>
+			<h2>Results</h2>
 
-      <section class="jumbotron masthead">
-		 <div class="container-narrow" id="home">
-        <h1>What is the most <span class="emph">beloved car brand</span> <br /> in hip-hop?</h1>
-		</div>
-      </section>
+			<p>So who won?</p>
 
-    <section class="container-narrow" id="hypothesis">
-        <h1>Hypothesis</h1>
-		<h2>My guess was <span class="emph">Chevy</span>.</h2>
-		<h3>After all:</h3>
-		<ul>
-		<li>"<span class="emph">Chevy</span> Ridin' High" (Rick Ross ft. Dre)</li>
-		<li>"Hop into My <span class="emph">Chevy</span>" (Gonzoe ft. A-Wax)</li>
-		<li>"Heavy <span class="emph">Chevys</span>" (T.I.)</li>
-		</ul>
-		<h3>Plus mentions in:</h3>
-		<ul>
-		<li>"Shoulder Lean" (Young Dro)</li>
-		<li>"Still Ballin" (2Pac ft. Trick Daddy)</li>
-		<li>"Get Down" (Craig Mack)</li>
-		<li>"Money in the Bank" (Lil Scrappy ft. Young Buck)</li>
-		<li>"It's Goin' Down" (Yung Joc)</li>
-		<li>"Believe It" (Meek Mill ft. Rick Ross)</li>
-		<li>"My Trunk" (Big KRIT ft. Trinidad James)</li>
-		<li>"The City" (Game ft. Kendrick Lamar)</li>
-		<li>"Welcome to My Hood" (DJ Khaled)</li>
-		<li>"Pornographic" (Tech N9ne ft. E-40, Krizz Kaliko, & Snoop Dogg)</li>
-		</ul>
+			<p><strong>Mercedes-Benz.</strong> By a landslide!</p>
 
-        <h3>But it turns out that hip-hop's most beloved car brand is NOT Chevy.</h3>
+			<!--Div that will hold the pie chart-->
+			<div id="chart_div"></div>
 
-	[img of chevy truck crying]
-	</section>
-	
-	
-    <section class="container-narrow" id="method">
-	<h1>Method</h1>
-	<h2>Tools</h2>
-	<ul>
-	<li>Python</li>
-	<li>Wikipedia</li>
-	<li><a href="http://research.blackyouthproject.com/raplyrics/">Rap 	Lyrics Database</a></li>
-	<li><a href="https://developers.google.com/chart/">Google Charts</a></li>
-	</ul>
+			<hr>
 
-	<h2>Gathering the data</h2>
-	<p>
-		I downloaded Wikipedia's lists of car manufacturers and brands by country and decided to limit the set to brands in <span class="emph">Germany, Japan, the United Kingdom, and the United States</span>. I had to download the lists because Wikipedia blocks web scraping. The number of usable brands came out to <span class="emph">153</span>. I also searched for known nicknames of the brands (e.g. "Bimmer/Beemer/Beamer" for BMW and "Chevy" for Chevrolet, etc.).
-	</p>
+			<table>
+				<thead>
+					<th>
+						Car Brand
+					</th>
+					<th>
+						Number of Songs
+					</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Mercedes-Benz</td>
+						<td>93
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Jeep</td>
+						<td>34
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Cadillac</td>
+						<td>25
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Chevrolet (Chevy)</td>
+						<td>24
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Lexus</td>
+						<td>22
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Rolls-Royce</td>
+						<td>22
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Bentley</td>
+						<td>20
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Tommy Kaira</td>
+						<td>15
+						</td>
+					</tr>
+					<tr>
+						<td>
+							ASL</td>
+						<td>15
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Welch-Detroit</td>
+						<td>13
+						</td>
+					</tr>
+					<tr>
+						<td>
+							BMW (Bimmer, Beemer, Beamer)</td>
+						<td>12
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Chalmers-Detroit</td>
+						<td>12
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Dodge</td>
+						<td>8
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Imperial</td>
+						<td>8
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Eagle</td>
+						<td>8
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Lincoln</td>
+						<td>7
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Jaguar</td>
+						<td>7
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Audi</td>
+						<td>6
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Nova</td>
+						<td>6
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Honda</td>
+						<td>5
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Hummer</td>
+						<td>5
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Maxwell</td>
+						<td>4
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Continental</td>
+						<td>3
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Acura</td>
+						<td>3
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Nissan</td>
+						<td>3
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Lotus</td>
+						<td>3
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Aston Martin</td>
+						<td>2
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mazda</td>
+						<td>2
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Porsche</td>
+						<td>2
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Ford</td>
+						<td>2
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Buick</td>
+						<td>2
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Lea-Francis</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Maybach</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Saturn</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Cony</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Toyota</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Yamaha</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							McLaren</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Plymouth</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Suzuki</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mitsubishi</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Viking</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Welch</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							TGE</td>
+						<td>1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Ewing</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Efini</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Scion</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Westfield</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Y&T</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Tsubakimoto Chain</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Artega</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Meihatsu</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Ishikawajima</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mikasa</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Autobacs</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Edsel</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Koei</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Gorham</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Ohmiya</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Takeoka</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Datsun</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Cartercar</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							BAC</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Keinath</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							TVR</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Daihatsu</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Isdera</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Nippon</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							NJ</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Apal</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mansory</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Jetcar</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Showa</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Sheridan</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Pontiac</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Asahi</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Infiniti</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Lotec</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							DeSoto</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							BS Motor</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Fuji</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Kurugane</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Locost</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Isuzu</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							litima</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mercury</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Marquette</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Suzliight</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Sumida</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Nikken</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Trident</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Vemac</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Publica</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Rainier</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Pegasus</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Chiyoda</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							LaSalle</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Idemitsu</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Otomo</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Volkswagen</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Kunisue</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Tachikawa</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Yes!</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Ohta</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Isaka</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Elmore</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Eunos</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Fuso</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							CityEl</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Takuri</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Ariel</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							AC</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Toyopet</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Jiotto</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							UD Trucks</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mizuno-shiki</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Scripps Booth</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Rintaku</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Wiesmann</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Chrysler</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Triking</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Opel</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							GMC</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Yamata</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Melkus</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Xedos</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Vauxhall</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Ales</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Humbee</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Lila</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Sanko</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Ascari</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Gumpert</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Yoshida-shiki</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Yanase</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Tama</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Subaru</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Hino</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							JZR</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Lister</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Tsukuba</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Meiwa</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Prodrive</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Suminoe</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mitaka</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Chalmers</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Oldsmobile</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							MK Indy</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mitsui</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Valiant</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Alpina</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mitsuoka</td>
+						<td>0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Autozam</td>
+						<td>0
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+		</section>
 
-	<h2>Cleaning the data</h2>
-	<p>
-		With the Python <a href="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a> library, I extracted the brand names from the Wikipedia pages. Then I used <a href="http://www.nltk.org">NLTK</a> to remove the HTML tags and regular expressions to remove excess whitespace and text (such as notes about the brand, the brand's years of operation, etc.).
-	</p>
+		<section class="content">
+			<h2>Errors</h2>
 
-	<h2>Analyzing the data</h2>
-	<p>
-		The Rap Lyrics Database contains lyrics for all of Billboard Music's rap songs from 1989 through 2009. It's the only (as far as I know) searchable database of hip-hop lyrics (exclusively).
-	<p>
-	<p>
-		I wrote a few Python scripts to search for all 153+ brands in the Rap Lyrics database, saved the resulting pages, and used BeautifulSoup again to count the number of results on each page. I saved the brands with their counts to a file, which I then sorted using LibreOffice Calc. I reformatted the results with Python to create the Google Chart below.
-	</p>
+			<h3>Semantic orientation</h3>
+			<p>
+				For this experiment, I equated "beloved" to "number of songs mentions." This is obviously not always the
+				case, as rappers name-drop plenty of things they dislike. It's true that rappers generally mention cars
+				in a
+				positive manner, but a more accurate experiment would take into account not just how many times the
+				brand
+				was used, but <strong>in what way</strong> the brand was used.
+			</p>
 
-	</section>
+			<h3>Multi-word brands</h3>
+			<p>
+				The Rap Lyrics Database turns up blank if you search for, say "Aston Martin" (with the quotes and the
+				space), even though Aston Martin is mentioned in a few songs. So multi-word brands with spaces in them
+				turned up short. (Mercedes-Benz doesn't have this issue because it has a hyphen, not a space.)
+			</p>
 
-    <section class="container-narrow" id="results">
+			<h3>Removing duplicates</h3>
+			<p>
+				Mercedes-Benz often referred to as just "Mercedes" or just "Benz." While I searched for the full name
+				and
+				both nicknames, I ended up using the results for the full name only to minimize the possibility of
+				duplicates (as I found the number of results, but not the actual song titles).
+			</p>
+			<p>
+				In general, a better analysis would have compared song results against each other to ensure that there
+				are
+				no duplicates in the count.
+			</p>
 
-	<h1>Results</h1>
+		</section>
+	</main>
 
-	<h2>So who won?</h2>
+	<!--Load the AJAX API-->
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
 
-	<h2><span class="emph">Mercedes-Benz.</span> By a landslide!</h2>
+		// Load the Visualization API and the piechart package.
+		google.load('visualization', '1.0', { 'packages': ['corechart'] });
 
+		// Set a callback to run when the Google Visualization API is loaded.
+		google.setOnLoadCallback(drawChart);
 
-    <!--Div that will hold the pie chart-->
-    <div id="chart_div"></div>
+		// Callback that creates and popliates a data table,
+		// instantiates the pie chart, passes in the data and
+		// draws it.
+		function drawChart() {
 
-      <hr>
+			// Create the data table.
+			var data = new google.visualization.DataTable();
+			data.addColumn('string', 'Brand');
+			data.addColumn('number', 'Number of Songs');
+			data.addRows(
+				[['Mercedes-Benz', 93], ['Jeep', 34], ['Cadillac', 25], ['Chevrolet (Chevy)', 24], ['Lexus', 22], ['Rolls-Royce', 22], ['Bentley', 20], ['Tommy Kaira', 15], ['ASL', 15], ['Welch-Detroit', 13], ['BMW (Bimmer, Beemer, Beamer)', 12], ['Chalmers-Detroit', 12], ['Dodge', 8], ['Imperial', 8], ['Eagle', 8], ['Lincoln', 7], ['Jaguar', 7], ['Audi', 6], ['Nova', 6], ['Honda', 5], ['Hummer', 5], ['Maxwell', 4], ['Continental', 3], ['Acura', 3], ['Nissan', 3], ['Lotus', 3], ['Aston Martin', 2], ['Mazda', 2], ['Porsche', 2], ['Ford', 2], ['Buick', 2]]);
 
-	<table class="table">
-		<thead>
-			<th>
-				Car Brand
-			</th>
-			<th>
-				Number of Songs
-			</th>
-		</thead>
-    	<tbody>
-<tr>
-<td>
-Mercedes-Benz</td><td>93
-</td>
-</tr>
-<tr>
-<td>
-Jeep</td><td>34
-</td>
-</tr>
-<tr>
-<td>
-Cadillac</td><td>25
-</td>
-</tr>
-<tr>
-<td>
-Chevrolet (Chevy)</td><td>24
-</td>
-</tr>
-<tr>
-<td>
-Lexus</td><td>22
-</td>
-</tr>
-<tr>
-<td>
-Rolls-Royce</td><td>22
-</td>
-</tr>
-<tr>
-<td>
-Bentley</td><td>20
-</td>
-</tr>
-<tr>
-<td>
-Tommy Kaira</td><td>15
-</td>
-</tr>
-<tr>
-<td>
-ASL</td><td>15
-</td>
-</tr>
-<tr>
-<td>
-Welch-Detroit</td><td>13
-</td>
-</tr>
-<tr>
-<td>
-BMW (Bimmer, Beemer, Beamer)</td><td>12
-</td>
-</tr>
-<tr>
-<td>
-Chalmers-Detroit</td><td>12
-</td>
-</tr>
-<tr>
-<td>
-Dodge</td><td>8
-</td>
-</tr>
-<tr>
-<td>
-Imperial</td><td>8
-</td>
-</tr>
-<tr>
-<td>
-Eagle</td><td>8
-</td>
-</tr>
-<tr>
-<td>
-Lincoln</td><td>7
-</td>
-</tr>
-<tr>
-<td>
-Jaguar</td><td>7
-</td>
-</tr>
-<tr>
-<td>
-Audi</td><td>6
-</td>
-</tr>
-<tr>
-<td>
-Nova</td><td>6
-</td>
-</tr>
-<tr>
-<td>
-Honda</td><td>5
-</td>
-</tr>
-<tr>
-<td>
-Hummer</td><td>5
-</td>
-</tr>
-<tr>
-<td>
-Maxwell</td><td>4
-</td>
-</tr>
-<tr>
-<td>
-Continental</td><td>3
-</td>
-</tr>
-<tr>
-<td>
-Acura</td><td>3
-</td>
-</tr>
-<tr>
-<td>
-Nissan</td><td>3
-</td>
-</tr>
-<tr>
-<td>
-Lotus</td><td>3
-</td>
-</tr>
-<tr>
-<td>
-Aston Martin</td><td>2
-</td>
-</tr>
-<tr>
-<td>
-Mazda</td><td>2
-</td>
-</tr>
-<tr>
-<td>
-Porsche</td><td>2
-</td>
-</tr>
-<tr>
-<td>
-Ford</td><td>2
-</td>
-</tr>
-<tr>
-<td>
-Buick</td><td>2
-</td>
-</tr>
-<tr>
-<td>
-Lea-Francis</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-Maybach</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-Saturn</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-Cony</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-Toyota</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-Yamaha</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-McLaren</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-Plymouth</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-Suzuki</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-Mitsubishi</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-Viking</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-Welch</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-TGE</td><td>1
-</td>
-</tr>
-<tr>
-<td>
-Ewing</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Efini</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Scion</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Westfield</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Y&T</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Tsubakimoto Chain</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Artega</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Meihatsu</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Ishikawajima</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Mikasa</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Autobacs</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Edsel</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Koei</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Gorham</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Ohmiya</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Takeoka</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Datsun</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Cartercar</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-BAC</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Keinath</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-TVR</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Daihatsu</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Isdera</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Nippon</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-NJ</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Apal</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Mansory</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Jetcar</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Showa</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Sheridan</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Pontiac</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Asahi</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Infiniti</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Lotec</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-DeSoto</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-BS Motor</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Fuji</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Kurugane</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Locost</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Isuzu</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-litima</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Mercury</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Marquette</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Suzliight</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Sumida</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Nikken</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Trident</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Vemac</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Publica</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Rainier</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Pegasus</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Chiyoda</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-LaSalle</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Idemitsu</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Otomo</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Volkswagen</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Kunisue</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Tachikawa</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Yes!</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Ohta</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Isaka</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Elmore</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Eunos</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Fuso</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-CityEl</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Takuri</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Ariel</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-AC</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Toyopet</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Jiotto</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-UD Trucks</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Mizuno-shiki</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Scripps Booth</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Rintaku</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Wiesmann</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Chrysler</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Triking</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Opel</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-GMC</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Yamata</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Melkus</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Xedos</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Vauxhall</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Ales</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Humbee</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Lila</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Sanko</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Ascari</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Gumpert</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Yoshida-shiki</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Yanase</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Tama</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Subaru</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Hino</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-JZR</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Lister</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Tsukuba</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Meiwa</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Prodrive</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Suminoe</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Mitaka</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Chalmers</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Oldsmobile</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-MK Indy</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Mitsui</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Valiant</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Alpina</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Mitsuoka</td><td>0
-</td>
-</tr>
-<tr>
-<td>
-Autozam</td><td>0
-</td>
-</tr>
-</tbody>
-</table>
-	</div>
-    </section>
+			// Set chart options
+			var options = {
+				'title': 'Car Brands Mentioned in Hip-Hop Music',
+				'width': 'auto',
+				'height': '600',
+				'colors': ['#fb8e8e'],
+				'fontSize': 12,
+				'fontName': 'Lato, Helvetica, Arial, sans-serif',
+				titleTextStyle: {
+					fontSize: 16
+				},
+				hAxis: {
+					title: 'Car Brands',
+					showTextEvery: 1,
+					slantedText: true,
+					slantedTextAngle: 90
+				},
+				vAxis: {
+					title: 'Number of Songs'
+				},
+				legend: {
+					position: 'none'
+				}
+			};
 
+			// Instantiate and draw our chart, passing in some options.
+			var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+			chart.draw(data, options);
+		}
+	</script>
 
-    <section class="container-narrow" id="results">
-	<h1>Errors</h1>
+</body>
 
-	<h2>Semantic orientation</h2>
-	<p>
-		For this experiment, I equated "beloved" to "number of songs mentions." This is obviously not always the case, as rappers name-drop plenty of things they dislike. It's true that rappers generally mention cars in a positive manner, but a more accurate experiment would take into account not just how many times the brand was used, but <span class="emph">in what way</span> the brand was used.
-	</p>
-
-	<h2>Multi-word brands</h2>
-	<p>
-		The Rap Lyrics Database turns up blank if you search for, say "Aston Martin" (with the quotes and the space), even though Aston Martin is mentioned in a few songs. So multi-word brands with spaces in them turned up short. (Mercedes-Benz doesn't have this issue because it has a hyphen, not a space.)
-	</p>
-
-	<h2>Removing duplicates</h2>
-	<p>
-		Mercedes-Benz often referred to as just "Mercedes" or just "Benz." While I searched for the full name and both nicknames, I ended up using the results for the full name only to minimize the possibility of duplicates (as I found the number of results, but not the actual song titles).
-	</p>
-	<p>
-		In general, a better analysis would have compared song results against each other to ensure that there are no duplicates in the count.
-	</p>
-
-	</section>
-
-      <hr>
-
-      <div class="footer">
-		<div class="container-narrow">
-        <p>Contents &copy; 2013 Stephanie A. Higa</p>
-		</div>
-      </div>
-
-  </body>
 </html>

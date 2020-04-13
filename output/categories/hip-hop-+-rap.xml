@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sahiga (hip-hop + rap)</title><link>http://www.stephaniehiga.com/</link><description></description><atom:link href="http://www.stephaniehiga.com/categories/hip-hop-+-rap.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 02 Jan 2016 22:08:48 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Analyzing Rap Lyrics with Python</title><link>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: &lt;strong&gt;What's the most beloved car brand in hip-hop?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In this post, I'll explain how I came up with a possible answer to that question. &lt;a class="reference external" href="http://stephaniehiga.com/cars.html#results"&gt;To skip to the results, click here&lt;/a&gt;.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sahiga (Posts about hip-hop + rap)</title><link>https://www.stephaniehiga.com/</link><description></description><atom:link href="https://www.stephaniehiga.com/categories/hip-hop-%2B-rap.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 13 Apr 2020 03:41:39 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Analyzing Rap Lyrics with Python</title><link>https://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: &lt;strong&gt;What's the most beloved car brand in hip-hop?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In this post, I'll explain how I came up with a possible answer to that question. &lt;a class="reference external" href="https://www.stephaniehiga.com/cars.html"&gt;To skip to the results, click here&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="section" id="why-hip-hop-why-cars"&gt;
 &lt;h2&gt;Why hip-hop / why cars&lt;/h2&gt;
 &lt;p&gt;Hip-hop is my favorite genre of music. On the road, I tune the radio to &lt;a class="reference external" href="http://www.935kday.com/"&gt;93.5 KDAY&lt;/a&gt;; otherwise, I'm plugged into my Pandora account, which is heavy on Golden Age, Midwestern, East Coast, Bay Area, and (recently) indie rap. Rap is also lyrically dense, which makes it a great source for text mining.&lt;/p&gt;
@@ -9,13 +9,15 @@
 &lt;div class="section" id="the-lyrics-mining-process"&gt;
 &lt;h2&gt;The lyrics mining process&lt;/h2&gt;
 &lt;p&gt;To find the answer, I needed a sizeable sample of car brand names, a searchable database of hip-hop lyrics, a script to search for the brands within the lyrics database, and a way of displaying the results. Fortunately, all the necessary tools were readily available:&lt;/p&gt;
-&lt;ul class="simple"&gt;&lt;li&gt;Python&lt;/li&gt;
-&lt;li&gt;Wikipedia&lt;/li&gt;
-&lt;li&gt;LibreOffice Calc&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://research.blackyouthproject.com/raplyrics/"&gt;Rap Lyrics Database&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://developers.google.com/chart/"&gt;Google Charts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bootstrap&lt;/li&gt;
-&lt;/ul&gt;&lt;div class="section" id="gathering-the-data"&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Python&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Wikipedia&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;LibreOffice Calc&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://research.blackyouthproject.com/raplyrics/"&gt;Rap Lyrics Database&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://developers.google.com/chart/"&gt;Google Charts&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bootstrap&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="section" id="gathering-the-data"&gt;
 &lt;h3&gt;Gathering the data&lt;/h3&gt;
 &lt;p&gt;Wikipedia blocks web scrapers, understandably. So I manually downloaded all of Wikipedia's lists of car manufacturers and brands by country. To reduce the amount of HTML I would have to parse, I selected the &lt;a class="reference external" href="http://en.m.wikipedia.org/wiki/Main_Page"&gt;Mobile View&lt;/a&gt; for each page.&lt;/p&gt;
 &lt;p&gt;I downloaded ten files in total: a general list of car manufacturers plus individual lists for China, France, Germany, Italy, Japan, Spain, Sweden, the United Kingdom, and the United States.&lt;/p&gt;
@@ -24,8 +26,7 @@
 &lt;h3&gt;Cleaning the data&lt;/h3&gt;
 &lt;p&gt;Wikipedia's Mobile View pages contain search bars at the top and the usual "See also," "References," and "Read in another language" links. I started by erasing these (manually again), reducing the files to structural markup and the lists themselves.&lt;/p&gt;
 &lt;p&gt;With the Python &lt;a class="reference external" href="http://www.crummy.com/software/BeautifulSoup/"&gt;Beautiful Soup&lt;/a&gt; library, I extracted the brand name tags by selecting all list elements. Then I used &lt;a class="reference external" href="http://www.nltk.org"&gt;NLTK&lt;/a&gt; to remove the HTML tags and regular expressions to remove excess whitespace and text (such as notes about the brand, the brand's years of operation, etc.). This is what I came up with:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-def clean_wikilist(filename):
+&lt;pre class="literal-block"&gt;def clean_wikilist(filename):
     # open saved html file
     html = open(filename).read()
 
@@ -48,12 +49,10 @@ def clean_wikilist(filename):
     tokens = [token for token in tokens if not re.findall(r'\[[0-9]+\]|\([\S\s]+[\(\)]?|^\s+$|^[\s\[\]\(\)0-9]+$', token)]
     tokens = list(set(tokens))
 
-    return tokens
-&lt;/pre&gt;
+    return tokens&lt;/pre&gt;
 &lt;p&gt;After running my script on all ten lists, I had a whopping &lt;strong&gt;2599 brand names&lt;/strong&gt;. So I decided to limit the set to Germany, Japan, the UK, and the US. The pages for Germany, the UK, and the US separate current brands from defunct brands, so for those countries I used current brands only. The Japan page mixes current and defunct brands into one list; to save time, I used all of them.&lt;/p&gt;
-&lt;p&gt;These four pages have slightly different structures. The &lt;tt class="docutils literal"&gt;clean_wikilist()&lt;/tt&gt; script worked nicely for Japan, but captured too much information on the others, so I wrote three additional scripts. Here's the one for Germany:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-def autos_ge():
+&lt;p&gt;These four pages have slightly different structures. The &lt;code class="docutils literal"&gt;clean_wikilist()&lt;/code&gt; script worked nicely for Japan, but captured too much information on the others, so I wrote three additional scripts. Here's the one for Germany:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;def autos_ge():
         # open saved html file
         html = open('autos-ge.html').read()
 
@@ -75,17 +74,15 @@ def autos_ge():
         # combine lists
         tokens = list(set(minor_tokens + major_tokens))
 
-        return tokens
-&lt;/pre&gt;
-&lt;p&gt;One notable difference between this and the original script is the usage of Beautiful Soup. In &lt;tt class="docutils literal"&gt;clean_wikilist()&lt;/tt&gt;, the desired elements are selected first, with SoupStrainer, and then used to create a list of the matching HTML tags in unicode format. &lt;tt class="docutils literal"&gt;autos_ge()&lt;/tt&gt;, on the other hand, creates a Beautiful Soup object out of the entire page; the desired elements are selected via DOM traversal.&lt;/p&gt;
+        return tokens&lt;/pre&gt;
+&lt;p&gt;One notable difference between this and the original script is the usage of Beautiful Soup. In &lt;code class="docutils literal"&gt;clean_wikilist()&lt;/code&gt;, the desired elements are selected first, with SoupStrainer, and then used to create a list of the matching HTML tags in unicode format. &lt;code class="docutils literal"&gt;autos_ge()&lt;/code&gt;, on the other hand, creates a Beautiful Soup object out of the entire page; the desired elements are selected via DOM traversal.&lt;/p&gt;
 &lt;p&gt;The number of brand names from this limited dataset? Just 178.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="analyzing-the-data"&gt;
 &lt;h3&gt;Analyzing the data&lt;/h3&gt;
 &lt;p&gt;The Rap Lyrics Database contains lyrics for all of Billboard Music's rap songs from 1989 through 2009. It's the only searchable database of hip-hop lyrics (exclusively).&lt;/p&gt;
 &lt;p&gt;The result pages share the same URL, with the search term appended to the end: &lt;em&gt;http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/&lt;/em&gt;. This made it much easier to automate the search and saving process.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-def rap_search(auto_list):
+&lt;pre class="literal-block"&gt;def rap_search(auto_list):
     # search for each brand name
     for brand in auto_list:
         url = 'http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/' + word
@@ -97,12 +94,10 @@ def rap_search(auto_list):
         results = word + '.html'
 
         with open(results, 'w') as results_file:
-            results_file.write(results_html)
-&lt;/pre&gt;
+            results_file.write(results_html)&lt;/pre&gt;
 &lt;p&gt;This saved 178 HTML pages, each named after the appropriate brand search term, onto my computer. I also searched for known nicknames of the brands (e.g., "Bimmer/Beemer/Beamer" for BMW and "Chevy" for Chevrolet).&lt;/p&gt;
 &lt;p&gt;I used Beautiful Soup again to count the number of results on each page:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-def count_rap_results():
+&lt;pre class="literal-block"&gt;def count_rap_results():
         # for all html files in current directory
         for filename in os.listdir('.'):
         if filename.endswith('html'):
@@ -117,8 +112,7 @@ def count_rap_results():
 
         # write brand names and number of songs into a text file
         with open('count_rap_autos.txt', 'a') as counter_file:
-                counter_file.write('%s%15d\n' % (filename[:-5], count))
-&lt;/pre&gt;
+                counter_file.write('%s%15d\n' % (filename[:-5], count))&lt;/pre&gt;
 &lt;p&gt;This got me a pretty messy-looking text file of each brand and the number of songs in which it was mentioned:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Lea-Francis               1&lt;/p&gt;
@@ -142,24 +136,19 @@ def count_rap_results():
 &lt;div class="section" id="pain-points"&gt;
 &lt;h2&gt;Pain points&lt;/h2&gt;
 &lt;p&gt;I'm new to programming. While I enjoy it very much, I spend about 90% of my time immersed in pain. The text analysis took me four nights (Monday through Thursday) to complete. On the actual hack day, I made the graph and web page, with a lot of help from Bootstrap. Along the way, I encountered many problems:&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;&lt;p class="first"&gt;Selecting specific subsets of HTML tags with no classes or ids.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Accidentally passing list items with the newline character to the &lt;tt class="docutils literal"&gt;rap_search()&lt;/tt&gt; script, resulting in 178 filenames split off from their extensions. Fortunately there was an easy fix:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-for filename in os.listdir("."):
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Selecting specific subsets of HTML tags with no classes or ids.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Accidentally passing list items with the newline character to the &lt;code class="docutils literal"&gt;rap_search()&lt;/code&gt; script, resulting in 178 filenames split off from their extensions. Fortunately there was an easy fix:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;for filename in os.listdir("."):
         if '\n' in filename:
-        os.rename(filename, re.sub(r'\n', r'', filename))
-&lt;/pre&gt;
+        os.rename(filename, re.sub(r'\n', r'', filename))&lt;/pre&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Reformatting the final list of brands into an HTML table.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Reformatting the final list of brands into a list of dictionaries to create a graph with &lt;a class="reference external" href="http://philogb.github.io/jit/"&gt;JavaScript InfoVis Toolkit&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Not knowing how to build a non-stacked bar graph with the InfoVis Toolkit.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Switching to Google Charts and reformatting the final list of brands into a list of lists to create a Google Charts graph.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;
+&lt;li&gt;&lt;p&gt;Reformatting the final list of brands into an HTML table.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reformatting the final list of brands into a list of dictionaries to create a graph with &lt;a class="reference external" href="http://philogb.github.io/jit/"&gt;JavaScript InfoVis Toolkit&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Not knowing how to build a non-stacked bar graph with the InfoVis Toolkit.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Switching to Google Charts and reformatting the final list of brands into a list of lists to create a Google Charts graph.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;div class="section" id="notes-for-the-future"&gt;
 &lt;h2&gt;Notes for the future&lt;/h2&gt;
 &lt;div class="section" id="more-complete-data"&gt;
@@ -194,4 +183,4 @@ for filename in os.listdir("."):
 &lt;p&gt;After going about this somewhat backwards, I think my initial impression remains correct. I'm happy I finally took a stab at the project, and I'm excited to continue working on it. This is just the first of a long series of experiments (and blog posts)!&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/sahiga/rap-analysis"&gt;Source files on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>hip-hop + rap</category><category>python</category><category>text mining</category><guid>http://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</guid><pubDate>Sat, 18 May 2013 18:32:32 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><category>hip-hop + rap</category><category>python</category><category>text mining</category><guid>https://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python/</guid><pubDate>Sat, 18 May 2013 18:32:32 GMT</pubDate></item></channel></rss>
