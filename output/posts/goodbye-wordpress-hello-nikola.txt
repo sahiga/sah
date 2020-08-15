@@ -1,0 +1,67 @@
+.. link: 
+.. description: 
+.. tags: 
+.. date: 2013/05/04 14:09:26
+.. title: Goodbye, WordPress! Hello, Nikola!
+.. slug: goodbye-wordpress-hello-nikola
+.. nocomments: True
+
+It's official: I've finally migrated my personal website from `WordPress <http://www.wordpress.org>`_ to `Nikola <http://nikola.ralsina.com.ar>`_, a static site generator. In my 53432099809th attempt to return to writing, I'll use this bit of nerd news to jumpstart what I hope will become a regular blogging habit.
+
+The quest for static
+====================
+
+WordPress gets a lot of hate in the development community. Let me say upfront that this is absolutely not the reason I decided to leave it (I have the softest of spots for WordPress). It's just that one day I woke up and realized I didn't need a database and a gazillion server queries to post text on my website.
+
+So I started looking into static site generators. A static site generator does exactly what's written on the box: it creates a static site. It combines the best of Web 1.0 (fast, portable, secure HTML pages) with the best of Web 2.0 (templates). I considered:
+
+- `Jekyll <http://jekyllrb.com/>`_ + `Octopress <http://www.octopress.org>`_: Hooks directly into `GitHub Pages <http://pages.github.com/>`_ and is apparently very good. But I don't know Ruby, so I kept looking.
+- `Hyde <http://ringce.com/hyde>`_: A Python port of Jekyll. Ultimately, I passed on it because of the lack of documentation. When it comes to technology, this Luddite needs a lot of hand-holding.
+- `Pelican <http://docs.getpelican.com>`_: Also Python-based, with complete, well-written documentation. I installed it and got lost while trying to generate files. Pelican looks like a great choice, but I think it's meant for people who are much more tech-savvy than I am.
+
+Shortly after I installed Pelican, someone posted a link to `Nikola <http://nikola.ralsina.com.ar>`_ on Hacker News. I'm not sure why it didn't come up in all my searches for Python-based static site generators, because so far it's proven to be a dream come true. The documentation is amazing. It's easy to use and in active development. And it was named after `Nikola Tesla <http://theoatmeal.com/comics/tesla>`_. (**Huge** Nikola Tesla fan here.)
+
+Goodbye, WordPress
+==================
+
+Nikola has an ``import_wordpress`` function to ease the transition from WordPress to Nikola. I grabbed an XML dump of my site (**Tools > Export > All Content** in the WP admin panel) and saved it in my Nikola site folder.
+
+I installed the Python `requests <https://pypi.python.org/pypi/requests>`_ package (import_wordpress depends on requests):
+
+::
+
+	sudo pip install requests
+
+Then I ran import_wordpress on the file:
+
+::
+
+	nikola import_wordpress stephanieahiga.wordpress.2013-05-05.xml
+
+This created a new folder, **new_site**, within the Nikola folder. I had no posts and only a handful of pages in my WordPress database, so I recreated the pages manually using the page command: ``nikola new_post -p``. Similar to WordPress, Nikola differentiates between posts and pages: posts are in the **posts** folder and pages are in the **stories** folder.
+
+Finally, I uninstalled WordPress from my domain via `SimpleScripts <https://www.simplescripts.com>`_ on my cPanel.
+
+import_wordpress saves all posts and pages with the ``.wp`` extension (read by my computer as WordPerfect files). The XML dump, and therefore the folder created by import_wordpress, save the contents of the WordPress database, but **not** the theme files. So it's important to backup any custom themes before uninstalling WordPress.
+
+Tutorials on importing WordPress posts into Nikola:
+
+- `Official site <http://nikola.ralsina.com.ar/handbook.html#importing-your-wordpress-site-into-nikola>`_
+- `Flexion.Org <http://flexion.org/posts/2012-10-migrating-wordpress-to-nikola.html>`_
+- `Kushal Das <http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html>`_
+
+Hello, Nikola
+=============
+
+I assume that the next step is to upload the Nikola site folder to my domain server. If you're reading this post, you can assume that my assumption turned out to be true.
+
+
+
+
+
+
+
+
+
+
+

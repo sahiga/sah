@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html prefix="        og: http://ogp.me/ns# article: http://ogp.me/ns/article#     " vocab="http://ogp.me/ns" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Goodbye, WordPress! Hello, Nikola! | sahiga</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="canonical" href="https://www.stephaniehiga.com/posts/goodbye-wordpress-hello-nikola/">
+<!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<a href="https://www.github.com/sahiga" class="github-corner" aria-label="View source on GitHub">
+		<svg width="80" height="80" viewbox="0 0 250 250" class="github-corner-svg" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+<div id="wrapper">
+  <div class="container">
+  <nav class="navigation"><div class="clearfix">          
+      <h1 class="blog-title">
+          <a href="../../" title="sahiga">sahiga</a>
+      </h1>
+      <ul class="nav-list">
+<li class="nav-list-item">
+<a href="../../pages/about">About</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="../../pages/books">Reading List</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="http://sahiga.github.io/wiki/tiddlywiki.html">Wiki</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="../../archive.html">Archives</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="../../categories">Tags</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="../../rss.xml">RSS</a>
+            
+            
+      </li>
+</ul>
+</div>
+  </nav><!-- #primary .theme_sidebar --><div class="content">
+            <div id="header">
+                
+                
+            </div>
+        <div class="hfeed">
+            <!--Body content-->
+            
+  <div id="post-goodbye-wordpress-hello-nikola" class="post hfeed">
+    <h2 class="entry-title"><a href=".">Goodbye, WordPress! Hello, Nikola!</a></h2>
+    <div class="entry-content">
+        <div>
+<p>It's official: I've finally migrated my personal website from <a class="reference external" href="http://www.wordpress.org">WordPress</a> to <a class="reference external" href="http://nikola.ralsina.com.ar">Nikola</a>, a static site generator. In my 53432099809th attempt to return to writing, I'll use this bit of nerd news to jumpstart what I hope will become a regular blogging habit.</p>
+<div class="section" id="the-quest-for-static">
+<h2>The quest for static</h2>
+<p>WordPress gets a lot of hate in the development community. Let me say upfront that this is absolutely not the reason I decided to leave it (I have the softest of spots for WordPress). It's just that one day I woke up and realized I didn't need a database and a gazillion server queries to post text on my website.</p>
+<p>So I started looking into static site generators. A static site generator does exactly what's written on the box: it creates a static site. It combines the best of Web 1.0 (fast, portable, secure HTML pages) with the best of Web 2.0 (templates). I considered:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://jekyllrb.com/">Jekyll</a> + <a class="reference external" href="http://www.octopress.org">Octopress</a>: Hooks directly into <a class="reference external" href="http://pages.github.com/">GitHub Pages</a> and is apparently very good. But I don't know Ruby, so I kept looking.</p></li>
+<li><p><a class="reference external" href="http://ringce.com/hyde">Hyde</a>: A Python port of Jekyll. Ultimately, I passed on it because of the lack of documentation. When it comes to technology, this Luddite needs a lot of hand-holding.</p></li>
+<li><p><a class="reference external" href="http://docs.getpelican.com">Pelican</a>: Also Python-based, with complete, well-written documentation. I installed it and got lost while trying to generate files. Pelican looks like a great choice, but I think it's meant for people who are much more tech-savvy than I am.</p></li>
+</ul>
+<p>Shortly after I installed Pelican, someone posted a link to <a class="reference external" href="http://nikola.ralsina.com.ar">Nikola</a> on Hacker News. I'm not sure why it didn't come up in all my searches for Python-based static site generators, because so far it's proven to be a dream come true. The documentation is amazing. It's easy to use and in active development. And it was named after <a class="reference external" href="http://theoatmeal.com/comics/tesla">Nikola Tesla</a>. (<strong>Huge</strong> Nikola Tesla fan here.)</p>
+</div>
+<div class="section" id="goodbye-wordpress">
+<h2>Goodbye, WordPress</h2>
+<p>Nikola has an <code class="docutils literal">import_wordpress</code> function to ease the transition to WordPress. I grabbed an XML dump of my site (<strong>Tools &gt; Export &gt; All Content</strong> in the WP admin panel) and saved it in my Nikola site folder.</p>
+<p>I installed the Python <a class="reference external" href="https://pypi.python.org/pypi/requests">requests</a> package (import_wordpress depends on requests):</p>
+<pre class="literal-block">sudo pip install requests</pre>
+<p>Then I ran import_wordpress on the file:</p>
+<pre class="literal-block">nikola import_wordpress stephanieahiga.wordpress.2013-05-05.xml</pre>
+<p>This created a new folder, <strong>new_site</strong>, within the Nikola folder. I had no posts and only a handful of pages in my WordPress database, so I recreated the pages manually using the page command: <code class="docutils literal">nikola new_post <span class="pre">-p</span></code>. Similar to WordPress, Nikola differentiates between posts and pages: posts are in the <strong>posts</strong> folder and pages are in the <strong>stories</strong> folder.</p>
+<p>Finally, I uninstalled WordPress from my domain via <a class="reference external" href="https://www.simplescripts.com">SimpleScripts</a> on my cPanel.</p>
+<p>import_wordpress saves all posts and pages with the <code class="docutils literal">.wp</code> extension (read by my computer as WordPerfect files). The XML dump, and therefore the folder created by import_wordpress, save the contents of the WordPress database, but <strong>not</strong> the theme files. So it's important to backup any custom themes before uninstalling WordPress.</p>
+<p>Tutorials on importing WordPress posts into Nikola:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://nikola.ralsina.com.ar/handbook.html#importing-your-wordpress-site-into-nikola">Official site</a></p></li>
+<li><p><a class="reference external" href="http://flexion.org/posts/2012-10-migrating-wordpress-to-nikola.html">Flexion.Org</a></p></li>
+<li><p><a class="reference external" href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html">Kushal Das</a></p></li>
+</ul>
+</div>
+<div class="section" id="hello-nikola">
+<h2>Hello, Nikola</h2>
+<p>I assume that the next step is to upload the Nikola site folder to my domain server. If you're reading this post, you can assume that my assumption turned out to be true.</p>
+</div>
+</div>
+    </div>
+    <div class="archive-meta">
+        Posted: <time class="published" datetime="2013-05-04T14:09:26+00:00">2013-05-04 14:09</time><a href="index.txt" id="sourcelink">Source</a>
+        
+            
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/nikola/" rel="tag">nikola</a></li>
+            <li><a class="tag p-category" href="../../categories/static-site-generators/" rel="tag">static site generators</a></li>
+            <li><a class="tag p-category" href="../../categories/wordpress/" rel="tag">wordpress</a></li>
+        </ul>
+<span class="entry-tags">
+        </span>
+      <hr>
+</div>
+  </div>
+  
+        <ul class="pager hidden-print">
+<li class="next">
+                <a href="../github-for-linux-mint/" rel="next" title="GitHub for Linux Mint">Next post</a>
+            </li>
+        </ul>
+</div>
+
+            <!--End of body content-->
+        </div>
+<!-- .hfeed -->
+    </div>
+<!-- #content -->
+<footer class="footer"><small>
+    Contents © 2020         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+    
+  </small>
+</footer><!-- #footer -->
+</div>
+<!-- #container -->
+
+
+<!-- #wrapper -->
+    
+    
+    
+            <script src="../../assets/js/all-nocdn.js"></script><script src="https://polyfill.io/v3/polyfill.js?features=Intl.RelativeTimeFormat.%7Elocale.en"></script><script src="../../assets/js/luxon.min.js"></script>
+</body>
+</html>

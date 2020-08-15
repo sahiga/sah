@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html prefix="        og: http://ogp.me/ns# article: http://ogp.me/ns/article#     " vocab="http://ogp.me/ns" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>The Design of Everyday Blogs | sahiga</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="canonical" href="https://www.stephaniehiga.com/posts/the-design-of-everyday-blogs/">
+<!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<a href="https://www.github.com/sahiga" class="github-corner" aria-label="View source on GitHub">
+		<svg width="80" height="80" viewbox="0 0 250 250" class="github-corner-svg" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+<div id="wrapper">
+  <div class="container">
+  <nav class="navigation"><div class="clearfix">          
+      <h1 class="blog-title">
+          <a href="../../" title="sahiga">sahiga</a>
+      </h1>
+      <ul class="nav-list">
+<li class="nav-list-item">
+<a href="../../pages/about">About</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="../../pages/books">Reading List</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="http://sahiga.github.io/wiki/tiddlywiki.html">Wiki</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="../../archive.html">Archives</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="../../categories">Tags</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="../../rss.xml">RSS</a>
+            
+            
+      </li>
+</ul>
+</div>
+  </nav><!-- #primary .theme_sidebar --><div class="content">
+            <div id="header">
+                
+                
+            </div>
+        <div class="hfeed">
+            <!--Body content-->
+            
+  <div id="post-the-design-of-everyday-blogs" class="post hfeed">
+    <h2 class="entry-title"><a href=".">The Design of Everyday Blogs</a></h2>
+    <div class="entry-content">
+        <div>
+<p>At the risk of losing all my design cred, I'll admit I put practically no effort or even thought into the way my blog looked until about a week ago. To put that into perspective: I wrote my first post here in May 2013. For most of the time since that point, it's been some variation of this default Bootstrap theme provided by Nikola, the static site generator I use:</p>
+<img alt="My blog, circa February 2015" src="../../images/2015-02-24-site.png"><p>Nikola, while excellent, has <a class="reference external" href="http://themes.getnikola.com/">slim pickings for themes</a>, and none of them are quite what I want my blog to look like. So when it came time for the big overhaul, I started (almost) from scratch with a new theme.</p>
+<div class="section" id="the-process">
+<h2>The process</h2>
+<p>Nikola themes live within the appropriately named <strong>themes</strong> directory. My files are structured as follows:</p>
+<pre class="literal-block">/theme-name
+  /assets
+    /css
+      theme.css
+  /templates
+    base.tmpl
+    index.tmpl
+    post.tmpl
+  engine
+  parent</pre>
+<p>Here's an overview of what these files do (taken from the <a class="reference external" href="http://getnikola.com/theming.html">Nikola theming reference</a>):</p>
+<table>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 89%">
+</colgroup>
+<thead><tr>
+<th class="head"><p>File Name</p></th>
+<th class="head"><p>Purpose</p></th>
+</tr></thead>
+<tbody>
+<tr>
+<td><p>theme.css</p></td>
+<td><p>Custom CSS</p></td>
+</tr>
+<tr>
+<td><p>base.tmpl</p></td>
+<td><p>Defines the basic layout for all pages</p></td>
+</tr>
+<tr>
+<td><p>index.tmpl</p></td>
+<td><p>Defines pages that contain multiple posts (the "index" pages)</p></td>
+</tr>
+<tr>
+<td><p>post.tmpl</p></td>
+<td><p>Defines an individual post</p></td>
+</tr>
+<tr>
+<td><p>engine</p></td>
+<td><p>Text file containing the name of the templating engine your theme uses. The two options are <strong>mako</strong> and <strong>jinja</strong>.</p></td>
+</tr>
+<tr>
+<td><p>parent</p></td>
+<td><p>Text file containing the name of the theme from which your theme inherits. Mine inherits from <strong>base</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+<p>That's it! I used the similarly bare <a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/blogtxt">monospace theme</a> as a guide. You can spruce up your theme with additional templates (see the <a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen">zen theme</a> for an example), but I decided to keep mine simple.</p>
+</div>
+<div class="section" id="now-for-the-fun-stuff">
+<h2>Now for the fun stuff!</h2>
+<p>There's another reason why the default theme didn't work that well for my blog: I'm wordy as hell. I don't write posts; I write <em>essays</em>. So, rather than change my style of blogging, I thought I'd pull off an illusion. My main objective in redesigning this blog was to make it resemble a series of digestible sentences, as opposed to the giant wall of text that it actually is.</p>
+<p>For inspiration, I looked at <a class="reference external" href="http://www.medium.com">Medium</a>, <a class="reference external" href="http://longreads.com/">Longreads</a>, <a class="reference external" href="http://nautil.us/">Nautilus</a>, <a class="reference external" href="http://aeon.co">Aeon</a>, and all the other beautiful text-heavy sites that have cropped up in recent years.</p>
+<div class="section" id="fonts">
+<h3>Fonts</h3>
+<p>Typefaces can make or break a design. For the headers, I picked <strong>Lato</strong>, my favorite web font of all time; for regular text, <strong>Lora</strong>, my other favorite web font of all time. Both are available on <a class="reference external" href="https://www.google.com/fonts">Google Fonts</a>. To improve readability, I increased the size of the text and the space between each line.</p>
+</div>
+<div class="section" id="colors">
+<h3>Colors</h3>
+<p>The link styles (salmon color + hover transitions) are from an old WordPress theme I created back in 2012, before I became a front-end developer. My CSS may have improved since then, but my visual tastes haven't changed much.</p>
+<p>My first pass at the new theme had an entirely white background, which tested poorly. "It's <strong>really</strong> white," commented one of my Hack Reactor classmates, as he shielded his eyes from the glare.<sup>*</sup> I subsequently reduced the white space and added a background from <a class="reference external" href="http://www.subtlepatterns.com">Subtle Patterns</a>. I picked a food icon pattern because, well, I love food.</p>
+</div>
+<div class="section" id="other-changes">
+<h3>Other changes</h3>
+<p>I removed the Share button that used to sit in the bottom right corner. It took me forever to figure out how to do this, but all I had to do was uncomment the <code class="docutils literal">SOCIAL_BUTTONS_CODE = ""</code> line in <strong>conf.py</strong>.</p>
+</div>
+</div>
+<div class="section" id="final-thoughts">
+<h2>Final thoughts</h2>
+<p>Designs are never finished, but I'm happy with how my blog looks right now. I plan to implement a hamburger menu for smaller screens within the upcoming weeks. If you have any suggestions, or find your viewing experience to be less than optimal, please let me know.</p>
+<hr class="docutils">
+<p><sup>*</sup> With much gratitude to my Hack Reactor classmates for giving me the necessary push to redesign my blog.</p>
+</div>
+</div>
+    </div>
+    <div class="archive-meta">
+        Posted: <time class="published" datetime="2015-03-02T00:27:26+00:00">2015-03-02 00:27</time><a href="index.rst" id="sourcelink">Source</a>
+        
+            
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/design/" rel="tag">design</a></li>
+            <li><a class="tag p-category" href="../../categories/nikola/" rel="tag">nikola</a></li>
+        </ul>
+<span class="entry-tags">
+        </span>
+      <hr>
+</div>
+  </div>
+  
+        <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../off-to-hack-reactor/" rel="prev" title="Off to Hack Reactor">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../degrees-of-pynchon/" rel="next" title="Degrees of Pynchon">Next post</a>
+            </li>
+        </ul>
+</div>
+
+            <!--End of body content-->
+        </div>
+<!-- .hfeed -->
+    </div>
+<!-- #content -->
+<footer class="footer"><small>
+    Contents © 2020         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+    
+  </small>
+</footer><!-- #footer -->
+</div>
+<!-- #container -->
+
+
+<!-- #wrapper -->
+    
+    
+    
+            <script src="../../assets/js/all-nocdn.js"></script><script src="https://polyfill.io/v3/polyfill.js?features=Intl.RelativeTimeFormat.%7Elocale.en"></script><script src="../../assets/js/luxon.min.js"></script>
+</body>
+</html>

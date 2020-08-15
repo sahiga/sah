@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html prefix="        og: http://ogp.me/ns# article: http://ogp.me/ns/article#     " vocab="http://ogp.me/ns" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Degrees of Pynchon | sahiga</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="canonical" href="https://www.stephaniehiga.com/posts/degrees-of-pynchon/">
+<!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<a href="https://www.github.com/sahiga" class="github-corner" aria-label="View source on GitHub">
+		<svg width="80" height="80" viewbox="0 0 250 250" class="github-corner-svg" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+<div id="wrapper">
+  <div class="container">
+  <nav class="navigation"><div class="clearfix">          
+      <h1 class="blog-title">
+          <a href="../../" title="sahiga">sahiga</a>
+      </h1>
+      <ul class="nav-list">
+<li class="nav-list-item">
+<a href="../../pages/about">About</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="../../pages/books">Reading List</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="http://sahiga.github.io/wiki/tiddlywiki.html">Wiki</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="../../archive.html">Archives</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="../../categories">Tags</a>
+            
+            
+          </li>
+<li class="nav-list-item">
+<a href="../../rss.xml">RSS</a>
+            
+            
+      </li>
+</ul>
+</div>
+  </nav><!-- #primary .theme_sidebar --><div class="content">
+            <div id="header">
+                
+                
+            </div>
+        <div class="hfeed">
+            <!--Body content-->
+            
+  <div id="post-degrees-of-pynchon" class="post hfeed">
+    <h2 class="entry-title"><a href=".">Degrees of Pynchon</a></h2>
+    <div class="entry-content">
+        <div>
+<p>We spent two days last week working on solo projects at Hack Reactor. I built a visualization of literary influences, beginning with <a class="reference external" href="http://thomaspynchon.com/">Thomas Pynchon</a> -- who, aside from being totally amazing, a genius, and one of my personal role models, also has a <a class="reference external" href="https://en.wikipedia.org/wiki/Thomas_Pynchon#Influence">lengthy section on Wikipedia</a> full of writers who influenced him and writers he's influenced.</p>
+<div class="section" id="thomas-pynchon-s-circle-of-influence">
+<h2>Thomas Pynchon's circle of influence</h2>
+<p>To visualize the relationships between Pynchon and the writers connected to him, I created an arc diagram  in <a class="reference external" href="http://www.d3js.org">D3</a>. Initially, I planned on using D3's built-in <a class="reference external" href="https://github.com/mbostock/d3/wiki/Chord-Layout">chord layout</a> generator, but I fell in love with arc diagrams after seeing so many beautiful examples online (e.g., <a class="reference external" href="http://www.chrisharrison.net/index.php/Visualizations/BibleViz">Bible Cross-References</a>, <a class="reference external" href="http://www.autodeskresearch.com/pages/infovis/command_usage_arc">Command Usage Arc Diagrams</a>, <a class="reference external" href="http://www.turbulence.org/Works/song/gallery/gallery.html">The Shape of Song</a>, among others).</p>
+<p>I went down a few rabbit holes, including creating a matrix dataset similar to those required by the chord layout and plotting the writers as nodes on a scale. Thankfully, there's this wonderful <a class="reference external" href="http://bl.ocks.org/sjengle/5431779">Les Misérables character co-ocurrences arc diagram</a>, also in D3, which set me on the right track.</p>
+<p>I formatted the influence data into an object with two arrays, <strong>nodes</strong> and <strong>links</strong>. Each node contains the name of a writer and a number indicating the writer's category (influencer or influencee), and each link contains a connection between Thomas Pynchon and another writer.</p>
+<div class="figure">
+<a class="reference external image-reference" href="http://sahiga.github.io/degrees-of-pynchon"><img alt="Thomas Pynchon's literary influences" src="../../images/degrees-of-pynchon.png"></a>
+<p class="caption">Click for the interactive version. I stole the quote from the Simpsons episode in which Thomas Pynchon reviews Marge's book. For anyone unfamiliar with Pynchon: he does not love cameras.</p>
+</div>
+<p>All the influencers appear to the left of Pynchon, with an arc above the horizontal; all the influencees appear to the right, with an arc below the horizontal. The colors were generated by D3's <a class="reference external" href="https://github.com/mbostock/d3/wiki/Ordinal-Scales#category20b">category20b scale</a>.</p>
+</div>
+<div class="section" id="other-circles-of-influence">
+<h2>Other circles of influence</h2>
+<p>I also wanted to visualize the influences of the other writers. Initially, I added all their connections to Pynchon's graph. This worked for Vladimir Nabokov but failed for Emily Dickinson, who was influenced by a writer who appeared to the right of her (Ralph Waldo Emerson) -- resulting in a backwards connection.</p>
+<p>The solution was to create new graphs and layer them on top of Pynchon's. So, clicking on Nabokov's name (for instance) will fade out Pynchon's graph, increase the size of Nabokov's name, move his name and dot to the center of the page, draw a line from his name to the center dot, and display his influence graph around that new center. Mousing away from Nabokov's graph will delete his graph and bring back Pynchon's.</p>
+<div class="figure">
+<img alt="Vladimir Nabokov's literary influences" src="../../images/degrees-of-pynchon-new-graph.png"><p class="caption">Vladimir Nabokov's literary influences</p>
+</div>
+<p>Figuring out how to rearrange the new graph around the new center dot was probably the most difficult part of the entire project. I passed the center position to the new graph and gave the influencer dots a negative x-axis position so that they appeared to the left of the center dot.</p>
+</div>
+<div class="section" id="hover-selections">
+<h2>Hover selections</h2>
+<p>The last feature I added was a hover selection event. Mousing over a writer's name will fade out the entire diagram except for the name, dot, and arc belonging to that writer.</p>
+<div class="figure">
+<img alt="Hovering over William S. Burroughs" src="../../images/degrees-of-pynchon-hover.png"><p class="caption">Hovering over William S. Burroughs</p>
+</div>
+<p>This was the second most difficult part of the project, because of the preexisting fade effects associated with the click event. The entire graph fades out upon clicking a name, and the entire graph fades back in when the mouse leaves the new graph.</p>
+<p>I ended up initializing a boolean to keep everything in check: <code class="docutils literal">multipleGraphsOnPage</code> starts off as false, becomes true when a new graph is created, and reverts to false when the new graph is deleted. The hover selection event is enabled only when <code class="docutils literal">multipleGraphsOnPage</code> is false.</p>
+</div>
+<div class="section" id="my-project-completion-strategy">
+<h2>My project completion strategy</h2>
+<p>The purpose of the solo project was not to build a perfect product, but a minimum viable product. Hack Reactor instructed us to reduce the size of our scope in half, twice -- which I didn't even need to do, since I'd deliberately chosen a very small scope to begin with. The extra time afforded me the chance to polish the look and feel of my project, including the animations, and dive deeper into D3.</p>
+<p>This project was really fun. D3 is by far my favorite JavaScript library ever, and I can't wait to make more visualizations with it.</p>
+</div>
+<div class="section" id="more-d3-svg-resources">
+<h2>More D3 &amp; SVG resources</h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.dashingd3js.com/d3-examples/1-d3-and-javascript-working-with-json">D3 and JavaScript: Working with JSON</a></p></li>
+<li><p><a class="reference external" href="http://www.d3noob.org/2013/01/how-to-rotate-text-labels-for-x-axis-of.html">How to rotate the text labels for the x-axis of a D3.js graph</a></p></li>
+<li><p><a class="reference external" href="https://www.dashingd3js.com/svg-text-element">SVG Text Element</a></p></li>
+<li><p><a class="reference external" href="http://tutorials.jenkov.com/svg/path-element.html#arcs">SVG Path Element</a></p></li>
+</ul>
+</div>
+</div>
+    </div>
+    <div class="archive-meta">
+        Posted: <time class="published" datetime="2015-03-16T02:12:30+00:00">2015-03-16 02:12</time><a href="index.rst" id="sourcelink">Source</a>
+        
+            
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/d3/" rel="tag">d3</a></li>
+            <li><a class="tag p-category" href="../../categories/hack-reactor/" rel="tag">hack reactor</a></li>
+            <li><a class="tag p-category" href="../../categories/javascript/" rel="tag">javascript</a></li>
+        </ul>
+<span class="entry-tags">
+        </span>
+      <hr>
+</div>
+  </div>
+  
+        <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../the-design-of-everyday-blogs/" rel="prev" title="The Design of Everyday Blogs">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../a-tale-of-two-silicon-valley-experiences/" rel="next" title="A tale of two Silicon Valley experiences">Next post</a>
+            </li>
+        </ul>
+</div>
+
+            <!--End of body content-->
+        </div>
+<!-- .hfeed -->
+    </div>
+<!-- #content -->
+<footer class="footer"><small>
+    Contents © 2020         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+    
+  </small>
+</footer><!-- #footer -->
+</div>
+<!-- #container -->
+
+
+<!-- #wrapper -->
+    
+    
+    
+            <script src="../../assets/js/all-nocdn.js"></script><script src="https://polyfill.io/v3/polyfill.js?features=Intl.RelativeTimeFormat.%7Elocale.en"></script><script src="../../assets/js/luxon.min.js"></script>
+</body>
+</html>

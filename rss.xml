@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sahiga</title><link>https://www.stephaniehiga.com/</link><description>The personal website of Stephanie A. Higa</description><atom:link href="https://www.stephaniehiga.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 15 Aug 2020 20:49:05 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>My conference talk on CSS</title><link>https://www.stephaniehiga.com/posts/my-conference-talk-on-css/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;In June, I gave a talk at &lt;a class="reference external" href="https://www.womentech.net/speaker/Stephanie%20A./Higa"&gt;WomenTech Global 2020&lt;/a&gt;, a virtual conference hosted by CEO Anna Radulovski and her team. Anna reached out to me on LinkedIn a couple of weeks before the conference, asking whether I'd be interested in speaking. I love opportunities that drag me outside of my comfort zone, so of course I said yes!&lt;/p&gt;
+&lt;p&gt;And then I panicked. What was I even qualified to talk about?&lt;/p&gt;
+&lt;p&gt;Giving a conference talk is challenging for a number of reasons (unless you are blessed by the public speaking gods), but the most difficult part is selecting a topic. It's totally intimidating, like facing a blank page.&lt;/p&gt;
+&lt;p&gt;I scrambled for the next few days, shuffling through various topics related to frontend engineering, doubting whether I'd really learned anything of use in the 7+ years I've been working as a professional developer.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Optimistic Me:&lt;/strong&gt; Data visualization?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Realistic Me:&lt;/strong&gt; Oh, please. You used D3, what, five years ago, and you think you're an expert now?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OM:&lt;/strong&gt; I could learn.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RM:&lt;/strong&gt; You're gonna learn this &lt;em&gt;whole&lt;/em&gt; field in two weeks?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OM:&lt;/strong&gt; Okay, okay, maybe not. I guess I could talk about JavaScript, right? I know JavaScript pretty well.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RM:&lt;/strong&gt; 45 minutes on closures, callbacks, arrow functions, async/await, and five ways to instantiate classes? Geez, sign me up.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OM:&lt;/strong&gt; Are you saying that wouldn't be interesting???&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RM:&lt;/strong&gt; I'm saying, if people wanted to learn that stuff, they could just read &lt;em&gt;JavaScript: The Good Parts&lt;/em&gt;. Or MDN. Don't be a textbook.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OM:&lt;/strong&gt; Well...maybe I could talk about React?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RM:&lt;/strong&gt; There are already two other talks on React.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OM:&lt;/strong&gt; I could talk about React &lt;em&gt;Hooks&lt;/em&gt;--&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RM:&lt;/strong&gt; No.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OM:&lt;/strong&gt; But...what else is there?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RM:&lt;/strong&gt; Hmm. Let's think. Is there, possibly, a technology that you absolutely love, with all your heart, that you've known for ages, that is incredibly cool, but it flies under the radar, so most people don't know it's incredibly cool?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OM:&lt;/strong&gt; OhhhhhhHHHHhhhHHH you mean CSS&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="section" id="cascading-style-sheets-my-dear-old-friend"&gt;
+&lt;h2&gt;Cascading Style Sheets, my dear old friend&lt;/h2&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="/images/css-talk-graphics.png" src="https://www.stephaniehiga.com/images/css-talk-graphics.png"&gt;
+&lt;p class="caption"&gt;Just a taste of what CSS can do.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I like CSS &lt;em&gt;way&lt;/em&gt; more than JavaScript. I like it more than English, too.&lt;/p&gt;
+&lt;p&gt;I learned CSS when I was a wee gal, during the glorious days of Web 1.0, when you could craft a second home on the internet without social media panopticons breathing over your shoulder.&lt;/p&gt;
+&lt;p&gt;Sure, there were some drawbacks during those days. You had to use HTML tables to create columns of text. You had to use Photoshop or PaintShopPro 7 to make gradients and rounded corners. Marquees and flashing text were all the rage. But that was the internet when it was beautiful.&lt;/p&gt;
+&lt;p&gt;CSS reminds me of that internet, and because of that, it fills me with joy.&lt;/p&gt;
+&lt;p&gt;My first website was an MSN Communities page. I quickly tired of it because I couldn't edit the look and feel of the site, so I went to Geocities, which at the time was the best way to create a free website. (I believe that Yahoo's downfall started the day they ended Geocities; no one can convince me otherwise.) Geocities had a “PageBuilder” feature that allowed users to move and style HTML elements within a drag-and-drop editor, which led to some pretty funky-looking sites, mine included. No matter how hard I tried, I couldn't get the elements to align properly.&lt;/p&gt;
+&lt;p&gt;I knew there &lt;em&gt;had&lt;/em&gt; to be a better tool out there.&lt;/p&gt;
+&lt;p&gt;It sounds dramatic to say that CSS changed my life, but it kinda did. If it weren't for CSS, I would have given up on websites a long time ago. I wouldn't have started making websites again right after college, as an unemployed architecture grad, and then dreamed that hey, maybe someday I could even get paid to build a website. Imagine that!&lt;/p&gt;
+&lt;p&gt;Honestly, I probably wouldn't use the internet without CSS, because it would look like this:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="/images/websites-unstyled.png" src="https://www.stephaniehiga.com/images/websites-unstyled.png"&gt;
+&lt;p class="caption"&gt;Six of the world's most popular websites, all sad and broken without CSS.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Over the years, CSS has become even more amazing. Yet I can't tell you how many times I've heard people -- mostly backend engineers, but some frontend engineers too -- dismiss this wonderful language as an afterthought, as a nice-to-have rather than a must-have.&lt;/p&gt;
+&lt;p&gt;Even at Hack Reactor, whose business was predicated on churning out new frontend engineers, we had a grand total of &lt;em&gt;one&lt;/em&gt; lecture on CSS. Most of the content was outdated. Some of it was flat-out wrong. The focus was always JavaScript, JavaScript, JavaScript. Sure, JavaScript is great. It's important. It's the golden child. Meanwhile, CSS remains forever in the background, the overlooked, misunderstood, unsung hero of the web.&lt;/p&gt;
+&lt;p&gt;With this in mind, I had fuel for my conference talk. My goal wasn't to give an introduction to CSS (there are far too many tutorials for that), but to share my passion, and to demonstrate how fun CSS can be.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="creating-my-conference-talk"&gt;
+&lt;h2&gt;Creating my conference talk&lt;/h2&gt;
+&lt;p&gt;Last year, I gave a talk at &lt;a class="reference external" href="https://www.womenofsiliconvalley.com/blog/how-i-became-a-software-engineer"&gt;Women of Silicon Valley&lt;/a&gt; about my path from architecture ➡️ biz dev ➡️ software. While I at first had lofty goals for that presentation involving custom graphics, I eventually settled on a basic Keynote template. So, out of habit, I started creating this presentation in Keynote as well.&lt;/p&gt;
+&lt;p&gt;After about five slides, I started feeling like something was wrong.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Honest Me:&lt;/strong&gt; What are you doing?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Defensive Me:&lt;/strong&gt; What does it look like I'm doing? I'm making my CSS presentation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HM:&lt;/strong&gt; Uhh...nah, that's just a Keynote template.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DM:&lt;/strong&gt; HEY! I spent hours working on these slides!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HM:&lt;/strong&gt; I'm just saying. You can do better. Like, wayyyy better.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DM:&lt;/strong&gt; No I can't.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HM:&lt;/strong&gt; I'll tell you what you can't do. You can't just &lt;em&gt;tell&lt;/em&gt; people that CSS is important and expect them to believe you. You need to prove it! With solid, incontrovertible evidence!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DM:&lt;/strong&gt; O...kay.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HM:&lt;/strong&gt; Imagine this. You're giving the talk. You're showing an example of a cool CSS thingamajig you built. But instead of switching back and forth between this Keynote template and the webpage with your example, you're just showing one seamless presentation. The example is &lt;em&gt;part&lt;/em&gt; of the presentation. Wouldn't that be awesome?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DM:&lt;/strong&gt; But I can't embed CSS examples into Keynote.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HM:&lt;/strong&gt; Nope. Hahaha.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And that's why I scrapped my Keynote presentation and rebuilt it as a webpage.&lt;/p&gt;
+&lt;a href="https://github.com/sahiga/css-talk"&gt;&lt;img src="https://www.stephaniehiga.com/images/css-talk-preview.png" alt="Preview of my presentation"&gt;&lt;/a&gt;&lt;p&gt;You can find the presentation &lt;a class="reference external" href="https://sahiga.github.io/css-talk"&gt;here&lt;/a&gt;. Check out &lt;a class="reference external" href="https://github.com/sahiga/css-talk"&gt;the GitHub repo&lt;/a&gt; for navigation instructions and direct links to some of the most interesting slides (imo, I'm biased of course).&lt;/p&gt;
+&lt;p&gt;I practiced my talk with my family and one of my best friends, who's also a frontend engineer. They gave excellent feedback, which helped me to create a more cohesive and relatable presentation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="connecting-with-a-virtual-audience"&gt;
+&lt;h2&gt;Connecting with a virtual audience&lt;/h2&gt;
+&lt;p&gt;As I mentioned earlier, I spoke at Women of Silicon Valley in 2019. I was fully prepared, but when I walked to the front of that room that had seemed so small from the back (there were ~100 people), I felt sheer terror.&lt;/p&gt;
+&lt;p&gt;I've read that the fear of public speaking traces back to our instinctual fear of predators. Humans, like all predators, have their eyes in the front of their heads, so when speak publicly, we're standing before a crowd of predators. (Can't find a source for this exact idea, though. I &lt;em&gt;may&lt;/em&gt; just be misinterpreting this &lt;a class="reference external" href="https://www.psychologytoday.com/intl/blog/the-real-story-risk/201211/the-thing-we-fear-more-death"&gt;Psychology Today&lt;/a&gt; article, which says that the ostracism we feel while speaking publicly makes us fear for our own survival.)&lt;/p&gt;
+&lt;p&gt;My biggest issue is that the adrenaline runs into my hands, no matter how much I prepare. Even if my voice sounds confident, my hands shake, and I end up doing silly things, like typing “boo.com” instead of “box.com” (this may or may not have happened while I was giving a live demo in front of my entire company).&lt;/p&gt;
+&lt;p&gt;At Women of Silicon Valley, I held a clicker in one hand and a microphone in the other. Both hands were shaking. I struggled with clicking the right arrow button to navigate to the next slide. My voice was a little too quiet, even with the microphone. The audience was supportive, and I didn't make any significant errors, but I left feeling like I could have expressed myself better.&lt;/p&gt;
+&lt;p&gt;WomenTech Global was a very different experience. The conference was completely virtual, hosted on Hopin.to. I commuted from my office into my dining nook, which has consistent lighting and a plain background, opened my presentation in a browser, and waited for my slot to begin.&lt;/p&gt;
+&lt;p&gt;I was nervous, of course, but significantly less nervous than I'd been at WoSV, even though my presentation consisted of multiple interactive slides.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Nervous Me:&lt;/strong&gt; This is scary! I wanna go home.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relaxed Me:&lt;/strong&gt; You &lt;em&gt;are&lt;/em&gt; home.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NM:&lt;/strong&gt; Oh yeah.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RM:&lt;/strong&gt; No one's going to attend anyway.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NM:&lt;/strong&gt; But...THEY MIGHT! Some people found out about it on LinkedIn!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RM:&lt;/strong&gt; So? It's the internet. People like posts without thinking twice. They've already liked a million other things by now.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NM:&lt;/strong&gt; But...I'm on the agenda!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RM:&lt;/strong&gt; You and a hundred other talks. Everyone's going to go to the talks about ML/data science/Python/React/social justice. CSS is just not flashy. Recruiters never reach out looking for &lt;em&gt;CSS&lt;/em&gt; developers. They're always looking for &lt;em&gt;React&lt;/em&gt; developers, aren't they?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NM:&lt;/strong&gt; But...!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RM:&lt;/strong&gt; Look. If anyone does show up, that means they're interested in what you have to say. They're not going to hurl tomatoes at you through the screen for being a less than perfect speaker. Besides, you know this presentation inside and out.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I took a deep breath, turned on my mic, and started speaking. Contrary to my expectations, about 30-40 people attended. When I reached the slide where I had to edit a CSS rule, I resorted to hunt-and-peck typing (which, thanks to the virtual format, no one could see).&lt;/p&gt;
+&lt;p&gt;Ultimately, the talk went really well -- better my practice sessions. I finished at the half hour mark, but the audience was lovely and filled the remaining 15 minutes with questions. Some of them even reached out to me afterward with more questions! I feel honored to have had this opportunity, and such a wonderful audience to boot 🙂&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="other-thoughts-on-public-speaking"&gt;
+&lt;h2&gt;Other thoughts on public speaking&lt;/h2&gt;
+&lt;p&gt;Would I speak at another conference, virtual or otherwise? Yes to both!&lt;/p&gt;
+&lt;p&gt;I'm a shy person. Not as shy as I was as a kid, or even a few years ago, but yeah, I'm shy. I don't like being in the spotlight. When I speak off the cuff, without sorting out my thoughts first, I space out and get tongue-tied.&lt;/p&gt;
+&lt;p&gt;It's precisely because of all these weaknesses that I try to do as much public speaking as I can. Public speaking has the potential to be deeply humiliating, but it can also be the exact opposite: &lt;em&gt;exhilarating&lt;/em&gt;. There's nothing else quite like it.&lt;/p&gt;
+&lt;p&gt;Now, all I need to do is figure out my next conference topic.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Optimistic Me:&lt;/strong&gt; 📊📈✨DATA VISUALIZATION ✨📈📊&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Realistic Me:&lt;/strong&gt; Why don't you try making some data visualizations first?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;&lt;strong&gt;Blog notes:&lt;/strong&gt; I haven't updated this blog since 2016. I would like to update more often than once every four years (ha), but I can't promise anything. I'm a very slow writer and my posts always end up being super long. This one is almost 2000 words!&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>conferences</category><category>css</category><guid>https://www.stephaniehiga.com/posts/my-conference-talk-on-css/</guid><pubDate>Fri, 14 Aug 2020 20:43:08 GMT</pubDate></item><item><title>A tale of two Silicon Valley experiences</title><link>https://www.stephaniehiga.com/posts/a-tale-of-two-silicon-valley-experiences/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;This post is twofold. First up will be my long overdue review of Hack Reactor, and after that I'll share a few of the many lessons I learned while hunting for a job in Silicon Valley.&lt;/p&gt;
+&lt;div class="section" id="was-hack-reactor-worth-it"&gt;
+&lt;h2&gt;Was Hack Reactor worth it?&lt;/h2&gt;
+&lt;p&gt;Short answer: Yes.&lt;/p&gt;
+&lt;p&gt;Long answer: For me, yes, it turned out to be worth it. What Hack Reactor promises, it delivers. When I speak of promises, I'm referring to the fine print of the student agreement, in which you pay $17,780 in exchange for a crash course in JavaScript plus job search training.&lt;/p&gt;
+&lt;p&gt;On both points, Hack Reactor absolutely excels. The software development curriculum is top-notch. I learned so much and so quickly that it felt like I was downloading information into my brain, which was pretty awesome.&lt;/p&gt;
+&lt;p&gt;How does Hack Reactor help people to learn so quickly? Different people will give different answers to this question. Some might say the lectures. Others might say the projects. For me, the crucial part of the learning experience was, unquestionably, the opportunity to interact with my remarkable classmates. My cohort was full of kind, brilliant people who encouraged and inspired me to be a better programmer. I learned a ton from working through problems with them, both in my pair programming assignments and in my group projects.&lt;/p&gt;
+&lt;p&gt;Because of my classmates, the 700-plus hours I spent in that concrete tower with the broken elevators at the southeast corner of the Tenderloin were not just tolerable. They were &lt;em&gt;fun&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;People often question the hiring statistics on the Hack Reactor website. I don't blame them; it seems ludicrous to suggest that fledgling programmers with no CS background or prior work experience could land six-figure salaries after three months at a for-profit bootcamp.&lt;/p&gt;
+&lt;p&gt;Now that I'm on the other side, it all makes sense. Most Hack Reactor grads end up in the Bay Area, which is flush with tech jobs and where the average going rate for software engineers is on the lower end of six figures. Hack Reactor also expends great effort on crafting and culling their student body. The program selects for students who have already demonstrated a certain level of proficiency in coding and trains those students in strictly practical matters: full-stack JavaScript, MVC frameworks, databases, version control, and those pesky algorithms questions that come up in technical interviews. We did toy problems, whiteboarding sessions, and mock interviews, all of which proved useful during my job search.&lt;/p&gt;
+&lt;p&gt;Hack Reactor also trained us to treat job searching as a job in itself, and to take it seriously, but not personally. We were encouraged to apply to five jobs every day and keep up with our toy problems.&lt;/p&gt;
+&lt;p&gt;I confess I did neither of those. But I did apply to 50+ companies total, and there was a memorable two-week period during which I had onsite interviews nearly every day. After a while, I finally understood what people mean when they say job searching is a numbers game.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="thoughts-on-the-job-search"&gt;
+&lt;h2&gt;Thoughts on the job search&lt;/h2&gt;
+&lt;p&gt;It was more difficult than Hack Reactor.&lt;/p&gt;
+&lt;p&gt;Then again, I have a terrible aversion to unemployment. I also have bad memories of my previous job search, back in 2010, when I graduated into the recession with a useless degree and no marketable skills. At that time, I did a total of one phone screen and three onsite interviews, all spaced at least a week apart, and immediately took the one and only offer I received.&lt;/p&gt;
+&lt;p&gt;This job search was much, much better. In summary: looking for a job as a front-end engineer in the Bay Area in 2015 was a lot easier than looking for a job as an entry-level sales/marketing/administrative assistant in Los Angeles in 2010, but it was still very difficult. Some of the things I learned:&lt;/p&gt;
+&lt;div class="section" id="you-re-interviewing-the-company-as-much-as-the-company-is-interviewing-you"&gt;
+&lt;h3&gt;You're interviewing the company as much as the company is interviewing you&lt;/h3&gt;
+&lt;p&gt;Both you and the company are evaluating each other to see whether there's a good fit. I was looking for companies that showed interest in me beyond my ability to code.&lt;/p&gt;
+&lt;p&gt;Because of that, I could always tell within the first five minutes how the interview would turn out. Some interviewers started by asking about my background, which made me more interested in those companies. Others started by asking me programming questions, which indicated to me that they didn't really care who I was as long as I could code, and those interviews quickly went south. There were no surprises.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="soft-skills-are-just-as-important-as-technical-skills"&gt;
+&lt;h3&gt;Soft skills are just as important as technical skills&lt;/h3&gt;
+&lt;p&gt;The technical interview process is more than just &lt;em&gt;Cracking the Coding Interview&lt;/em&gt;. Being able to build rapport with an interviewer is critical. Interviewers want to see that you're someone they can get along with and would want to work with. And some companies, particularly startups, place an even higher premium on soft skills than on technical skills.&lt;/p&gt;
+&lt;p&gt;Caveat: possible confirmation bias. Maybe I just happened to fail all the interviews that were 100% technical. I also only applied for front-end positions, which generally have an easier (for me) interview process.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="narratives-matter"&gt;
+&lt;h3&gt;Narratives matter&lt;/h3&gt;
+&lt;p&gt;I spent a long time crafting my narrative. Four and a half years to be exact. Remember that one offer I received in 2010? It was for a business development internship paying fifty cents above minimum wage.&lt;/p&gt;
+&lt;p&gt;Nowadays when I tell people that, they reel in shock. Minimum wage! Well, sure, why not? I wasn't entitled to anything. Back then, my narrative was weak. Practically nonexistent. I was a fresh college graduate with no real work experience, who had decided, in a mystifying twist, not to pursue a career in the field she'd spent four years studying.&lt;/p&gt;
+&lt;p&gt;I knew I just needed to start working as soon as possible. So I took the offer, and it turned out to be one of the best decisions I've ever made. That company gave me so many opportunities to be so many different people: a salesperson, an administrative assistant, a receptionist, a marketer, a customer service representative, an account manager, an internship program coordinator, a copywriter, a designer, and finally, a front-end developer.&lt;/p&gt;
+&lt;p&gt;Everyone has a strong narrative inside of them; it's just a matter of storytelling. Frame your background in a way that helps employers to see that the next logical step in your narrative would be working for them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="job-search-support-is-essential"&gt;
+&lt;h3&gt;Job search support is essential&lt;/h3&gt;
+&lt;p&gt;Looking for a job is a degrading and stressful experience. Mine would have been much worse if it weren't for the support of my friends at Hack Reactor. During the first couple of weeks of my search, I complained to a friend that while I'd had a bunch of phone screens and remote technical interviews, I hadn't yet had any onsites. He told me to stop whining and start actively applying for jobs on AngelList. It was the best advice I received during the process. Following that advice led to a flurry of onsites, which in turn yielded good results.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="angellist-is-awesome"&gt;
+&lt;h3&gt;AngelList is awesome&lt;/h3&gt;
+&lt;p&gt;AngelList introduced me to a ton of interesting startups. If you're on the hunt for a software job, make sure you've created a candidate profile and set it to &lt;strong&gt;actively looking&lt;/strong&gt;!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="failing-an-interview-is-not-the-end-of-the-world"&gt;
+&lt;h3&gt;Failing an interview is not the end of the world&lt;/h3&gt;
+&lt;p&gt;The interviews I failed prepared me for the interviews I didn't fail. After a while, I became quite comfortable with rejection. In fact, one day I reached out to so many companies on AngelList that I ended up getting rejection letters from companies I didn't even remember applying to. Some of those companies are &lt;em&gt;still&lt;/em&gt; sending me rejection letters!&lt;/p&gt;
+&lt;p&gt;Rejection can be personal, but it's best not to take it personally. As I mentioned above, interviewing is a mutual process. Companies reject candidates for all sorts of reasons.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="employers-will-read-your-blog"&gt;
+&lt;h3&gt;Employers will read your blog&lt;/h3&gt;
+&lt;p&gt;(very meta, I know)&lt;/p&gt;
+&lt;p&gt;Multiple employers referenced specific posts on my blog during my interviews. The &lt;a class="reference external" href="https://www.stephaniehiga.com/posts/degrees-of-pynchon.html"&gt;Degrees of Pynchon&lt;/a&gt; post came up most often, followed by the one on &lt;a class="reference external" href="https://www.stephaniehiga.com/posts/off-to-hack-reactor.html"&gt;my decision to go to Hack Reactor&lt;/a&gt; and &lt;a class="reference external" href="https://www.stephaniehiga.com/posts/review-introduction-to-functional-programming.html"&gt;my review of the functional programming class I took last year&lt;/a&gt;. I only wish I'd taken the time to post about the three group projects I did at Hack Reactor. I still have a lot to say about those projects, so maybe I'll write about them soon!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="being-different-can-be-a-good-thing"&gt;
+&lt;h3&gt;Being different can be a good thing&lt;/h3&gt;
+&lt;p&gt;The stereotypical -- and some might say "ideal" -- software engineer is male and holds a degree in computer science from a top engineering school. I'm a woman who didn't learn to code until long after college, and I was fully prepared to be discriminated against during the job search for these reasons. But I was pleasantly surprised.&lt;/p&gt;
+&lt;p&gt;For years, I've lamented what I studied in college (architecture), which continually tops lists of majors with the highest unemployment rate. In 2010, it was difficult to prove in interviews that I could work hard and excel at jobs that had nothing to do with my major.&lt;/p&gt;
+&lt;p&gt;Architecture came up much less frequently during my last job search. Most Hack Reactor grads have an unusual trajectory, so no one expected me to have a CS degree. I'm also five years out of college, so my work experience has finally trumped where I went to school and what I studied. During my interviews, an interesting pattern emerged: not only did employers not mind my lack of a CS degree; some of them &lt;em&gt;liked&lt;/em&gt; the fact that I'd studied architecture and even reached out to me because of it.&lt;/p&gt;
+&lt;p&gt;Again, possible caveat: front-end engineers are often expected to have design skills, or at least an appreciation for design. I assume employers would prefer to hire CS majors for backend positions if possible.&lt;/p&gt;
+&lt;p&gt;One of my former housemates asked me if I felt employers discriminated me in the job search because I'm a woman. I'm happy to say that the answer is, on the whole, &lt;em&gt;no&lt;/em&gt;. If anything, I suspect the scales were tipped slightly in my favor because of my gender. Female software engineers are still unfortunately rare, so I imagine it was easier for employers to remember me. (I'll refrain from further speculation, as it would feed into my impostor syndrome to believe that employers deliberately recruited me to fill diversity quotas, or that they held me to a lower technical standard than they did for male candidates.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="but-wait-there-s-more"&gt;
+&lt;h3&gt;But wait, there's more!&lt;/h3&gt;
+&lt;p&gt;I wrote the bulk of this post in June 2015, right after I started my new job. I still stand by everything I wrote above, but with one clarification. I realize I may have given the impression that being a smooth talker and keeping a blog will make up for a lack of technical ability, which is &lt;em&gt;absolutely not true&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;During the past few months, I've switched over to the other side of the technical interview process. While evaluating 20+ candidates for front-end positions at my company, I've found that the most successful candidates possess strong technical skills as well as strong soft skills. (Big surprise there!)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>hack reactor</category><category>hiring</category><guid>https://www.stephaniehiga.com/posts/a-tale-of-two-silicon-valley-experiences/</guid><pubDate>Sat, 02 Jan 2016 02:05:16 GMT</pubDate></item><item><title>Degrees of Pynchon</title><link>https://www.stephaniehiga.com/posts/degrees-of-pynchon/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;We spent two days last week working on solo projects at Hack Reactor. I built a visualization of literary influences, beginning with &lt;a class="reference external" href="http://thomaspynchon.com/"&gt;Thomas Pynchon&lt;/a&gt; -- who, aside from being totally amazing, a genius, and one of my personal role models, also has a &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Thomas_Pynchon#Influence"&gt;lengthy section on Wikipedia&lt;/a&gt; full of writers who influenced him and writers he's influenced.&lt;/p&gt;
+&lt;div class="section" id="thomas-pynchon-s-circle-of-influence"&gt;
+&lt;h2&gt;Thomas Pynchon's circle of influence&lt;/h2&gt;
+&lt;p&gt;To visualize the relationships between Pynchon and the writers connected to him, I created an arc diagram  in &lt;a class="reference external" href="http://www.d3js.org"&gt;D3&lt;/a&gt;. Initially, I planned on using D3's built-in &lt;a class="reference external" href="https://github.com/mbostock/d3/wiki/Chord-Layout"&gt;chord layout&lt;/a&gt; generator, but I fell in love with arc diagrams after seeing so many beautiful examples online (e.g., &lt;a class="reference external" href="http://www.chrisharrison.net/index.php/Visualizations/BibleViz"&gt;Bible Cross-References&lt;/a&gt;, &lt;a class="reference external" href="http://www.autodeskresearch.com/pages/infovis/command_usage_arc"&gt;Command Usage Arc Diagrams&lt;/a&gt;, &lt;a class="reference external" href="http://www.turbulence.org/Works/song/gallery/gallery.html"&gt;The Shape of Song&lt;/a&gt;, among others).&lt;/p&gt;
+&lt;p&gt;I went down a few rabbit holes, including creating a matrix dataset similar to those required by the chord layout and plotting the writers as nodes on a scale. Thankfully, there's this wonderful &lt;a class="reference external" href="http://bl.ocks.org/sjengle/5431779"&gt;Les Misérables character co-ocurrences arc diagram&lt;/a&gt;, also in D3, which set me on the right track.&lt;/p&gt;
+&lt;p&gt;I formatted the influence data into an object with two arrays, &lt;strong&gt;nodes&lt;/strong&gt; and &lt;strong&gt;links&lt;/strong&gt;. Each node contains the name of a writer and a number indicating the writer's category (influencer or influencee), and each link contains a connection between Thomas Pynchon and another writer.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://sahiga.github.io/degrees-of-pynchon"&gt;&lt;img alt="Thomas Pynchon's literary influences" src="https://www.stephaniehiga.com/images/degrees-of-pynchon.png"&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Click for the interactive version. I stole the quote from the Simpsons episode in which Thomas Pynchon reviews Marge's book. For anyone unfamiliar with Pynchon: he does not love cameras.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;All the influencers appear to the left of Pynchon, with an arc above the horizontal; all the influencees appear to the right, with an arc below the horizontal. The colors were generated by D3's &lt;a class="reference external" href="https://github.com/mbostock/d3/wiki/Ordinal-Scales#category20b"&gt;category20b scale&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="other-circles-of-influence"&gt;
+&lt;h2&gt;Other circles of influence&lt;/h2&gt;
+&lt;p&gt;I also wanted to visualize the influences of the other writers. Initially, I added all their connections to Pynchon's graph. This worked for Vladimir Nabokov but failed for Emily Dickinson, who was influenced by a writer who appeared to the right of her (Ralph Waldo Emerson) -- resulting in a backwards connection.&lt;/p&gt;
+&lt;p&gt;The solution was to create new graphs and layer them on top of Pynchon's. So, clicking on Nabokov's name (for instance) will fade out Pynchon's graph, increase the size of Nabokov's name, move his name and dot to the center of the page, draw a line from his name to the center dot, and display his influence graph around that new center. Mousing away from Nabokov's graph will delete his graph and bring back Pynchon's.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="Vladimir Nabokov's literary influences" src="https://www.stephaniehiga.com/images/degrees-of-pynchon-new-graph.png"&gt;
+&lt;p class="caption"&gt;Vladimir Nabokov's literary influences&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Figuring out how to rearrange the new graph around the new center dot was probably the most difficult part of the entire project. I passed the center position to the new graph and gave the influencer dots a negative x-axis position so that they appeared to the left of the center dot.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="hover-selections"&gt;
+&lt;h2&gt;Hover selections&lt;/h2&gt;
+&lt;p&gt;The last feature I added was a hover selection event. Mousing over a writer's name will fade out the entire diagram except for the name, dot, and arc belonging to that writer.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="Hovering over William S. Burroughs" src="https://www.stephaniehiga.com/images/degrees-of-pynchon-hover.png"&gt;
+&lt;p class="caption"&gt;Hovering over William S. Burroughs&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;This was the second most difficult part of the project, because of the preexisting fade effects associated with the click event. The entire graph fades out upon clicking a name, and the entire graph fades back in when the mouse leaves the new graph.&lt;/p&gt;
+&lt;p&gt;I ended up initializing a boolean to keep everything in check: &lt;code class="docutils literal"&gt;multipleGraphsOnPage&lt;/code&gt; starts off as false, becomes true when a new graph is created, and reverts to false when the new graph is deleted. The hover selection event is enabled only when &lt;code class="docutils literal"&gt;multipleGraphsOnPage&lt;/code&gt; is false.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="my-project-completion-strategy"&gt;
+&lt;h2&gt;My project completion strategy&lt;/h2&gt;
+&lt;p&gt;The purpose of the solo project was not to build a perfect product, but a minimum viable product. Hack Reactor instructed us to reduce the size of our scope in half, twice -- which I didn't even need to do, since I'd deliberately chosen a very small scope to begin with. The extra time afforded me the chance to polish the look and feel of my project, including the animations, and dive deeper into D3.&lt;/p&gt;
+&lt;p&gt;This project was really fun. D3 is by far my favorite JavaScript library ever, and I can't wait to make more visualizations with it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="more-d3-svg-resources"&gt;
+&lt;h2&gt;More D3 &amp;amp; SVG resources&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.dashingd3js.com/d3-examples/1-d3-and-javascript-working-with-json"&gt;D3 and JavaScript: Working with JSON&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://www.d3noob.org/2013/01/how-to-rotate-text-labels-for-x-axis-of.html"&gt;How to rotate the text labels for the x-axis of a D3.js graph&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.dashingd3js.com/svg-text-element"&gt;SVG Text Element&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://tutorials.jenkov.com/svg/path-element.html#arcs"&gt;SVG Path Element&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>d3</category><category>hack reactor</category><category>javascript</category><guid>https://www.stephaniehiga.com/posts/degrees-of-pynchon/</guid><pubDate>Mon, 16 Mar 2015 02:12:30 GMT</pubDate></item><item><title>The Design of Everyday Blogs</title><link>https://www.stephaniehiga.com/posts/the-design-of-everyday-blogs/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;At the risk of losing all my design cred, I'll admit I put practically no effort or even thought into the way my blog looked until about a week ago. To put that into perspective: I wrote my first post here in May 2013. For most of the time since that point, it's been some variation of this default Bootstrap theme provided by Nikola, the static site generator I use:&lt;/p&gt;
+&lt;img alt="My blog, circa February 2015" src="https://www.stephaniehiga.com/images/2015-02-24-site.png"&gt;
+&lt;p&gt;Nikola, while excellent, has &lt;a class="reference external" href="http://themes.getnikola.com/"&gt;slim pickings for themes&lt;/a&gt;, and none of them are quite what I want my blog to look like. So when it came time for the big overhaul, I started (almost) from scratch with a new theme.&lt;/p&gt;
+&lt;div class="section" id="the-process"&gt;
+&lt;h2&gt;The process&lt;/h2&gt;
+&lt;p&gt;Nikola themes live within the appropriately named &lt;strong&gt;themes&lt;/strong&gt; directory. My files are structured as follows:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;/theme-name
+  /assets
+    /css
+      theme.css
+  /templates
+    base.tmpl
+    index.tmpl
+    post.tmpl
+  engine
+  parent&lt;/pre&gt;
+&lt;p&gt;Here's an overview of what these files do (taken from the &lt;a class="reference external" href="http://getnikola.com/theming.html"&gt;Nikola theming reference&lt;/a&gt;):&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 11%"&gt;
+&lt;col style="width: 89%"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th class="head"&gt;&lt;p&gt;File Name&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;p&gt;Purpose&lt;/p&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;theme.css&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Custom CSS&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;base.tmpl&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Defines the basic layout for all pages&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;index.tmpl&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Defines pages that contain multiple posts (the "index" pages)&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;post.tmpl&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Defines an individual post&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;engine&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Text file containing the name of the templating engine your theme uses. The two options are &lt;strong&gt;mako&lt;/strong&gt; and &lt;strong&gt;jinja&lt;/strong&gt;.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;parent&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Text file containing the name of the theme from which your theme inherits. Mine inherits from &lt;strong&gt;base&lt;/strong&gt;.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;That's it! I used the similarly bare &lt;a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/blogtxt"&gt;monospace theme&lt;/a&gt; as a guide. You can spruce up your theme with additional templates (see the &lt;a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen"&gt;zen theme&lt;/a&gt; for an example), but I decided to keep mine simple.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="now-for-the-fun-stuff"&gt;
+&lt;h2&gt;Now for the fun stuff!&lt;/h2&gt;
+&lt;p&gt;There's another reason why the default theme didn't work that well for my blog: I'm wordy as hell. I don't write posts; I write &lt;em&gt;essays&lt;/em&gt;. So, rather than change my style of blogging, I thought I'd pull off an illusion. My main objective in redesigning this blog was to make it resemble a series of digestible sentences, as opposed to the giant wall of text that it actually is.&lt;/p&gt;
+&lt;p&gt;For inspiration, I looked at &lt;a class="reference external" href="http://www.medium.com"&gt;Medium&lt;/a&gt;, &lt;a class="reference external" href="http://longreads.com/"&gt;Longreads&lt;/a&gt;, &lt;a class="reference external" href="http://nautil.us/"&gt;Nautilus&lt;/a&gt;, &lt;a class="reference external" href="http://aeon.co"&gt;Aeon&lt;/a&gt;, and all the other beautiful text-heavy sites that have cropped up in recent years.&lt;/p&gt;
+&lt;div class="section" id="fonts"&gt;
+&lt;h3&gt;Fonts&lt;/h3&gt;
+&lt;p&gt;Typefaces can make or break a design. For the headers, I picked &lt;strong&gt;Lato&lt;/strong&gt;, my favorite web font of all time; for regular text, &lt;strong&gt;Lora&lt;/strong&gt;, my other favorite web font of all time. Both are available on &lt;a class="reference external" href="https://www.google.com/fonts"&gt;Google Fonts&lt;/a&gt;. To improve readability, I increased the size of the text and the space between each line.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="colors"&gt;
+&lt;h3&gt;Colors&lt;/h3&gt;
+&lt;p&gt;The link styles (salmon color + hover transitions) are from an old WordPress theme I created back in 2012, before I became a front-end developer. My CSS may have improved since then, but my visual tastes haven't changed much.&lt;/p&gt;
+&lt;p&gt;My first pass at the new theme had an entirely white background, which tested poorly. "It's &lt;strong&gt;really&lt;/strong&gt; white," commented one of my Hack Reactor classmates, as he shielded his eyes from the glare.&lt;sup&gt;*&lt;/sup&gt; I subsequently reduced the white space and added a background from &lt;a class="reference external" href="http://www.subtlepatterns.com"&gt;Subtle Patterns&lt;/a&gt;. I picked a food icon pattern because, well, I love food.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="other-changes"&gt;
+&lt;h3&gt;Other changes&lt;/h3&gt;
+&lt;p&gt;I removed the Share button that used to sit in the bottom right corner. It took me forever to figure out how to do this, but all I had to do was uncomment the &lt;code class="docutils literal"&gt;SOCIAL_BUTTONS_CODE = ""&lt;/code&gt; line in &lt;strong&gt;conf.py&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="final-thoughts"&gt;
+&lt;h2&gt;Final thoughts&lt;/h2&gt;
+&lt;p&gt;Designs are never finished, but I'm happy with how my blog looks right now. I plan to implement a hamburger menu for smaller screens within the upcoming weeks. If you have any suggestions, or find your viewing experience to be less than optimal, please let me know.&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;&lt;sup&gt;*&lt;/sup&gt; With much gratitude to my Hack Reactor classmates for giving me the necessary push to redesign my blog.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>design</category><category>nikola</category><guid>https://www.stephaniehiga.com/posts/the-design-of-everyday-blogs/</guid><pubDate>Mon, 02 Mar 2015 00:27:26 GMT</pubDate></item><item><title>Off to Hack Reactor</title><link>https://www.stephaniehiga.com/posts/off-to-hack-reactor/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;I'm going to &lt;a class="reference external" href="http://www.hackreactor.com"&gt;Hack Reactor&lt;/a&gt; next week!&lt;/p&gt;
+&lt;p&gt;Hack Reactor is a programming bootcamp -- the most intense of its kind, at eleven hours a day, six days a week, for twelve weeks. Pretty much everyone I've mentioned it to has recoiled in horror, imagining what it would be like to spend so much time cooped up in front of a screen. Yeah, I know. It sounds terrible. It might even sound nonsensical. But here I am anyway: packing my bags, preparing to fly to San Francisco in a few days, and writing about the program that will take over my life for the next three months.&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;Last August I happened upon A List Apart during work hours, likely in search of CSS help. I'm sure I found what I was looking for, but what caught my eye was an ad for Hack Reactor. Twelve-week immersive programming bootcamp! Six-figure average starting salary! It seemed too good to be true.&lt;/p&gt;
+&lt;p&gt;The only programming bootcamp I'd heard of was General Assembly's Web Development Immersive, which had briefly interested me until I lucked into a front-end development role at my company back in 2013. I'd even taken a couple of General Assembly classes -- Intro to Data Science and Analysis (at their Santa Monica campus) and Optimizing Landing Pages for Conversion (online) -- neither of which had impressed me.&lt;/p&gt;
+&lt;p&gt;But Hack Reactor looked like a completely different species of bootcamp. It looked like something I needed.&lt;/p&gt;
+&lt;p&gt;Many people have questioned why I would need a bootcamp when I already have a career in web development. So I feel compelled to explain my reasoning here.&lt;/p&gt;
+&lt;p&gt;I may not be a novice programmer, but I learned to code recently enough that I remember what it was like to be a novice programmer and how much I struggled to even get to that point. I'm a late bloomer: after years of grappling with for loops and other basic concepts, I finally managed to make sense of programming at the ripe old age of 23. (In fact, I was weeks, maybe even days, away from 24 at that point.) The book that did it for me is &lt;a class="reference external" href="http://www.nltk.org/book/"&gt;Natural Language Processing with Python&lt;/a&gt; -- a truly wonderful read, if you're more inclined to language than math, as I am.&lt;/p&gt;
+&lt;p&gt;Learning to code was a terrific, frustrating, enlightening experience. When I realized I could solve problems in Python, I was shocked. People had told me that it was impossible to learn to code after a certain age, that developers had an "innate ability" that I didn't have. (By the way, if anyone ever says such complete and utter bullshit to you, you must prove them wrong.)&lt;/p&gt;
+&lt;p&gt;Soon after I taught myself basic Python, I offered to build a WordPress theme for a project at work, through which I picked up jQuery and a tiny bit of PHP. Within half a year, the company decided to move me from the business team to the development team; from there, I learned a ton on the job and eventually served as the sole front-end developer and designer. By August 2014, when that Hack Reactor ad showed up on my work computer, I had more than a passing familiarity with JavaScript. I wrote it almost daily. I'd used AngularJS for three different projects. And if you'd asked me, I would have told you, yes, I know how to code...&lt;/p&gt;
+&lt;p&gt;...while a dark, ever-evolving nugget of truth blossomed in the back of my mind, containing my lack of knowledge of closures, compilers, systems, dependency injection, Big-O notation, hash tables, pointers, concurrency, multithreading, inheritance, and everything else that differentiated a computer science prodigy from clueless, fumbling me. There were countless times when I honestly had no idea what I was doing. I flailed around in the darkness, fashioning solutions out of bits and pieces of StackOverflow answers. Programming was like magic to me. I had vague notions of why things worked out in the end -- but only vague, and only notions.&lt;/p&gt;
+&lt;p&gt;Before you start thinking I've got impostor syndrome, let me bring up &lt;a class="reference external" href="https://medium.com/@aliciatweet/overcoming-impostor-syndrome-bdae04e46ec5"&gt;this post&lt;/a&gt;, which Hack Reactor recommended. I don't identify with this mindset at all. For one, I actually &lt;em&gt;am&lt;/em&gt; an impostor. And second, I actually &lt;em&gt;don't&lt;/em&gt; have a background in computer science or anything related to it. Unlike the author, I didn't take programming classes in high school, didn't study CS/CE in college, never cofounded a software startup, and never worked for a tech giant.&lt;/p&gt;
+&lt;p&gt;Here's my history with computers prior to the age of 23. When I was eleven, I fell in love with the Geocities-era web and taught myself HTML and CSS. But I had no interest in programming whatsoever. In high school, I was convinced that I would be a novelist (that didn't pan out). In college, I was convinced that I would be an architect (that didn't pan out either), and I was the most Luddite architecture major you could imagine. When our professors told us to use Photoshop, I stuck with Microsoft Paint; when I saw my classmates saving time by using the AutoCAD command line, I turned up my nose. I produced hand drawings whenever possible. I put off learning Rhino, the school-sanctioned 3D drawing program, until mere days leading up to my final review. And my 3D renderings were wretched: oddly colored, unrealistic, physically unsound boxes. Needless to say, I had no future as an architect.&lt;/p&gt;
+&lt;p&gt;When I graduated at 21, I had a strange epiphany that I would make my living off computers. What's even stranger is that it turned out to be true. But I still haven't shaken off the Luddite cloak, which is ultimately why I decided to apply to Hack Reactor.&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;After seeing the Smashing Magazine ad, I researched all the programming bootcamps I could find. I immediately ruled out the ones that taught Ruby on Rails (which, by the way, is nearly all of them). Eventually I settled on two: Hack Reactor, my first choice by a long shot, and MakerSquare, as a backup. Hack Reactor appealed to me because of its laser focus on one language, JavaScript, and its intensity.&lt;/p&gt;
+&lt;p&gt;The MakerSquare interview came first. They stood me up. The admissions coordinator scheduled another interview, but alas, no one showed up to that one, either. How ridiculously unprofessional! So I canceled my application. (The funny part is that Hack Reactor recently acquired MakerSquare.)&lt;/p&gt;
+&lt;p&gt;When my Hack Reactor interview rolled around, at 10 a.m. on a bleak September Saturday, I was pessimistic. I downloaded Skype onto my computer about half an hour before the interview. The last time I'd used Skype was in 2011 or so, and I'd never used it for video calls. At 9:50, my interviewer messaged me, saying that he would begin the interview soon. Around that time, I checked the calendar confirmation email, and that's when I realized it would be a technical interview.&lt;/p&gt;
+&lt;p&gt;That's right. I confess to having done zero preparation whatsoever for my Hack Reactor interview. &lt;strong&gt;DO NOT DO THIS.&lt;/strong&gt; It was a dreadful mistake on my part, and the only reason I managed to cope with coding in real-time on a Google Doc with zero prep was because I'd been writing JavaScript nearly every day for over a year at that point. I was nervous as hell. Fortunately, my interviewer was really cool. He gave me plenty of hints and encouraged me to talk through my thought process. Thanks to his help, I managed to complete the functions he asked me to write, but I came away feeling like I'd bombed the interview. He told me I would hear back within a week.&lt;/p&gt;
+&lt;p&gt;Two days later, I got to work, fired up my email, and what did I find? An enrollment agreement and acceptance letter from Hack Reactor. I checked the email headers and freaked out. They'd sent the decision to me within &lt;em&gt;three hours&lt;/em&gt; of the end of my interview; I simply hadn't seen it because my application was tied to my GitHub account, which was in turn tied to my work email address.&lt;/p&gt;
+&lt;p&gt;I wrote back to the HR admission team. I deluged them with questions. I connected with HR alumni on LinkedIn and deluged &lt;em&gt;them&lt;/em&gt; with questions. I pushed back my start date from December 8, the cohort I'd applied for, to February 2. I sat on the enrollment agreement for a couple of months.&lt;/p&gt;
+&lt;p&gt;Then I decided to go.&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;Hack Reactor used to devote the first two weeks of the course to JavaScript fundamentals. Now they require students to complete a separate precourse curriculum, ensuring that everyone possesses a certain level of JavaScript knowledge before starting the program. I'm under oath not to reveal details about the precourse work, but, as other bloggers have mentioned, it involves cloning a popular functional JavaScript library as well as the front-end of a popular social media site.&lt;/p&gt;
+&lt;p&gt;My advice for the precourse work? Complete it as soon as possible so you don't have to worry about it. The estimated amount of time is 50-80 hours. I'm pretty sure I completed the precourse work in fewer hours than that, but I also rushed through it to make time for the edX functional programming class I mentioned in my last entry. Looking back, I'm happy I stayed with the functional programming class, as it sharpened my brain and made the precourse work look quite simple by comparison. But I'm not sure I would recommend doing this, especially around the holidays. It was stressful.&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;Deciding to attend Hack Reactor isn't like deciding to go to college, or deciding to accept a job offer. It's an expensive, unaccredited program, and people will wonder if it's a scam when you tell them about it.&lt;/p&gt;
+&lt;p&gt;Career-wise, it's probably the most difficult decision I've ever made. To be honest, I'm still not sure it's the right choice, but all I can really do at this point is look forward to the future. I'm beyond excited. Plus, Hack Reactor encourages blogging, so I'll be posting here more frequently!&lt;/p&gt;&lt;/div&gt;</description><category>hack reactor</category><category>programming</category><guid>https://www.stephaniehiga.com/posts/off-to-hack-reactor/</guid><pubDate>Mon, 26 Jan 2015 23:45:45 GMT</pubDate></item><item><title>Review: Introduction to Functional Programming</title><link>https://www.stephaniehiga.com/posts/review-introduction-to-functional-programming/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Recently I completed Delft University's fall 2014 offering of &lt;a class="reference external" href="https://www.edx.org/course/introduction-functional-programming-delftx-fp101x"&gt;Introduction to Functional Programming (FP101x)&lt;/a&gt; on edX. I've been interested in functional programming for a while (caught the bug when I learned about Python list comprehensions), so I was really excited for this class. It turned out to be one of the better MOOCs I've taken, and definitely the most challenging.&lt;/p&gt;
+&lt;p&gt;My takeaways from the class:&lt;/p&gt;
+&lt;div class="section" id="functional-programming-is-cool"&gt;
+&lt;h2&gt;Functional programming is cool&lt;/h2&gt;
+&lt;p&gt;Erik Meijer, the professor, is funny and brilliant, and I came away from many of his lectures thinking, wow, that was fascinating. I've read before that learning how to program in a functional style is like learning how to code all over again, which I found to be true. This class opened my mind to a totally different way of reasoning about the structure and composition of programs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="beginners-beware"&gt;
+&lt;h2&gt;Beginners, beware&lt;/h2&gt;
+&lt;p&gt;The prerequisite for FP101x is at least one year of experience programming in an imperative language. I've been working with JavaScript since early 2013, and I learned basic Python and C before that, so you'd think I would be fine. NOPE. Both the homework (multiple choice) and labs (programming assignments) started off simple but got mind-numbingly difficult toward the end. The last two labs in particular really stumped me -- we had to implement Poor Man's Concurrency and rose trees, two subjects that weren't even hinted at in the lectures. And don't even get me started on monads.&lt;/p&gt;
+&lt;p&gt;I got the sense that Prof. Meijer doesn't typically teach beginners. Based on the assignments and his forum posts, he seemed to have really high expectations of what a MOOC student would be able to accomplish with little guidance and limited time. For me, a total novice, the second half of the class was a struggle. Fortunately, there were plenty of kind, generous folks who took the time to help out their classmates in the forums.&lt;/p&gt;
+&lt;p&gt;To anyone who's considering taking FP101x: learn a bit about &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Category_theory"&gt;category theory&lt;/a&gt; first. Also, &lt;a class="reference external" href="http://learnyouahaskell.com/"&gt;basic Haskell&lt;/a&gt; would be good. The class is language-agnostic, but Prof. Meijer used Haskell in all the lectures and homework assignments. From my travels around the discussion forums I'd wager that most of us ended up solving the labs in Haskell, too, although the instructions were provided in multiple languages (Scala, F#, Groovy, Frege, Ruby). It would have been much easier for me to digest the concepts in this class if I hadn't had to learn an entirely new language as well.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="but-speaking-of-haskell"&gt;
+&lt;h2&gt;But, speaking of Haskell...&lt;/h2&gt;
+&lt;p&gt;Seriously, what a gorgeous language.&lt;/p&gt;
+&lt;p&gt;I don't understand it. That is, I understand enough of it to know I don't understand it at all. Regardless, I can still appreciate it on a superficial level.&lt;/p&gt;
+&lt;p&gt;Say you have a list, and you want to apply one function to the members of the list in odd positions, and another function to the members of the list in even positions. Here's a quick JavaScript implementation:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;function oddEvenMap(list, oddFunc, evenFunc) {
+  for (var i = 0; i &amp;lt; list.length; i++) {
+    if (i % 2 === 0) {
+      evenFunc(list[i]);
+    } else {
+      oddFunc(list[i]);
+    }
+  }
+}&lt;/pre&gt;
+&lt;p&gt;And here it is in Haskell:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;oddEvenMap :: (a -&amp;gt; b) -&amp;gt; (a -&amp;gt; b) -&amp;gt; [a] -&amp;gt; [b]
+oddEvenMap f g [] = []
+oddEvenMap f g (x : xs) = f x : oddEvenMap g f xs&lt;/pre&gt;
+&lt;p&gt;No variable assignments. No for loops. Haskell is stunningly beautiful and concise. (I realize the comparison to JavaScript isn't fair, but that's the language I know best.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lastly-edx-is-a-great-mooc-platform"&gt;
+&lt;h2&gt;Lastly, edX is a great MOOC platform&lt;/h2&gt;
+&lt;p&gt;In 2014, Coursera was my MOOC platform of choice, as I'd finished three classes through it at the end of 2013 (&lt;a class="reference external" href="https://www.coursera.org/course/compdata"&gt;Computing for Data Analysis&lt;/a&gt;, &lt;a class="reference external" href="https://www.coursera.org/course/dataanalysis"&gt;Data Analysis&lt;/a&gt;, and &lt;a class="reference external" href="https://www.coursera.org/course/ml"&gt;Machine Learning&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Now edX has taken its place, primarily for usability reasons. Coursera's interface is passable, with many Bootstrappy elements; the videos seem to go on forever. edX's interface is thoughtful and intuitive. Two of my favorite aspects: the video player, which has speed controls and highlighted subtitles that scroll in unison with the instructor's speech, and the homework submission system, which checks each answer individually.&lt;/p&gt;
+&lt;p&gt;I will definitely be returning to edX for more classes later this year.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>programming</category><guid>https://www.stephaniehiga.com/posts/review-introduction-to-functional-programming/</guid><pubDate>Sat, 03 Jan 2015 05:47:51 GMT</pubDate></item><item><title>Movable AND/OR Statements</title><link>https://www.stephaniehiga.com/posts/movable-andor-statements/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Recently at work I wrote a messy bit of JavaScript (jQuery really) to create movable AND/OR statements. I learned how to code less than a year ago and haven't done any intense programming (yet, just wait), so this is probably the most difficult, headache-inducing, neck-wringing problem I've worked on to date. The last time I encountered this much trouble was when I learned about recursion and &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Trie"&gt;tries&lt;/a&gt;. I figure I'll outline my thought process here in case it's useful to anyone else.&lt;/p&gt;
+&lt;div class="section" id="the-assignment"&gt;
+&lt;h2&gt;The assignment&lt;/h2&gt;
+&lt;p&gt;The goal of these AND/OR statements was to allow users to perform searches with custom parameters. On the right side of the page would be two lists: one containing the available parameters (Location, Category, Subcategory) and the other containing the two operators (AND, OR). On the left two-thirds of the page would be where the user would drag the parameters and operators to build a full search statement.&lt;/p&gt;
+&lt;p&gt;Full, well-formed search statements would have this format:
+&lt;strong&gt;Location OR Category AND Subcategory&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Making elements sortable is fairly simple. Two words: &lt;a class="reference external" href="http://jqueryui.com/sortable/"&gt;jQuery UI&lt;/a&gt;. No, that wasn't the hard part at all. The hard part was following the rules given to me, which involved much tweaking of the sortable interaction and, as always, fighting with the DOM.&lt;/p&gt;
+&lt;p&gt;The rules:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Parameters should never be next to parameters, and operators should never be next to operators, e.g., it shouldn't be possible to build statements like &lt;strong&gt;Location Category AND OR Subcategory&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Operators should never be at the beginning or ending of a statement, e.g., &lt;strong&gt;AND Category AND Subcategory OR&lt;/strong&gt;. Pretty much anything that doesn't make sense in natural language shouldn't be possible.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;When a parameter or operator (for brevity's sake I'll call them "items" from now on) is dragged from the sidebar into a statement, the sidebar should repopulate with the missing item.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Parameters can be dragged into statements, and operators can be dragged into statements. All other dragging between lists should not be allowed. In other words, a parameter can't be dragged into the list of operators, an operator can't be dragged into the list of parameters, and blocks in statements can't be dragged back into the lists (to be honest, I implemented this last rule to make it slightly easier for me). Also, items can't be dragged from one statement to another.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Since items in statements can't be dragged back into the list, there needs to be a way to clear a statement and start over.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Each statement begins with an empty dotted box, to indicate that a new item can be placed there. As items are placed in the statement, the dotted box should move over to the right until the statement reaches its item limit. The item limit is five, as there are only three parameters and two operators.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Items can be dragged within a statement, but again, parameters should never be next to parameters, and operators should never be next to operators.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Within a statement, if an item is dragged over a like block, it should switch with the like item. In other words, if "Location" is dragged over "Category," the two items should switch places.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;When parameters are placed into a statement, they should become editable input boxes, so that the user can enter her preferred location, category, and subcategory.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;When a user types into the "Location" input box, this should trigger an autocomplete place search. (I'd been playing with the &lt;a class="reference external" href="https://developers.google.com/places/"&gt;Google Places API&lt;/a&gt; the week prior to this for my &lt;a class="reference external" href="http://www.wehoeatmo.com"&gt;WeHo Eat Mo&lt;/a&gt; project, so this was fairly easy to implement.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That's about it. I created some of the rules as I went along based on the issues I faced while interacting with the interface. Bugs just kept on cropping up. (In fact, while writing this, I discovered a few more. Code is never finished.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="if-else-and-nothing-else"&gt;
+&lt;h2&gt;If, else, and nothing else&lt;/h2&gt;
+&lt;p&gt;The code I ended up writing is almost entirely made up of if–else blocks. Here's the nested conditional monster that controls the "sortability" of items (variables are defined at the beginning of the sort):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;function sortRules(event, ui) {
+        targetParent = ui.item.parent();
+        targetParent.children('.ui-state-dotted').remove();
+
+        // If the to-list is a statement and (1) the from-list is a item list or (2) the to-list and from-list are identical
+        // Items can be rearranged within a single statement and dragged from a item list to a statement
+        // Items cannot be dragged from one statement to another or from a statement to a item list
+        if (targetParent.hasClass('fullStatement') &amp;amp;&amp;amp; (originalParent.hasClass('piece'))) {
+                // Add a dotted box (implying that another item can be added) if the total statement length is shorter than five items
+                // If the total statement length is equal to five items, don't add another dotted box, but don't cancel the sort, either
+                if (targetParent.children('li:not(.delete):not(.ui-state-dotted)').length &amp;lt; 5) {
+                        targetParent.append('&amp;lt;li class="ui-state-dotted"&amp;gt;&amp;lt;/li&amp;gt;');
+                // Cancel the sort if the statement length has six or more items (including the current item)
+                } else if (targetParent.children('li:not(.delete):not(.ui-state-dotted)').length &amp;gt;= 6) {
+                        $(this).sortable('cancel');
+                }
+
+                // Add a delete button if the statement does not already have it
+                if (targetParent.children('.delete').length === 0) {
+                        $('&amp;lt;li class="delete"&amp;gt;x&amp;lt;/li&amp;gt;').insertBefore(targetParent.children('li:first-child'));
+                }
+
+                // Prevent like items from being placed next to each other
+                // i.e., operators should never be next to operators, and parameters should never be next to parameters
+                // Check if the item has the same class as the item before it or the item after it
+                // or if the item is an operator and (1) the previous item is not a parameter (e.g., operator or undefined),
+                // (2) the next item is an operator, and (3) the next item is undefined
+                // This prevents operators from being placed next to each other, at the beginning or end of a statement,
+                // but allows them to appear before a dotted box
+                if ((ui.item.attr('class') === ui.item.prev().attr('class')) || (ui.item.attr('class') === ui.item.next().attr('class')) || (ui.item.hasClass('operator') &amp;amp;&amp;amp; (!ui.item.prev().hasClass('parameter') || ui.item.next().hasClass('operator') || ui.item.next().attr('class') === undefined)) || ui.item.prev().hasClass('ui-state-dotted')) {
+                        $(this).sortable('cancel');
+                        checkCanceled(targetParent);
+                // Otherwise, if the sort arrangement is allowed, continue with the sort
+                } else {
+                        if (ui.item.hasClass('parameter')) {
+                                ui.item.html('&amp;lt;form class="handler"&amp;gt;&amp;lt;input type="text" class="search-input" name="search-input" value=""&amp;gt;&amp;lt;/form&amp;gt;');
+                                ui.item.css('padding', '5px');
+                        }
+                        if (originalText === 'Location') {
+                                ui.item.children('form').children('input').attr({
+                                        'id': 'locationInput',
+                                        'placeholder': 'Enter your city'
+                                });
+                                locationSearch();
+                        } else {
+                                ui.item.children('form').children('input').attr('placeholder', originalText);
+                        }
+
+                        originalParent.append('&amp;lt;li class="' + ui.item.attr('class') + '"&amp;gt;' + originalHTML + '&amp;lt;/li&amp;gt;');
+                        deleteParameter(targetParent);
+                }
+        } else if (targetParent.attr('id') === originalParent.attr('id')) {
+                // Grab the new target index of the item (after the sort ends)
+                newIndex = ui.item.index();
+                // Swap the current item with the item at its target index
+                // if the target item is an even number away from the current item,
+                // so that only like items are swapped with each other
+                if (Math.abs(originalIndex - newIndex) % 2 === 0 &amp;amp;&amp;amp; (ui.item.hasClass('operator') &amp;amp;&amp;amp; !ui.item.prev().hasClass('operator'))) {
+                        ui.item.next().insertAfter(originalParent.children('li').eq(originalIndex));
+                } else {
+                        $(this).sortable('cancel');
+                        checkCanceled(targetParent);
+                }
+        // Prevent items from being dragged from statements back into item lists
+        } else {
+                $(this).sortable('cancel');
+                checkCanceled(targetParent);
+        }
+}&lt;/pre&gt;
+&lt;p&gt;Yes, this function consists of one if–else block with...I don't even know how many nested if–else blocks inside of each of those conditions. It's terrifying. But it does the trick. Eventually I'd like to refactor this using a hash table, if that's possible. To see my progress on this project, &lt;a class="reference external" href="https://github.com/sahiga/movable-logic"&gt;check out my source code on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>javascript</category><category>jquery</category><guid>https://www.stephaniehiga.com/posts/movable-andor-statements/</guid><pubDate>Fri, 20 Sep 2013 20:07:16 GMT</pubDate></item><item><title>Read-Only Text: How to Write Every Day</title><link>https://www.stephaniehiga.com/posts/read-only-text-how-to-write-every-day/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Three months ago I decided to start writing consistently.&lt;/p&gt;
+&lt;p&gt;Since then, I've worked on my novel every single day without fail. In the past, I would have used any sort of negative feeling – laziness, exhaustion, simply "not wanting to write" – as my cue to step back and let writer's block take over, but now I fight through it. All I have to do is start.&lt;/p&gt;
+&lt;p&gt;Before, I thought of writing every day as some monstrous, impossible feat. But I've found that it's just the opposite. &lt;strong&gt;Writing only when you're inspired is ridiculously hard compared to writing daily.&lt;/strong&gt; Inspiration doesn't strike often, and if you rely on it to dictate your writing schedule, then you're not going to write very often. And when you don't practice, you stagnate.&lt;/p&gt;
+&lt;p&gt;So if you want to write, don't let yourself stagnate. Here are the rules I came up with to jumpstart my writing habit.&lt;/p&gt;
+&lt;div class="section" id="rule-1-write-a-sentence-every-day"&gt;
+&lt;h2&gt;RULE #1: Write a sentence every day&lt;/h2&gt;
+&lt;p&gt;When creating a habit, start small. One sentence is easy to do, and it's a fluid unit: it can be anywhere from one to &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Longest_English_sentence"&gt;thousands of words&lt;/a&gt;. It doesn't even have to be grammatically correct.&lt;/p&gt;
+&lt;p&gt;In seven days, up your daily number of sentences by one. Repeat for each week that passes. When you've found your ideal number of daily sentences, stop adding to it, and use that number as your permanent minimum.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reasoning:&lt;/strong&gt; This rule helps you to build a writing habit, however small, into your daily schedule. The key is that you don't skip any days. Skipping even one day makes it easier to skip the next.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="rule-2-don-t-even-think-about-editing"&gt;
+&lt;h2&gt;RULE#2: Don't even think about editing&lt;/h2&gt;
+&lt;p&gt;This is extremely important. Unless you're Thomas Pynchon, you will write terrible sentences. And it's okay. That doesn't mean you're a terrible writer – it's just a natural consequence of writing so frequently. Some days your output will be brilliant. Some days you'll look at what you wrote before and want to kill it with fire. But whatever you do, &lt;strong&gt;don't touch any of your previous days' work&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You're free to edit what you've written today. However, when 24 hours is up, so is your editing access to those sentences. I like to think of work from previous days as being &lt;strong&gt;read-only&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;What if you've written a bunch of sentences in the past few days that don't fit with your new vision of the story? Forget about them! Go forth and write new sentences that do fit with your vision. You can align them when you're done with the entire story.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reasoning:&lt;/strong&gt; One of the fastest ways to kill your writing habit is to get caught in a line-edit loop. I had this problem for many years. I would write something, hate it, and rewrite it ad nauseum until it was "perfect." I couldn't finish my stories because I kept destroying my ideas right after creating them. For more on this topic, read Scott H. Young's excellent &lt;a class="reference external" href="http://www.scotthyoung.com/blog/2008/01/07/how-to-fuel-a-creative-flow/"&gt;How to Fuel a Creative Flow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This rule helps you to reach the finish line. When you've finished an entire draft – and &lt;em&gt;only&lt;/em&gt; when you've finished an entire draft – you can edit to your heart's desire.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="rule-3-begin-where-you-left-off-the-previous-day"&gt;
+&lt;h2&gt;RULE #3: Begin where you left off the previous day&lt;/h2&gt;
+&lt;p&gt;Treat your scenes as if they were read-only, too. You can't write a new sentence in the middle of a paragraph from a previous day. If you choose to do this anyway, then that sentence doesn't count.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reasoning:&lt;/strong&gt; Rule #2 prevents destructive editing; this rule prevents &lt;em&gt;constructive&lt;/em&gt; editing. It ensures that each new sentence is subsequent, which increases the likelihood that the new sentence will push the story forward.&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;p&gt;I've been following these rules for twelve weeks. Today is the first day of week 13, which means I'll write a minimum of 13 sentences every day this week. At this rate, I should have written 546 sentences by now. Instead I've written 34,043 words, which, at an average of 15 words per sentence, translates to about &lt;strong&gt;2270 sentences, over four times what I projected&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For reference, before I started this habit, the novel clocked in at 49,091 words. It took me well over a year to write that much. Within the past three months, I've written 70% of that amount, and despite my focus on quantity, I've also made strides in quality.&lt;/p&gt;
+&lt;p&gt;I highly recommend this sentence-based system to anyone who wants to write. For more ideas on how to write every day, check out these articles:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://abuckfifty.tumblr.com/"&gt;It's Not a Sprint, It's a Marathon&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://zenhabits.net/write-daily/"&gt;Zen Habits: Why You Should Write Daily&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>writing</category><guid>https://www.stephaniehiga.com/posts/read-only-text-how-to-write-every-day/</guid><pubDate>Sun, 11 Aug 2013 19:15:09 GMT</pubDate></item><item><title>Analyzing Rap Lyrics with Python</title><link>https://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: &lt;strong&gt;What's the most beloved car brand in hip-hop?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In this post, I'll explain how I came up with a possible answer to that question. &lt;a class="reference external" href="https://www.stephaniehiga.com/cars.html"&gt;To skip to the results, click here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="why-hip-hop-why-cars"&gt;
+&lt;h2&gt;Why hip-hop / why cars&lt;/h2&gt;
+&lt;p&gt;Hip-hop is my favorite genre of music. On the road, I tune the radio to &lt;a class="reference external" href="http://www.935kday.com/"&gt;93.5 KDAY&lt;/a&gt;; otherwise, I'm plugged into my Pandora account, which is heavy on Golden Age, Midwestern, East Coast, Bay Area, and (recently) indie rap. Rap is also lyrically dense, which makes it a great source for text mining.&lt;/p&gt;
+&lt;p&gt;I got curious about cars because rappers talk about them--a lot. So I decided to find out once and for all which brand they love the most, with &lt;strong&gt;Chevy&lt;/strong&gt; (the brand I kept hearing) as my hypothesis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-lyrics-mining-process"&gt;
+&lt;h2&gt;The lyrics mining process&lt;/h2&gt;
+&lt;p&gt;To find the answer, I needed a sizeable sample of car brand names, a searchable database of hip-hop lyrics, a script to search for the brands within the lyrics database, and a way of displaying the results. Fortunately, all the necessary tools were readily available:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Python&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Wikipedia&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;LibreOffice Calc&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://research.blackyouthproject.com/raplyrics/"&gt;Rap Lyrics Database&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://developers.google.com/chart/"&gt;Google Charts&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bootstrap&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="section" id="gathering-the-data"&gt;
+&lt;h3&gt;Gathering the data&lt;/h3&gt;
+&lt;p&gt;Wikipedia blocks web scrapers, understandably. So I manually downloaded all of Wikipedia's lists of car manufacturers and brands by country. To reduce the amount of HTML I would have to parse, I selected the &lt;a class="reference external" href="http://en.m.wikipedia.org/wiki/Main_Page"&gt;Mobile View&lt;/a&gt; for each page.&lt;/p&gt;
+&lt;p&gt;I downloaded ten files in total: a general list of car manufacturers plus individual lists for China, France, Germany, Italy, Japan, Spain, Sweden, the United Kingdom, and the United States.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cleaning-the-data"&gt;
+&lt;h3&gt;Cleaning the data&lt;/h3&gt;
+&lt;p&gt;Wikipedia's Mobile View pages contain search bars at the top and the usual "See also," "References," and "Read in another language" links. I started by erasing these (manually again), reducing the files to structural markup and the lists themselves.&lt;/p&gt;
+&lt;p&gt;With the Python &lt;a class="reference external" href="http://www.crummy.com/software/BeautifulSoup/"&gt;Beautiful Soup&lt;/a&gt; library, I extracted the brand name tags by selecting all list elements. Then I used &lt;a class="reference external" href="http://www.nltk.org"&gt;NLTK&lt;/a&gt; to remove the HTML tags and regular expressions to remove excess whitespace and text (such as notes about the brand, the brand's years of operation, etc.). This is what I came up with:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;def clean_wikilist(filename):
+    # open saved html file
+    html = open(filename).read()
+
+    # collect bulleted items only
+    bullets = SoupStrainer("li")
+
+    # make soup out of the bulleted items
+    soup = BeautifulSoup(html, 'lxml', parse_only = bullets).prettify()
+
+    # remove html from soup
+    raw = nltk.clean_html(soup)
+
+    # remove extra lines
+    raw = re.sub(r'\n \n \n \n \n', r'\n', raw)
+    raw = re.sub(r'\n \n \n', r'\n', raw)
+
+    # create and clean tokens
+    tokens = raw.split('\n')
+    tokens = [re.sub(r'^\s+(?=[\S]+)', r'', token) for token in tokens]
+    tokens = [token for token in tokens if not re.findall(r'\[[0-9]+\]|\([\S\s]+[\(\)]?|^\s+$|^[\s\[\]\(\)0-9]+$', token)]
+    tokens = list(set(tokens))
+
+    return tokens&lt;/pre&gt;
+&lt;p&gt;After running my script on all ten lists, I had a whopping &lt;strong&gt;2599 brand names&lt;/strong&gt;. So I decided to limit the set to Germany, Japan, the UK, and the US. The pages for Germany, the UK, and the US separate current brands from defunct brands, so for those countries I used current brands only. The Japan page mixes current and defunct brands into one list; to save time, I used all of them.&lt;/p&gt;
+&lt;p&gt;These four pages have slightly different structures. The &lt;code class="docutils literal"&gt;clean_wikilist()&lt;/code&gt; script worked nicely for Japan, but captured too much information on the others, so I wrote three additional scripts. Here's the one for Germany:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;def autos_ge():
+        # open saved html file
+        html = open('autos-ge.html').read()
+
+        # create soup object
+        soup = BeautifulSoup(html)
+
+        # select current major manufacturers
+        majors = soup.select('span.mw-headline')
+        majors = [w for w in majors if w.parent.parent.previous_sibling.contents[0]['id'] == 'Current_major_manufacturers']
+        major_tokens = [nltk.clean_html(str(w)) for w in majors]
+        major_tokens = [re.sub(r'\[\s\S\s\]', r'', token) for token in major_tokens]
+
+        # select current minor manufacturers
+        minors = soup.select('li')
+        minors = [w for w in minors if w.parent.parent.previous_sibling.contents[0]['id'] == 'Current_minor_manufacturers']
+        minor_tokens = [nltk.clean_html(str(w)) for w in minors]
+        minor_tokens = [re.sub(r'\s\(\S+\)', r'', token) for token in minor_tokens]
+
+        # combine lists
+        tokens = list(set(minor_tokens + major_tokens))
+
+        return tokens&lt;/pre&gt;
+&lt;p&gt;One notable difference between this and the original script is the usage of Beautiful Soup. In &lt;code class="docutils literal"&gt;clean_wikilist()&lt;/code&gt;, the desired elements are selected first, with SoupStrainer, and then used to create a list of the matching HTML tags in unicode format. &lt;code class="docutils literal"&gt;autos_ge()&lt;/code&gt;, on the other hand, creates a Beautiful Soup object out of the entire page; the desired elements are selected via DOM traversal.&lt;/p&gt;
+&lt;p&gt;The number of brand names from this limited dataset? Just 178.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="analyzing-the-data"&gt;
+&lt;h3&gt;Analyzing the data&lt;/h3&gt;
+&lt;p&gt;The Rap Lyrics Database contains lyrics for all of Billboard Music's rap songs from 1989 through 2009. It's the only searchable database of hip-hop lyrics (exclusively).&lt;/p&gt;
+&lt;p&gt;The result pages share the same URL, with the search term appended to the end: &lt;em&gt;http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/&lt;/em&gt;. This made it much easier to automate the search and saving process.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;def rap_search(auto_list):
+    # search for each brand name
+    for brand in auto_list:
+        url = 'http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/' + word
+
+        # save the search results page
+        results_html = urllib2.urlopen(url).read()
+
+        # save it as a file named after the brand
+        results = word + '.html'
+
+        with open(results, 'w') as results_file:
+            results_file.write(results_html)&lt;/pre&gt;
+&lt;p&gt;This saved 178 HTML pages, each named after the appropriate brand search term, onto my computer. I also searched for known nicknames of the brands (e.g., "Bimmer/Beemer/Beamer" for BMW and "Chevy" for Chevrolet).&lt;/p&gt;
+&lt;p&gt;I used Beautiful Soup again to count the number of results on each page:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;def count_rap_results():
+        # for all html files in current directory
+        for filename in os.listdir('.'):
+        if filename.endswith('html'):
+
+        # select song titles
+        html = open(filename).read()
+        soup = BeautifulSoup(html)
+        songs = soup.select('.title')
+
+        # count number of song titles
+        count = len(songs)
+
+        # write brand names and number of songs into a text file
+        with open('count_rap_autos.txt', 'a') as counter_file:
+                counter_file.write('%s%15d\n' % (filename[:-5], count))&lt;/pre&gt;
+&lt;p&gt;This got me a pretty messy-looking text file of each brand and the number of songs in which it was mentioned:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lea-Francis               1&lt;/p&gt;
+&lt;p&gt;Ewing      0&lt;/p&gt;
+&lt;p&gt;Efini         0&lt;/p&gt;
+&lt;p&gt;Scion       0&lt;/p&gt;
+&lt;p&gt;Tommy Kaira            15&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It turned out that the Rap Lyrics Database doesn't recognize spaces. So, a search for "Art and Tech" became a search for "Art"--which of course is a popular word that is often used in a non-automobile context. I removed ambiguous names from the list and combined the results from brands and their nicknames. LibreOffice Calc was helpful in fixing the columns and sorting the results.&lt;/p&gt;
+&lt;p&gt;The final number of usable brands came out to 153.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="who-won"&gt;
+&lt;h2&gt;Who won?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Mercedes-Benz&lt;/strong&gt;, with &lt;strong&gt;93 song mentions&lt;/strong&gt;--and remember, that's only counting a small segment of rap songs between 1989-2009.&lt;/p&gt;
+&lt;p&gt;Jeep came in second, at 34 songs. Then came Cadillac with 25 songs, and finally Chevy at 24.&lt;/p&gt;
+&lt;p&gt;So, Chevy isn't as popular as I expected. But the biggest shocker is Jeep. I can't recall a single song that mentions Jeep.&lt;/p&gt;
+&lt;p&gt;To display the results, I made a &lt;a class="reference external" href="http://stephaniehiga.com/cars.html#results"&gt;graph&lt;/a&gt; with Google Charts. (I'd add them here, but I've yet to learn how to embed JavaScript into reStructuredText.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pain-points"&gt;
+&lt;h2&gt;Pain points&lt;/h2&gt;
+&lt;p&gt;I'm new to programming. While I enjoy it very much, I spend about 90% of my time immersed in pain. The text analysis took me four nights (Monday through Thursday) to complete. On the actual hack day, I made the graph and web page, with a lot of help from Bootstrap. Along the way, I encountered many problems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Selecting specific subsets of HTML tags with no classes or ids.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Accidentally passing list items with the newline character to the &lt;code class="docutils literal"&gt;rap_search()&lt;/code&gt; script, resulting in 178 filenames split off from their extensions. Fortunately there was an easy fix:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;for filename in os.listdir("."):
+        if '\n' in filename:
+        os.rename(filename, re.sub(r'\n', r'', filename))&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reformatting the final list of brands into an HTML table.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reformatting the final list of brands into a list of dictionaries to create a graph with &lt;a class="reference external" href="http://philogb.github.io/jit/"&gt;JavaScript InfoVis Toolkit&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Not knowing how to build a non-stacked bar graph with the InfoVis Toolkit.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Switching to Google Charts and reformatting the final list of brands into a list of lists to create a Google Charts graph.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="notes-for-the-future"&gt;
+&lt;h2&gt;Notes for the future&lt;/h2&gt;
+&lt;div class="section" id="more-complete-data"&gt;
+&lt;h3&gt;More complete data&lt;/h3&gt;
+&lt;p&gt;I slashed the set of brand names to less than 7% of its original size and conflated "car manufacturers" with "car brands." Wikipedia also has a lengthy &lt;a class="reference external" href="https://en.wikipedia.org/wiki/List_of_automobile_marques"&gt;list of automobile marques&lt;/a&gt;, which I didn't even touch.&lt;/p&gt;
+&lt;p&gt;I'd like to go deeper than brands, into the actual names of cars, and match them against an even bigger database of lyrics. &lt;a class="reference external" href="http://www.rapgenius.com"&gt;RapGenius&lt;/a&gt; and the &lt;a class="reference external" href="http://www.last.fm/api"&gt;Last.fm API&lt;/a&gt; are possible alternatives to the Rap Lyrics Database. RapGenius has an excellent database, but it contains a significant amount of lyrics from non-hip-hop artists as well.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="semantic-orientation"&gt;
+&lt;h3&gt;Semantic orientation&lt;/h3&gt;
+&lt;p&gt;I equated "beloved" to "number of songs mentions." This is obviously not always the case, as rappers name-drop plenty of things they dislike. It's true that rappers generally mention cars in a positive manner, but a more accurate experiment would take into account not just how many times the brand was used, but in what way the brand was used--i.e., the semantic orientation of the brand. A &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Sentiment_analysis"&gt;sentiment analysis&lt;/a&gt; might be the way to go.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="multi-word-brands"&gt;
+&lt;h3&gt;Multi-word brands&lt;/h3&gt;
+&lt;p&gt;The Rap Lyrics Database turns up blank if you search for, say "Aston Martin" (with the quotes and the space), even though Aston Martin is mentioned in a few songs. So multi-word brands with spaces in them turned up short. (Mercedes-Benz doesn't have this issue because it has a hyphen, not a space.)&lt;/p&gt;
+&lt;p&gt;If I were to use the Rap Lyrics Database again, I'd have to search for "Aston" and "Martin" separately and compare the songs on each results page. Otherwise, RapGenius seems to do spaces nicely.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="nicknames-and-duplicates"&gt;
+&lt;h3&gt;Nicknames and duplicates&lt;/h3&gt;
+&lt;p&gt;I searched for "Mercedes-Benz" as well as just "Mercedes" and "Benz." However, again, because I didn't compare song names, I ended up nixing the counts for the nicknames to minimize the possibility of duplicates. I also missed some nicknames--for instance, I completely neglected "Caddy" and "Lac" (sorry, Cadillac), "Lex," etc.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="misspellings-plurals-etc"&gt;
+&lt;h3&gt;Misspellings, plurals, etc.&lt;/h3&gt;
+&lt;p&gt;I did search for "Beamer" and "Beemer," but there's also "Bima" and probably countless other misspellings of "Bimmer" and other car brands. I ignored plurals, whether spelled correctly ("Bimmers") or not ("Bimaz").&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="disambiguation"&gt;
+&lt;h3&gt;Disambiguation&lt;/h3&gt;
+&lt;p&gt;Many car brands double as common words or unrelated proper names, e.g., Prince, Radical, Ram, MINI, Oakland. I discarded these instead of determining whether or not they were referring to the car brand.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="last-thoughts"&gt;
+&lt;h3&gt;Last thoughts&lt;/h3&gt;
+&lt;p&gt;A few months ago, when I first got the idea for this project, I thought it would be ridiculously hard. I envisioned building a large corpus of hip-hop lyrics and determining the classification, meaning, and orientation of each word to uncover the truth.&lt;/p&gt;
+&lt;p&gt;After going about this somewhat backwards, I think my initial impression remains correct. I'm happy I finally took a stab at the project, and I'm excited to continue working on it. This is just the first of a long series of experiments (and blog posts)!&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/sahiga/rap-analysis"&gt;Source files on GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>hip-hop + rap</category><category>python</category><category>text mining</category><guid>https://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python/</guid><pubDate>Sat, 18 May 2013 18:32:32 GMT</pubDate></item><item><title>GitHub for Linux Mint</title><link>https://www.stephaniehiga.com/posts/github-for-linux-mint/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;Version control terrifies me.&lt;/p&gt;
+&lt;p&gt;But you know what else terrifies me? Losing files. I've lost enough of them and endured enough filename headaches (story-1.doc, story-2.doc, story-final, story-new.doc, story-newEST.doc, etc.) in my lifetime to realize that &lt;strong&gt;version control is extremely important&lt;/strong&gt;, and I need to develop better version control habits.&lt;/p&gt;
+&lt;p&gt;So, I added the files for this site to &lt;a class="reference external" href="https://github.com/sahiga/sah"&gt;my GitHub account&lt;/a&gt;. The following guide details the steps I took, minus the legion of errors I made. I've named it "GitHub for &lt;a class="reference external" href="http://www.linuxmint.com"&gt;Linux Mint&lt;/a&gt;," in honor of my operating system and the fact that GitHub offers &lt;a class="reference external" href="http://mac.github.com"&gt;GitHub for Mac&lt;/a&gt; and &lt;a class="reference external" href="http://windows.github.com"&gt;GitHub for Windows&lt;/a&gt;, but no GitHub for GNU/Linux (even though, hey, some of us GNU/Linux users could use a little point-and-click help over here).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: Afterward, I realized I could have had a &lt;a class="reference external" href="https://help.github.com/articles/fetching-a-remote"&gt;much easier time&lt;/a&gt; cloning the repository. This command is identical to the "Clone in Windows" and "Clone in Mac" buttons in the corresponding GitHub GUI applications:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;git clone &amp;lt;URL&amp;gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;div class="section" id="connect-your-computer-to-github"&gt;
+&lt;h2&gt;Connect your computer to GitHub&lt;/h2&gt;
+&lt;p&gt;First, you need a secure method of connecting your computer to GitHub. You can do this through SSH (generate a new public/private SSH key pair and add it to your GitHub account) or through HTTPS (configure the Git credential helper).&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://help.github.com/articles/set-up-git"&gt;Instructions for using HTTPS with GitHub&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://help.github.com/articles/generating-ssh-keys"&gt;Instructions for using SSH with GitHub&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="prepare-the-branches"&gt;
+&lt;h2&gt;Prepare the branches&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/new"&gt;Create a new repository on GitHub&lt;/a&gt;. This is the &lt;strong&gt;remote branch&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Fire up your command line. Move to the directory containing your version control files (if you're not there already), e.g., &lt;code class="docutils literal"&gt;cd sah&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Initialize a Git repository in this directory. This is the &lt;strong&gt;local branch&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;git init&lt;/pre&gt;
+&lt;p&gt;Check the status of your new repository.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;git status&lt;/pre&gt;
+&lt;p&gt;(or &lt;code class="docutils literal"&gt;git st&lt;/code&gt; if you've set up &lt;a class="reference external" href="http://git-scm.com/book/ch2-7.html#Git-Aliases"&gt;aliases&lt;/a&gt;). This is optional, but I like checking the status to see which branch I'm working on and which files will be included in the next commit.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;# On branch master
+# Untracked files:
+#   (use "git add &amp;lt;file&amp;gt;..." to include in what will be committed)
+#
+#       .doit.db
+#       1.txt
+#       README.txt
+#       cache/
+#       conf.py
+#       conf.pyc
+#       conf.py~
+#       files/
+#       galleries/
+#       listings/
+#       new_site/
+#       output/
+#       posts/
+#       stephanieahiga.wordpress.2013-05-05.xml
+#       stories/
+nothing added to commit but untracked files present (use "git add" to track)&lt;/pre&gt;
+&lt;p&gt;Right now there's "nothing added to commit," meaning the local repository is empty. This is because you've just initialized it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="start-tracking-your-files"&gt;
+&lt;h2&gt;Start tracking your files&lt;/h2&gt;
+&lt;p&gt;Next, add version control tracking to your files. To add individual files, write &lt;code class="docutils literal"&gt;git add&lt;/code&gt; and then the filename. To add everything in the directory to your commit:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;git add .&lt;/pre&gt;
+&lt;p&gt;Now it's time to commit the change. The basic commit command is &lt;code class="docutils literal"&gt;git commit&lt;/code&gt;, which will launch your preferred text editor. The &lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;-m&lt;/span&gt;&lt;/code&gt; flag allows you to skip the text editor and type your commit message inline; the &lt;code class="docutils literal"&gt;&lt;span class="pre"&gt;-a&lt;/span&gt;&lt;/code&gt; flag tells Git to automatically stage your tracked files, skipping the staging area.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;git commit -a -m "Added Nikola site files"&lt;/pre&gt;
+&lt;p&gt;See &lt;a class="reference external" href="http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository"&gt;Git Basics - Recording Changes to the Repository&lt;/a&gt; for more information on committing changes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="merge-and-sync-your-branches"&gt;
+&lt;h2&gt;Merge and sync your branches&lt;/h2&gt;
+&lt;p&gt;Merge the remote branch (the GitHub copy of the repository) with your local branch (the local copy of the repository). This consolidates the two branches and ensures that they are identical.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;git pull https://github.com/sahiga/sah.git&lt;/pre&gt;
+&lt;p&gt;You should see a message like this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;From https://github.com/sahiga/sah
+ * branch            HEAD       -&amp;gt; FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ README.md |    4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 README.md&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class="docutils literal"&gt;git pull&lt;/code&gt; automatically merges commits from the "pulled" branch into your current branch. This works fine on an empty GitHub repository, but it could cause &lt;a class="reference external" href="https://help.github.com/articles/fetching-a-remote"&gt;merge conflicts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Push your commit on the local branch to the remote branch:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;git push origin master&lt;/pre&gt;
+&lt;p&gt;If you're using HTTPS, GitHub will prompt you for credentials. To switch to SSH, &lt;a class="reference external" href="https://help.github.com/articles/why-is-git-always-asking-for-my-password"&gt;follow these instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; I originally attempted &lt;code class="docutils literal"&gt;git push origin master&lt;/code&gt; before &lt;code class="docutils literal"&gt;git pull&lt;/code&gt;, resulting in a "non-fast-forward" error. This error occurs when the local branch is behind the remote branch, and therefore Git can't push the local commits without losing commits on the remote branch. GitHub has an &lt;a class="reference external" href="https://help.github.com/articles/dealing-with-non-fast-forward-errors"&gt;article on non-fast-forward errors&lt;/a&gt; that I wish I'd found when I made this mistake.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The two branches are now in sync! Check the commit history in your local branch with &lt;code class="docutils literal"&gt;git log&lt;/code&gt;. The most recent commit should have a "Merge" attribute, identical to what you'll find in the "Commits" tab in your GitHub account:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;    commit e9bcc38554dd930b4bd1f557e45c92f8f65e0a98
+    Merge: 3e653b4 96d590b
+    Author: sahiga
+    Date:   Sat May 4 23:51:39 2013 -0700
+
+Merge https://github.com/sahiga/sah&lt;/pre&gt;
+&lt;p&gt;Tutorials for Git and GitHub:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://git-scm.com/book"&gt;Pro Git&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://help.github.com/"&gt;GitHub Help&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://www.floraworley.com/2013/03/11/get-started-with-git-and-github/"&gt;Diary of a Future Dev&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><category>linux</category><category>version control</category><guid>https://www.stephaniehiga.com/posts/github-for-linux-mint/</guid><pubDate>Sun, 05 May 2013 21:05:00 GMT</pubDate></item></channel></rss>
