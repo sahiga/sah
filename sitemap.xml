@@ -7,11 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://www.stephaniehiga.com/</loc>
-  <lastmod>2020-08-14T21:39:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/2012/</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
+  <lastmod>2020-08-15T20:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/2013/</loc>
@@ -34,16 +30,8 @@
   <lastmod>2020-08-14T21:39:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/books.html</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/categories/</loc>
-  <lastmod>2020-08-14T21:39:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/categories/blog.html</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
+  <lastmod>2020-08-15T20:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/categories/conferences/</loc>
@@ -58,144 +46,68 @@
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/categories/demo.html</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/categories/design/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/categories/git.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/categories/git/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/categories/hack-reactor.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/categories/hack-reactor/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/categories/hip-hop-%2B-rap.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/categories/hip-hop-%2B-rap/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/categories/hip-hop-rap.html</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/categories/hiring/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/categories/javascript.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/categories/javascript/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/categories/jquery.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/categories/jquery/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/categories/linux.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/categories/linux/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/categories/nikola.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/categories/nikola/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/categories/programming.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/categories/programming/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/categories/python.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/categories/python/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/categories/static-site-generators.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/categories/static-site-generators/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/categories/text-mining.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/categories/text-mining/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/categories/version-control.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/categories/version-control/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/categories/w3m.html</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/categories/wordpress.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/categories/wordpress/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/categories/writing.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/categories/writing/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/galleries/</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/galleries/demo/</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/index-1.html</loc>
@@ -319,7 +231,7 @@
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/pages/books/</loc>
-  <lastmod>2020-04-13T00:45:00Z</lastmod>
+  <lastmod>2020-08-15T20:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/pages/diy-data-science/</loc>
@@ -330,36 +242,20 @@
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/posts/analyzing-rap-lyrics-with-python/</loc>
-  <lastmod>2020-04-13T03:40:00Z</lastmod>
+  <lastmod>2020-08-15T20:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/posts/degrees-of-pynchon/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/posts/github-for-linux-mint.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/posts/github-for-linux-mint/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/posts/goodbye-wordpress-hello-nikola.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/posts/goodbye-wordpress-hello-nikola/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/posts/movable-andor-statements.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/posts/movable-andor-statements/</loc>
@@ -370,59 +266,19 @@
   <lastmod>2020-08-14T22:38:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/posts/my-hardware-software-setup.html</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/posts/my-virtual-conference-talk-on-css/</loc>
-  <lastmod>2020-08-14T21:39:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/posts/off-to-hack-reactor.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/posts/off-to-hack-reactor/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/posts/read-only-text-how-to-write-every-day.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/posts/read-only-text-how-to-write-every-day/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/posts/review-introduction-to-functional-programming.html</loc>
-  <lastmod>2020-04-12T19:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/posts/review-introduction-to-functional-programming/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://www.stephaniehiga.com/posts/text-based-web-browsing.html</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
- </url>
- <url>
   <loc>https://www.stephaniehiga.com/posts/the-design-of-everyday-blogs/</loc>
-  <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/posts/welcome-to-nikola.html</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/stories/about/</loc>
-  <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/stories/books/</loc>
-  <lastmod>2020-04-12T21:12:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.stephaniehiga.com/stories/diy-data-science/</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
 </urlset>
