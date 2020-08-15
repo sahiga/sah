@@ -1,9 +1,10 @@
 *~
 *.pyc
 
-output/*
-cache/*
-cache/.mako.tmp/*
+cache
+.doit.db
+__pycache__
+output
 
 .DS_Store
 .vscode/*
