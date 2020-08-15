@@ -6,24 +6,16 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>https://www.stephaniehiga.com/categories/blog.xml</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://www.stephaniehiga.com/categories/conferences.xml</loc>
-  <lastmod>2020-08-14T22:38:00Z</lastmod>
+  <lastmod>2020-08-15T20:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://www.stephaniehiga.com/categories/css.xml</loc>
-  <lastmod>2020-08-14T22:38:00Z</lastmod>
+  <lastmod>2020-08-15T20:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://www.stephaniehiga.com/categories/d3.xml</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://www.stephaniehiga.com/categories/demo.xml</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://www.stephaniehiga.com/categories/design.xml</loc>
@@ -40,10 +32,6 @@
  <sitemap>
   <loc>https://www.stephaniehiga.com/categories/hip-hop-%2B-rap.xml</loc>
   <lastmod>2020-04-13T03:41:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://www.stephaniehiga.com/categories/hip-hop-rap.xml</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://www.stephaniehiga.com/categories/hiring.xml</loc>
@@ -86,20 +74,12 @@
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://www.stephaniehiga.com/categories/w3m.xml</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://www.stephaniehiga.com/categories/wordpress.xml</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://www.stephaniehiga.com/categories/writing.xml</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://www.stephaniehiga.com/galleries/rss.xml</loc>
-  <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://www.stephaniehiga.com/output/categories/blog.xml</loc>
@@ -123,10 +103,10 @@
  </sitemap>
  <sitemap>
   <loc>https://www.stephaniehiga.com/rss.xml</loc>
-  <lastmod>2020-08-14T22:38:00Z</lastmod>
+  <lastmod>2020-08-15T20:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://www.stephaniehiga.com/sitemap.xml</loc>
-  <lastmod>2020-08-14T22:38:00Z</lastmod>
+  <lastmod>2020-08-15T21:02:00Z</lastmod>
  </sitemap>
 </sitemapindex>

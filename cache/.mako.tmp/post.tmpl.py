@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1597525120.290935
+_modified_time = 1597525379.354032
 _enable_loop = True
 _template_filename = 'themes/lightning/templates/post.tmpl'
 _template_uri = 'post.tmpl'
@@ -36,20 +36,20 @@ def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
-        comments = _mako_get_namespace(context, 'comments')
-        messages = context.get('messages', UNDEFINED)
-        def extra_head():
-            return render_extra_head(context._locals(__M_locals))
+        permalink = context.get('permalink', UNDEFINED)
         helper = _mako_get_namespace(context, 'helper')
-        def content():
-            return render_content(context._locals(__M_locals))
         pheader = _mako_get_namespace(context, 'pheader')
-        post = context.get('post', UNDEFINED)
         def sourcelink():
             return render_sourcelink(context._locals(__M_locals))
-        title = context.get('title', UNDEFINED)
         date_format = context.get('date_format', UNDEFINED)
-        permalink = context.get('permalink', UNDEFINED)
+        post = context.get('post', UNDEFINED)
+        def content():
+            return render_content(context._locals(__M_locals))
+        title = context.get('title', UNDEFINED)
+        def extra_head():
+            return render_extra_head(context._locals(__M_locals))
+        messages = context.get('messages', UNDEFINED)
+        comments = _mako_get_namespace(context, 'comments')
         __M_writer = context.writer()
         __M_writer('\n')
         __M_writer('\n')
@@ -72,10 +72,10 @@ def render_body(context,**pageargs):
 def render_extra_head(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        helper = _mako_get_namespace(context, 'helper')
+        post = context.get('post', UNDEFINED)
         def extra_head():
             return render_extra_head(context)
-        post = context.get('post', UNDEFINED)
+        helper = _mako_get_namespace(context, 'helper')
         __M_writer = context.writer()
         __M_writer('\n')
         __M_writer(str(helper.twitter_card_information(post)))
@@ -92,18 +92,18 @@ def render_extra_head(context,**pageargs):
 def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        comments = _mako_get_namespace(context, 'comments')
-        messages = context.get('messages', UNDEFINED)
-        def content():
-            return render_content(context)
-        pheader = _mako_get_namespace(context, 'pheader')
-        helper = _mako_get_namespace(context, 'helper')
-        post = context.get('post', UNDEFINED)
+        permalink = context.get('permalink', UNDEFINED)
         def sourcelink():
             return render_sourcelink(context)
-        title = context.get('title', UNDEFINED)
+        pheader = _mako_get_namespace(context, 'pheader')
+        helper = _mako_get_namespace(context, 'helper')
         date_format = context.get('date_format', UNDEFINED)
-        permalink = context.get('permalink', UNDEFINED)
+        post = context.get('post', UNDEFINED)
+        def content():
+            return render_content(context)
+        title = context.get('title', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
+        comments = _mako_get_namespace(context, 'comments')
         __M_writer = context.writer()
         __M_writer('\n  <div id="post-')
         __M_writer(str(post.meta('slug')))
@@ -146,10 +146,10 @@ def render_content(context,**pageargs):
 def render_sourcelink(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
+        post = context.get('post', UNDEFINED)
         messages = context.get('messages', UNDEFINED)
         def sourcelink():
             return render_sourcelink(context)
-        post = context.get('post', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if not post.meta('password'):
