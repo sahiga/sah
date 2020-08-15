@@ -10,7 +10,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
 <link rel="canonical" href="https://www.stephaniehiga.com/">
-<link rel="next" href="index-1.html" type="text/html">
+<link rel="next" href="index-2.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
@@ -64,6 +64,117 @@
         <div class="hfeed">
             <!--Body content-->
             
+    <div class="post hfeed">
+      <h2 class="entry-title"><a href="posts/my-conference-talk-on-css/">My conference talk on CSS</a></h2>
+      <div class="entry-content">
+        <div>
+<p>In June, I gave a talk at <a class="reference external" href="https://www.womentech.net/speaker/Stephanie%20A./Higa">WomenTech Global 2020</a>, a virtual conference hosted by CEO Anna Radulovski and her team. Anna reached out to me on LinkedIn a couple of weeks before the conference, asking whether I'd be interested in speaking. I love opportunities that drag me outside of my comfort zone, so of course I said yes!</p>
+<p>And then I panicked. What was I even qualified to talk about?</p>
+<p>Giving a conference talk is challenging for a number of reasons (unless you are blessed by the public speaking gods), but the most difficult part is selecting a topic. It's totally intimidating, like facing a blank page.</p>
+<p>I scrambled for the next few days, shuffling through various topics related to frontend engineering, doubting whether I'd really learned anything of use in the 7+ years I've been working as a professional developer.</p>
+<blockquote>
+<p><strong>Optimistic Me:</strong> Data visualization?</p>
+<p><strong>Realistic Me:</strong> Oh, please. You used D3, what, five years ago, and you think you're an expert now?</p>
+<p><strong>OM:</strong> I could learn.</p>
+<p><strong>RM:</strong> You're gonna learn this <em>whole</em> field in two weeks?</p>
+<p><strong>OM:</strong> Okay, okay, maybe not. I guess I could talk about JavaScript, right? I know JavaScript pretty well.</p>
+<p><strong>RM:</strong> 45 minutes on closures, callbacks, arrow functions, async/await, and five ways to instantiate classes? Geez, sign me up.</p>
+<p><strong>OM:</strong> Are you saying that wouldn't be interesting???</p>
+<p><strong>RM:</strong> I'm saying, if people wanted to learn that stuff, they could just read <em>JavaScript: The Good Parts</em>. Or MDN. Don't be a textbook.</p>
+<p><strong>OM:</strong> Well...maybe I could talk about React?</p>
+<p><strong>RM:</strong> There are already two other talks on React.</p>
+<p><strong>OM:</strong> I could talk about React <em>Hooks</em>--</p>
+<p><strong>RM:</strong> No.</p>
+<p><strong>OM:</strong> But...what else is there?</p>
+<p><strong>RM:</strong> Hmm. Let's think. Is there, possibly, a technology that you absolutely love, with all your heart, that you've known for ages, that is incredibly cool, but it flies under the radar, so most people don't know it's incredibly cool?</p>
+<p><strong>OM:</strong> OhhhhhhHHHHhhhHHH you mean CSS</p>
+</blockquote>
+<div class="section" id="cascading-style-sheets-my-dear-old-friend">
+<h2>Cascading Style Sheets, my dear old friend</h2>
+<div class="figure">
+<img alt="/images/css-talk-graphics.png" src="images/css-talk-graphics.png"><p class="caption">Just a taste of what CSS can do.</p>
+</div>
+<p>I like CSS <em>way</em> more than JavaScript. I like it more than English, too.</p>
+<p>I learned CSS when I was a wee gal, during the glorious days of Web 1.0, when you could craft a second home on the internet without social media panopticons breathing over your shoulder.</p>
+<p>Sure, there were some drawbacks during those days. You had to use HTML tables to create columns of text. You had to use Photoshop or PaintShopPro 7 to make gradients and rounded corners. Marquees and flashing text were all the rage. But that was the internet when it was beautiful.</p>
+<p>CSS reminds me of that internet, and because of that, it fills me with joy.</p>
+<p>My first website was an MSN Communities page. I quickly tired of it because I couldn't edit the look and feel of the site, so I went to Geocities, which at the time was the best way to create a free website. (I believe that Yahoo's downfall started the day they ended Geocities; no one can convince me otherwise.) Geocities had a “PageBuilder” feature that allowed users to move and style HTML elements within a drag-and-drop editor, which led to some pretty funky-looking sites, mine included. No matter how hard I tried, I couldn't get the elements to align properly.</p>
+<p>I knew there <em>had</em> to be a better tool out there.</p>
+<p>It sounds dramatic to say that CSS changed my life, but it kinda did. If it weren't for CSS, I would have given up on websites a long time ago. I wouldn't have started making websites again right after college, as an unemployed architecture grad, and then dreamed that hey, maybe someday I could even get paid to build a website. Imagine that!</p>
+<p>Honestly, I probably wouldn't use the internet without CSS, because it would look like this:</p>
+<div class="figure">
+<img alt="/images/websites-unstyled.png" src="images/websites-unstyled.png"><p class="caption">Six of the world's most popular websites, all sad and broken without CSS.</p>
+</div>
+<p>Over the years, CSS has become even more amazing. Yet I can't tell you how many times I've heard people -- mostly backend engineers, but some frontend engineers too -- dismiss this wonderful language as an afterthought, as a nice-to-have rather than a must-have.</p>
+<p>Even at Hack Reactor, whose business was predicated on churning out new frontend engineers, we had a grand total of <em>one</em> lecture on CSS. Most of the content was outdated. Some of it was flat-out wrong. The focus was always JavaScript, JavaScript, JavaScript. Sure, JavaScript is great. It's important. It's the golden child. Meanwhile, CSS remains forever in the background, the overlooked, misunderstood, unsung hero of the web.</p>
+<p>With this in mind, I had fuel for my conference talk. My goal wasn't to give an introduction to CSS (there are far too many tutorials for that), but to share my passion, and to demonstrate how fun CSS can be.</p>
+</div>
+<div class="section" id="creating-my-conference-talk">
+<h2>Creating my conference talk</h2>
+<p>Last year, I gave a talk at <a class="reference external" href="https://www.womenofsiliconvalley.com/blog/how-i-became-a-software-engineer">Women of Silicon Valley</a> about my path from architecture ➡️ biz dev ➡️ software. While I at first had lofty goals for that presentation involving custom graphics, I eventually settled on a basic Keynote template. So, out of habit, I started creating this presentation in Keynote as well.</p>
+<p>After about five slides, I started feeling like something was wrong.</p>
+<blockquote>
+<p><strong>Honest Me:</strong> What are you doing?</p>
+<p><strong>Defensive Me:</strong> What does it look like I'm doing? I'm making my CSS presentation.</p>
+<p><strong>HM:</strong> Uhh...nah, that's just a Keynote template.</p>
+<p><strong>DM:</strong> HEY! I spent hours working on these slides!</p>
+<p><strong>HM:</strong> I'm just saying. You can do better. Like, wayyyy better.</p>
+<p><strong>DM:</strong> No I can't.</p>
+<p><strong>HM:</strong> I'll tell you what you can't do. You can't just <em>tell</em> people that CSS is important and expect them to believe you. You need to prove it! With solid, incontrovertible evidence!</p>
+<p><strong>DM:</strong> O...kay.</p>
+<p><strong>HM:</strong> Imagine this. You're giving the talk. You're showing an example of a cool CSS thingamajig you built. But instead of switching back and forth between this Keynote template and the webpage with your example, you're just showing one seamless presentation. The example is <em>part</em> of the presentation. Wouldn't that be awesome?</p>
+<p><strong>DM:</strong> But I can't embed CSS examples into Keynote.</p>
+<p><strong>HM:</strong> Nope. Hahaha.</p>
+</blockquote>
+<p>And that's why I scrapped my Keynote presentation and rebuilt it as a webpage.</p>
+<a href="https://github.com/sahiga/css-talk"><img src="images/css-talk-preview.png" alt="Preview of my presentation"></a><p>You can find the presentation <a class="reference external" href="https://sahiga.github.io/css-talk">here</a>. Check out <a class="reference external" href="https://github.com/sahiga/css-talk">the GitHub repo</a> for navigation instructions and direct links to some of the most interesting slides (imo, I'm biased of course).</p>
+<p>I practiced my talk with my family and one of my best friends, who's also a frontend engineer. They gave excellent feedback, which helped me to create a more cohesive and relatable presentation.</p>
+</div>
+<div class="section" id="connecting-with-a-virtual-audience">
+<h2>Connecting with a virtual audience</h2>
+<p>As I mentioned earlier, I spoke at Women of Silicon Valley in 2019. I was fully prepared, but when I walked to the front of that room that had seemed so small from the back (there were ~100 people), I felt sheer terror.</p>
+<p>I've read that the fear of public speaking traces back to our instinctual fear of predators. Humans, like all predators, have their eyes in the front of their heads, so when speak publicly, we're standing before a crowd of predators. (Can't find a source for this exact idea, though. I <em>may</em> just be misinterpreting this <a class="reference external" href="https://www.psychologytoday.com/intl/blog/the-real-story-risk/201211/the-thing-we-fear-more-death">Psychology Today</a> article, which says that the ostracism we feel while speaking publicly makes us fear for our own survival.)</p>
+<p>My biggest issue is that the adrenaline runs into my hands, no matter how much I prepare. Even if my voice sounds confident, my hands shake, and I end up doing silly things, like typing “boo.com” instead of “box.com” (this may or may not have happened while I was giving a live demo in front of my entire company).</p>
+<p>At Women of Silicon Valley, I held a clicker in one hand and a microphone in the other. Both hands were shaking. I struggled with clicking the right arrow button to navigate to the next slide. My voice was a little too quiet, even with the microphone. The audience was supportive, and I didn't make any significant errors, but I left feeling like I could have expressed myself better.</p>
+<p>WomenTech Global was a very different experience. The conference was completely virtual, hosted on Hopin.to. I commuted from my office into my dining nook, which has consistent lighting and a plain background, opened my presentation in a browser, and waited for my slot to begin.</p>
+<p>I was nervous, of course, but significantly less nervous than I'd been at WoSV, even though my presentation consisted of multiple interactive slides.</p>
+<blockquote>
+<p><strong>Nervous Me:</strong> This is scary! I wanna go home.</p>
+<p><strong>Relaxed Me:</strong> You <em>are</em> home.</p>
+<p><strong>NM:</strong> Oh yeah.</p>
+<p><strong>RM:</strong> No one's going to attend anyway.</p>
+<p><strong>NM:</strong> But...THEY MIGHT! Some people found out about it on LinkedIn!</p>
+<p><strong>RM:</strong> So? It's the internet. People like posts without thinking twice. They've already liked a million other things by now.</p>
+<p><strong>NM:</strong> But...I'm on the agenda!</p>
+<p><strong>RM:</strong> You and a hundred other talks. Everyone's going to go to the talks about ML/data science/Python/React/social justice. CSS is just not flashy. Recruiters never reach out looking for <em>CSS</em> developers. They're always looking for <em>React</em> developers, aren't they?</p>
+<p><strong>NM:</strong> But...!</p>
+<p><strong>RM:</strong> Look. If anyone does show up, that means they're interested in what you have to say. They're not going to hurl tomatoes at you through the screen for being a less than perfect speaker. Besides, you know this presentation inside and out.</p>
+</blockquote>
+<p>I took a deep breath, turned on my mic, and started speaking. Contrary to my expectations, about 30-40 people attended. When I reached the slide where I had to edit a CSS rule, I resorted to hunt-and-peck typing (which, thanks to the virtual format, no one could see).</p>
+<p>Ultimately, the talk went really well -- better my practice sessions. I finished at the half hour mark, but the audience was lovely and filled the remaining 15 minutes with questions. Some of them even reached out to me afterward with more questions! I feel honored to have had this opportunity, and such a wonderful audience to boot 🙂</p>
+</div>
+<div class="section" id="other-thoughts-on-public-speaking">
+<h2>Other thoughts on public speaking</h2>
+<p>Would I speak at another conference, virtual or otherwise? Yes to both!</p>
+<p>I'm a shy person. Not as shy as I was as a kid, or even a few years ago, but yeah, I'm shy. I don't like being in the spotlight. When I speak off the cuff, without sorting out my thoughts first, I space out and get tongue-tied.</p>
+<p>It's precisely because of all these weaknesses that I try to do as much public speaking as I can. Public speaking has the potential to be deeply humiliating, but it can also be the exact opposite: <em>exhilarating</em>. There's nothing else quite like it.</p>
+<p>Now, all I need to do is figure out my next conference topic.</p>
+<blockquote>
+<p><strong>Optimistic Me:</strong> 📊📈✨DATA VISUALIZATION ✨📈📊</p>
+<p><strong>Realistic Me:</strong> Why don't you try making some data visualizations first?</p>
+</blockquote>
+<hr class="docutils">
+<p><strong>Blog notes:</strong> I haven't updated this blog since 2016. I would like to update more often than once every four years (ha), but I can't promise anything. I'm a very slow writer and my posts always end up being super long. This one is almost 2000 words!</p>
+</div>
+</div>
+      </div>
+      <div class="entry-meta">
+        <span class="entry-date">Posted: <time class="published" datetime="2020-08-14T20:43:08+00:00">2020-08-14 20:43</time></span>
+            
+
+      </div>
+      <hr class="double-spacing">
+</div>
     <div class="post hfeed">
       <h2 class="entry-title"><a href="posts/a-tale-of-two-silicon-valley-experiences/">A tale of two Silicon Valley experiences</a></h2>
       <div class="entry-content">
@@ -331,59 +442,10 @@
       </div>
       <hr class="double-spacing">
 </div>
-    <div class="post hfeed">
-      <h2 class="entry-title"><a href="posts/review-introduction-to-functional-programming/">Review: Introduction to Functional Programming</a></h2>
-      <div class="entry-content">
-        <div>
-<p>Recently I completed Delft University's fall 2014 offering of <a class="reference external" href="https://www.edx.org/course/introduction-functional-programming-delftx-fp101x">Introduction to Functional Programming (FP101x)</a> on edX. I've been interested in functional programming for a while (caught the bug when I learned about Python list comprehensions), so I was really excited for this class. It turned out to be one of the better MOOCs I've taken, and definitely the most challenging.</p>
-<p>My takeaways from the class:</p>
-<div class="section" id="functional-programming-is-cool">
-<h2>Functional programming is cool</h2>
-<p>Erik Meijer, the professor, is funny and brilliant, and I came away from many of his lectures thinking, wow, that was fascinating. I've read before that learning how to program in a functional style is like learning how to code all over again, which I found to be true. This class opened my mind to a totally different way of reasoning about the structure and composition of programs.</p>
-</div>
-<div class="section" id="beginners-beware">
-<h2>Beginners, beware</h2>
-<p>The prerequisite for FP101x is at least one year of experience programming in an imperative language. I've been working with JavaScript since early 2013, and I learned basic Python and C before that, so you'd think I would be fine. NOPE. Both the homework (multiple choice) and labs (programming assignments) started off simple but got mind-numbingly difficult toward the end. The last two labs in particular really stumped me -- we had to implement Poor Man's Concurrency and rose trees, two subjects that weren't even hinted at in the lectures. And don't even get me started on monads.</p>
-<p>I got the sense that Prof. Meijer doesn't typically teach beginners. Based on the assignments and his forum posts, he seemed to have really high expectations of what a MOOC student would be able to accomplish with little guidance and limited time. For me, a total novice, the second half of the class was a struggle. Fortunately, there were plenty of kind, generous folks who took the time to help out their classmates in the forums.</p>
-<p>To anyone who's considering taking FP101x: learn a bit about <a class="reference external" href="http://en.wikipedia.org/wiki/Category_theory">category theory</a> first. Also, <a class="reference external" href="http://learnyouahaskell.com/">basic Haskell</a> would be good. The class is language-agnostic, but Prof. Meijer used Haskell in all the lectures and homework assignments. From my travels around the discussion forums I'd wager that most of us ended up solving the labs in Haskell, too, although the instructions were provided in multiple languages (Scala, F#, Groovy, Frege, Ruby). It would have been much easier for me to digest the concepts in this class if I hadn't had to learn an entirely new language as well.</p>
-</div>
-<div class="section" id="but-speaking-of-haskell">
-<h2>But, speaking of Haskell...</h2>
-<p>Seriously, what a gorgeous language.</p>
-<p>I don't understand it. That is, I understand enough of it to know I don't understand it at all. Regardless, I can still appreciate it on a superficial level.</p>
-<p>Say you have a list, and you want to apply one function to the members of the list in odd positions, and another function to the members of the list in even positions. Here's a quick JavaScript implementation:</p>
-<pre class="literal-block">function oddEvenMap(list, oddFunc, evenFunc) {
-  for (var i = 0; i &lt; list.length; i++) {
-    if (i % 2 === 0) {
-      evenFunc(list[i]);
-    } else {
-      oddFunc(list[i]);
-    }
-  }
-}</pre>
-<p>And here it is in Haskell:</p>
-<pre class="literal-block">oddEvenMap :: (a -&gt; b) -&gt; (a -&gt; b) -&gt; [a] -&gt; [b]
-oddEvenMap f g [] = []
-oddEvenMap f g (x : xs) = f x : oddEvenMap g f xs</pre>
-<p>No variable assignments. No for loops. Haskell is stunningly beautiful and concise. (I realize the comparison to JavaScript isn't fair, but that's the language I know best.)</p>
-</div>
-<div class="section" id="lastly-edx-is-a-great-mooc-platform">
-<h2>Lastly, edX is a great MOOC platform</h2>
-<p>In 2014, Coursera was my MOOC platform of choice, as I'd finished three classes through it at the end of 2013 (<a class="reference external" href="https://www.coursera.org/course/compdata">Computing for Data Analysis</a>, <a class="reference external" href="https://www.coursera.org/course/dataanalysis">Data Analysis</a>, and <a class="reference external" href="https://www.coursera.org/course/ml">Machine Learning</a>).</p>
-<p>Now edX has taken its place, primarily for usability reasons. Coursera's interface is passable, with many Bootstrappy elements; the videos seem to go on forever. edX's interface is thoughtful and intuitive. Two of my favorite aspects: the video player, which has speed controls and highlighted subtitles that scroll in unison with the instructor's speech, and the homework submission system, which checks each answer individually.</p>
-<p>I will definitely be returning to edX for more classes later this year.</p>
-</div>
-</div>
-      </div>
-      <div class="entry-meta">
-        <span class="entry-date">Posted: <time class="published" datetime="2015-01-03T05:47:51+00:00">2015-01-03 05:47</time></span>
-      </div>
-      <hr class="double-spacing">
-</div>
   
         <nav class="postindexpager"><ul class="pager">
 <li class="next">
-                <a href="index-1.html" rel="next">Older posts</a>
+                <a href="index-2.html" rel="next">Older posts</a>
             </li>
         </ul></nav><!--End of body content-->
 </div>
@@ -404,6 +466,6 @@ oddEvenMap f g (x : xs) = f x : oddEvenMap g f xs</pre>
     
     
     
-            <script src="assets/js/all-nocdn.js"></script><script src="assets/js/moment-with-locales.min.js"></script>
+            <script src="assets/js/all-nocdn.js"></script><script src="https://polyfill.io/v3/polyfill.js?features=Intl.RelativeTimeFormat.%7Elocale.en"></script><script src="assets/js/luxon.min.js"></script>
 </body>
 </html>

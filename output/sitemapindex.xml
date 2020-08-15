@@ -10,6 +10,14 @@
   <lastmod>2019-10-13T20:00:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://www.stephaniehiga.com/categories/conferences.xml</loc>
+  <lastmod>2020-08-14T22:38:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://www.stephaniehiga.com/categories/css.xml</loc>
+  <lastmod>2020-08-14T22:38:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://www.stephaniehiga.com/categories/d3.xml</loc>
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </sitemap>
@@ -115,10 +123,10 @@
  </sitemap>
  <sitemap>
   <loc>https://www.stephaniehiga.com/rss.xml</loc>
-  <lastmod>2020-04-13T03:41:00Z</lastmod>
+  <lastmod>2020-08-14T22:38:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://www.stephaniehiga.com/sitemap.xml</loc>
-  <lastmod>2020-04-13T03:41:00Z</lastmod>
+  <lastmod>2020-08-14T22:38:00Z</lastmod>
  </sitemap>
 </sitemapindex>

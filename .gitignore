@@ -6,3 +6,5 @@ cache/*
 cache/.mako.tmp/*
 
 .DS_Store
+.vscode/*
+nikola/*

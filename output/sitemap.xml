@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://www.stephaniehiga.com/</loc>
-  <lastmod>2020-04-12T21:59:00Z</lastmod>
+  <lastmod>2020-08-14T21:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/2012/</loc>
@@ -26,8 +26,12 @@
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
+  <loc>https://www.stephaniehiga.com/2020/</loc>
+  <lastmod>2020-08-14T21:39:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://www.stephaniehiga.com/archive.html</loc>
-  <lastmod>2020-04-13T01:15:00Z</lastmod>
+  <lastmod>2020-08-14T21:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/books.html</loc>
@@ -35,11 +39,19 @@
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/categories/</loc>
-  <lastmod>2020-04-12T21:12:00Z</lastmod>
+  <lastmod>2020-08-14T21:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/categories/blog.html</loc>
   <lastmod>2019-10-13T20:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.stephaniehiga.com/categories/conferences/</loc>
+  <lastmod>2020-08-14T21:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.stephaniehiga.com/categories/css/</loc>
+  <lastmod>2020-08-14T21:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/categories/d3/</loc>
@@ -187,7 +199,11 @@
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/index-1.html</loc>
-  <lastmod>2020-04-13T03:41:00Z</lastmod>
+  <lastmod>2020-08-14T21:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.stephaniehiga.com/index-2.html</loc>
+  <lastmod>2020-08-14T21:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/listings/</loc>
@@ -195,7 +211,7 @@
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/listings/hello.py.html</loc>
-  <lastmod>2020-04-13T01:15:00Z</lastmod>
+  <lastmod>2020-08-14T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/output/</loc>
@@ -350,8 +366,16 @@
   <lastmod>2020-04-12T21:12:00Z</lastmod>
  </url>
  <url>
+  <loc>https://www.stephaniehiga.com/posts/my-conference-talk-on-css/</loc>
+  <lastmod>2020-08-14T22:38:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://www.stephaniehiga.com/posts/my-hardware-software-setup.html</loc>
   <lastmod>2019-10-13T20:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.stephaniehiga.com/posts/my-virtual-conference-talk-on-css/</loc>
+  <lastmod>2020-08-14T21:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.stephaniehiga.com/posts/off-to-hack-reactor.html</loc>
