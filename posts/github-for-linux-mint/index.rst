@@ -4,7 +4,6 @@
 .. date: 2013/05/05 21:05:00
 .. title: GitHub for Linux Mint
 .. slug: github-for-linux-mint
-.. nocomments: true
 
 Version control terrifies me.
 

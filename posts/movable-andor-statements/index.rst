@@ -4,7 +4,6 @@
 .. date: 2013/09/20 20:07:16
 .. title: Movable AND/OR Statements
 .. slug: movable-andor-statements
-.. nocomments: true
 
 Recently at work I wrote a messy bit of JavaScript (jQuery really) to create movable AND/OR statements. I learned how to code less than a year ago and haven't done any intense programming (yet, just wait), so this is probably the most difficult, headache-inducing, neck-wringing problem I've worked on to date. The last time I encountered this much trouble was when I learned about recursion and `tries <https://en.wikipedia.org/wiki/Trie>`_. I figure I'll outline my thought process here in case it's useful to anyone else.
 

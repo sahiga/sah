@@ -36,6 +36,8 @@ body {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  display: block;
+  overflow: auto;
 }
 
 ol, ul {
@@ -67,7 +69,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  line-height: 2em;
+  margin: 1.2em 0 0.5em;
 }
 
 h3 {
@@ -191,7 +193,7 @@ pre.literal-block {
 
 .tag {
   color: #fff;
-  background: #f84444;
+  background: #fb8e8e;
   padding: 0.5em 0.8em;
   font-size: 0.8em;
   text-decoration: none;
@@ -283,6 +285,19 @@ tr:last-child td:last-child {
   border-radius: 0 0 4px 0;
 }
 
+.entry-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listdate {
+  display: inline-block;
+  width: 140px;
+}
+
+.listtitle {
+  margin: 0 1em;
+}
 
 /***************
   Layout
@@ -392,10 +407,6 @@ tr:last-child td:last-child {
 }
 
 @media (max-width: 980px) {
-  body {
-    font-size: 1em;
-  }
-
   .container {
     width: 90%;
   }
@@ -418,10 +429,9 @@ tr:last-child td:last-child {
   .nav-list-item {
     padding: 0 1em;
   }
-}
 
-@media (max-width: 600px) {
-  body {
-    font-size: 0.8em;
+  .navigation {
+    margin: 0 auto;
+    width: 80%;
   }
 }

@@ -63,7 +63,7 @@
             <!--Body content-->
             
   <div id="post-the-design-of-everyday-blogs" class="post hfeed">
-    <h2 class="entry-title"><a href=".">The Design of Everyday Blogs</a></h2>
+    <h1 class="entry-title"><a href=".">The Design of Everyday Blogs</a></h1>
     <div class="entry-content">
         <div>
 <p>At the risk of losing all my design cred, I'll admit I put practically no effort or even thought into the way my blog looked until about a week ago. To put that into perspective: I wrote my first post here in May 2013. For most of the time since that point, it's been some variation of this default Bootstrap theme provided by Nikola, the static site generator I use:</p>
@@ -168,7 +168,30 @@
                 <a href="../degrees-of-pynchon/" rel="next" title="Degrees of Pynchon">Next post</a>
             </li>
         </ul>
-</div>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="sahiga",
+            disqus_url="https://www.stephaniehiga.com/posts/the-design-of-everyday-blogs/",
+        disqus_title="The Design of Everyday Blogs",
+        disqus_identifier="cache/posts/the-design-of-everyday-blogs.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+    
+
+
+  </div>
 
             <!--End of body content-->
         </div>
@@ -188,6 +211,6 @@
     
     
     
-            <script src="../../assets/js/all-nocdn.js"></script><script src="https://polyfill.io/v3/polyfill.js?features=Intl.RelativeTimeFormat.%7Elocale.en"></script><script src="../../assets/js/luxon.min.js"></script>
+            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script>
 </body>
 </html>

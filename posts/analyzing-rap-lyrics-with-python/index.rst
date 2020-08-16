@@ -4,7 +4,6 @@
 .. date: 2013/05/18 18:32:32
 .. title: Analyzing Rap Lyrics with Python
 .. slug: analyzing-rap-lyrics-with-python
-.. nocomments: true
 
 On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: **What's the most beloved car brand in hip-hop?**
 
