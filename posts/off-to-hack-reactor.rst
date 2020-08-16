@@ -5,7 +5,6 @@
 .. link: 
 .. description: 
 .. type: text
-.. nocomments: true
 
 I'm going to `Hack Reactor <http://www.hackreactor.com>`_ next week!
 

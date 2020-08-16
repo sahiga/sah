@@ -4,7 +4,6 @@
 .. date: 2013/05/04 14:09:26
 .. title: Goodbye, WordPress! Hello, Nikola!
 .. slug: goodbye-wordpress-hello-nikola
-.. nocomments: True
 
 It's official: I've finally migrated my personal website from `WordPress <http://www.wordpress.org>`_ to `Nikola <http://nikola.ralsina.com.ar>`_, a static site generator. In my 53432099809th attempt to return to writing, I'll use this bit of nerd news to jumpstart what I hope will become a regular blogging habit.
 

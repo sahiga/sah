@@ -4,7 +4,6 @@
 .. date: 2013/08/11 19:15:09
 .. title: Read-Only Text: How to Write Every Day
 .. slug: read-only-text-how-to-write-every-day
-.. nocomments: true
 
 Three months ago I decided to start writing consistently.
 

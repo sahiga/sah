@@ -5,7 +5,6 @@
 .. link: 
 .. description: 
 .. type: text
-.. nocomments: true
 
 Recently I completed Delft University's fall 2014 offering of `Introduction to Functional Programming (FP101x) <https://www.edx.org/course/introduction-functional-programming-delftx-fp101x>`_ on edX. I've been interested in functional programming for a while (caught the bug when I learned about Python list comprehensions), so I was really excited for this class. It turned out to be one of the better MOOCs I've taken, and definitely the most challenging.
 
