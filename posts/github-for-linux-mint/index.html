@@ -65,24 +65,19 @@
   <div id="post-github-for-linux-mint" class="post hfeed">
     <h1 class="entry-title"><a href=".">GitHub for Linux Mint</a></h1>
     <div class="entry-content">
-        <div>
-<p>Version control terrifies me.</p>
+        <p>Version control terrifies me.</p>
 <p>But you know what else terrifies me? Losing files. I've lost enough of them and endured enough filename headaches (story-1.doc, story-2.doc, story-final, story-new.doc, story-newEST.doc, etc.) in my lifetime to realize that <strong>version control is extremely important</strong>, and I need to develop better version control habits.</p>
 <p>So, I added the files for this site to <a class="reference external" href="https://github.com/sahiga/sah">my GitHub account</a>. The following guide details the steps I took, minus the legion of errors I made. I've named it "GitHub for <a class="reference external" href="http://www.linuxmint.com">Linux Mint</a>," in honor of my operating system and the fact that GitHub offers <a class="reference external" href="http://mac.github.com">GitHub for Mac</a> and <a class="reference external" href="http://windows.github.com">GitHub for Windows</a>, but no GitHub for GNU/Linux (even though, hey, some of us GNU/Linux users could use a little point-and-click help over here).</p>
 <blockquote>
 <p>Note: Afterward, I realized I could have had a <a class="reference external" href="https://help.github.com/articles/fetching-a-remote">much easier time</a> cloning the repository. This command is identical to the "Clone in Windows" and "Clone in Mac" buttons in the corresponding GitHub GUI applications:</p>
 <pre class="literal-block">git clone &lt;URL&gt;</pre>
 </blockquote>
-<div class="section" id="connect-your-computer-to-github">
-<h2>Connect your computer to GitHub</h2>
+<section id="connect-your-computer-to-github"><h2>Connect your computer to GitHub</h2>
 <p>First, you need a secure method of connecting your computer to GitHub. You can do this through SSH (generate a new public/private SSH key pair and add it to your GitHub account) or through HTTPS (configure the Git credential helper).</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://help.github.com/articles/set-up-git">Instructions for using HTTPS with GitHub</a></p></li>
 <li><p><a class="reference external" href="https://help.github.com/articles/generating-ssh-keys">Instructions for using SSH with GitHub</a></p></li>
-</ul>
-</div>
-<div class="section" id="prepare-the-branches">
-<h2>Prepare the branches</h2>
+</ul></section><section id="prepare-the-branches"><h2>Prepare the branches</h2>
 <p><a class="reference external" href="https://github.com/new">Create a new repository on GitHub</a>. This is the <strong>remote branch</strong>.</p>
 <p>Fire up your command line. Move to the directory containing your version control files (if you're not there already), e.g., <code class="docutils literal">cd sah</code>.</p>
 <p>Initialize a Git repository in this directory. This is the <strong>local branch</strong>.</p>
@@ -111,17 +106,13 @@
 #       stories/
 nothing added to commit but untracked files present (use "git add" to track)</pre>
 <p>Right now there's "nothing added to commit," meaning the local repository is empty. This is because you've just initialized it.</p>
-</div>
-<div class="section" id="start-tracking-your-files">
-<h2>Start tracking your files</h2>
+</section><section id="start-tracking-your-files"><h2>Start tracking your files</h2>
 <p>Next, add version control tracking to your files. To add individual files, write <code class="docutils literal">git add</code> and then the filename. To add everything in the directory to your commit:</p>
 <pre class="literal-block">git add .</pre>
 <p>Now it's time to commit the change. The basic commit command is <code class="docutils literal">git commit</code>, which will launch your preferred text editor. The <code class="docutils literal"><span class="pre">-m</span></code> flag allows you to skip the text editor and type your commit message inline; the <code class="docutils literal"><span class="pre">-a</span></code> flag tells Git to automatically stage your tracked files, skipping the staging area.</p>
 <pre class="literal-block">git commit -a -m "Added Nikola site files"</pre>
 <p>See <a class="reference external" href="http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository">Git Basics - Recording Changes to the Repository</a> for more information on committing changes.</p>
-</div>
-<div class="section" id="merge-and-sync-your-branches">
-<h2>Merge and sync your branches</h2>
+</section><section id="merge-and-sync-your-branches"><h2>Merge and sync your branches</h2>
 <p>Merge the remote branch (the GitHub copy of the repository) with your local branch (the local copy of the repository). This consolidates the two branches and ensures that they are identical.</p>
 <pre class="literal-block">git pull https://github.com/sahiga/sah.git</pre>
 <p>You should see a message like this:</p>
@@ -150,10 +141,8 @@ Merge https://github.com/sahiga/sah</pre>
 <li><p><a class="reference external" href="http://git-scm.com/book">Pro Git</a></p></li>
 <li><p><a class="reference external" href="https://help.github.com/">GitHub Help</a></p></li>
 <li><p><a class="reference external" href="http://www.floraworley.com/2013/03/11/get-started-with-git-and-github/">Diary of a Future Dev</a></p></li>
-</ul>
+</ul></section>
 </div>
-</div>
-    </div>
     <div class="archive-meta">
         Posted: <time class="published" datetime="2013-05-05T21:05:00+00:00">2013-05-05 21:05</time><a href="index.rst" id="sourcelink">Source</a>
         
@@ -208,7 +197,7 @@ Merge https://github.com/sahiga/sah</pre>
     </div>
 <!-- #content -->
 <footer class="footer"><small>
-    Contents © 2020         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+    Contents © 2022         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
     
   </small>
 </footer><!-- #footer -->
@@ -220,6 +209,6 @@ Merge https://github.com/sahiga/sah</pre>
     
     
     
-            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script>
+            <script src="../../assets/js/all-nocdn.js"></script><script src="https://polyfill.io/v3/polyfill.js?features=Intl.RelativeTimeFormat.%7Elocale.en"></script><script src="../../assets/js/luxon.min.js"></script>
 </body>
 </html>

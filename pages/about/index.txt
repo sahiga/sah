@@ -5,11 +5,13 @@
 .. title: About
 .. slug: about
 
-I'm a software developer based in San Mateo, California. You can find me in a few other places on the web (my LinkedIn and GitHub profiles are generally up to date; everything else is a time capsule):
+Hello there!
 
-- `Illustrations <https://sahiga.carbonmade.com>`_
+I'm Stephanie, a software developer based in San Mateo, California. You can find me in a few other places on the web:
+
+- `Oil paintings & other doodles <https://www.stephaniehiga.art>`_
 - `LinkedIn <https://www.linkedin.com/in/sahiga>`_
-- `Daytum <https://www.daytum.com/sahiga>`_
 - `GitHub <https://www.github.com/sahiga>`_
-- `About.me <https://about.me/sahiga>`_
-- `Goodreads <https://www.goodreads.com/sahiga>`_
+- `About.me <https://about.me/sahiga>`_ (last updated 2015)
+- `Daytum <https://www.daytum.com/sahiga>`_ (last updated 2013)
+- `Goodreads <https://www.goodreads.com/sahiga>`_ (last updated 2013)

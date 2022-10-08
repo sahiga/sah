@@ -67,10 +67,8 @@
     <div class="post hfeed">
       <h1 class="entry-title"><a href="posts/movable-andor-statements/">Movable AND/OR Statements</a></h1>
       <div class="entry-content">
-        <div>
-<p>Recently at work I wrote a messy bit of JavaScript (jQuery really) to create movable AND/OR statements. I learned how to code less than a year ago and haven't done any intense programming (yet, just wait), so this is probably the most difficult, headache-inducing, neck-wringing problem I've worked on to date. The last time I encountered this much trouble was when I learned about recursion and <a class="reference external" href="https://en.wikipedia.org/wiki/Trie">tries</a>. I figure I'll outline my thought process here in case it's useful to anyone else.</p>
-<div class="section" id="the-assignment">
-<h2>The assignment</h2>
+        <p>Recently at work I wrote a messy bit of JavaScript (jQuery really) to create movable AND/OR statements. I learned how to code less than a year ago and haven't done any intense programming (yet, just wait), so this is probably the most difficult, headache-inducing, neck-wringing problem I've worked on to date. The last time I encountered this much trouble was when I learned about recursion and <a class="reference external" href="https://en.wikipedia.org/wiki/Trie">tries</a>. I figure I'll outline my thought process here in case it's useful to anyone else.</p>
+<section id="the-assignment"><h2>The assignment</h2>
 <p>The goal of these AND/OR statements was to allow users to perform searches with custom parameters. On the right side of the page would be two lists: one containing the available parameters (Location, Category, Subcategory) and the other containing the two operators (AND, OR). On the left two-thirds of the page would be where the user would drag the parameters and operators to build a full search statement.</p>
 <p>Full, well-formed search statements would have this format:
 <strong>Location OR Category AND Subcategory</strong></p>
@@ -89,9 +87,7 @@
 <li><p>When a user types into the "Location" input box, this should trigger an autocomplete place search. (I'd been playing with the <a class="reference external" href="https://developers.google.com/places/">Google Places API</a> the week prior to this for my <a class="reference external" href="http://www.wehoeatmo.com">WeHo Eat Mo</a> project, so this was fairly easy to implement.)</p></li>
 </ul>
 <p>That's about it. I created some of the rules as I went along based on the issues I faced while interacting with the interface. Bugs just kept on cropping up. (In fact, while writing this, I discovered a few more. Code is never finished.)</p>
-</div>
-<div class="section" id="if-else-and-nothing-else">
-<h2>If, else, and nothing else</h2>
+</section><section id="if-else-and-nothing-else"><h2>If, else, and nothing else</h2>
 <p>The code I ended up writing is almost entirely made up of if–else blocks. Here's the nested conditional monster that controls the "sortability" of items (variables are defined at the beginning of the sort):</p>
 <pre class="literal-block">function sortRules(event, ui) {
         targetParent = ui.item.parent();
@@ -163,13 +159,12 @@
         }
 }</pre>
 <p>Yes, this function consists of one if–else block with...I don't even know how many nested if–else blocks inside of each of those conditions. It's terrifying. But it does the trick. Eventually I'd like to refactor this using a hash table, if that's possible. To see my progress on this project, <a class="reference external" href="https://github.com/sahiga/movable-logic">check out my source code on GitHub</a>.</p>
+</section>
 </div>
-</div>
-      </div>
       <div class="entry-meta">
         <span class="entry-date">Posted: <time class="published" datetime="2013-09-20T20:07:16+00:00">2013-09-20 20:07</time></span>
             
-        
+    
     <a href="posts/movable-andor-statements/#disqus_thread" data-disqus-identifier="cache/posts/movable-andor-statements.html">Comments</a>
 
 
@@ -179,27 +174,21 @@
     <div class="post hfeed">
       <h1 class="entry-title"><a href="posts/read-only-text-how-to-write-every-day/">Read-Only Text: How to Write Every Day</a></h1>
       <div class="entry-content">
-        <div>
-<p>Three months ago I decided to start writing consistently.</p>
+        <p>Three months ago I decided to start writing consistently.</p>
 <p>Since then, I've worked on my novel every single day without fail. In the past, I would have used any sort of negative feeling – laziness, exhaustion, simply "not wanting to write" – as my cue to step back and let writer's block take over, but now I fight through it. All I have to do is start.</p>
 <p>Before, I thought of writing every day as some monstrous, impossible feat. But I've found that it's just the opposite. <strong>Writing only when you're inspired is ridiculously hard compared to writing daily.</strong> Inspiration doesn't strike often, and if you rely on it to dictate your writing schedule, then you're not going to write very often. And when you don't practice, you stagnate.</p>
 <p>So if you want to write, don't let yourself stagnate. Here are the rules I came up with to jumpstart my writing habit.</p>
-<div class="section" id="rule-1-write-a-sentence-every-day">
-<h2>RULE #1: Write a sentence every day</h2>
+<section id="rule-1-write-a-sentence-every-day"><h2>RULE #1: Write a sentence every day</h2>
 <p>When creating a habit, start small. One sentence is easy to do, and it's a fluid unit: it can be anywhere from one to <a class="reference external" href="https://en.wikipedia.org/wiki/Longest_English_sentence">thousands of words</a>. It doesn't even have to be grammatically correct.</p>
 <p>In seven days, up your daily number of sentences by one. Repeat for each week that passes. When you've found your ideal number of daily sentences, stop adding to it, and use that number as your permanent minimum.</p>
 <p><strong>Reasoning:</strong> This rule helps you to build a writing habit, however small, into your daily schedule. The key is that you don't skip any days. Skipping even one day makes it easier to skip the next.</p>
-</div>
-<div class="section" id="rule-2-don-t-even-think-about-editing">
-<h2>RULE#2: Don't even think about editing</h2>
+</section><section id="rule-2-don-t-even-think-about-editing"><h2>RULE#2: Don't even think about editing</h2>
 <p>This is extremely important. Unless you're Thomas Pynchon, you will write terrible sentences. And it's okay. That doesn't mean you're a terrible writer – it's just a natural consequence of writing so frequently. Some days your output will be brilliant. Some days you'll look at what you wrote before and want to kill it with fire. But whatever you do, <strong>don't touch any of your previous days' work</strong>.</p>
 <p>You're free to edit what you've written today. However, when 24 hours is up, so is your editing access to those sentences. I like to think of work from previous days as being <strong>read-only</strong>.</p>
 <p>What if you've written a bunch of sentences in the past few days that don't fit with your new vision of the story? Forget about them! Go forth and write new sentences that do fit with your vision. You can align them when you're done with the entire story.</p>
 <p><strong>Reasoning:</strong> One of the fastest ways to kill your writing habit is to get caught in a line-edit loop. I had this problem for many years. I would write something, hate it, and rewrite it ad nauseum until it was "perfect." I couldn't finish my stories because I kept destroying my ideas right after creating them. For more on this topic, read Scott H. Young's excellent <a class="reference external" href="http://www.scotthyoung.com/blog/2008/01/07/how-to-fuel-a-creative-flow/">How to Fuel a Creative Flow</a>.</p>
 <p>This rule helps you to reach the finish line. When you've finished an entire draft – and <em>only</em> when you've finished an entire draft – you can edit to your heart's desire.</p>
-</div>
-<div class="section" id="rule-3-begin-where-you-left-off-the-previous-day">
-<h2>RULE #3: Begin where you left off the previous day</h2>
+</section><section id="rule-3-begin-where-you-left-off-the-previous-day"><h2>RULE #3: Begin where you left off the previous day</h2>
 <p>Treat your scenes as if they were read-only, too. You can't write a new sentence in the middle of a paragraph from a previous day. If you choose to do this anyway, then that sentence doesn't count.</p>
 <p><strong>Reasoning:</strong> Rule #2 prevents destructive editing; this rule prevents <em>constructive</em> editing. It ensures that each new sentence is subsequent, which increases the likelihood that the new sentence will push the story forward.</p>
 <hr class="docutils">
@@ -209,14 +198,12 @@
 <ul class="simple">
 <li><p><a class="reference external" href="http://abuckfifty.tumblr.com/">It's Not a Sprint, It's a Marathon</a></p></li>
 <li><p><a class="reference external" href="http://zenhabits.net/write-daily/">Zen Habits: Why You Should Write Daily</a></p></li>
-</ul>
+</ul></section>
 </div>
-</div>
-      </div>
       <div class="entry-meta">
         <span class="entry-date">Posted: <time class="published" datetime="2013-08-11T19:15:09+00:00">2013-08-11 19:15</time></span>
             
-        
+    
     <a href="posts/read-only-text-how-to-write-every-day/#disqus_thread" data-disqus-identifier="cache/posts/read-only-text-how-to-write-every-day.html">Comments</a>
 
 
@@ -226,16 +213,12 @@
     <div class="post hfeed">
       <h1 class="entry-title"><a href="posts/analyzing-rap-lyrics-with-python/">Analyzing Rap Lyrics with Python</a></h1>
       <div class="entry-content">
-        <div>
-<p>On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: <strong>What's the most beloved car brand in hip-hop?</strong></p>
+        <p>On Friday, my company held a personal project hack day. I used the opportunity to run a quick-and-dirty experiment based on a question I've had on my mind for months: <strong>What's the most beloved car brand in hip-hop?</strong></p>
 <p>In this post, I'll explain how I came up with a possible answer to that question. <a class="reference external" href="https://www.stephaniehiga.com/cars.html">To skip to the results, click here</a>.</p>
-<div class="section" id="why-hip-hop-why-cars">
-<h2>Why hip-hop / why cars</h2>
+<section id="why-hip-hop-why-cars"><h2>Why hip-hop / why cars</h2>
 <p>Hip-hop is my favorite genre of music. On the road, I tune the radio to <a class="reference external" href="http://www.935kday.com/">93.5 KDAY</a>; otherwise, I'm plugged into my Pandora account, which is heavy on Golden Age, Midwestern, East Coast, Bay Area, and (recently) indie rap. Rap is also lyrically dense, which makes it a great source for text mining.</p>
 <p>I got curious about cars because rappers talk about them--a lot. So I decided to find out once and for all which brand they love the most, with <strong>Chevy</strong> (the brand I kept hearing) as my hypothesis.</p>
-</div>
-<div class="section" id="the-lyrics-mining-process">
-<h2>The lyrics mining process</h2>
+</section><section id="the-lyrics-mining-process"><h2>The lyrics mining process</h2>
 <p>To find the answer, I needed a sizeable sample of car brand names, a searchable database of hip-hop lyrics, a script to search for the brands within the lyrics database, and a way of displaying the results. Fortunately, all the necessary tools were readily available:</p>
 <ul class="simple">
 <li><p>Python</p></li>
@@ -245,13 +228,10 @@
 <li><p><a class="reference external" href="https://developers.google.com/chart/">Google Charts</a></p></li>
 <li><p>Bootstrap</p></li>
 </ul>
-<div class="section" id="gathering-the-data">
-<h3>Gathering the data</h3>
+<section id="gathering-the-data"><h3>Gathering the data</h3>
 <p>Wikipedia blocks web scrapers, understandably. So I manually downloaded all of Wikipedia's lists of car manufacturers and brands by country. To reduce the amount of HTML I would have to parse, I selected the <a class="reference external" href="http://en.m.wikipedia.org/wiki/Main_Page">Mobile View</a> for each page.</p>
 <p>I downloaded ten files in total: a general list of car manufacturers plus individual lists for China, France, Germany, Italy, Japan, Spain, Sweden, the United Kingdom, and the United States.</p>
-</div>
-<div class="section" id="cleaning-the-data">
-<h3>Cleaning the data</h3>
+</section><section id="cleaning-the-data"><h3>Cleaning the data</h3>
 <p>Wikipedia's Mobile View pages contain search bars at the top and the usual "See also," "References," and "Read in another language" links. I started by erasing these (manually again), reducing the files to structural markup and the lists themselves.</p>
 <p>With the Python <a class="reference external" href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a> library, I extracted the brand name tags by selecting all list elements. Then I used <a class="reference external" href="http://www.nltk.org">NLTK</a> to remove the HTML tags and regular expressions to remove excess whitespace and text (such as notes about the brand, the brand's years of operation, etc.). This is what I came up with:</p>
 <pre class="literal-block">def clean_wikilist(filename):
@@ -305,9 +285,7 @@
         return tokens</pre>
 <p>One notable difference between this and the original script is the usage of Beautiful Soup. In <code class="docutils literal">clean_wikilist()</code>, the desired elements are selected first, with SoupStrainer, and then used to create a list of the matching HTML tags in unicode format. <code class="docutils literal">autos_ge()</code>, on the other hand, creates a Beautiful Soup object out of the entire page; the desired elements are selected via DOM traversal.</p>
 <p>The number of brand names from this limited dataset? Just 178.</p>
-</div>
-<div class="section" id="analyzing-the-data">
-<h3>Analyzing the data</h3>
+</section><section id="analyzing-the-data"><h3>Analyzing the data</h3>
 <p>The Rap Lyrics Database contains lyrics for all of Billboard Music's rap songs from 1989 through 2009. It's the only searchable database of hip-hop lyrics (exclusively).</p>
 <p>The result pages share the same URL, with the search term appended to the end: <em>http://research.blackyouthproject.com/raplyrics/results/?all/1989-2009/</em>. This made it much easier to automate the search and saving process.</p>
 <pre class="literal-block">def rap_search(auto_list):
@@ -352,17 +330,12 @@
 </blockquote>
 <p>It turned out that the Rap Lyrics Database doesn't recognize spaces. So, a search for "Art and Tech" became a search for "Art"--which of course is a popular word that is often used in a non-automobile context. I removed ambiguous names from the list and combined the results from brands and their nicknames. LibreOffice Calc was helpful in fixing the columns and sorting the results.</p>
 <p>The final number of usable brands came out to 153.</p>
-</div>
-</div>
-<div class="section" id="who-won">
-<h2>Who won?</h2>
+</section></section><section id="who-won"><h2>Who won?</h2>
 <p><strong>Mercedes-Benz</strong>, with <strong>93 song mentions</strong>--and remember, that's only counting a small segment of rap songs between 1989-2009.</p>
 <p>Jeep came in second, at 34 songs. Then came Cadillac with 25 songs, and finally Chevy at 24.</p>
 <p>So, Chevy isn't as popular as I expected. But the biggest shocker is Jeep. I can't recall a single song that mentions Jeep.</p>
 <p>To display the results, I made a <a class="reference external" href="http://stephaniehiga.com/cars.html#results">graph</a> with Google Charts. (I'd add them here, but I've yet to learn how to embed JavaScript into reStructuredText.)</p>
-</div>
-<div class="section" id="pain-points">
-<h2>Pain points</h2>
+</section><section id="pain-points"><h2>Pain points</h2>
 <p>I'm new to programming. While I enjoy it very much, I spend about 90% of my time immersed in pain. The text analysis took me four nights (Monday through Thursday) to complete. On the actual hack day, I made the graph and web page, with a lot of help from Bootstrap. Along the way, I encountered many problems:</p>
 <ul>
 <li><p>Selecting specific subsets of HTML tags with no classes or ids.</p></li>
@@ -376,49 +349,31 @@
 <li><p>Reformatting the final list of brands into a list of dictionaries to create a graph with <a class="reference external" href="http://philogb.github.io/jit/">JavaScript InfoVis Toolkit</a>.</p></li>
 <li><p>Not knowing how to build a non-stacked bar graph with the InfoVis Toolkit.</p></li>
 <li><p>Switching to Google Charts and reformatting the final list of brands into a list of lists to create a Google Charts graph.</p></li>
-</ul>
-</div>
-<div class="section" id="notes-for-the-future">
-<h2>Notes for the future</h2>
-<div class="section" id="more-complete-data">
-<h3>More complete data</h3>
+</ul></section><section id="notes-for-the-future"><h2>Notes for the future</h2>
+<section id="more-complete-data"><h3>More complete data</h3>
 <p>I slashed the set of brand names to less than 7% of its original size and conflated "car manufacturers" with "car brands." Wikipedia also has a lengthy <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_automobile_marques">list of automobile marques</a>, which I didn't even touch.</p>
 <p>I'd like to go deeper than brands, into the actual names of cars, and match them against an even bigger database of lyrics. <a class="reference external" href="http://www.rapgenius.com">RapGenius</a> and the <a class="reference external" href="http://www.last.fm/api">Last.fm API</a> are possible alternatives to the Rap Lyrics Database. RapGenius has an excellent database, but it contains a significant amount of lyrics from non-hip-hop artists as well.</p>
-</div>
-<div class="section" id="semantic-orientation">
-<h3>Semantic orientation</h3>
+</section><section id="semantic-orientation"><h3>Semantic orientation</h3>
 <p>I equated "beloved" to "number of songs mentions." This is obviously not always the case, as rappers name-drop plenty of things they dislike. It's true that rappers generally mention cars in a positive manner, but a more accurate experiment would take into account not just how many times the brand was used, but in what way the brand was used--i.e., the semantic orientation of the brand. A <a class="reference external" href="https://en.wikipedia.org/wiki/Sentiment_analysis">sentiment analysis</a> might be the way to go.</p>
-</div>
-<div class="section" id="multi-word-brands">
-<h3>Multi-word brands</h3>
+</section><section id="multi-word-brands"><h3>Multi-word brands</h3>
 <p>The Rap Lyrics Database turns up blank if you search for, say "Aston Martin" (with the quotes and the space), even though Aston Martin is mentioned in a few songs. So multi-word brands with spaces in them turned up short. (Mercedes-Benz doesn't have this issue because it has a hyphen, not a space.)</p>
 <p>If I were to use the Rap Lyrics Database again, I'd have to search for "Aston" and "Martin" separately and compare the songs on each results page. Otherwise, RapGenius seems to do spaces nicely.</p>
-</div>
-<div class="section" id="nicknames-and-duplicates">
-<h3>Nicknames and duplicates</h3>
+</section><section id="nicknames-and-duplicates"><h3>Nicknames and duplicates</h3>
 <p>I searched for "Mercedes-Benz" as well as just "Mercedes" and "Benz." However, again, because I didn't compare song names, I ended up nixing the counts for the nicknames to minimize the possibility of duplicates. I also missed some nicknames--for instance, I completely neglected "Caddy" and "Lac" (sorry, Cadillac), "Lex," etc.</p>
-</div>
-<div class="section" id="misspellings-plurals-etc">
-<h3>Misspellings, plurals, etc.</h3>
+</section><section id="misspellings-plurals-etc"><h3>Misspellings, plurals, etc.</h3>
 <p>I did search for "Beamer" and "Beemer," but there's also "Bima" and probably countless other misspellings of "Bimmer" and other car brands. I ignored plurals, whether spelled correctly ("Bimmers") or not ("Bimaz").</p>
-</div>
-<div class="section" id="disambiguation">
-<h3>Disambiguation</h3>
+</section><section id="disambiguation"><h3>Disambiguation</h3>
 <p>Many car brands double as common words or unrelated proper names, e.g., Prince, Radical, Ram, MINI, Oakland. I discarded these instead of determining whether or not they were referring to the car brand.</p>
-</div>
-<div class="section" id="last-thoughts">
-<h3>Last thoughts</h3>
+</section><section id="last-thoughts"><h3>Last thoughts</h3>
 <p>A few months ago, when I first got the idea for this project, I thought it would be ridiculously hard. I envisioned building a large corpus of hip-hop lyrics and determining the classification, meaning, and orientation of each word to uncover the truth.</p>
 <p>After going about this somewhat backwards, I think my initial impression remains correct. I'm happy I finally took a stab at the project, and I'm excited to continue working on it. This is just the first of a long series of experiments (and blog posts)!</p>
 <p><a class="reference external" href="https://github.com/sahiga/rap-analysis">Source files on GitHub</a></p>
+</section></section>
 </div>
-</div>
-</div>
-      </div>
       <div class="entry-meta">
         <span class="entry-date">Posted: <time class="published" datetime="2013-05-18T18:32:32+00:00">2013-05-18 18:32</time></span>
             
-        
+    
     <a href="posts/analyzing-rap-lyrics-with-python/#disqus_thread" data-disqus-identifier="cache/posts/analyzing-rap-lyrics-with-python.html">Comments</a>
 
 
@@ -428,24 +383,19 @@
     <div class="post hfeed">
       <h1 class="entry-title"><a href="posts/github-for-linux-mint/">GitHub for Linux Mint</a></h1>
       <div class="entry-content">
-        <div>
-<p>Version control terrifies me.</p>
+        <p>Version control terrifies me.</p>
 <p>But you know what else terrifies me? Losing files. I've lost enough of them and endured enough filename headaches (story-1.doc, story-2.doc, story-final, story-new.doc, story-newEST.doc, etc.) in my lifetime to realize that <strong>version control is extremely important</strong>, and I need to develop better version control habits.</p>
 <p>So, I added the files for this site to <a class="reference external" href="https://github.com/sahiga/sah">my GitHub account</a>. The following guide details the steps I took, minus the legion of errors I made. I've named it "GitHub for <a class="reference external" href="http://www.linuxmint.com">Linux Mint</a>," in honor of my operating system and the fact that GitHub offers <a class="reference external" href="http://mac.github.com">GitHub for Mac</a> and <a class="reference external" href="http://windows.github.com">GitHub for Windows</a>, but no GitHub for GNU/Linux (even though, hey, some of us GNU/Linux users could use a little point-and-click help over here).</p>
 <blockquote>
 <p>Note: Afterward, I realized I could have had a <a class="reference external" href="https://help.github.com/articles/fetching-a-remote">much easier time</a> cloning the repository. This command is identical to the "Clone in Windows" and "Clone in Mac" buttons in the corresponding GitHub GUI applications:</p>
 <pre class="literal-block">git clone &lt;URL&gt;</pre>
 </blockquote>
-<div class="section" id="connect-your-computer-to-github">
-<h2>Connect your computer to GitHub</h2>
+<section id="connect-your-computer-to-github"><h2>Connect your computer to GitHub</h2>
 <p>First, you need a secure method of connecting your computer to GitHub. You can do this through SSH (generate a new public/private SSH key pair and add it to your GitHub account) or through HTTPS (configure the Git credential helper).</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://help.github.com/articles/set-up-git">Instructions for using HTTPS with GitHub</a></p></li>
 <li><p><a class="reference external" href="https://help.github.com/articles/generating-ssh-keys">Instructions for using SSH with GitHub</a></p></li>
-</ul>
-</div>
-<div class="section" id="prepare-the-branches">
-<h2>Prepare the branches</h2>
+</ul></section><section id="prepare-the-branches"><h2>Prepare the branches</h2>
 <p><a class="reference external" href="https://github.com/new">Create a new repository on GitHub</a>. This is the <strong>remote branch</strong>.</p>
 <p>Fire up your command line. Move to the directory containing your version control files (if you're not there already), e.g., <code class="docutils literal">cd sah</code>.</p>
 <p>Initialize a Git repository in this directory. This is the <strong>local branch</strong>.</p>
@@ -474,17 +424,13 @@
 #       stories/
 nothing added to commit but untracked files present (use "git add" to track)</pre>
 <p>Right now there's "nothing added to commit," meaning the local repository is empty. This is because you've just initialized it.</p>
-</div>
-<div class="section" id="start-tracking-your-files">
-<h2>Start tracking your files</h2>
+</section><section id="start-tracking-your-files"><h2>Start tracking your files</h2>
 <p>Next, add version control tracking to your files. To add individual files, write <code class="docutils literal">git add</code> and then the filename. To add everything in the directory to your commit:</p>
 <pre class="literal-block">git add .</pre>
 <p>Now it's time to commit the change. The basic commit command is <code class="docutils literal">git commit</code>, which will launch your preferred text editor. The <code class="docutils literal"><span class="pre">-m</span></code> flag allows you to skip the text editor and type your commit message inline; the <code class="docutils literal"><span class="pre">-a</span></code> flag tells Git to automatically stage your tracked files, skipping the staging area.</p>
 <pre class="literal-block">git commit -a -m "Added Nikola site files"</pre>
 <p>See <a class="reference external" href="http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository">Git Basics - Recording Changes to the Repository</a> for more information on committing changes.</p>
-</div>
-<div class="section" id="merge-and-sync-your-branches">
-<h2>Merge and sync your branches</h2>
+</section><section id="merge-and-sync-your-branches"><h2>Merge and sync your branches</h2>
 <p>Merge the remote branch (the GitHub copy of the repository) with your local branch (the local copy of the repository). This consolidates the two branches and ensures that they are identical.</p>
 <pre class="literal-block">git pull https://github.com/sahiga/sah.git</pre>
 <p>You should see a message like this:</p>
@@ -513,14 +459,12 @@ Merge https://github.com/sahiga/sah</pre>
 <li><p><a class="reference external" href="http://git-scm.com/book">Pro Git</a></p></li>
 <li><p><a class="reference external" href="https://help.github.com/">GitHub Help</a></p></li>
 <li><p><a class="reference external" href="http://www.floraworley.com/2013/03/11/get-started-with-git-and-github/">Diary of a Future Dev</a></p></li>
-</ul>
+</ul></section>
 </div>
-</div>
-      </div>
       <div class="entry-meta">
         <span class="entry-date">Posted: <time class="published" datetime="2013-05-05T21:05:00+00:00">2013-05-05 21:05</time></span>
             
-        
+    
     <a href="posts/github-for-linux-mint/#disqus_thread" data-disqus-identifier="cache/posts/github-for-linux-mint.html">Comments</a>
 
 
@@ -530,10 +474,8 @@ Merge https://github.com/sahiga/sah</pre>
     <div class="post hfeed">
       <h1 class="entry-title"><a href="posts/goodbye-wordpress-hello-nikola/">Goodbye, WordPress! Hello, Nikola!</a></h1>
       <div class="entry-content">
-        <div>
-<p>It's official: I've finally migrated my personal website from <a class="reference external" href="http://www.wordpress.org">WordPress</a> to <a class="reference external" href="http://nikola.ralsina.com.ar">Nikola</a>, a static site generator. In my 53432099809th attempt to return to writing, I'll use this bit of nerd news to jumpstart what I hope will become a regular blogging habit.</p>
-<div class="section" id="the-quest-for-static">
-<h2>The quest for static</h2>
+        <p>It's official: I've finally migrated my personal website from <a class="reference external" href="http://www.wordpress.org">WordPress</a> to <a class="reference external" href="http://nikola.ralsina.com.ar">Nikola</a>, a static site generator. In my 53432099809th attempt to return to writing, I'll use this bit of nerd news to jumpstart what I hope will become a regular blogging habit.</p>
+<section id="the-quest-for-static"><h2>The quest for static</h2>
 <p>WordPress gets a lot of hate in the development community. Let me say upfront that this is absolutely not the reason I decided to leave it (I have the softest of spots for WordPress). It's just that one day I woke up and realized I didn't need a database and a gazillion server queries to post text on my website.</p>
 <p>So I started looking into static site generators. A static site generator does exactly what's written on the box: it creates a static site. It combines the best of Web 1.0 (fast, portable, secure HTML pages) with the best of Web 2.0 (templates). I considered:</p>
 <ul class="simple">
@@ -542,9 +484,7 @@ Merge https://github.com/sahiga/sah</pre>
 <li><p><a class="reference external" href="http://docs.getpelican.com">Pelican</a>: Also Python-based, with complete, well-written documentation. I installed it and got lost while trying to generate files. Pelican looks like a great choice, but I think it's meant for people who are much more tech-savvy than I am.</p></li>
 </ul>
 <p>Shortly after I installed Pelican, someone posted a link to <a class="reference external" href="http://nikola.ralsina.com.ar">Nikola</a> on Hacker News. I'm not sure why it didn't come up in all my searches for Python-based static site generators, because so far it's proven to be a dream come true. The documentation is amazing. It's easy to use and in active development. And it was named after <a class="reference external" href="http://theoatmeal.com/comics/tesla">Nikola Tesla</a>. (<strong>Huge</strong> Nikola Tesla fan here.)</p>
-</div>
-<div class="section" id="goodbye-wordpress">
-<h2>Goodbye, WordPress</h2>
+</section><section id="goodbye-wordpress"><h2>Goodbye, WordPress</h2>
 <p>Nikola has an <code class="docutils literal">import_wordpress</code> function to ease the transition to WordPress. I grabbed an XML dump of my site (<strong>Tools &gt; Export &gt; All Content</strong> in the WP admin panel) and saved it in my Nikola site folder.</p>
 <p>I installed the Python <a class="reference external" href="https://pypi.python.org/pypi/requests">requests</a> package (import_wordpress depends on requests):</p>
 <pre class="literal-block">sudo pip install requests</pre>
@@ -558,18 +498,14 @@ Merge https://github.com/sahiga/sah</pre>
 <li><p><a class="reference external" href="http://nikola.ralsina.com.ar/handbook.html#importing-your-wordpress-site-into-nikola">Official site</a></p></li>
 <li><p><a class="reference external" href="http://flexion.org/posts/2012-10-migrating-wordpress-to-nikola.html">Flexion.Org</a></p></li>
 <li><p><a class="reference external" href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html">Kushal Das</a></p></li>
-</ul>
-</div>
-<div class="section" id="hello-nikola">
-<h2>Hello, Nikola</h2>
+</ul></section><section id="hello-nikola"><h2>Hello, Nikola</h2>
 <p>I assume that the next step is to upload the Nikola site folder to my domain server. If you're reading this post, you can assume that my assumption turned out to be true.</p>
+</section>
 </div>
-</div>
-      </div>
       <div class="entry-meta">
         <span class="entry-date">Posted: <time class="published" datetime="2013-05-04T14:09:26+00:00">2013-05-04 14:09</time></span>
             
-        
+    
     <a href="posts/goodbye-wordpress-hello-nikola/#disqus_thread" data-disqus-identifier="cache/posts/goodbye-wordpress-hello-nikola.html">Comments</a>
 
 
@@ -587,7 +523,7 @@ Merge https://github.com/sahiga/sah</pre>
     </div>
 <!-- #content -->
 <footer class="footer"><small>
-    Contents © 2020         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+    Contents © 2022         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
     
   </small>
 </footer><!-- #footer -->
@@ -600,6 +536,6 @@ Merge https://github.com/sahiga/sah</pre>
     
     
     
-            <script src="assets/js/all-nocdn.js"></script><script src="assets/js/moment-with-locales.min.js"></script>
+            <script src="assets/js/all-nocdn.js"></script><script src="https://polyfill.io/v3/polyfill.js?features=Intl.RelativeTimeFormat.%7Elocale.en"></script><script src="assets/js/luxon.min.js"></script>
 </body>
 </html>

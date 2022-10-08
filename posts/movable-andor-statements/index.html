@@ -65,10 +65,8 @@
   <div id="post-movable-andor-statements" class="post hfeed">
     <h1 class="entry-title"><a href=".">Movable AND/OR Statements</a></h1>
     <div class="entry-content">
-        <div>
-<p>Recently at work I wrote a messy bit of JavaScript (jQuery really) to create movable AND/OR statements. I learned how to code less than a year ago and haven't done any intense programming (yet, just wait), so this is probably the most difficult, headache-inducing, neck-wringing problem I've worked on to date. The last time I encountered this much trouble was when I learned about recursion and <a class="reference external" href="https://en.wikipedia.org/wiki/Trie">tries</a>. I figure I'll outline my thought process here in case it's useful to anyone else.</p>
-<div class="section" id="the-assignment">
-<h2>The assignment</h2>
+        <p>Recently at work I wrote a messy bit of JavaScript (jQuery really) to create movable AND/OR statements. I learned how to code less than a year ago and haven't done any intense programming (yet, just wait), so this is probably the most difficult, headache-inducing, neck-wringing problem I've worked on to date. The last time I encountered this much trouble was when I learned about recursion and <a class="reference external" href="https://en.wikipedia.org/wiki/Trie">tries</a>. I figure I'll outline my thought process here in case it's useful to anyone else.</p>
+<section id="the-assignment"><h2>The assignment</h2>
 <p>The goal of these AND/OR statements was to allow users to perform searches with custom parameters. On the right side of the page would be two lists: one containing the available parameters (Location, Category, Subcategory) and the other containing the two operators (AND, OR). On the left two-thirds of the page would be where the user would drag the parameters and operators to build a full search statement.</p>
 <p>Full, well-formed search statements would have this format:
 <strong>Location OR Category AND Subcategory</strong></p>
@@ -87,9 +85,7 @@
 <li><p>When a user types into the "Location" input box, this should trigger an autocomplete place search. (I'd been playing with the <a class="reference external" href="https://developers.google.com/places/">Google Places API</a> the week prior to this for my <a class="reference external" href="http://www.wehoeatmo.com">WeHo Eat Mo</a> project, so this was fairly easy to implement.)</p></li>
 </ul>
 <p>That's about it. I created some of the rules as I went along based on the issues I faced while interacting with the interface. Bugs just kept on cropping up. (In fact, while writing this, I discovered a few more. Code is never finished.)</p>
-</div>
-<div class="section" id="if-else-and-nothing-else">
-<h2>If, else, and nothing else</h2>
+</section><section id="if-else-and-nothing-else"><h2>If, else, and nothing else</h2>
 <p>The code I ended up writing is almost entirely made up of if–else blocks. Here's the nested conditional monster that controls the "sortability" of items (variables are defined at the beginning of the sort):</p>
 <pre class="literal-block">function sortRules(event, ui) {
         targetParent = ui.item.parent();
@@ -161,9 +157,8 @@
         }
 }</pre>
 <p>Yes, this function consists of one if–else block with...I don't even know how many nested if–else blocks inside of each of those conditions. It's terrifying. But it does the trick. Eventually I'd like to refactor this using a hash table, if that's possible. To see my progress on this project, <a class="reference external" href="https://github.com/sahiga/movable-logic">check out my source code on GitHub</a>.</p>
+</section>
 </div>
-</div>
-    </div>
     <div class="archive-meta">
         Posted: <time class="published" datetime="2013-09-20T20:07:16+00:00">2013-09-20 20:07</time><a href="index.rst" id="sourcelink">Source</a>
         
@@ -217,7 +212,7 @@
     </div>
 <!-- #content -->
 <footer class="footer"><small>
-    Contents © 2020         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+    Contents © 2022         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
     
   </small>
 </footer><!-- #footer -->
@@ -229,6 +224,6 @@
     
     
     
-            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script>
+            <script src="../../assets/js/all-nocdn.js"></script><script src="https://polyfill.io/v3/polyfill.js?features=Intl.RelativeTimeFormat.%7Elocale.en"></script><script src="../../assets/js/luxon.min.js"></script>
 </body>
 </html>

@@ -7,18 +7,77 @@
 
 This list was inspired by `Pamela Fox's reading list <http://www.pamelafox.org/readinglist>`_. I've ordered these books by the date I finished them. Before 2013, I reviewed most of the books I read on `Goodreads <https://www.goodreads.com/sahiga>`_.
 
+
+2022
+====
+
+.. table::
+
+   ===============  ============================================================================================================================  ================================  ============== 
+   Date             Title                                                                                                                         Author                            Rating
+   ===============  ============================================================================================================================  ================================  ==============
+   8/16/2022        A Lady for a Duke                                                                                                             Alexis Hall                       ⭑⭑
+   8/15/2022        Here and Now and Then                                                                                                         Mike Chen                         ⭑⭑⭑
+   8/13/2022        Harrow the Ninth                                                                                                              Tamsyn Muir                       ⭑⭑⭑⭑⭑
+   8/10/2022        The Silence of the Lambs                                                                                                      Thomas Harris                     ⭑⭑⭑⭑
+   8/5/2022         Stranger with My Face                                                                                                         Lois Duncan                       ⭑⭑⭑
+   8/5/2022         Locked In Time                                                                                                                Lois Duncan                       ⭑⭑
+   7/29/2022        The City We Became                                                                                                            N.K. Jemisin                      ⭑⭑
+   7/26/2022        Breasts and Eggs                                                                                                              Mieko Kawakami                    ⭑⭑⭑
+   7/23/2022        Gideon the Ninth                                                                                                              Tamsyn Muir                       ⭑⭑⭑
+   6/20/2022        Ninefox Gambit                                                                                                                Yoon Ha Lee                       ⭑
+   6/12/2022        Coma                                                                                                                          Robin Cook                        ⭑⭑
+   6/11/2022        This is How You Lose the Time War                                                                                             Amal El-Mohtar & Max Gladstone    ⭑
+   5/28/2022        Weapons of Math Destruction                                                                                                   Cathy O'Neil                      ⭑⭑
+   5/27/2022        Killing Commendatore                                                                                                          Haruki Murakami                   ⭑⭑
+   2/23/2022        Amp It Up                                                                                                                     Frank Slootman                    ⭑⭑
+   ===============  ============================================================================================================================  ================================  ============== 
+
+----
+
+2021
+====
+
+.. table::
+
+   ===============  ============================================================================================================================  ================================  ============== 
+   Date             Title                                                                                                                         Author                            Rating
+   ===============  ============================================================================================================================  ================================  ==============
+   12/4/2021        Passing                                                                                                                       Nella Larsen                      ⭑⭑⭑
+   5/29/2021        Solaris                                                                                                                       Stanislaw Lem                     ⭑⭑⭑
+   1/31/2021        Stay Gold                                                                                                                     Tobly McSmith                     ⭑⭑
+   1/23/2021        Jurassic Park                                                                                                                 Michael Crichton                  ⭑⭑⭑⭑
+   1/17/2021        Never Split the Difference                                                                                                    Chris Voss                        ⭑⭑⭑
+   ===============  ============================================================================================================================  ================================  ============== 
+
+----
+
 2020
 ====
 
 .. table::
 
-   ===============  ============================================================================================================================  ======================  ============== 
-   Date             Title                                                                                                                         Author                  Rating
-   ===============  ============================================================================================================================  ======================  ==============
-   1/6/2020         The Story of the Lost Child                                                                                                   Elena Ferrante          ⭑⭑⭑⭑⭑
-   1/5/2020         Those Who Leave and Those Who Stay                                                                                            Elena Ferrante          ⭑⭑⭑⭑⭑
-   1/4/2020         The Story of a New Name                                                                                                       Elena Ferrante          ⭑⭑⭑⭑⭑
-   ===============  ============================================================================================================================  ======================  ============== 
+   ===============  ============================================================================================================================  ================================  ============== 
+   Date             Title                                                                                                                         Author                            Rating
+   ===============  ============================================================================================================================  ================================  ==============
+   12/18/2020       Dangerous Visions                                                                                                             Edited by Harlan Ellison          ⭑⭑⭑
+   12/17/2020       Ghost Work                                                                                                                    Mary L. Gray & Siddharth Suri     ⭑⭑⭑
+   12/6/2020        How to Improve Your Speculative Fiction Openings                                                                              Robert Qualkinbush                ⭑⭑⭑⭑
+   12/5/2020        Nonviolent Communication                                                                                                      Marshall B. Rosenberg             ⭑⭑⭑
+   11/8/2020        Born a Crime                                                                                                                  Trevor Noah                       ⭑⭑⭑⭑
+   8/14/2020        Minor Feelings                                                                                                                Cathy Park Hong                   ⭑⭑⭑⭑⭑
+   8/6/2020         The Rape of Nanking                                                                                                           Iris Chang                        ⭑⭑⭑⭑
+   7/12/2020        The Color of Law                                                                                                              Richard Rothstein                 ⭑⭑⭑⭑
+   7/7/2020         The Bluest Eye                                                                                                                Toni Morrison                     ⭑⭑⭑⭑⭑
+   6/30/2020        Why I'm No Longer Talking to White People About Race                                                                          Reni Eddo-Lodge                   ⭑⭑⭑
+   6/27/2020        How to Be an Antiracist                                                                                                       Ibram X. Kendi                    ⭑⭑⭑
+   6/14/2020        Between the World and Me                                                                                                      Ta-Nehisi Coates                  ⭑⭑⭑⭑
+   5/25/2020        Caramelo                                                                                                                      Sandra Cisneros                   ⭑⭑⭑⭑
+   3/28/2020        Gourmet Hound                                                                                                                 Leehama                           ⭑⭑⭑⭑⭑
+   1/6/2020         The Story of the Lost Child                                                                                                   Elena Ferrante                    ⭑⭑⭑⭑⭑
+   1/5/2020         Those Who Leave and Those Who Stay                                                                                            Elena Ferrante                    ⭑⭑⭑⭑⭑
+   1/4/2020         The Story of a New Name                                                                                                       Elena Ferrante                    ⭑⭑⭑⭑⭑
+   ===============  ============================================================================================================================  ================================  ============== 
 
 ----
 

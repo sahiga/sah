@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sahiga (Posts about design)</title><link>https://www.stephaniehiga.com/</link><description></description><atom:link href="https://www.stephaniehiga.com/categories/design.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 12 Apr 2020 21:12:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The Design of Everyday Blogs</title><link>https://www.stephaniehiga.com/posts/the-design-of-everyday-blogs/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;At the risk of losing all my design cred, I'll admit I put practically no effort or even thought into the way my blog looked until about a week ago. To put that into perspective: I wrote my first post here in May 2013. For most of the time since that point, it's been some variation of this default Bootstrap theme provided by Nikola, the static site generator I use:&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sahiga (Posts about design)</title><link>https://www.stephaniehiga.com/</link><description></description><atom:link href="https://www.stephaniehiga.com/categories/design.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 08 Oct 2022 23:05:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New look!</title><link>https://www.stephaniehiga.com/posts/new-look/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;p&gt;Goodbye, ultra-light colors.&lt;/p&gt;
+&lt;img alt="The blog before today" src="https://www.stephaniehiga.com/images/2022-10-08-site.jpg"&gt;
+&lt;p&gt;It's been so long (2+ years) since I updated this site that I literally forgot everything. I had to reinstall Python3 and recreate my Nikola virtual environment.&lt;/p&gt;
+&lt;p&gt;In other news, I have a &lt;a class="reference external" href="http://www.stephaniehiga.art"&gt;new art site&lt;/a&gt; that may or may not get updated more frequently than this site. That's right. I'm an artist now! No more coding! 🙅🏻‍♀️👩🏻‍💻 → 👩🏻‍🎨🎨  (jk, I totally still write something resembling JavaScript every day)&lt;/p&gt;</description><category>design</category><category>nikola</category><guid>https://www.stephaniehiga.com/posts/new-look/</guid><pubDate>Sat, 08 Oct 2022 22:49:13 GMT</pubDate></item><item><title>The Design of Everyday Blogs</title><link>https://www.stephaniehiga.com/posts/the-design-of-everyday-blogs/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;p&gt;At the risk of losing all my design cred, I'll admit I put practically no effort or even thought into the way my blog looked until about a week ago. To put that into perspective: I wrote my first post here in May 2013. For most of the time since that point, it's been some variation of this default Bootstrap theme provided by Nikola, the static site generator I use:&lt;/p&gt;
 &lt;img alt="My blog, circa February 2015" src="https://www.stephaniehiga.com/images/2015-02-24-site.png"&gt;
 &lt;p&gt;Nikola, while excellent, has &lt;a class="reference external" href="http://themes.getnikola.com/"&gt;slim pickings for themes&lt;/a&gt;, and none of them are quite what I want my blog to look like. So when it came time for the big overhaul, I started (almost) from scratch with a new theme.&lt;/p&gt;
-&lt;div class="section" id="the-process"&gt;
+&lt;section id="the-process"&gt;
 &lt;h2&gt;The process&lt;/h2&gt;
 &lt;p&gt;Nikola themes live within the appropriately named &lt;strong&gt;themes&lt;/strong&gt; directory. My files are structured as follows:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;/theme-name
@@ -17,10 +20,6 @@
   parent&lt;/pre&gt;
 &lt;p&gt;Here's an overview of what these files do (taken from the &lt;a class="reference external" href="http://getnikola.com/theming.html"&gt;Nikola theming reference&lt;/a&gt;):&lt;/p&gt;
 &lt;table&gt;
-&lt;colgroup&gt;
-&lt;col style="width: 11%"&gt;
-&lt;col style="width: 89%"&gt;
-&lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;&lt;th class="head"&gt;&lt;p&gt;File Name&lt;/p&gt;&lt;/th&gt;
 &lt;th class="head"&gt;&lt;p&gt;Purpose&lt;/p&gt;&lt;/th&gt;
@@ -48,28 +47,28 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;That's it! I used the similarly bare &lt;a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/blogtxt"&gt;monospace theme&lt;/a&gt; as a guide. You can spruce up your theme with additional templates (see the &lt;a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen"&gt;zen theme&lt;/a&gt; for an example), but I decided to keep mine simple.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="now-for-the-fun-stuff"&gt;
+&lt;/section&gt;
+&lt;section id="now-for-the-fun-stuff"&gt;
 &lt;h2&gt;Now for the fun stuff!&lt;/h2&gt;
 &lt;p&gt;There's another reason why the default theme didn't work that well for my blog: I'm wordy as hell. I don't write posts; I write &lt;em&gt;essays&lt;/em&gt;. So, rather than change my style of blogging, I thought I'd pull off an illusion. My main objective in redesigning this blog was to make it resemble a series of digestible sentences, as opposed to the giant wall of text that it actually is.&lt;/p&gt;
 &lt;p&gt;For inspiration, I looked at &lt;a class="reference external" href="http://www.medium.com"&gt;Medium&lt;/a&gt;, &lt;a class="reference external" href="http://longreads.com/"&gt;Longreads&lt;/a&gt;, &lt;a class="reference external" href="http://nautil.us/"&gt;Nautilus&lt;/a&gt;, &lt;a class="reference external" href="http://aeon.co"&gt;Aeon&lt;/a&gt;, and all the other beautiful text-heavy sites that have cropped up in recent years.&lt;/p&gt;
-&lt;div class="section" id="fonts"&gt;
+&lt;section id="fonts"&gt;
 &lt;h3&gt;Fonts&lt;/h3&gt;
 &lt;p&gt;Typefaces can make or break a design. For the headers, I picked &lt;strong&gt;Lato&lt;/strong&gt;, my favorite web font of all time; for regular text, &lt;strong&gt;Lora&lt;/strong&gt;, my other favorite web font of all time. Both are available on &lt;a class="reference external" href="https://www.google.com/fonts"&gt;Google Fonts&lt;/a&gt;. To improve readability, I increased the size of the text and the space between each line.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="colors"&gt;
+&lt;/section&gt;
+&lt;section id="colors"&gt;
 &lt;h3&gt;Colors&lt;/h3&gt;
 &lt;p&gt;The link styles (salmon color + hover transitions) are from an old WordPress theme I created back in 2012, before I became a front-end developer. My CSS may have improved since then, but my visual tastes haven't changed much.&lt;/p&gt;
 &lt;p&gt;My first pass at the new theme had an entirely white background, which tested poorly. "It's &lt;strong&gt;really&lt;/strong&gt; white," commented one of my Hack Reactor classmates, as he shielded his eyes from the glare.&lt;sup&gt;*&lt;/sup&gt; I subsequently reduced the white space and added a background from &lt;a class="reference external" href="http://www.subtlepatterns.com"&gt;Subtle Patterns&lt;/a&gt;. I picked a food icon pattern because, well, I love food.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="other-changes"&gt;
+&lt;/section&gt;
+&lt;section id="other-changes"&gt;
 &lt;h3&gt;Other changes&lt;/h3&gt;
 &lt;p&gt;I removed the Share button that used to sit in the bottom right corner. It took me forever to figure out how to do this, but all I had to do was uncomment the &lt;code class="docutils literal"&gt;SOCIAL_BUTTONS_CODE = ""&lt;/code&gt; line in &lt;strong&gt;conf.py&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="final-thoughts"&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="final-thoughts"&gt;
 &lt;h2&gt;Final thoughts&lt;/h2&gt;
 &lt;p&gt;Designs are never finished, but I'm happy with how my blog looks right now. I plan to implement a hamburger menu for smaller screens within the upcoming weeks. If you have any suggestions, or find your viewing experience to be less than optimal, please let me know.&lt;/p&gt;
 &lt;hr class="docutils"&gt;
 &lt;p&gt;&lt;sup&gt;*&lt;/sup&gt; With much gratitude to my Hack Reactor classmates for giving me the necessary push to redesign my blog.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>design</category><category>nikola</category><guid>https://www.stephaniehiga.com/posts/the-design-of-everyday-blogs/</guid><pubDate>Mon, 02 Mar 2015 00:27:26 GMT</pubDate></item></channel></rss>
+&lt;/section&gt;</description><category>design</category><category>nikola</category><guid>https://www.stephaniehiga.com/posts/the-design-of-everyday-blogs/</guid><pubDate>Mon, 02 Mar 2015 00:27:26 GMT</pubDate></item></channel></rss>

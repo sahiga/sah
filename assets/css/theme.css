@@ -51,7 +51,7 @@ body {
   font-size: 1em;
   line-height: 1.8em;
   color: #2e2e2e;
-  background: url('../../images/restaurant_icons.png') #eee fixed;
+  background: url('../../images/congruent_outline.png') #222 fixed;
 }
 
 h1, h2, h3 {
@@ -98,7 +98,7 @@ sup {
 }
 
 a:link:not(.tag), a:visited:not(.tag) {
-  color: #f84444;
+  color: #fb8e8e;
   text-decoration: none;
   -moz-transition: color .5s ease-in-out;
   -o-transition: color .5s ease-in-out;
@@ -108,7 +108,7 @@ a:link:not(.tag), a:visited:not(.tag) {
 }
 
 a:hover:not(.tag) {
-  color: #fb8e8e;
+  color:#ffe6d1;
 }
 
 hr {
@@ -137,10 +137,7 @@ hr {
 }
 
 .content {
-  padding: 1.5em 2.5em;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 1px 2px 8px rgb(231, 231, 231);
+  color: #fff;
 }
 
 .blog-title {
@@ -150,14 +147,14 @@ hr {
 }
 
 .caption {
-  color: #f84444;
+  color: #ffe6d1;
   font-size: 0.8em;
   font-style: italic;
 }
 
 pre, tt {
   font-family: monospace;
-  background: rgb(255, 244, 234);
+  background: #222;
   padding: 0.5em 0.8em;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -171,7 +168,7 @@ pre.literal-block {
 
 .literal-block {
   overflow: auto;
-  background: rgb(255, 244, 234);
+  background: #222;
   padding: 1em;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -207,6 +204,7 @@ pre.literal-block {
 }
 
 .footer {
+  color: #fff;
   text-align: center;
   padding: 1em 0;
 }
@@ -242,11 +240,11 @@ em {
 }
 
 tr:nth-of-type(odd) td {
-  background: #ffe6d1;
+  background: rgba(2, 2, 2, 0.4);
 }
 
 tr:nth-of-type(even) td {
-  background: rgb(255, 244, 234);
+  background: rgba(2, 2, 2, 0.2);
 }
 
 td {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sahiga (Posts about conferences)</title><link>https://www.stephaniehiga.com/</link><description></description><atom:link href="https://www.stephaniehiga.com/categories/conferences.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 16 Aug 2020 12:18:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>My conference talk on CSS</title><link>https://www.stephaniehiga.com/posts/my-conference-talk-on-css/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;div&gt;&lt;p&gt;In June, I gave a talk at &lt;a class="reference external" href="https://www.womentech.net/speaker/Stephanie%20A./Higa"&gt;WomenTech Global 2020&lt;/a&gt;, a virtual conference hosted by CEO Anna Radulovski and her team. Anna reached out to me on LinkedIn a couple of weeks before the conference, asking whether I'd be interested in speaking. I love opportunities that drag me outside of my comfort zone, so of course I said yes!&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sahiga (Posts about conferences)</title><link>https://www.stephaniehiga.com/</link><description></description><atom:link href="https://www.stephaniehiga.com/categories/conferences.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 08 Oct 2022 22:03:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>My conference talk on CSS</title><link>https://www.stephaniehiga.com/posts/my-conference-talk-on-css/</link><dc:creator>Stephanie A. Higa</dc:creator><description>&lt;p&gt;In June, I gave a talk at &lt;a class="reference external" href="https://www.womentech.net/speaker/Stephanie%20A./Higa"&gt;WomenTech Global 2020&lt;/a&gt;, a virtual conference hosted by CEO Anna Radulovski and her team. Anna reached out to me on LinkedIn a couple of weeks before the conference, asking whether I'd be interested in speaking. I love opportunities that drag me outside of my comfort zone, so of course I said yes!&lt;/p&gt;
 &lt;p&gt;And then I panicked. What was I even qualified to talk about?&lt;/p&gt;
 &lt;p&gt;Giving a conference talk is challenging for a number of reasons (unless you are blessed by the public speaking gods), but the most difficult part is selecting a topic. It's totally intimidating, like facing a blank page.&lt;/p&gt;
 &lt;p&gt;I scrambled for the next few days, shuffling through various topics related to frontend engineering, doubting whether I'd really learned anything of use in the 7+ years I've been working as a professional developer.&lt;/p&gt;
@@ -20,12 +20,14 @@
 &lt;p&gt;&lt;strong&gt;RM:&lt;/strong&gt; Hmm. Let's think. Is there, possibly, a technology that you absolutely love, with all your heart, that you've known for ages, that is incredibly cool, but it flies under the radar, so most people don't know it's incredibly cool?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;OM:&lt;/strong&gt; OhhhhhhHHHHhhhHHH you mean CSS&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class="section" id="cascading-style-sheets-my-dear-old-friend"&gt;
+&lt;section id="cascading-style-sheets-my-dear-old-friend"&gt;
 &lt;h2&gt;Cascading Style Sheets, my dear old friend&lt;/h2&gt;
-&lt;div class="figure"&gt;
+&lt;figure&gt;
 &lt;img alt="/images/css-talk-graphics.png" src="https://www.stephaniehiga.com/images/css-talk-graphics.png"&gt;
-&lt;p class="caption"&gt;Just a taste of what CSS can do.&lt;/p&gt;
-&lt;/div&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Just a taste of what CSS can do.&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;p&gt;I like CSS &lt;em&gt;way&lt;/em&gt; more than JavaScript. I like it more than English, too.&lt;/p&gt;
 &lt;p&gt;I learned CSS when I was a wee gal, during the glorious days of Web 1.0, when you could craft a second home on the internet without social media panopticons breathing over your shoulder.&lt;/p&gt;
 &lt;p&gt;Sure, there were some drawbacks during those days. You had to use HTML tables to create columns of text. You had to use Photoshop or PaintShopPro 7 to make gradients and rounded corners. Marquees and flashing text were all the rage. But that was the internet when it was beautiful.&lt;/p&gt;
@@ -34,15 +36,17 @@
 &lt;p&gt;I knew there &lt;em&gt;had&lt;/em&gt; to be a better tool out there.&lt;/p&gt;
 &lt;p&gt;It sounds dramatic to say that CSS changed my life, but it kinda did. If it weren't for CSS, I would have given up on websites a long time ago. I wouldn't have started making websites again right after college, as an unemployed architecture grad, and then dreamed that hey, maybe someday I could even get paid to build a website. Imagine that!&lt;/p&gt;
 &lt;p&gt;Honestly, I probably wouldn't use the internet without CSS, because it would look like this:&lt;/p&gt;
-&lt;div class="figure"&gt;
+&lt;figure&gt;
 &lt;img alt="/images/websites-unstyled.png" src="https://www.stephaniehiga.com/images/websites-unstyled.png"&gt;
-&lt;p class="caption"&gt;Six of the world's most popular websites, all sad and broken without CSS.&lt;/p&gt;
-&lt;/div&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Six of the world's most popular websites, all sad and broken without CSS.&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;p&gt;Over the years, CSS has become even more amazing. Yet I can't tell you how many times I've heard people -- mostly backend engineers, but some frontend engineers too -- dismiss this wonderful language as an afterthought, as a nice-to-have rather than a must-have.&lt;/p&gt;
 &lt;p&gt;Even at Hack Reactor, whose business was predicated on churning out new frontend engineers, we had a grand total of &lt;em&gt;one&lt;/em&gt; lecture on CSS. Most of the content was outdated. Some of it was flat-out wrong. The focus was always JavaScript, JavaScript, JavaScript. Sure, JavaScript is great. It's important. It's the golden child. Meanwhile, CSS remains forever in the background, the overlooked, misunderstood, unsung hero of the web.&lt;/p&gt;
 &lt;p&gt;With this in mind, I had fuel for my conference talk. My goal wasn't to give an introduction to CSS (there are far too many tutorials for that), but to share my passion, and to demonstrate how fun CSS can be.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="creating-my-conference-talk"&gt;
+&lt;/section&gt;
+&lt;section id="creating-my-conference-talk"&gt;
 &lt;h2&gt;Creating my conference talk&lt;/h2&gt;
 &lt;p&gt;Last year, I gave a talk at &lt;a class="reference external" href="https://www.womenofsiliconvalley.com/blog/how-i-became-a-software-engineer"&gt;Women of Silicon Valley&lt;/a&gt; about my path from architecture ➡️ biz dev ➡️ software. While I at first had lofty goals for that presentation involving custom graphics, I eventually settled on a basic Keynote template. So, out of habit, I started creating this presentation in Keynote as well.&lt;/p&gt;
 &lt;p&gt;After about five slides, I started feeling like something was wrong.&lt;/p&gt;
@@ -62,8 +66,8 @@
 &lt;p&gt;And that's why I scrapped my Keynote presentation and rebuilt it as a webpage.&lt;/p&gt;
 &lt;a href="https://github.com/sahiga/css-talk"&gt;&lt;img src="https://www.stephaniehiga.com/images/css-talk-preview.png" alt="Preview of my presentation"&gt;&lt;/a&gt;&lt;p&gt;You can find the presentation &lt;a class="reference external" href="https://sahiga.github.io/css-talk"&gt;here&lt;/a&gt;. Check out &lt;a class="reference external" href="https://github.com/sahiga/css-talk"&gt;the GitHub repo&lt;/a&gt; for navigation instructions and direct links to some of the most interesting slides (imo, I'm biased of course).&lt;/p&gt;
 &lt;p&gt;I practiced my talk with my family and one of my best friends, who's also a frontend engineer. They gave excellent feedback, which helped me to create a more cohesive and relatable presentation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="connecting-with-a-virtual-audience"&gt;
+&lt;/section&gt;
+&lt;section id="connecting-with-a-virtual-audience"&gt;
 &lt;h2&gt;Connecting with a virtual audience&lt;/h2&gt;
 &lt;p&gt;As I mentioned earlier, I spoke at Women of Silicon Valley in 2019. I was fully prepared, but when I walked to the front of that room that had seemed so small from the back (there were ~100 people), I felt sheer terror.&lt;/p&gt;
 &lt;p&gt;I've read that the fear of public speaking traces back to our instinctual fear of predators. Humans, like all predators, have their eyes in the front of their heads, so when speak publicly, we're standing before a crowd of predators. (Can't find a source for this exact idea, though. I &lt;em&gt;may&lt;/em&gt; just be misinterpreting this &lt;a class="reference external" href="https://www.psychologytoday.com/intl/blog/the-real-story-risk/201211/the-thing-we-fear-more-death"&gt;Psychology Today&lt;/a&gt; article, which says that the ostracism we feel while speaking publicly makes us fear for our own survival.)&lt;/p&gt;
@@ -85,8 +89,8 @@
 &lt;/blockquote&gt;
 &lt;p&gt;I took a deep breath, turned on my mic, and started speaking. Contrary to my expectations, about 30-40 people attended. When I reached the slide where I had to edit a CSS rule, I resorted to hunt-and-peck typing (which, thanks to the virtual format, no one could see).&lt;/p&gt;
 &lt;p&gt;Ultimately, the talk went really well -- better my practice sessions. I finished at the half hour mark, but the audience was lovely and filled the remaining 15 minutes with questions. Some of them even reached out to me afterward with more questions! I feel honored to have had this opportunity, and such a wonderful audience to boot 🙂&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="other-thoughts-on-public-speaking"&gt;
+&lt;/section&gt;
+&lt;section id="other-thoughts-on-public-speaking"&gt;
 &lt;h2&gt;Other thoughts on public speaking&lt;/h2&gt;
 &lt;p&gt;Would I speak at another conference, virtual or otherwise? Yes to both!&lt;/p&gt;
 &lt;p&gt;I'm a shy person. Not as shy as I was as a kid, or even a few years ago, but yeah, I'm shy. I don't like being in the spotlight. When I speak off the cuff, without sorting out my thoughts first, I space out and get tongue-tied.&lt;/p&gt;
@@ -98,4 +102,4 @@
 &lt;/blockquote&gt;
 &lt;hr class="docutils"&gt;
 &lt;p&gt;&lt;strong&gt;Blog notes:&lt;/strong&gt; I haven't updated this blog since 2016. I would like to update more often than once every four years (ha), but I can't promise anything. I'm a very slow writer and my posts always end up being super long. This one is almost 2000 words!&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>conferences</category><category>css</category><guid>https://www.stephaniehiga.com/posts/my-conference-talk-on-css/</guid><pubDate>Fri, 14 Aug 2020 20:43:08 GMT</pubDate></item></channel></rss>
+&lt;/section&gt;</description><category>conferences</category><category>css</category><guid>https://www.stephaniehiga.com/posts/my-conference-talk-on-css/</guid><pubDate>Fri, 14 Aug 2020 20:43:08 GMT</pubDate></item></channel></rss>

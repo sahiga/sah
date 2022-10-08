@@ -65,11 +65,9 @@
   <div id="post-the-design-of-everyday-blogs" class="post hfeed">
     <h1 class="entry-title"><a href=".">The Design of Everyday Blogs</a></h1>
     <div class="entry-content">
-        <div>
-<p>At the risk of losing all my design cred, I'll admit I put practically no effort or even thought into the way my blog looked until about a week ago. To put that into perspective: I wrote my first post here in May 2013. For most of the time since that point, it's been some variation of this default Bootstrap theme provided by Nikola, the static site generator I use:</p>
+        <p>At the risk of losing all my design cred, I'll admit I put practically no effort or even thought into the way my blog looked until about a week ago. To put that into perspective: I wrote my first post here in May 2013. For most of the time since that point, it's been some variation of this default Bootstrap theme provided by Nikola, the static site generator I use:</p>
 <img alt="My blog, circa February 2015" src="../../images/2015-02-24-site.png"><p>Nikola, while excellent, has <a class="reference external" href="http://themes.getnikola.com/">slim pickings for themes</a>, and none of them are quite what I want my blog to look like. So when it came time for the big overhaul, I started (almost) from scratch with a new theme.</p>
-<div class="section" id="the-process">
-<h2>The process</h2>
+<section id="the-process"><h2>The process</h2>
 <p>Nikola themes live within the appropriately named <strong>themes</strong> directory. My files are structured as follows:</p>
 <pre class="literal-block">/theme-name
   /assets
@@ -83,10 +81,6 @@
   parent</pre>
 <p>Here's an overview of what these files do (taken from the <a class="reference external" href="http://getnikola.com/theming.html">Nikola theming reference</a>):</p>
 <table>
-<colgroup>
-<col style="width: 11%">
-<col style="width: 89%">
-</colgroup>
 <thead><tr>
 <th class="head"><p>File Name</p></th>
 <th class="head"><p>Purpose</p></th>
@@ -119,33 +113,22 @@
 </tbody>
 </table>
 <p>That's it! I used the similarly bare <a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/blogtxt">monospace theme</a> as a guide. You can spruce up your theme with additional templates (see the <a class="reference external" href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen">zen theme</a> for an example), but I decided to keep mine simple.</p>
-</div>
-<div class="section" id="now-for-the-fun-stuff">
-<h2>Now for the fun stuff!</h2>
+</section><section id="now-for-the-fun-stuff"><h2>Now for the fun stuff!</h2>
 <p>There's another reason why the default theme didn't work that well for my blog: I'm wordy as hell. I don't write posts; I write <em>essays</em>. So, rather than change my style of blogging, I thought I'd pull off an illusion. My main objective in redesigning this blog was to make it resemble a series of digestible sentences, as opposed to the giant wall of text that it actually is.</p>
 <p>For inspiration, I looked at <a class="reference external" href="http://www.medium.com">Medium</a>, <a class="reference external" href="http://longreads.com/">Longreads</a>, <a class="reference external" href="http://nautil.us/">Nautilus</a>, <a class="reference external" href="http://aeon.co">Aeon</a>, and all the other beautiful text-heavy sites that have cropped up in recent years.</p>
-<div class="section" id="fonts">
-<h3>Fonts</h3>
+<section id="fonts"><h3>Fonts</h3>
 <p>Typefaces can make or break a design. For the headers, I picked <strong>Lato</strong>, my favorite web font of all time; for regular text, <strong>Lora</strong>, my other favorite web font of all time. Both are available on <a class="reference external" href="https://www.google.com/fonts">Google Fonts</a>. To improve readability, I increased the size of the text and the space between each line.</p>
-</div>
-<div class="section" id="colors">
-<h3>Colors</h3>
+</section><section id="colors"><h3>Colors</h3>
 <p>The link styles (salmon color + hover transitions) are from an old WordPress theme I created back in 2012, before I became a front-end developer. My CSS may have improved since then, but my visual tastes haven't changed much.</p>
 <p>My first pass at the new theme had an entirely white background, which tested poorly. "It's <strong>really</strong> white," commented one of my Hack Reactor classmates, as he shielded his eyes from the glare.<sup>*</sup> I subsequently reduced the white space and added a background from <a class="reference external" href="http://www.subtlepatterns.com">Subtle Patterns</a>. I picked a food icon pattern because, well, I love food.</p>
-</div>
-<div class="section" id="other-changes">
-<h3>Other changes</h3>
+</section><section id="other-changes"><h3>Other changes</h3>
 <p>I removed the Share button that used to sit in the bottom right corner. It took me forever to figure out how to do this, but all I had to do was uncomment the <code class="docutils literal">SOCIAL_BUTTONS_CODE = ""</code> line in <strong>conf.py</strong>.</p>
-</div>
-</div>
-<div class="section" id="final-thoughts">
-<h2>Final thoughts</h2>
+</section></section><section id="final-thoughts"><h2>Final thoughts</h2>
 <p>Designs are never finished, but I'm happy with how my blog looks right now. I plan to implement a hamburger menu for smaller screens within the upcoming weeks. If you have any suggestions, or find your viewing experience to be less than optimal, please let me know.</p>
 <hr class="docutils">
 <p><sup>*</sup> With much gratitude to my Hack Reactor classmates for giving me the necessary push to redesign my blog.</p>
+</section>
 </div>
-</div>
-    </div>
     <div class="archive-meta">
         Posted: <time class="published" datetime="2015-03-02T00:27:26+00:00">2015-03-02 00:27</time><a href="index.rst" id="sourcelink">Source</a>
         
@@ -199,7 +182,7 @@
     </div>
 <!-- #content -->
 <footer class="footer"><small>
-    Contents © 2020         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+    Contents © 2022         <a href="mailto:sahiga@gmail.com">Stephanie A. Higa</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
     
   </small>
 </footer><!-- #footer -->
@@ -211,6 +194,6 @@
     
     
     
-            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script>
+            <script src="../../assets/js/all-nocdn.js"></script><script src="https://polyfill.io/v3/polyfill.js?features=Intl.RelativeTimeFormat.%7Elocale.en"></script><script src="../../assets/js/luxon.min.js"></script>
 </body>
 </html>
