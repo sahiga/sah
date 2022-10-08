@@ -5,9 +5,9 @@
 .. title: About
 .. slug: about
 
-I'm a software developer based in San Mateo, California. You can find me in a few other places on the web (my LinkedIn and GitHub profiles are generally up to date; everything else is a time capsule):
+I'm a software developer based in San Mateo, California. You can find me in a few other places on the web:
 
-- `Illustrations <https://sahiga.carbonmade.com>`_
+- `Oil paintings & other doodles <https://www.stephaniehiga.art>`_
 - `LinkedIn <https://www.linkedin.com/in/sahiga>`_
 - `Daytum <https://www.daytum.com/sahiga>`_
 - `GitHub <https://www.github.com/sahiga>`_
